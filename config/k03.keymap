@@ -12,6 +12,8 @@
 
 &mt { tapping-term-ms = <180>; };
 
+&mmv { time-to-max-speed-ms = <200>; };
+
 / {
     behaviors {
         enc_vol: enc_vol {
