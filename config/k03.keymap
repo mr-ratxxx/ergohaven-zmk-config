@@ -45,10 +45,10 @@
                    &trans        &trans    &trans         &trans   &trans    &trans     &trans         &trans        &kp N0       &trans
             >;
 
-            display-name = "Nav";
+            display-name = "Function";
         };
 
-        sym {
+        nav {
             bindings = <
 &trans  &trans    &kp AT    &kp DLLR   &kp HASH  &trans                       &trans     &trans    &kp CARET  &trans    &trans    &trans
 &trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &trans     &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
@@ -57,7 +57,7 @@
                   &trans    &trans     &trans    &mo 3      &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
-            display-name = "Symbols";
+            display-name = "Navigation";
         };
 
         adj {
