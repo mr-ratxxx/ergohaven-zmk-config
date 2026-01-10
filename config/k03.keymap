@@ -17,8 +17,8 @@
 };
 
 &mmv {
-    trigger-period-ms = <1>;
-    delay-ms = <1>;
+    trigger-period-ms = <50>;
+    delay-ms = <100>;
     acceleration-exponent = <15>;
 };
 
