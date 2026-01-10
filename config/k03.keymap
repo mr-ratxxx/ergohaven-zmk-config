@@ -34,6 +34,7 @@
         M__ENTER {
             bindings = <&kp ENTER>;
             key-positions = <46 45>;
+            layers = <0 1 4 5>;
         };
 
         UI_REVERT {
@@ -50,13 +51,25 @@
 
         JK_MOUSE1 {
             bindings = <&mkp MB1>;
-            key-positions = <31 32>;
+            key-positions = <45 46>;
             layers = <2 3>;
         };
 
         JKL_MOUSE2 {
             bindings = <&mkp MB2>;
-            key-positions = <31 32 33>;
+            key-positions = <45 46 47>;
+            layers = <2 3>;
+        };
+
+        NM_MOUSE4 {
+            bindings = <&mkp MB4>;
+            key-positions = <44 45>;
+            layers = <2 3>;
+        };
+
+        NM_MOUSE5 {
+            bindings = <&mkp MB5>;
+            key-positions = <48 49>;
             layers = <2 3>;
         };
     };
@@ -133,11 +146,11 @@
 
         symb {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp LS(MINUS)  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                    &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)     &kp RS(EQUAL)
+&none          &kp LS(MINUS)  &kp LS(N9)  &kp LS(N8)  &kp LS(N7)  &none                         &none       &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(MINUS)  &none
+&none          &kp LS(N0)     &kp LS(N6)  &kp LS(N5)  &kp RS(N4)  &none                         &none       &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp RS(N0)     &none
+&none          &kp RS(EQUAL)  &kp RS(N3)  &kp RS(N2)  &kp RS(N1)  &none       &trans    &trans  &none       &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(EQUAL)  &none
+                              &trans      &trans      &none       &trans      &trans    &trans  &trans      &trans      &trans      &trans
             >;
 
             label = "symb";
