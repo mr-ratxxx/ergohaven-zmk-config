@@ -53,14 +53,14 @@
 
         base {
             bindings = <
-&kp ESC    &kp F2  &kp F3     &kp F4       &kp F5     &kp F6                               &kp F7          &kp F8           &kp F9      &kp F10   &kp F11   &kp F12
-&none      &kp Q   &kp W      &kp E        &kp R      &kp T                                &kp Y           &kp U            &kp I       &kp O     &kp P     &kp GRAVE
-&none      &kp A   &kp S      &kp D        &kp F      &kp G                                &kp H           &kp J            &kp K       &kp L     &kp SEMI  &kp SQT
-&kp ENTER  &kp Z   &kp X      &kp C        &kp V      &kp B        &kp LBKT     &kp RBKT   &kp N           &kp M            &kp COMMA   &kp DOT   &kp FSLH  &kp BSLH
-                   &kp MINUS  &lt 5 EQUAL  &lt 4 TAB  &lt 3 SPACE  &lt 1 DEL    &lt 1 ESC  &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
+&kp ESC    &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                               &kp F7          &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
+&none      &kp Q       &kp W        &kp E        &kp R        &kp T                                &kp Y           &kp U            &kp I       &kp O        &kp P          &kp GRAVE
+&none      &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                &kp H           &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
+&kp ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &kp LBKT     &kp RBKT   &kp N           &kp M            &kp COMMA   &kp DOT      &kp FSLH       &kp BSLH
+                       &kp MINUS    &lt 5 EQUAL  &lt 4 TAB    &lt 3 SPACE  &lt 1 DEL    &lt 1 ESC  &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
             >;
 
-            display-name = "Base";
+            display-name = "base";
             sensor-bindings =
                 <&enc_vol>,
                 <&enc_vol>,
@@ -79,19 +79,19 @@
                         &trans        &trans       &trans         &trans    &trans       &trans     &trans         &trans        &trans       &trans
             >;
 
-            display-name = "Function";
+            display-name = "funct";
         };
 
         nav-r {
             bindings = <
 &trans         &trans     &trans     &trans    &trans      &trans                      &trans    &trans          &trans        &trans          &trans           &trans
-&none          &kp LG(X)  &none      &none     &none       &tog 2                      &tog 2    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
+&none          &kp LG(X)  &none      &none     &none       &tog 2                      &to 2     &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
 &kp PAGE_UP    &kp LGUI   &kp LCTRL  &kp RALT  &kp LSHIFT  &kp PLUS                    &kp HOME  &kp LEFT        &kp UP        &kp DOWN        &kp RIGHT_ARROW  &kp END
 &kp PAGE_DOWN  &kp LG(A)  &none      &none     &kp LG(V)   &none     &trans    &trans  &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB2
                           &kp END    &kp HOME  &trans      &trans    &trans    &trans  &trans    &trans          &kp PAGE_UP   &kp PAGE_DOWN
             >;
 
-            display-name = "NavigationRight";
+            display-name = "nav-r";
         };
 
         nav-l {
@@ -103,7 +103,7 @@
                      &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &trans
             >;
 
-            display-name = "NavigationLeft";
+            display-name = "nav-l";
         };
 
         num {
@@ -115,7 +115,7 @@
                            &trans        &trans       &trans        &trans    &trans       &trans     &trans    &trans         &trans               &trans
             >;
 
-            label = "Numbers";
+            label = "num";
         };
 
         symb {
@@ -127,7 +127,7 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "Symbols";
+            label = "symb";
         };
     };
 };
