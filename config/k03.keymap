@@ -6,8 +6,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &msc {
-    acceleration-exponent = <3>;
-    time-to-max-speed-ms = <100>;
 };
 
 &mt {
@@ -17,8 +15,6 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <100>;
-    acceleration-exponent = <5>;
 };
 
 / {
@@ -36,7 +32,8 @@
 
         M__ENTER {
             bindings = <&kp ENTER>;
-            key-positions = <32 31>;
+            key-positions = <45 46>;
+            layers = <0 4 5 6 1>;
         };
 
         UI_REVERT {
@@ -63,15 +60,9 @@
             layers = <2 3>;
         };
 
-        NM_MOUSE4 {
-            bindings = <&mkp MB4>;
-            key-positions = <44 45>;
-            layers = <2 3>;
-        };
-
-        NM_MOUSE5 {
-            bindings = <&mkp MB5>;
-            key-positions = <48 49>;
+        JK_ENTER {
+            bindings = <&kp ENTER>;
+            key-positions = <31 32>;
             layers = <2 3>;
         };
     };
@@ -81,11 +72,11 @@
 
         base {
             bindings = <
-&kp ESC    &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                               &kp F7          &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
-&tog 1     &kp Q       &kp W        &kp E        &kp R        &kp T                                &kp Y           &kp U            &kp I       &kp O        &kp P          &kp GRAVE
-&none      &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                &kp H           &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
-&kp ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &kp ENTER    &kp ENTER  &kp N           &kp M            &kp COMMA   &kp DOT      &kp FSLH       &kp BSLH
-                       &kp MINUS    &lt 5 EQUAL  &lt 4 TAB    &lt 3 SPACE  &lt 1 DEL    &lt 1 ESC  &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
+&kp ESC  &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7          &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
+&none    &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y           &kp U            &kp I       &kp O        &kp P          &kp GRAVE
+&none    &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H           &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
+&none    &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 6 ENTER    &lt 6 ENTER  &kp N           &kp M            &kp COMMA   &kp DOT      &kp FSLH       &kp BSLH
+                     &kp MINUS    &lt 5 EQUAL  &lt 4 TAB    &lt 3 SPACE  &lt 1 DEL      &lt 1 ESC    &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
             >;
 
             display-name = "base";
@@ -113,7 +104,7 @@
         nav-r {
             bindings = <
 &trans         &trans     &trans     &trans    &trans      &trans                      &trans    &trans          &trans        &trans          &trans           &trans
-&none          &kp LG(X)  &none      &none     &none       &tog 2                      &to 2     &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
+&none          &kp LG(X)  &none      &none     &none       &tog 2                      &mkp MB4  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &mkp MB5
 &kp PAGE_UP    &kp LGUI   &kp LCTRL  &kp RALT  &kp LSHIFT  &kp PLUS                    &kp HOME  &kp LEFT        &kp UP        &kp DOWN        &kp RIGHT_ARROW  &kp END
 &kp PAGE_DOWN  &kp LG(A)  &none      &none     &kp LG(V)   &none     &trans    &trans  &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB2
                           &kp END    &kp HOME  &trans      &trans    &trans    &trans  &trans    &trans          &kp PAGE_UP   &kp PAGE_DOWN
@@ -156,6 +147,18 @@
             >;
 
             label = "symb";
+        };
+
+        layers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &tog 5  &tog 4  &tog 3  &tog 1    &tog 1  &tog 2  &tog 4  &tog 5  &trans
+            >;
+
+            label = "layers";
         };
     };
 };
