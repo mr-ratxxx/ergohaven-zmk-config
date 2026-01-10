@@ -15,6 +15,40 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        M,-ENTER {
+            bindings = <&kp ENTER>;
+            key-positions = <46 45>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        UI-REVERT {
+            bindings = <&kp RG(Z)>;
+            key-positions = <20 19>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        UIO-REPEAT {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <19 20 21>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        JK-MOUSE1 {
+            bindings = <&mkp MB1>;
+            key-positions = <31 32>;
+            layers = <2 3>;
+        };
+
+        JKL-MOUSE2 {
+            bindings = <&mkp MB2>;
+            key-positions = <31 32 33>;
+            layers = <2 3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,10 +74,10 @@
         funct {
             bindings = <
 &kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                            &kp N6         &kp N7        &kp N8       &kp N9        &kp N0       &kp EQUAL
-&trans     &kp F3       &kp F12       &kp F11      &kp F10        &tog 1                            &tog 1         &kp F10       &kp F11      &kp F12       &kt F3       &trans
-&trans     &mt LGUI F2  &mt LCTRL F9  &mt LALT F8  &mt LSHIFT F7  &kp BSPC                          &kp BACKSPACE  &mt RSHFT F7  &mt RALT F8  &mt RCTRL F9  &mt RGUI F2  &trans
-&trans     &kp F1       &kp F6        &kp F5       &kp F4         &kp DEL   &kp ENTER    &kp ENTER  &kp DEL        &kp F4        &kp F5       &kp F6        &kp F1       &trans
-                        &trans        &trans       &trans         &trans    &trans       &trans     &trans         &trans        &kp N0       &trans
+&none      &kp F3       &kp F12       &kp F11      &kp F10        &tog 1                            &tog 1         &kp F10       &kp F11      &kp F12       &kt F3       &none
+&none      &mt LGUI F2  &mt LCTRL F9  &mt LALT F8  &mt LSHIFT F7  &kp BSPC                          &kp BACKSPACE  &mt RSHFT F7  &mt RALT F8  &mt RCTRL F9  &mt RGUI F2  &none
+&none      &kp F1       &kp F6        &kp F5       &kp F4         &kp DEL   &kp ENTER    &kp ENTER  &kp DEL        &kp F4        &kp F5       &kp F6        &kp F1       &none
+                        &trans        &trans       &trans         &trans    &trans       &trans     &trans         &trans        &trans       &trans
             >;
 
             display-name = "Function";
@@ -52,9 +86,9 @@
         nav-r {
             bindings = <
 &trans         &trans     &trans     &trans    &trans      &trans                      &trans    &trans          &trans        &trans          &trans           &trans
-&trans         &kp LG(X)  &none      &none     &none       &none                       &trans    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
+&none          &kp LG(X)  &none      &none     &none       &tog 2                      &tog 2    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
 &kp PAGE_UP    &kp LGUI   &kp LCTRL  &kp RALT  &kp LSHIFT  &kp PLUS                    &kp HOME  &kp LEFT        &kp UP        &kp DOWN        &kp RIGHT_ARROW  &kp END
-&kp PAGE_DOWN  &kp LG(A)  &none      &none     &kp LG(V)   &trans    &trans    &trans  &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB2
+&kp PAGE_DOWN  &kp LG(A)  &none      &none     &kp LG(V)   &none     &trans    &trans  &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB2
                           &kp END    &kp HOME  &trans      &trans    &trans    &trans  &trans    &trans          &kp PAGE_UP   &kp PAGE_DOWN
             >;
 
@@ -75,11 +109,11 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp MINUS  &kp N1          &kp N2        &kp N3       &kp N4        &kp N5                            &kp N6    &kp N7         &kp N8               &kp N9        &kp N0          &kp EQUAL
+&none      &kp N0          &kp N9        &kp N8       &kp N7        &tog 4                            &tog 4    &kp N7         &kp N8               &kp N9        &kp N0          &none
+&none      &mt LGUI MINUS  &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp BSPC                          &kp BSPC  &mt RSHIFT N4  &mt RC(RS(LALT)) N5  &mt LCTRL N6  &mt RGUI MINUS  &none
+&none      &kp EQUAL       &kp N3        &kp N2       &kp N1        &kp DEL   &kp ENTER    &kp ENTER  &kp DEL   &kp N1         &kp N2               &kp N3        &kp EQUAL       &none
+                           &trans        &trans       &trans        &trans    &trans       &trans     &trans    &trans         &trans               &trans
             >;
 
             label = "Numbers";
