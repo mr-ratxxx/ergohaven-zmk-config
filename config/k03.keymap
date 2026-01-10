@@ -18,7 +18,7 @@
     combos {
         compatible = "zmk,combos";
 
-        M,_ENTER {
+        Mk_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <46 45>;
             layers = <0 1 2 3 4 5>;
