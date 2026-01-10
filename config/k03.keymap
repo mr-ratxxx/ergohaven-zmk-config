@@ -18,10 +18,9 @@
     combos {
         compatible = "zmk,combos";
 
-        Mk_ENTER {
+        M__ENTER {
             bindings = <&kp ENTER>;
             key-positions = <46 45>;
-            layers = <0 1 2 3 4 5>;
         };
 
         UI_REVERT {
