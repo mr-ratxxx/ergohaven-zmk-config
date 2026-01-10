@@ -13,7 +13,7 @@
 
 &msc {
     time-to-max-speed-ms = <70>;
-    acceleration-exponent = <3>;
+    acceleration-exponent = <5>;
 };
 
 &mmv {
@@ -96,11 +96,11 @@
 
         funct {
             bindings = <
-&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                            &kp N6         &kp N7        &kp N8       &kp N9        &kp N0       &kp EQUAL
-&trans     &kp F3       &kp F12       &kp F11      &kp F10        &tog 1                            &tog 1         &kp F10       &kp F11      &kp F12       &kt F3       &none
-&none      &mt LGUI F2  &mt LCTRL F9  &mt LALT F8  &mt LSHIFT F7  &kp BSPC                          &kp BACKSPACE  &mt RSHFT F7  &mt RALT F8  &mt RCTRL F9  &mt RGUI F2  &none
-&none      &kp F1       &kp F6        &kp F5       &kp F4         &kp DEL   &kp ENTER    &kp ENTER  &kp DEL        &kp F4        &kp F5       &kp F6        &kp F1       &none
-                        &trans        &trans       &trans         &trans    &trans       &trans     &trans         &trans        &trans       &trans
+&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                      &kp N6         &kp N7        &kp N8       &kp N9        &kp N0       &kp EQUAL
+&trans     &kp F3       &kp F12       &kp F11      &kp F10        &tog 1                      &tog 1         &kp F10       &kp F11      &kp F12       &kt F3       &none
+&none      &mt LGUI F2  &mt LCTRL F9  &mt LALT F8  &mt LSHIFT F7  &kp BSPC                    &kp BACKSPACE  &mt RSHFT F7  &mt RALT F8  &mt RCTRL F9  &mt RGUI F2  &none
+&none      &kp F1       &kp F6        &kp F5       &kp F4         &kp DEL   &trans    &trans  &kp DEL        &kp F4        &kp F5       &kp F6        &kp F1       &none
+                        &trans        &trans       &trans         &trans    &trans    &trans  &trans         &trans        &trans       &trans
             >;
 
             display-name = "funct";
@@ -132,11 +132,11 @@
 
         num {
             bindings = <
-&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4        &kp N5                            &kp N6    &kp N7         &kp N8               &kp N9        &kp N0       &kp EQUAL
-&none      &kp MINUS    &kp N9        &kp N8       &kp N7        &tog 4                            &tog 4    &kp N7         &kp N8               &kp N9        &kp MINUS    &none
-&none      &mt LGUI N0  &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp BSPC                          &kp BSPC  &mt RSHIFT N4  &mt RC(RS(LALT)) N5  &mt LCTRL N6  &mt RGUI N0  &none
-&none      &kp EQUAL    &kp N3        &kp N2       &kp N1        &kp DEL   &kp ENTER    &kp ENTER  &kp DEL   &kp N1         &kp N2               &kp N3        &kp EQUAL    &none
-                        &trans        &trans       &trans        &trans    &trans       &trans     &trans    &trans         &trans               &trans
+&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4        &kp N5                      &kp N6    &kp N7         &kp N8               &kp N9        &kp N0       &kp EQUAL
+&none      &kp MINUS    &kp N9        &kp N8       &kp N7        &tog 4                      &tog 4    &kp N7         &kp N8               &kp N9        &kp MINUS    &none
+&none      &mt LGUI N0  &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp BSPC                    &kp BSPC  &mt RSHIFT N4  &mt RC(RS(LALT)) N5  &mt LCTRL N6  &mt RGUI N0  &none
+&none      &kp EQUAL    &kp N3        &kp N2       &kp N1        &kp DEL   &trans    &trans  &kp DEL   &kp N1         &kp N2               &kp N3        &kp EQUAL    &none
+                        &trans        &trans       &trans        &trans    &trans    &trans  &trans    &trans         &trans               &trans
             >;
 
             label = "num";
