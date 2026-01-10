@@ -12,7 +12,7 @@
 
 &mt {
     tapping-term-ms = <180>;
-    flavor = "tap-unless-interrupted";
+    flavor = "balanced";
     require-prior-idle-ms = <50>;
 };
 
