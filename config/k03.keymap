@@ -18,31 +18,31 @@
     combos {
         compatible = "zmk,combos";
 
-        M,-ENTER {
+        M,_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <46 45>;
             layers = <0 1 2 3 4 5>;
         };
 
-        UI-REVERT {
+        UI_REVERT {
             bindings = <&kp RG(Z)>;
             key-positions = <20 19>;
             layers = <0 1 2 3 4 5>;
         };
 
-        UIO-REPEAT {
+        UIO_REPEAT {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <19 20 21>;
             layers = <0 1 2 3 4 5>;
         };
 
-        JK-MOUSE1 {
+        JK_MOUSE1 {
             bindings = <&mkp MB1>;
             key-positions = <31 32>;
             layers = <2 3>;
         };
 
-        JKL-MOUSE2 {
+        JKL_MOUSE2 {
             bindings = <&mkp MB2>;
             key-positions = <31 32 33>;
             layers = <2 3>;
