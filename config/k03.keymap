@@ -106,11 +106,11 @@
 
         nav-r {
             bindings = <
-&trans  &trans     &trans     &trans    &trans      &trans                      &trans         &trans          &trans        &trans          &trans           &trans
-&trans  &kp LG(X)  &none      &none     &none       &tog 2                      &kp PAGE_DOWN  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp PAGE_UP
-&trans  &kp LGUI   &kp LCTRL  &kp RALT  &kp LSHIFT  &kp PLUS                    &kp HOME       &kp LEFT        &kp UP        &kp DOWN        &kp RIGHT_ARROW  &kp END
-&trans  &kp LG(A)  &none      &none     &kp LG(V)   &none     &trans    &trans  &mkp MB1       &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
-                   &kp END    &kp HOME  &trans      &trans    &trans    &trans  &trans         &trans          &kp PAGE_UP   &kp PAGE_DOWN
+&trans  &trans     &trans     &trans    &trans      &trans                        &trans          &trans          &trans        &trans          &trans           &trans
+&trans  &kp LG(X)  &none      &none     &none       &tog 2                        &msc SCRL_LEFT  &kp PAGE_DOWN   &msc SCRL_UP  &msc SCRL_DOWN  &kp PAGE_UP      &msc SCRL_RIGHT
+&trans  &kp LGUI   &kp LCTRL  &kp RALT  &kp LSHIFT  &kp PLUS                      &kp HOME        &kp LEFT        &kp UP        &kp DOWN        &kp RIGHT_ARROW  &kp END
+&trans  &kp LG(A)  &none      &none     &kp LG(V)   &none     &trans    &mkp MB2  &mkp MB1        &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
+                   &kp END    &kp HOME  &trans      &trans    &trans    &trans    &trans          &trans          &kp PAGE_UP   &kp PAGE_DOWN
             >;
 
             display-name = "nav-r";
