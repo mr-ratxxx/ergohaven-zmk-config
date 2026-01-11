@@ -31,12 +31,24 @@
 
     combos {
         compatible = "zmk,combos";
+        
+        FJ_CAPS {
+                    bindings = <&caps_word>;
+                    key-positions = <31 28>;
+                    layers = <0>;
+                };
 
         M__ENTER {
             bindings = <&kp ENTER>;
             key-positions = <45 46>;
             layers = <0 4 5 6 1>;
         };
+        
+        JK_ENTER {
+                    bindings = <&kp ENTER>;
+                    key-positions = <31 32>;
+                    layers = <3 4>;
+                };
 
         UI_REVERT {
             bindings = <&kp RG(Z)>;
@@ -60,18 +72,6 @@
             bindings = <&mkp MB2>;
             key-positions = <45 46 47>;
             layers = <3 4>;
-        };
-
-        JK_ENTER {
-            bindings = <&kp ENTER>;
-            key-positions = <31 32>;
-            layers = <3 4>;
-        };
-
-        FJ_CAPS {
-            bindings = <&caps_word>;
-            key-positions = <31 28>;
-            layers = <0>;
         };
 
         CV_MOUSE1 {
