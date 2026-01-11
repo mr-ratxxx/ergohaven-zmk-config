@@ -65,21 +65,21 @@
         JK_MOUSE1 {
             bindings = <&mkp MB1>;
             key-positions = <45 46>;
-            layers = <3 4>;
+            layers = <3 2>;
         };
 
         JKL_MOUSE2 {
             bindings = <&mkp MB2>;
             key-positions = <45 46 47>;
-            layers = <3 4>;
+            layers = <3 2>;
         };
 
-        CV_MOUSE1 {
+        DF_MOUSE1 {
             bindings = <&mkp MB1>;
             key-positions = <40 39>;
         };
 
-        XCV_MOUSE2 {
+        SDF_MOUSE2 {
             bindings = <&mkp MB2>;
             key-positions = <40 39 38>;
         };
