@@ -10,13 +10,13 @@
 };
 
 &msc {
-    time-to-max-speed-ms = <70>;
+    time-to-max-speed-ms = <10>;
     acceleration-exponent = <5>;
 };
 
 &mmv {
     acceleration-exponent = <3>;
-    time-to-max-speed-ms = <150>;
+    time-to-max-speed-ms = <300>;
 };
 
 / {
