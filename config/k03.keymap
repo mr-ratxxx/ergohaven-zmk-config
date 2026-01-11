@@ -75,11 +75,11 @@
 
         base {
             bindings = <
-&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7          &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
-&none        &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y           &kp U            &kp I       &kp O        &kp P          &kp GRAVE
-&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H           &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
-&lt 6 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 6 ENTER    &lt 6 ENTER  &kp N           &kp M            &kp COMMA   &kp DOT      &kp FSLH       &kp BSLH
-                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 1 DEL      &lt 1 ESC    &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
+&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                  &kp F7          &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
+&none        &kp Q       &kp W        &kp E        &kp R        &kp T                                   &kp Y           &kp U            &kp I       &kp O        &kp P          &kp GRAVE
+&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                   &kp H           &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
+&lt 6 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &kp C_MUTE    &lt 6 ENTER  &kp N           &kp M            &kp COMMA   &kp DOT      &kp FSLH       &kp BSLH
+                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 1 DEL     &lt 1 ESC    &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
             >;
 
             display-name = "base";
