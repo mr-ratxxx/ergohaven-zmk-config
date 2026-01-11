@@ -73,6 +73,16 @@
             key-positions = <31 28>;
             layers = <0>;
         };
+
+        CV_MOUSE1 {
+            bindings = <&mkp MB1>;
+            key-positions = <40 39>;
+        };
+
+        XCV_MOUSE2 {
+            bindings = <&mkp MB2>;
+            key-positions = <40 39 38>;
+        };
     };
 
     keymap {
