@@ -33,10 +33,13 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HM_MMV_CUSTOM";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <150>;
+            flavor = "balanced";
+            tapping-term-ms = <10>;
+            quick-tap-ms = <250>;
             bindings = <&mmv>, <&mmv>;
+
+            require-prior-idle-ms = <0>;
+            retro-tap;
         };
     };
 
@@ -116,11 +119,11 @@
 
         nav-r {
             bindings = <
-&trans  &trans     &trans     &trans    &trans      &trans                        &trans          &trans                            &trans        &trans          &trans           &trans
-&trans  &kp LG(X)  &none      &none     &none       &tog 2                        &msc SCRL_LEFT  &kp PAGE_DOWN                     &msc SCRL_UP  &msc SCRL_DOWN  &kp PAGE_UP      &msc SCRL_RIGHT
-&trans  &kp LGUI   &kp LCTRL  &kp RALT  &kp LSHIFT  &kp PLUS                      &kp HOME        &kp LEFT                          &kp UP        &kp DOWN        &kp RIGHT_ARROW  &kp END
-&trans  &kp LG(A)  &none      &none     &kp LG(V)   &none     &trans    &mkp MB2  &mkp MB1        &hm_mmv_custom MOVE_X(-50) MOVE_X(-400)  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
-                   &kp END    &kp HOME  &trans      &trans    &trans    &trans    &trans          &trans                            &kp PAGE_UP   &kp PAGE_DOWN
+&trans  &trans     &trans     &trans    &trans      &trans                        &trans          &trans                                    &trans        &trans          &trans           &trans
+&trans  &kp LG(X)  &none      &none     &none       &tog 2                        &msc SCRL_LEFT  &kp PAGE_DOWN                             &msc SCRL_UP  &msc SCRL_DOWN  &kp PAGE_UP      &msc SCRL_RIGHT
+&trans  &kp LGUI   &kp LCTRL  &kp RALT  &kp LSHIFT  &kp PLUS                      &kp HOME        &kp LEFT                                  &kp UP        &kp DOWN        &kp RIGHT_ARROW  &kp END
+&trans  &kp LG(A)  &none      &none     &kp LG(V)   &none     &trans    &mkp MB2  &mkp MB1        &hm_mmv_custom MOVE_X(-300) MOVE_X(-600)  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
+                   &kp END    &kp HOME  &trans      &trans    &trans    &trans    &trans          &trans                                    &kp PAGE_UP   &kp PAGE_DOWN
             >;
 
             display-name = "nav-r";
