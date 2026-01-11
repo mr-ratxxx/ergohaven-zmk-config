@@ -28,14 +28,12 @@
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
         
-        // Устанавливаем очень короткое время движения
         &mmv_instant {
             delay-ms = <0>;
-            acceleration-exponent = <0>;  // Без ускорения
-            time-to-max-speed-ms = <1>;   // Мгновенно
+            acceleration-exponent = <0>;
+            time-to-max-speed-ms = <1>;
         };
         
-        // Создаем поведение с мгновенным движением
         tap_instant_move: tap_instant_move {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_INSTANT_MOVE";
