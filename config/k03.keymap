@@ -110,7 +110,7 @@
         funct {
             bindings = <
 &kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                      &kp N6         &kp N7        &kp N8       &kp N9        &kp N0       &kp EQUAL
-&trans     &kp F3       &kp F12       &kp F11      &kp F10        &tog 1                      &tog 1         &kp F10       &kp F11      &kp F12       &kt F3       &none
+&trans     &kp F3       &kp F12       &kp F11      &kp F10        &none                       &none          &kp F10       &kp F11      &kp F12       &kt F3       &none
 &trans     &mt LGUI F2  &mt LCTRL F9  &mt LALT F8  &mt LSHIFT F7  &kp BSPC                    &kp BACKSPACE  &mt RSHFT F7  &mt RALT F8  &mt RCTRL F9  &mt RGUI F2  &none
 &trans     &kp F1       &kp F6        &kp F5       &kp F4         &kp DEL   &trans    &trans  &kp DEL        &kp F4        &kp F5       &kp F6        &kp F1       &mo 6
                         &trans        &trans       &trans         &trans    &trans    &trans  &trans         &trans        &trans       &trans
@@ -157,11 +157,11 @@
 
         symb {
             bindings = <
-&kp LS(MINUS)  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                    &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)     &kp RS(EQUAL)
-&trans         &kp LS(MINUS)  &kp LS(N9)  &kp LS(N8)  &kp LS(N7)  &none                         &none       &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(MINUS)  &none
-&trans         &kp LS(N0)     &kp LS(N6)  &kp LS(N5)  &kp RS(N4)  &none                         &none       &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp RS(N0)     &none
-&trans         &kp RS(EQUAL)  &kp RS(N3)  &kp RS(N2)  &kp RS(N1)  &none       &trans    &trans  &none       &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(EQUAL)  &mo 6
-                              &trans      &trans      &trans      &trans      &trans    &trans  &trans      &trans      &trans      &trans
+&kp LS(MINUS)  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                       &kp RS(N6)     &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)     &kp RS(EQUAL)
+&trans         &kp LS(MINUS)  &kp LS(N9)  &kp LS(N8)  &kp LS(N7)  &none                            &none          &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(MINUS)  &none
+&trans         &kp LS(N0)     &kp LS(N6)  &kp LS(N5)  &kp RS(N4)  &kp BACKSPACE                    &kp BACKSPACE  &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp RS(N0)     &none
+&trans         &kp RS(EQUAL)  &kp RS(N3)  &kp RS(N2)  &kp RS(N1)  &kp DELETE     &trans    &trans  &kp DELETE     &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(EQUAL)  &mo 6
+                              &trans      &trans      &trans      &trans         &trans    &trans  &trans         &trans      &trans      &trans
             >;
 
             label = "symb";
