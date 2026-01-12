@@ -170,10 +170,10 @@
         layers {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &to 0
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &tog 5  &tog 4  &tog 4  &tog 1    &tog 1  &tog 3  &tog 4  &tog 5  &trans
+                &trans  &tog 4  &tog 5  &tog 3  &tog 1    &tog 1  &tog 2  &tog 4  &tog 5  &trans
             >;
 
             label = "layers";
