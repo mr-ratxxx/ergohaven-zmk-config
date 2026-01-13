@@ -94,7 +94,7 @@
 &none        &kp Q       &kp W        &kp E        &kp R        &kp T                                   &kp Y           &kp U            &kp I       &kp O        &kp P          &kp GRAVE
 &none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                   &kp H           &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
 &lt 6 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &kp C_MUTE    &lt 6 ENTER  &kp N           &kp M            &kp COMMA   &kp DOT      &kp FSLH       &lt 6 BSLH
-                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 1 DEL     &lt 1 ESC    &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
+                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 7 DEL     &lt 7 ESC    &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
             >;
 
             display-name = "base";
@@ -173,10 +173,21 @@
 &to 0   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &to 0
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &tog 4  &tog 5  &tog 3  &tog 1    &tog 1  &tog 2  &tog 4  &tog 5  &trans
+                &trans  &tog 4  &tog 5  &tog 3  &tog 7    &tog 7  &tog 2  &tog 4  &tog 5  &trans
             >;
 
             label = "layers";
+        };
+
+        funct-test {
+            display-name = "funct-test";
+            bindings = <
+&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                      &kp N6         &kp N7        &kp N8       &kp N9        &kp N0        &kp EQUAL
+&trans     &kp F3       &kp F12       &kp F11      &kp F10        &none                       &none          &kp F7        &kp F8       &kp F9        &kt F12       &none
+&trans     &mt LGUI F2  &mt LCTRL F9  &mt LALT F8  &mt LSHIFT F7  &kp BSPC                    &kp BACKSPACE  &mt RSHFT F4  &mt RALT F5  &mt RCTRL F6  &mt RGUI F10  &none
+&trans     &kp F1       &kp F6        &kp F5       &kp F4         &kp DEL   &trans    &trans  &kp DEL        &kp F1        &kp F2       &kp F3        &kp F11       &mo 6
+                        &trans        &trans       &trans         &trans    &trans    &trans  &trans         &trans        &trans       &trans
+            >;
         };
     };
 };
