@@ -37,6 +37,16 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        copy_paste: copy_paste {
+            compatible = "zmk,behavior-hold-tap";
+            label = "COPY_PASTE";
+            bindings = <&mt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -100,11 +110,11 @@
 
         base {
             bindings = <
-&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                  &kp F7          &kp F8              &kp F9      &kp F10      &kp F11        &kp F12
-&none        &kp Q       &kp W        &kp E        &kp R        &kp T                                   &kp Y           &kp U               &kp I       &kp O        &kp P          &kp GRAVE
-&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                   &kp H           &mt RSHIFT J        &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
-&lt 6 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &kp C_MUTE    &lt 6 ENTER  &kp N           &kp M               &kp COMMA   &kp DOT      &kp FSLH       &lt 6 BSLH
-                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 7 DEL     &lt 7 ESC    &lt 2 CAPSLOCK  &mt_kr 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
+&kp ESC      &kp F2      &kp F3               &kp F4               &kp F5               &kp F6                                  &kp F7             &kp F8              &kp F9      &kp F10      &kp F11        &kp F12
+&none        &kp Q       &kp W                &kp E                &kp R                &kp T                                   &kp Y              &kp U               &kp I       &kp O        &kp P          &kp GRAVE
+&none        &mt LGUI A  &mt LCTRL S          &mt LALT D           &mt LSHFT F          &kp G                                   &kp H              &mt RSHIFT J        &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
+&lt 6 ENTER  &kp Z       &copy_paste X LG(X)  &copy_paste C LG(C)  &copy_paste V LG(V)  &kp B        &kp C_MUTE    &lt 6 ENTER  &kp N              &kp M               &kp COMMA   &kp DOT      &kp FSLH       &lt 6 BSLH
+                         &kp MINUS            &lt 4 EQUAL          &lt 5 TAB            &lt 3 SPACE  &lt 7 DEL     &lt 7 ESC    &mt_kr 2 CAPSLOCK  &mt_kr 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
             >;
 
             display-name = "base";
