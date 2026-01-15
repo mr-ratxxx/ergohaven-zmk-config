@@ -118,7 +118,7 @@
             >;
 
             display-name = "base";
-            sensor-bindings = <&enc_vol>;
+            sensor-bindings = <&inc_dec_kp LG(TAB) LG(TAB)>;
         };
 
         funct {
