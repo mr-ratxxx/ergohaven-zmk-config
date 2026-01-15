@@ -98,13 +98,7 @@
             >;
 
             display-name = "base";
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
+            sensor-bindings = <&enc_vol>;
         };
 
         funct {
@@ -117,6 +111,7 @@
             >;
 
             display-name = "funct";
+            sensor-bindings = <&inc_dec_kp LA(LS(J)) LA(LS(L))>;
         };
 
         nav-r {
@@ -129,6 +124,7 @@
             >;
 
             display-name = "nav-r";
+            sensor-bindings = <&inc_dec_kp LG(TAB) LG(TAB)>;
         };
 
         nav-l {
