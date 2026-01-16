@@ -6,7 +6,7 @@
 &mt {
     tapping-term-ms = <180>;
     flavor = "balanced";
-    require-prior-idle-ms = <100>;
+    require-prior-idle-ms = <120>;
 };
 
 &msc {
