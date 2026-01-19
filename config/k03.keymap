@@ -20,8 +20,8 @@
 };
 
 &lt {
-    tapping-term-ms = <180>;
     retro-tap;
+    quick-tap-ms = <150>;
 };
 
 / {
