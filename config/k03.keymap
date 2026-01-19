@@ -107,9 +107,9 @@
         funct {
             bindings = <
 &kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                      &kp N6         &kp N7        &kp N8       &kp N9        &kp N0       &kp EQUAL
-&trans     &kp F3       &kp F12       &kp F11      &kp F10        &none                       &none          &kp F10       &kp F11      &kp F12       &kt F3       &none
-&trans     &mt LGUI F2  &mt LCTRL F9  &mt LALT F8  &mt LSHIFT F7  &kp BSPC                    &kp BACKSPACE  &mt RSHFT F7  &mt RALT F8  &mt RCTRL F9  &mt RGUI F2  &none
-&trans     &kp F1       &kp F6        &kp F5       &kp F4         &kp DEL   &trans    &trans  &kp DEL        &kp F4        &kp F5       &kp F6        &kp F1       &mo 6
+&trans     &kp F3       &kp F9        &kp F8       &kp F7         &none                       &none          &kp F7        &kp F8       &kp F9        &kt F3       &none
+&trans     &mt LGUI F2  &mt LCTRL F6  &mt LALT F5  &mt LSHIFT F4  &kp BSPC                    &kp BACKSPACE  &mt RSHFT F4  &mt RALT F5  &mt RCTRL F6  &mt RGUI F2  &none
+&trans     &kp F1       &kp F12       &kp F11      &kp F10        &kp DEL   &trans    &trans  &kp DEL        &kp F10       &kp F11      &kp F12       &kp F1       &mo 6
                         &trans        &trans       &trans         &trans    &trans    &trans  &trans         &trans        &trans       &trans
             >;
 
