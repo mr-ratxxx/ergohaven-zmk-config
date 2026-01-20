@@ -30,6 +30,15 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
+
+        change_window: change_window {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CHANGE_WINDOW";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <2000>;
+        };
     };
 
     combos {
@@ -93,11 +102,11 @@
 
         base {
             bindings = <
-&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                  &kp F7          &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
-&none        &kp Q       &kp W        &kp E        &kp R        &kp T                                   &kp Y           &kp U            &kp I       &kp O        &kp P          &kp GRAVE
-&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                   &kp H           &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
-&lt 6 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &kp C_MUTE    &lt 6 ENTER  &kp N           &kp M            &kp COMMA   &kp DOT      &kp FSLH       &lt 6 BSLH
-                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 1 DEL     &lt 1 ESC    &lt 2 CAPSLOCK  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
+&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                  &kp F7               &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
+&none        &kp Q       &kp W        &kp E        &kp R        &kp T                                   &mt RG(TAB) RG(TAB)  &kp U            &kp I       &kp O        &kp P          &kp GRAVE
+&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                   &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
+&lt 6 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &kp C_MUTE    &lt 6 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT      &kp FSLH       &lt 6 BSLH
+                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 1 DEL     &lt 1 ESC    &lt 2 CAPSLOCK       &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
             >;
 
             display-name = "base";
@@ -106,15 +115,15 @@
 
         funct {
             bindings = <
-&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                         &kp N6         &kp N7        &kp N8       &kp N9        &kp N0       &kp EQUAL
-&trans     &kp F3       &kp F9        &kp F8       &kp F7         &kp LG(TAB)                    &kp RG(TAB)    &kp F7        &kp F8       &kp F9        &kt F3       &none
-&trans     &mt LGUI F2  &mt LCTRL F6  &mt LALT F5  &mt LSHIFT F4  &kp BSPC                       &kp BACKSPACE  &mt RSHFT F4  &mt RALT F5  &mt RCTRL F6  &mt RGUI F2  &none
-&trans     &kp F1       &kp F12       &kp F11      &kp F10        &kp DEL      &trans    &trans  &kp DEL        &kp F10       &kp F11      &kp F12       &kp F1       &mo 6
-                        &trans        &trans       &trans         &trans       &trans    &trans  &trans         &trans        &trans       &trans
+&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                         &kp N6                          &kp N7        &kp N8       &kp N9        &kp N0       &kp EQUAL
+&trans     &kp F3       &kp F9        &kp F8       &kp F7         &kp LG(TAB)                    &change_window RG(TAB) RG(TAB)  &kp F7        &kp F8       &kp F9        &kt F3       &none
+&trans     &mt LGUI F2  &mt LCTRL F6  &mt LALT F5  &mt LSHIFT F4  &kp BSPC                       &kp BACKSPACE                   &mt RSHFT F4  &mt RALT F5  &mt RCTRL F6  &mt RGUI F2  &none
+&trans     &kp F1       &kp F12       &kp F11      &kp F10        &kp DEL      &trans    &trans  &kp DEL                         &kp F10       &kp F11      &kp F12       &kp F1       &mo 6
+                        &trans        &trans       &trans         &trans       &trans    &trans  &trans                          &trans        &trans       &trans
             >;
 
             display-name = "funct";
-            sensor-bindings = <&inc_dec_kp LA(LS(J)) LA(LS(L))>;
+            sensor-bindings = <&inc_dec_kp LG(TAB) RG(TAB)>;
         };
 
         nav-r {
@@ -127,7 +136,7 @@
             >;
 
             display-name = "nav-r";
-            sensor-bindings = <&inc_dec_kp LG(TAB) LG(TAB)>;
+            sensor-bindings = <&inc_dec_kp LS(LA(L)) LA(LS(J))>;
         };
 
         nav-l {
@@ -140,6 +149,7 @@
             >;
 
             display-name = "nav-l";
+            sensor-bindings = <&inc_dec_kp LA(LS(L)) LS(LA(J))>;
         };
 
         num {
