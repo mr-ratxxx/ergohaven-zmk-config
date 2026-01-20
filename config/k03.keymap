@@ -106,11 +106,11 @@
 
         funct {
             bindings = <
-&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                             &kp N6         &kp N7         &kp N8       &kp N9        &kp N0       &kp EQUAL
-&trans     &kp F3       &kp F9        &kp F8       &kp F7         &kp TAB                            &kp TAB        &kp F7         &kp F8       &kp F9        &kt F3       &none
-&trans     &mt LGUI F2  &mt LCTRL F6  &mt LALT F5  &mt LSHIFT F4  &kp BSPC                           &kp BACKSPACE  &mt RSHFT F4   &mt RALT F5  &mt RCTRL F6  &mt RGUI F2  &none
-&trans     &kp F1       &kp F12       &kp F11      &kp F10        &kp DEL        &trans     &trans   &kp DEL        &kp F10        &kp F11      &kp F12       &kp F1       &mo 6
-                        &trans        &trans       &kp TAB        &kp BACKSPACE  &kp DEL    &kp ESC  &kp CAPSLOCK   &kp BACKSPACE  &trans       &trans
+&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4         &kp N5                         &kp N6         &kp N7         &kp N8       &kp N9        &kp N0       &kp EQUAL
+&trans     &kp F3       &kp F9        &kp F8       &kp F7         &kp TAB                        &kp TAB        &kp F7         &kp F8       &kp F9        &kt F3       &none
+&trans     &mt LGUI F2  &mt LCTRL F6  &mt LALT F5  &mt LSHIFT F4  &kp BSPC                       &kp BACKSPACE  &mt RSHFT F4   &mt RALT F5  &mt RCTRL F6  &mt RGUI F2  &none
+&trans     &kp F1       &kp F12       &kp F11      &kp F10        &kp DEL    &trans     &trans   &kp DEL        &kp F10        &kp F11      &kp F12       &kp F1       &mo 6
+                        &trans        &trans       &kp TAB        &kp SPACE  &kp DEL    &kp ESC  &kp CAPSLOCK   &kp BACKSPACE  &trans       &trans
             >;
 
             display-name = "funct";
@@ -119,11 +119,11 @@
 
         nav-r {
             bindings = <
-&trans  &trans     &trans     &trans         &trans      &trans                               &trans          &trans          &trans         &trans          &trans           &trans
-&trans  &none      &none      &kp PAGE_DOWN  &kp PG_UP   &kp LG(EQUAL)                        &msc SCRL_LEFT  &kp PG_UP       &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT
-&trans  &kp LGUI   &kp LCTRL  &kp RALT       &kp LSHIFT  &kp LG(MINUS)                        &kp HOME        &kp LEFT        &kp UP         &kp DOWN        &kp RIGHT_ARROW  &kp END
-&trans  &kp LG(A)  &kp LG(X)  &kp LG(C)      &kp LG(V)   &none          &trans    &kp DELETE  &kp BACKSPACE   &mmv MOVE_LEFT  &mmv MOVE_UP   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
-                   &trans     &trans         &trans      &trans         &trans    &trans      &trans          &trans          &trans         &trans
+&trans  &trans     &trans     &trans         &trans      &trans                                   &trans          &trans          &trans         &trans          &trans           &trans
+&trans  &none      &none      &kp PAGE_DOWN  &kp PG_UP   &kp LG(EQUAL)                            &msc SCRL_LEFT  &kp PG_UP       &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT
+&trans  &kp LGUI   &kp LCTRL  &kp RALT       &kp LSHIFT  &kp LG(MINUS)                            &kp HOME        &kp LEFT        &kp UP         &kp DOWN        &kp RIGHT_ARROW  &kp END
+&trans  &kp LG(A)  &kp LG(X)  &kp LG(C)      &kp LG(V)   &none          &trans        &kp DELETE  &kp BACKSPACE   &mmv MOVE_LEFT  &mmv MOVE_UP   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
+                   &trans     &trans         &kp TAB     &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE   &trans         &trans
             >;
 
             display-name = "nav-r";
@@ -132,11 +132,11 @@
 
         nav-l {
             bindings = <
-&trans          &trans          &trans          &trans         &trans           &trans                                 &trans         &trans       &trans         &trans     &trans     &trans
-&msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &kp PAGE_DOWN  &kp PG_UP        &msc SCRL_RIGHT                        &kp RG(EQUAL)  &kp PAGE_UP  &kp PAGE_DOWN  &none      &none      &none
-&kp END         &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT_ARROW  &kp HOME                               &kp RG(MINUS)  &kp RSHIFT   &kp RALT       &kp RCTRL  &kp RGUI   &none
-&trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp BACKSPACE    &kp DELETE    &none   &none          &kp RG(V)    &kp RG(C)      &kp RG(X)  &kp RG(A)  &mo 6
-                                &trans          &trans         &trans           &trans           &trans        &trans  &trans         &trans       &trans         &trans
+&trans          &trans          &trans          &trans         &trans           &trans                                  &trans         &trans         &trans         &trans     &trans     &trans
+&msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &kp PAGE_DOWN  &kp PG_UP        &msc SCRL_RIGHT                         &kp RG(EQUAL)  &kp PAGE_UP    &kp PAGE_DOWN  &none      &none      &none
+&kp END         &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT_ARROW  &kp HOME                                &kp RG(MINUS)  &kp RSHIFT     &kp RALT       &kp RCTRL  &kp RGUI   &none
+&trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp BACKSPACE    &kp DELETE    &none    &none          &kp RG(V)      &kp RG(C)      &kp RG(X)  &kp RG(A)  &mo 6
+                                &trans          &trans         &kp TAB          &kp SPACE        &kp DELETE    &kp ESC  &kp CAPSLOCK   &kp BACKSPACE  &trans         &trans
             >;
 
             display-name = "nav-l";
@@ -145,11 +145,11 @@
 
         num {
             bindings = <
-&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4        &kp N5                      &kp N6    &kp N7         &kp N8               &kp N9        &kp N0       &kp EQUAL
-&trans     &kp MINUS    &kp N9        &kp N8       &kp N7        &tog 4                      &tog 4    &kp N7         &kp N8               &kp N9        &kp MINUS    &none
-&trans     &mt LGUI N0  &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp BSPC                    &kp BSPC  &mt RSHIFT N4  &mt RC(RS(LALT)) N5  &mt LCTRL N6  &mt RGUI N0  &none
-&trans     &kp EQUAL    &kp N3        &kp N2       &kp N1        &kp DEL   &trans    &trans  &kp DEL   &kp N1         &kp N2               &kp N3        &kp EQUAL    &mo 6
-                        &trans        &trans       &trans        &trans    &trans    &trans  &trans    &trans         &trans               &trans
+&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4        &kp N5                            &kp N6        &kp N7         &kp N8               &kp N9        &kp N0       &kp EQUAL
+&trans     &kp MINUS    &kp N9        &kp N8       &kp N7        &tog 4                            &tog 4        &kp N7         &kp N8               &kp N9        &kp MINUS    &none
+&trans     &mt LGUI N0  &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp BSPC                          &kp BSPC      &mt RSHIFT N4  &mt RC(RS(LALT)) N5  &mt LCTRL N6  &mt RGUI N0  &none
+&trans     &kp EQUAL    &kp N3        &kp N2       &kp N1        &kp DEL    &trans        &trans   &kp DEL       &kp N1         &kp N2               &kp N3        &kp EQUAL    &mo 6
+                        &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans               &trans
             >;
 
             label = "num";
@@ -157,11 +157,11 @@
 
         symb {
             bindings = <
-&kp LS(MINUS)  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                       &kp RS(N6)     &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)     &kp RS(EQUAL)
-&trans         &kp LS(MINUS)  &kp LS(N9)  &kp LS(N8)  &kp LS(N7)  &none                            &none          &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(MINUS)  &none
-&trans         &kp LS(N0)     &kp LS(N6)  &kp LS(N5)  &kp RS(N4)  &kp BACKSPACE                    &kp BACKSPACE  &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp RS(N0)     &none
-&trans         &kp RS(EQUAL)  &kp RS(N3)  &kp RS(N2)  &kp RS(N1)  &kp DELETE     &trans    &trans  &kp DELETE     &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(EQUAL)  &mo 6
-                              &trans      &trans      &trans      &trans         &trans    &trans  &trans         &trans      &trans      &trans
+&kp LS(MINUS)  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                            &kp RS(N6)     &kp RS(N7)     &kp RS(N8)  &kp RS(N9)  &kp RS(N0)     &kp RS(EQUAL)
+&trans         &kp LS(MINUS)  &kp LS(N9)  &kp LS(N8)  &kp LS(N7)  &kp TAB                               &kp TAB        &kp RS(N7)     &kp RS(N8)  &kp RS(N9)  &kp RS(MINUS)  &none
+&trans         &kp LS(N0)     &kp LS(N6)  &kp LS(N5)  &kp RS(N4)  &kp BACKSPACE                         &kp BACKSPACE  &kp RS(N4)     &kp RS(N5)  &kp RS(N6)  &kp RS(N0)     &none
+&trans         &kp RS(EQUAL)  &kp RS(N3)  &kp RS(N2)  &kp RS(N1)  &kp DELETE     &trans        &trans   &kp DELETE     &kp RS(N1)     &kp RS(N2)  &kp RS(N3)  &kp RS(EQUAL)  &mo 6
+                              &trans      &trans      &kp TAB     &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK   &kp BACKSPACE  &trans      &trans
             >;
 
             label = "symb";
