@@ -120,7 +120,7 @@
         nav-r {
             bindings = <
 &trans  &trans     &trans     &trans         &trans      &trans                               &trans          &trans          &trans         &trans          &trans           &trans
-&trans  &none      &none      &kp PAGE_DOWN  &kp PG_UP   &kp LG(PLUS)                         &msc SCRL_LEFT  &kp PG_UP       &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT
+&trans  &none      &none      &kp PAGE_DOWN  &kp PG_UP   &kp LG(EQUAL)                        &msc SCRL_LEFT  &kp PG_UP       &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT
 &trans  &kp LGUI   &kp LCTRL  &kp RALT       &kp LSHIFT  &kp LG(MINUS)                        &kp HOME        &kp LEFT        &kp UP         &kp DOWN        &kp RIGHT_ARROW  &kp END
 &trans  &kp LG(A)  &kp LG(X)  &kp LG(C)      &kp LG(V)   &none          &trans    &kp DELETE  &kp BACKSPACE   &mmv MOVE_LEFT  &mmv MOVE_UP   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
                    &trans     &trans         &trans      &trans         &trans    &trans      &trans          &trans          &trans         &trans
@@ -133,7 +133,7 @@
         nav-l {
             bindings = <
 &trans          &trans          &trans          &trans         &trans           &trans                                 &trans         &trans       &trans         &trans     &trans     &trans
-&msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &kp PAGE_DOWN  &kp PG_UP        &msc SCRL_RIGHT                        &kp RG(PLUS)   &kp PAGE_UP  &kp PAGE_DOWN  &none      &none      &none
+&msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &kp PAGE_DOWN  &kp PG_UP        &msc SCRL_RIGHT                        &kp RG(EQUAL)  &kp PAGE_UP  &kp PAGE_DOWN  &none      &none      &none
 &kp END         &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT_ARROW  &kp HOME                               &kp RG(MINUS)  &kp RSHIFT   &kp RALT       &kp RCTRL  &kp RGUI   &none
 &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp BACKSPACE    &kp DELETE    &none   &none          &kp RG(V)    &kp RG(C)      &kp RG(X)  &kp RG(A)  &mo 6
                                 &trans          &trans         &trans           &trans           &trans        &trans  &trans         &trans       &trans         &trans
