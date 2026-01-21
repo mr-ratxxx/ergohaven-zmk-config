@@ -114,7 +114,7 @@
             >;
 
             display-name = "funct";
-            sensor-bindings = <&inc_dec_kp TAB TAB>;
+            sensor-bindings = <&inc_dec_kp LA(LS(J)) LA(LS(L))>;
         };
 
         nav-r {
