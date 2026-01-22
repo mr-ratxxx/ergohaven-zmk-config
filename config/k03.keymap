@@ -53,7 +53,7 @@
         JK_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
-            layers = <3 4>;
+            layers = <3 2>;
         };
 
         UI_REVERT {
