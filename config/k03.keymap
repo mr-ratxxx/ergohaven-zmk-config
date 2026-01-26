@@ -20,8 +20,6 @@
 &mmv {
     acceleration-exponent = <0>;
     time-to-max-speed-ms = <300>;
-    trigger-period-ms = <50>;
-    delay-ms = <200>;
 };
 
 &lt { tapping-term-ms = <180>; };
@@ -109,7 +107,8 @@
                 <&enc_vol>,
                 <&inc_dec_kp 0 0>,
                 <&enc_vol>,
-                <&inc_dec_kp 0 0>;
+                <&inc_dec_kp 0 0>,
+                <&enc_vol>;
         };
 
         funct {
@@ -125,7 +124,9 @@
             sensor-bindings =
                 <&inc_dec_kp 0 0>,
                 <&inc_dec_kp 0 0>,
-                <&inc_dec_kp LA(LS(L)) LA(LS(J))>;
+                <&inc_dec_kp (LA(LS(L))) LA(LS(J))>,
+                <&inc_dec_kp C D>,
+                <&inc_dec_kp (LA(LS(L))) LA(LS(J))>;
         };
 
         nav-r {
