@@ -129,11 +129,11 @@
 
         nav-r {
             bindings = <
-&trans  &trans     &trans     &trans         &trans      &trans                                      &trans        &trans          &trans         &trans          &trans           &trans
-&trans  &none      &none      &kp PAGE_DOWN  &kp PG_UP   &kp LG(ESCAPE)                              &kp TAB       &kp PG_UP       &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_LEFT
-&trans  &kp LGUI   &kp LCTRL  &kp RALT       &kp LSHIFT  &kp LG(CAPSLOCK)                            &kp SPACE     &kp LEFT        &kp UP         &kp DOWN        &kp RIGHT_ARROW  &msc SCRL_RIGHT
-&trans  &kp LG(A)  &kp LG(X)  &kp LG(C)      &kp LG(V)   &kp BACKSPACE     &trans        &trans      &kp DELETE    &mmv MOVE_LEFT  &mmv MOVE_UP   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
-                   &trans     &trans         &kp TAB     &kp SPACE         &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE   &mkp MB4       &mkp MB5
+&trans  &trans     &trans     &trans         &trans      &trans                                   &trans        &trans          &trans         &trans          &trans           &trans
+&trans  &none      &none      &kp PAGE_DOWN  &kp PG_UP   &kp ESCAPE                               &kp TAB       &kp PG_UP       &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_LEFT
+&trans  &kp LGUI   &kp LCTRL  &kp RALT       &kp LSHIFT  &kp CAPSLOCK                             &kp SPACE     &kp LEFT        &kp UP         &kp DOWN        &kp RIGHT_ARROW  &msc SCRL_RIGHT
+&trans  &kp LG(A)  &kp LG(X)  &kp LG(C)      &kp LG(V)   &kp BACKSPACE  &trans        &trans      &kp DELETE    &mmv MOVE_LEFT  &mmv MOVE_UP   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
+                   &trans     &trans         &kp TAB     &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE   &mkp MB4       &mkp MB5
             >;
 
             display-name = "nav-r";
@@ -142,11 +142,11 @@
 
         nav-l {
             bindings = <
-&trans          &trans          &trans          &trans         &trans           &trans                                  &trans         &trans         &trans         &trans     &trans     &trans
-&msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &kp PAGE_DOWN  &kp PG_UP        &msc SCRL_RIGHT                         &kp RG(EQUAL)  &kp PAGE_UP    &kp PAGE_DOWN  &none      &none      &none
-&kp END         &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT_ARROW  &kp HOME                                &kp RG(MINUS)  &kp RSHIFT     &kp RALT       &kp RCTRL  &kp RGUI   &none
-&trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp BACKSPACE    &kp DELETE    &none    &none          &kp RG(V)      &kp RG(C)      &kp RG(X)  &kp RG(A)  &mo 6
-                                &mkp MB5        &mkp MB4       &kp TAB          &kp SPACE        &kp DELETE    &kp ESC  &kp CAPSLOCK   &kp BACKSPACE  &trans         &trans
+&trans           &trans          &trans          &trans         &trans           &trans                                &trans        &trans         &trans         &trans     &trans     &trans
+&msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP    &kp PAGE_DOWN  &kp PG_UP        &kp ESC                               &kp TAB       &kp PAGE_UP    &kp PAGE_DOWN  &none      &none      &none
+&msc SCRL_RIGHT  &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT_ARROW  &kp CAPSLOCK                          &kp SPACE     &kp RSHIFT     &kp RALT       &kp RCTRL  &kp RGUI   &none
+&trans           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp BACKSPACE  &trans        &trans   &kp DELETE    &kp RG(V)      &kp RG(C)      &kp RG(X)  &kp RG(A)  &mo 6
+                                 &mkp MB5        &mkp MB4       &kp TAB          &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans         &trans
             >;
 
             display-name = "nav-l";
