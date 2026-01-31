@@ -181,11 +181,11 @@
 
         layers {
             bindings = <
-&to 0   &trans    &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &to 0
-&to 0   &kp LGUI  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &to 0
-&trans  &kp LGUI  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LGUI  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                  &trans  &tog 4  &tog 5  &tog 3  &tog 1    &tog 1  &tog 2  &tog 4  &tog 5  &trans
+&to 0   &trans    &trans     &trans    &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &to 0
+&to 0   &kp LGUI  &kp LCTRL  &kp LALT  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &to 0
+&trans  &kp LGUI  &kp LCTRL  &kp LALT  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LGUI  &kp LCTRL  &kp LALT  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                  &trans     &tog 4    &tog 5  &tog 3  &tog 1    &tog 1  &tog 2  &tog 4  &tog 5  &trans
             >;
 
             label = "layers";
