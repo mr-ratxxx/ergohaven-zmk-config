@@ -165,7 +165,7 @@
 &trans           &trans          &trans                &trans                 &trans           &trans                                &trans        &trans         &trans     &trans         &trans     &trans
 &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP          &kp PAGE_DOWN          &kp PG_UP        &kp ESCAPE                            &kp TAB       &kp HOME       &kp PG_UP  &kp PAGE_DOWN  &kp END    &none
 &msc SCRL_RIGHT  &kp LEFT        &kp DOWN              &kp UP                 &kp RIGHT_ARROW  &kp CAPSLOCK                          &kp SPACE     &kp RSHIFT     &kp RALT   &kp RCTRL      &kp RGUI   &none
-&trans           &msm            &msm                  &msm                   &msm             &kp BACKSPACE  &trans        &none    &kp DELETE    &kp RG(V)      &kp RG(C)  &kp RG(X)      &kp RG(A)  &mo 6
+&trans           &&msm MOVE_LEFT 8             &msm MOVE_DOWN 8                   &msm MOVE_UP 8                    &msm MOVE_RIGHT 8              &kp BACKSPACE  &trans        &none    &kp DELETE    &kp RG(V)      &kp RG(C)  &kp RG(X)      &kp RG(A)  &mo 6
                                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB          &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans     &trans
             >;
 
