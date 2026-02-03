@@ -200,7 +200,7 @@
 &to 0   &trans    &trans     &trans    &trans      &trans                           &trans      &trans      &trans    &trans     &trans    &to 0
 &to 0   &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT   &kp ESC                          &kp TAB     &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
 &trans  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHIFT  &kp CAPSLOCK                     &kp SPACE   &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
-&trans  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT   &kp BACKSPACE  &trans    &trans  &kp DELETE  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
+&to 0   &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT   &kp BACKSPACE  &trans    &trans  &kp DELETE  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
                   &tog 1     &tog 5    &tog 6      &tog 4         &tog 2    &tog 2  &tog 3      &tog 5      &tog 6    &tog 1
             >;
 
