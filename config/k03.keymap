@@ -1,3 +1,5 @@
+#include "keys_ru.h"
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
 #include <behaviors.dtsi>
@@ -20,7 +22,7 @@
     time-to-max-speed-ms = <300>;
 };
 
-&lt { tapping-term-ms = <170>; };
+&lt { tapping-term-ms = <180>; };
 
 / {
     behaviors {
@@ -93,11 +95,11 @@
 
         base {
             bindings = <
-&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7             &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
-&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y              &kp U            &kp I       &kp O        &kp P          &kp GRAVE
-&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H              &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
-&lt 6 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 6 ENTER    &lt 6 ENTER  &kp N              &kp M            &kp COMMA   &kp DOT      &kp FSLH       &lt 6 BSLH
-                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 1 DEL      &lt 1 ESC    &lt (2) LC(SPACE)  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
+&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7           &kp F8           &kp F9      &kp F10      &kp F11        &kp F12
+&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y            &kp U            &kp I       &kp O        &kp P          &kp GRAVE
+&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H            &mt RSHIFT J     &mt RALT K  &mt RCTRL L  &mt RGUI SEMI  &kp SQT
+&lt 6 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 6 ENTER    &lt 6 ENTER  &kp N            &kp M            &kp COMMA   &kp DOT      &kp FSLH       &lt 6 BSLH
+                         &kp MINUS    &lt 4 EQUAL  &lt 5 TAB    &lt 3 SPACE  &lt 1 DEL      &lt 1 ESC    &lt 2 RC(SPACE)  &lt 4 BACKSPACE  &lt 5 LBKT  &kp RBKT
             >;
 
             display-name = "base";
@@ -120,20 +122,18 @@
 
             display-name = "funct";
             sensor-bindings =
+                <&inc_dec_kp LA(LS(L)) LA(LS(J))>,
                 <&inc_dec_kp 0 0>,
-                <&inc_dec_kp 0 0>,
-                <&inc_dec_kp (LA(LS(L))) LA(LS(J))>,
-                <&inc_dec_kp C D>,
-                <&inc_dec_kp (LA(LS(L))) LA(LS(J))>;
+                <&inc_dec_kp LA(LS(L)) LA(LS(J))>;
         };
 
         nav-r {
             bindings = <
-&trans  &trans     &trans         &trans       &trans      &trans                                      &trans        &trans          &trans                &trans                 &trans           &trans
-&trans  &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &kp LG(ESCAPE)                              &kp TAB       &kp PG_UP       &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN   &msc SCRL_LEFT
-&trans  &kp LGUI   &kp LCTRL      &kp RALT     &kp LSHIFT  &kp LG(CAPSLOCK)                            &kp SPACE     &kp LEFT        &kp UP                &kp DOWN               &kp RIGHT_ARROW  &msc SCRL_RIGHT
-&trans  &kp LG(A)  &kp LG(X)      &kp LG(C)    &kp LG(V)   &kp BACKSPACE     &trans        &trans      &kp DELETE    &mmv MOVE_LEFT  &mmv MOVE_UP          &mmv MOVE_DOWN         &mmv MOVE_RIGHT  &mo 6
-                   &trans         &trans       &kp TAB     &kp SPACE         &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE   &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+&trans  &trans     &trans     &trans         &trans      &trans                                   &trans        &trans          &trans         &trans          &trans           &trans
+&trans  &none      &none      &kp PAGE_DOWN  &kp PG_UP   &kp ESCAPE                               &kp TAB       &kp PG_UP       &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_LEFT
+&trans  &kp LGUI   &kp LCTRL  &kp RALT       &kp LSHIFT  &kp CAPSLOCK                             &kp SPACE     &kp LEFT        &kp UP         &kp DOWN        &kp RIGHT_ARROW  &msc SCRL_RIGHT
+&trans  &kp LG(A)  &kp LG(X)  &kp LG(C)      &kp LG(V)   &kp BACKSPACE  &trans        &trans      &kp DELETE    &mmv MOVE_LEFT  &mmv MOVE_UP   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 6
+                   &trans     &trans         &kp TAB     &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE   &mkp MB4       &mkp MB5
             >;
 
             display-name = "nav-r";
@@ -142,11 +142,11 @@
 
         nav-l {
             bindings = <
-&trans           &trans          &trans                &trans                 &trans           &trans                                &trans        &trans         &trans     &trans         &trans     &trans
-&msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP          &kp PAGE_DOWN          &kp PG_UP        &kp ESCAPE                            &kp TAB       &kp HOME       &kp PG_UP  &kp PAGE_DOWN  &kp END    &none
-&msc SCRL_RIGHT  &kp LEFT        &kp DOWN              &kp UP                 &kp RIGHT_ARROW  &kp CAPSLOCK                          &kp SPACE     &kp RSHIFT     &kp RALT   &kp RCTRL      &kp RGUI   &none
-&trans           &mmv MOVE_LEFT  &mmv MOVE_DOWN        &mmv MOVE_UP           &mmv MOVE_RIGHT  &kp BACKSPACE  &trans        &none    &kp DELETE    &kp RG(V)      &kp RG(C)  &kp RG(X)      &kp RG(A)  &mo 6
-                                 &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB          &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans     &trans
+&trans           &trans          &trans          &trans         &trans           &trans                                &trans        &trans         &trans         &trans     &trans     &trans
+&msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP    &kp PAGE_DOWN  &kp PG_UP        &kp ESC                               &kp TAB       &kp PAGE_UP    &kp PAGE_DOWN  &none      &none      &none
+&msc SCRL_RIGHT  &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT_ARROW  &kp CAPSLOCK                          &kp SPACE     &kp RSHIFT     &kp RALT       &kp RCTRL  &kp RGUI   &none
+&trans           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp BACKSPACE  &trans        &trans   &kp DELETE    &kp RG(V)      &kp RG(C)      &kp RG(X)  &kp RG(A)  &mo 6
+                                 &mkp MB5        &mkp MB4       &kp TAB          &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans         &trans
             >;
 
             display-name = "nav-l";
@@ -179,32 +179,14 @@
 
         layers {
             bindings = <
-&to 0   &trans    &trans     &trans    &trans      &trans                           &trans      &trans      &trans    &trans     &trans    &to 0
-&to 0   &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT   &kp ESC                          &kp TAB     &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
-&trans  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHIFT  &kp CAPSLOCK                     &kp SPACE   &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
-&trans  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT   &kp BACKSPACE  &trans    &trans  &kp DELETE  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
-                  &trans     &tog 4    &tog 5      &tog 3         &tog 1    &tog 1  &tog 2      &tog 4      &tog 5    &trans
+&to 0   &trans        &trans     &trans    &trans     &trans                          &trans         &trans      &trans    &trans     &trans    &to 0
+&to 0   &kp LEFT_GUI  &kp LCTRL  &kp LALT  &kp LSHFT  &kp ESCAPE                      &kp TAB        &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
+&trans  &kp LGUI      &kp LCTRL  &kp LALT  &kp LSHFT  &kp CAPSLOCK                    &kp SPACE      &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
+&trans  &kp LGUI      &kp LCTRL  &kp LALT  &kp LSHFT  &kp DELETE    &trans    &trans  &kp BACKSPACE  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
+                      &trans     &tog 4    &tog 5     &tog 3        &tog 1    &tog 1  &tog 2         &tog 4      &tog 5    &trans
             >;
 
             label = "layers";
         };
-
-             base_mirrored {
-                    bindings = <
-        &kp ESC      &kp F7      &kp F8       &kp F9       &kp F10      &kp F11                                   &kp F2             &kp F3           &kp F4      &kp F5       &kp F6         &kp F12
-        &kp GRAVE    &kp P       &kp O        &kp I        &kp U        &kp Y                                    &kp T              &kp R            &kp E       &kp W        &kp Q          &kp LG(TAB)
-        &kp SQT      &mt RGUI SEMI &mt RCTRL L &mt RALT K  &mt RSHIFT J &kp H                                    &kp G              &mt LSHFT F      &mt LALT D  &mt LCTRL S  &mt LGUI A     &none
-        &lt 6 BSLH   &kp FSLH    &kp DOT      &kp COMMA    &kp M        &kp N        &lt 6 ENTER    &lt 6 ENTER  &kp B              &kp V            &kp C       &kp X        &kp Z         &lt 6 ENTER
-                                 &kp RBKT     &lt 5 LBKT   &lt 4 BACKSPACE &lt 2 LC(SPACE) &lt 1 ESC    &lt 1 DEL    &lt (3) SPACE    &lt 5 TAB     &lt 4 EQUAL   &kp MINUS
-                    >;
-        
-                    display-name = "base-mirrored";
-                    sensor-bindings =
-                        <&enc_vol>,
-                        <&inc_dec_kp 0 0>,
-                        <&enc_vol>,
-                        <&inc_dec_kp 0 0>,
-                        <&enc_vol>;
-                };
     };
 };
