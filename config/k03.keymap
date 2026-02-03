@@ -111,7 +111,7 @@
                 <&enc_vol>;
         };
 
-        base_mirrored {
+        base_mirror {
             bindings = <
 &kp ESC     &kp F8         &kp F9       &kp F10     &kp F11          &kp F12                                      &kp F2       &kp F3       &kp F4       &kp F5       &kp F6      &kp F7
 &kp GRAVE   &kp P          &kp O        &kp I       &kp U            &kp Y                                        &kp T        &kp R        &kp E        &kp W        &kp Q       &kp LG(TAB)
@@ -120,7 +120,7 @@
                            &kp LBKT     &lt 5 RBKT  &lt 4 BACKSPACE  &lt 0 LC(SPACE)  &lt 2 ESC      &lt 2 DEL    &lt 3 SPACE  &lt 5 TAB    &lt 4 EQUAL  &kp MINUS
             >;
 
-            display-name = "base-mirrored";
+            display-name = "base-mirror";
             sensor-bindings =
                 <&enc_vol>,
                 <&inc_dec_kp 0 0>,
