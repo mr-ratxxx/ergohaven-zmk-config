@@ -20,7 +20,7 @@
     time-to-max-speed-ms = <300>;
 };
 
-&lt { tapping-term-ms = <170>; };
+&lt { tapping-term-ms = <171>; };
 
 / {
     behaviors {
