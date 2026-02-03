@@ -188,15 +188,23 @@
 
             label = "layers";
         };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-        };
+                
+        base_mirrored {
+                    bindings = <
+        &kp ESC      &kp F7      &kp F8       &kp F9       &kp F10      &kp F11                                   &kp F2             &kp F3           &kp F4      &kp F5       &kp F6         &kp F12
+        &kp GRAVE    &kp P       &kp O        &kp I        &kp U        &kp Y                                    &kp T              &kp R            &kp E       &kp W        &kp Q          &kp LG(TAB)
+        &kp SQT      &mt RGUI SEMI &mt RCTRL L &mt RALT K  &mt RSHIFT J &kp H                                    &kp G              &mt LSHFT F      &mt LALT D  &mt LCTRL S  &mt LGUI A     &none
+        &lt 6 BSLH   &kp FSLH    &kp DOT      &kp COMMA    &kp M        &kp N        &lt 6 ENTER    &lt 6 ENTER  &kp B              &kp V            &kp C       &kp X        &kp Z         &lt 6 ENTER
+                                 &kp RBKT     &lt 5 LBKT   &lt 4 BACKSPACE &lt 2 LC(SPACE) &lt 1 ESC    &lt 1 DEL    &lt (3) SPACE    &lt 5 TAB     &lt 4 EQUAL   &kp MINUS
+                    >;
+        
+                    display-name = "base-mirrored";
+                    sensor-bindings =
+                        <&enc_vol>,
+                        <&inc_dec_kp 0 0>,
+                        <&enc_vol>,
+                        <&inc_dec_kp 0 0>,
+                        <&enc_vol>;
+                };
     };
 };
