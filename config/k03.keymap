@@ -114,7 +114,7 @@
 &kp ESC     &kp F8         &kp F9       &kp F10     &kp F11          &kp F12                                  &kp F2       &kp F3       &kp F4       &kp F5       &kp F6      &kp F7
 &kp GRAVE   &kp P          &kp O        &kp I       &kp U            &kp Y                                    &kp T        &kp R        &kp E        &kp W        &kp Q       &kp LG(TAB)
 &kp SQT     &mt RGUI SEMI  &mt RCTRL L  &mt RALT K  &mt RSHIFT J     &kp H                                    &kp G        &mt LSHFT F  &mt LALT D   &mt LCTRL S  &mt LGUI A  &none
-&lt 7 BSLH  &kp FSLH       &kp DOT      &kp COMMA   &kp M            &kp N            &trans       &trans     &kp B        &kp V        &kp C        &kp X        &kp Z       &lt 7 ENTER
+&lt 7 BSLH  &kp FSLH       &kp DOT      &kp COMMA   &kp M            &kp N            &trans       &trans     &kp B        &kp V        &kp C        &kp X        &kp Z       &to 0
                            &kp LBKT     &lt 5 RBKT  &lt 6 BACKSPACE  &lt 4 LC(SPACE)  &lt 2 ESC    &lt 2 DEL  &lt 3 SPACE  &lt 5 TAB    &lt 6 EQUAL  &kp MINUS
             >;
 
