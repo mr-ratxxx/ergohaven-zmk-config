@@ -151,7 +151,7 @@
 &trans  &trans     &trans                &trans                 &trans      &trans                                      &trans        &trans          &trans                &trans                 &trans           &trans
 &trans  &kp HOME   &kp PAGE_DOWN         &kp PAGE_UP            &kp END     &kp LG(ESCAPE)                              &kp TAB       &kp PG_UP       &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN   &msc SCRL_LEFT
 &trans  &kp LGUI   &kp LCTRL             &kp RALT               &kp LSHIFT  &kp LG(CAPSLOCK)                            &kp SPACE     &kp LEFT        &kp UP                &kp DOWN               &kp RIGHT_ARROW  &msc SCRL_RIGHT
-&trans  &kp LG(A)  &kp LG(X)             &kp LG(C)              &kp LG(V)   &kp BACKSPACE     &trans        &trans      &kp DELETE    &mmv MOVE_X(-300)   &mmv MOVE_Y(300)          &kp MOVE_Y(-300)         &mmv MOVE_X(300)  &mo 7
+&trans  &kp LG(A)  &kp LG(X)             &kp LG(C)              &kp LG(V)   &kp BACKSPACE     &trans        &trans      &kp DELETE    &mmv MOVE_X(-200)   &mmv MOVE_Y(-200)          &mmv MOVE_Y(200)         &mmv MOVE_X(200)  &mo 7
                    &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB     &kp SPACE         &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE   &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
