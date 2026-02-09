@@ -34,13 +34,7 @@
     };
 
     combos {
-        compatible = "zmk,combos";
-
-        FJ_CAPS {
-            bindings = <&caps_word>;
-            key-positions = <31 28>;
-            layers = <0>;
-        };
+        compatible = "zmk,combos";        
 
         M__ENTER {
             bindings = <&kp ENTER>;
