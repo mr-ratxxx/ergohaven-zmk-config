@@ -180,11 +180,11 @@
 
         symb {
             bindings = <
-&kp LS(MINUS)  &kp LS(N1)     &kp LS(EQUAL)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(N5)                            &kp RS(N6)    &kp RS(MINUS)  &kp RS(N0)  &kp RS(EQUAL)  &kp RS(N0)     &kp RS(EQUAL)
-&trans         &kp LS(EQUAL)  &kp LS(N9)     &kp LS(N8)  &kp LS(N7)     &kp ESCAPE                            &kp TAB       &kp RS(N7)     &kp RS(N8)  &kp RS(N9)     &kp RS(EQUAL)  &none
-&trans         &kp LS(N0)     &kp LS(N6)     &kp LS(N5)  &kp RS(N4)     &kp CAPSLOCK                          &kp SPACE     &kp RS(N4)     &kp RS(N5)  &kp RS(N6)     &kp RS(N0)     &none
-&trans         &kp RS(MINUS)  &kp RS(N3)     &kp RS(N2)  &kp RS(N1)     &kp BACKSPACE  &trans        &trans   &kp DELETE    &kp RS(N1)     &kp RS(N2)  &kp RS(N3)     &kp RS(MINUS)  &mo 7
-                              &trans         &trans      &kp TAB        &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans      &trans
+&kp LS(MINUS)  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                            &kp RS(N6)    &kp RS(N7)     &kp RS(N8)  &kp RS(N9)  &kp RS(N0)     &kp RS(EQUAL)
+&trans         &kp LS(EQUAL)  &kp LS(N9)  &kp LS(N8)  &kp LS(N7)  &kp ESCAPE                            &kp TAB       &kp RS(N7)     &kp RS(N8)  &kp RS(N9)  &kp RS(EQUAL)  &none
+&trans         &kp LS(N0)     &kp LS(N6)  &kp LS(N5)  &kp RS(N4)  &kp CAPSLOCK                          &kp SPACE     &kp RS(N4)     &kp RS(N5)  &kp RS(N6)  &kp RS(N0)     &none
+&trans         &kp RS(MINUS)  &kp RS(N3)  &kp RS(N2)  &kp RS(N1)  &kp BACKSPACE  &trans        &trans   &kp DELETE    &kp RS(N1)     &kp RS(N2)  &kp RS(N3)  &kp RS(MINUS)  &mo 7
+                              &trans      &trans      &kp TAB     &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans      &trans
             >;
 
             label = "symb";
