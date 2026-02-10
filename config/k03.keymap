@@ -34,18 +34,18 @@
     };
 
     combos {
-        compatible = "zmk,combos";        
+        compatible = "zmk,combos";
 
         M__ENTER {
             bindings = <&kp ENTER>;
             key-positions = <45 46>;
-            layers = <0 4 5 6 1>;
+            layers = <0 4 5 6 1 2 7>;
         };
 
         JK_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
-            layers = <3 2>;
+            layers = <3>;
         };
 
         UI_REVERT {
@@ -63,13 +63,13 @@
         JK_MOUSE1 {
             bindings = <&mkp MB1>;
             key-positions = <45 46>;
-            layers = <3 2>;
+            layers = <3>;
         };
 
         JKL_MOUSE2 {
             bindings = <&mkp MB2>;
             key-positions = <45 46 47>;
-            layers = <3 2>;
+            layers = <3>;
         };
 
         DF_MOUSE1 {
