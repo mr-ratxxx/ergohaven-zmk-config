@@ -31,16 +31,6 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
-
-        hold_mouse: hold_mouse {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_MOUSE";
-            bindings = <&kp>, <&mmv>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <0>;
-            flavor = "tap-preferred";
-        };
     };
 
     combos {
@@ -152,11 +142,11 @@
 
         nav-r {
             bindings = <
-&trans  &trans                       &trans                       &trans                    &trans                         &trans                                   &trans        &trans             &trans                &trans                 &trans            &trans
-&trans  &kp HOME                     &kp PAGE_DOWN                &kp PAGE_UP               &kp END                        &kp ESCAPE                               &kp TAB       &kp PG_UP          &kp PAGE_DOWN         &msc MOVE_Y(90)        &msc MOVE_Y(-90)  &msc SCRL_LEFT
-&trans  &hold_mouse LGUI MOVE_RIGHT  &hold_mouse LCTRL MOVE_DOWN  &hold_mouse RALT MOVE_UP  &hold_mouse LSHIFT MOVE_RIGHT  &kp CAPSLOCK                             &kp SPACE     &kp LEFT           &kp UP                &kp DOWN               &kp RIGHT_ARROW   &msc SCRL_RIGHT
-&trans  &mmv MOVE_LEFT               &mmv MOVE_DOWN               &mmv MOVE_UP              &mmv MOVE_RIGHT                &kp BACKSPACE  &trans        &trans      &kp DELETE    &mmv MOVE_X(-300)  &mmv MOVE_Y(-300)     &mmv MOVE_Y(300)       &mmv MOVE_X(300)  &mo 7
-                                     &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)     &kp TAB                        &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+&trans  &trans          &trans                &trans                 &trans           &trans                                   &trans        &trans             &trans                &trans                 &trans            &trans
+&trans  &kp HOME        &kp PAGE_DOWN         &kp PAGE_UP            &kp END          &kp ESCAPE                               &kp TAB       &kp PG_UP          &kp PAGE_DOWN         &msc MOVE_Y(90)        &msc MOVE_Y(-90)  &msc SCRL_LEFT
+&trans  &kp LGUI        &kp LCTRL             &kp RALT               &kp LSHIFT       &kp CAPSLOCK                             &kp SPACE     &kp LEFT           &kp UP                &kp DOWN               &kp RIGHT_ARROW   &msc SCRL_RIGHT
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN        &mmv MOVE_UP           &mmv MOVE_RIGHT  &kp BACKSPACE  &trans        &trans      &kp DELETE    &mmv MOVE_X(-300)  &mmv MOVE_Y(-300)     &mmv MOVE_Y(300)       &mmv MOVE_X(300)  &mo 7
+                        &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB          &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
             display-name = "nav-r";
