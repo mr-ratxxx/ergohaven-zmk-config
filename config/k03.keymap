@@ -131,11 +131,11 @@
 
         nav-r {
             bindings = <
-&trans  &trans          &trans                  &trans                 &trans           &trans                                   &trans        &trans             &trans                &trans                   &trans            &trans
-&trans  &kp HOME        &kp END                 &kp PAGE_DOWN          &kp PAGE_UP      &kp ESCAPE                               &kp TAB       &kp PG_UP          &kp PAGE_DOWN         &msc MOVE_Y(90)          &msc MOVE_Y(-90)  &msc SCRL_LEFT
-&trans  &kp LGUI        &kp LCTRL               &kp LALT               &kp LSHFT        &kp CAPSLOCK                             &kp SPACE     &kp LEFT           &kp UP                &kp DOWN                 &kp RIGHT_ARROW   &msc SCRL_RIGHT
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_UP           &mmv MOVE_RIGHT  &kp BACKSPACE  &trans        &trans      &kp DELETE    &mmv MOVE_X(-270)  &mmv MOVE_Y(-270)     &mmv MOVE_Y(270)         &mmv MOVE_X(270)  &mo 7
-                        &lt 7 LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB          &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE      &kp RG(LEFT_BRACKET)  &lt 7 RG(RIGHT_BRACKET)
+&trans  &trans          &trans                &trans                 &trans           &trans                                   &trans        &trans             &trans                &trans                 &trans            &trans
+&trans  &kp HOME        &kp END               &kp PAGE_DOWN          &kp PAGE_UP      &kp ESCAPE                               &kp TAB       &kp PG_UP          &kp PAGE_DOWN         &msc MOVE_Y(90)        &msc MOVE_Y(-90)  &msc SCRL_LEFT
+&trans  &kp LGUI        &kp LCTRL             &kp LALT               &kp LSHFT        &kp CAPSLOCK                             &kp SPACE     &kp LEFT           &kp UP                &kp DOWN               &kp RIGHT_ARROW   &msc SCRL_RIGHT
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN        &mmv MOVE_UP           &mmv MOVE_RIGHT  &kp BACKSPACE  &trans        &trans      &kp DELETE    &mmv MOVE_X(-270)  &mmv MOVE_Y(-270)     &mmv MOVE_Y(270)       &mmv MOVE_X(270)  &mo 7
+                        &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB          &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
             display-name = "nav-r";
