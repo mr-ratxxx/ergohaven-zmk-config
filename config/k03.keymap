@@ -101,7 +101,12 @@
             >;
 
             display-name = "base";
-            sensor-bindings = <&enc_vol>;
+            sensor-bindings =
+                <&enc_vol>,
+                <&inc_dec_kp 0 0>,
+                <&enc_vol>,
+                <&inc_dec_kp 0 0>,
+                <&enc_vol>;
         };
 
         base_mirror {
@@ -114,7 +119,12 @@
             >;
 
             display-name = "base-mirror";
-            sensor-bindings = <&enc_vol>;
+            sensor-bindings =
+                <&enc_vol>,
+                <&inc_dec_kp 0 0>,
+                <&enc_vol>,
+                <&inc_dec_kp 0 0>,
+                <&enc_vol>;
         };
 
         funct {
@@ -127,6 +137,12 @@
             >;
 
             display-name = "funct";
+            sensor-bindings =
+                <&inc_dec_kp 0 0>,
+                <&inc_dec_kp 0 0>,
+                <&inc_dec_kp (LA(LS(L))) LA(LS(J))>,
+                <&inc_dec_kp C D>,
+                <&inc_dec_kp (LA(LS(L))) LA(LS(J))>;
         };
 
         nav-r {
@@ -139,6 +155,7 @@
             >;
 
             display-name = "nav-r";
+            sensor-bindings = <&inc_dec_kp LS(LA(L)) LA(LS(J))>;
         };
 
         nav-l {
@@ -151,6 +168,7 @@
             >;
 
             display-name = "nav-l";
+            sensor-bindings = <&inc_dec_kp LA(LS(L)) LS(LA(J))>;
         };
 
         num {
