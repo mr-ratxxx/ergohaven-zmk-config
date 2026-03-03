@@ -95,7 +95,7 @@
             bindings = <
 &kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9      &kp F10              &kp F11        &kp F12
 &kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I       &kp O                &kp P          &kp GRAVE
-&tog 1       &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
+&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
 &lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 1 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT              &kp FSLH       &lt 7 BSLH
                          &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT  &lt 7 RIGHT_BRACKET
             >;
@@ -108,7 +108,7 @@
             bindings = <
 &kp ESC     &kp F8         &kp F9       &kp F10     &kp F11          &kp F12                                  &kp F2       &kp F3       &kp F4       &kp F5       &kp F6      &kp F7
 &kp GRAVE   &kp P          &kp O        &kp I       &kp U            &kp Y                                    &kp T        &kp R        &kp E        &kp W        &kp Q       &kp LG(TAB)
-&kp SQT     &mt RGUI SEMI  &mt RCTRL L  &mt RALT K  &mt RSHIFT J     &kp H                                    &kp G        &mt LSHFT F  &mt LALT D   &mt LCTRL S  &mt LGUI A  &tog 1
+&kp SQT     &mt RGUI SEMI  &mt RCTRL L  &mt RALT K  &mt RSHIFT J     &kp H                                    &kp G        &mt LSHFT F  &mt LALT D   &mt LCTRL S  &mt LGUI A  &none
 &lt 7 BSLH  &kp FSLH       &kp DOT      &kp COMMA   &kp M            &kp N            &trans       &trans     &kp B        &kp V        &kp C        &kp X        &kp Z       &to 0
                            &kp LBKT     &lt 5 RBKT  &lt 6 BACKSPACE  &lt 4 LC(SPACE)  &lt 2 ESC    &lt 2 DEL  &lt 3 SPACE  &lt 5 TAB    &lt 6 EQUAL  &kp MINUS
             >;
