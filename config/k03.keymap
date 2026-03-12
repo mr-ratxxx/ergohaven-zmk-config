@@ -112,13 +112,7 @@
                            &kp LBKT     &lt 5 RBKT  &lt 6 BACKSPACE  &lt 4 LC(SPACE)  &lt 2 ESC    &lt 2 DEL  &lt 3 SPACE  &lt 5 TAB    &lt 6 EQUAL  &kp MINUS
             >;
 
-            display-name = "base-mirror";
-            sensor-bindings =
-                <&enc_vol>,
-                <&inc_dec_kp 0 0>,
-                <&enc_vol>,
-                <&inc_dec_kp 0 0>,
-                <&enc_vol>;
+            display-name = "base-mirror";            
         };
 
         funct {
@@ -130,13 +124,7 @@
                         &trans        &trans       &kp TAB        &kp SPACE      &kp DEL    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans       &trans
             >;
 
-            display-name = "funct";
-            sensor-bindings =
-                <&inc_dec_kp 0 0>,
-                <&inc_dec_kp 0 0>,
-                <&inc_dec_kp (LA(LS(L))) LA(LS(J))>,
-                <&inc_dec_kp C D>,
-                <&inc_dec_kp (LA(LS(L))) LA(LS(J))>;
+            display-name = "funct";            
         };
 
         nav-r {
@@ -148,8 +136,7 @@
                         &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB          &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
-            display-name = "nav-r";
-            sensor-bindings = <&inc_dec_kp LS(LA(L)) LA(LS(J))>;
+            display-name = "nav-r";            
         };
 
         nav-l {
@@ -162,7 +149,6 @@
             >;
 
             display-name = "nav-l";
-            sensor-bindings = <&inc_dec_kp LA(LS(L)) LS(LA(J))>;
         };
 
         num {
