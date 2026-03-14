@@ -184,11 +184,11 @@
 
         layers {
             bindings = <
-&to 0  &none     &none      &none     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &none       &none       &none     &none      &none     &to 0
-&to 0  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT          &kp ESC                            &kp TAB     &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
-&to 0  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHIFT         &kp CAPSLOCK                       &kp SPACE   &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
-&to 0  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT          &kp BACKSPACE    &trans    &trans  &kp DELETE  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
-                 &tog 1     &tog 5    &tog 6             &tog 4           &tog 2    &tog 2  &tog 3      &tog 5      &tog 6    &tog 1
+&to 0  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &none       &none       &none     &none      &none     &to 0
+&to 0  &kp LGUI    &kp LCTRL         &kp LALT    &kp LSHFT          &kp ESC                            &kp TAB     &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
+&to 0  &kp LGUI    &kp LCTRL         &kp LALT    &kp LSHIFT         &kp CAPSLOCK                       &kp SPACE   &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
+&to 0  &kp LGUI    &kp LCTRL         &kp LALT    &kp LSHFT          &kp BACKSPACE    &trans    &trans  &kp DELETE  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
+                   &tog 1            &tog 5      &tog 6             &tog 4           &tog 2    &tog 2  &tog 3      &tog 5      &tog 6    &tog 1
             >;
 
             label = "layers";
