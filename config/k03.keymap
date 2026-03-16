@@ -50,9 +50,9 @@
             layers = <3 4>;
         };
 
-        CV_ENTER {
+        VB_ENTER {
             bindings = <&kp ENTER>;
-            key-positions = <28 27>;
+            key-positions = <41 40>;
         };
 
         UI_REVERT {
