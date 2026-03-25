@@ -54,7 +54,7 @@
                     compatible = "zmk,behavior-mod-morph";
                     label = "MMV_ALT_X_LEFT";
                     #binding-cells = <0>;
-                    bindings = <&mmv MOVE_X(250)>, <&mmv MOVE_X(750)>;
+                    bindings = <&mmv MOVE_X(-250)>, <&mmv MOVE_X(-750)>;
                     mods = <(MOD_LALT | MOD_RALT)>;
                 };
                 
@@ -62,7 +62,7 @@
                                     compatible = "zmk,behavior-mod-morph";
                                     label = "MMV_ALT_X_RIGHT";
                                     #binding-cells = <0>;
-                                    bindings = <&mmv MOVE_X(-250)>, <&mmv MOVE_X(-750)>;
+                                    bindings = <&mmv MOVE_X(250)>, <&mmv MOVE_X(750)>;
                                     mods = <(MOD_LALT | MOD_RALT)>;
                                 };
     };
