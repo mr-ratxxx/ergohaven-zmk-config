@@ -34,33 +34,33 @@
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
               
-                mmv_alt_y_up: mmv_alt_y_up {
+                alt_y_up: alt_y_up {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "MMV_ALT_Y_UP";
+                    label = "ALT_Y_UP";
                     #binding-cells = <0>;
                     bindings = <&mmv MOVE_Y(-250)>, <&mmv MOVE_Y(-780)>;
                     mods = <(MOD_LALT | MOD_RALT)>;
                 };
                 
-                mmv_alt_y_down: mmv_alt_y_down {
+                alt_y_down: alt_y_down {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "MMV_ALT_Y_DOWN";
+                    label = "ALT_Y_DOWN";
                     #binding-cells = <0>;
                     bindings = <&mmv MOVE_Y(250)>, <&mmv MOVE_Y(780)>;
                     mods = <(MOD_LALT | MOD_RALT)>;
                 };
                 
-                mmv_alt_x_left: mmv_alt_x_left {
+                alt_x_left: alt_x_left {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "MMV_ALT_X_LEFT";
+                    label = "ALT_X_LEFT";
                     #binding-cells = <0>;
                     bindings = <&mmv MOVE_X(-250)>, <&mmv MOVE_X(-780)>;
                     mods = <(MOD_LALT | MOD_RALT)>;
                 };
                 
-                                mmv_alt_x_right: mmv_alt_x_right {
+                                alt_x_right: alt_x_right {
                                     compatible = "zmk,behavior-mod-morph";
-                                    label = "MMV_ALT_X_RIGHT";
+                                    label = "ALT_X_RIGHT";
                                     #binding-cells = <0>;
                                     bindings = <&mmv MOVE_X(250)>, <&mmv MOVE_X(780)>;
                                     mods = <(MOD_LALT | MOD_RALT)>;
@@ -171,7 +171,7 @@
 &trans  &trans             &trans                &trans                 &trans            &trans                                   &trans        &trans             &trans                &trans                 &trans            &trans
 &trans  &msc SCRL_DOWN     &msc SCRL_UP          &kp PAGE_DOWN          &kp PAGE_UP       &kp ESCAPE                               &kp TAB       &kp PG_UP          &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN    &msc SCRL_LEFT
 &trans  &kp LGUI           &kp LCTRL             &kp LALT               &kp LSHFT         &kp CAPSLOCK                             &kp SPACE     &kp LEFT           &kp UP                &kp DOWN               &kp RIGHT_ARROW   &msc SCRL_RIGHT
-&trans  &mmv MOVE_X(-750)  &mmv MOVE_Y(750)      &mmv MOVE_Y(-750)      &mmv MOVE_X(750)  &kp BACKSPACE  &trans        &trans      &kp DELETE    &mmv_alt_x_left  &mmv_alt_y_up     &mmv_alt_y_down       &mmv_alt_x_right  &mo 7
+&trans  &mmv MOVE_X(-750)  &mmv MOVE_Y(750)      &mmv MOVE_Y(-750)      &mmv MOVE_X(750)  &kp BACKSPACE  &trans        &trans      &kp DELETE    &alt_x_left  &alt_y_up     &alt_y_down       &alt_x_right  &mo 7
                            &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB           &kp SPACE      &kp DELETE    &kp ESCAPE  &kp CAPSLOCK  &kp BACKSPACE      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
