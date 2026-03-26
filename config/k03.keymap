@@ -39,7 +39,7 @@
             label = "ALT_SCRL_UP";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc MOVE_Y(50)>;
-            mods = <(MOD_LALT | MOD_RALT)>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
         };
         
         alt_scrl_down: alt_scrl_down {
@@ -47,7 +47,7 @@
             label = "ALT_SCRL_DOWN";
             #binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc MOVE_Y(-50)>;
-            mods = <(MOD_LALT | MOD_RALT)>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
         };
               
                 alt_y_up: alt_y_up {
