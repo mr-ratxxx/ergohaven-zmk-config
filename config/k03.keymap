@@ -2,7 +2,7 @@
 
 // Константы для перемещений
 #define MMV_SLOW_SPEED 230
-#define MMV_FAST_SPEED 700
+#define MMV_FAST_SPEED 750
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -85,6 +85,38 @@
             bindings = <&mmv MOVE_X(MMV_SLOW_SPEED)>, <&mmv MOVE_X(MMV_FAST_SPEED)>;
             mods = <(MOD_LALT | MOD_RALT)>;
         };
+        
+        alt_y_up_i: alt_y_up_i {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "ALT_Y_UP_I";
+                    #binding-cells = <0>;
+                    bindings = <&mmv MOVE_Y(-MMV_FAST_SPEED)>, <&mmv MOVE_Y(-MMV_SLOW_SPEED)>;
+                    mods = <(MOD_LALT | MOD_RALT)>;
+                };
+                
+                alt_y_down_i: alt_y_down_i {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "ALT_Y_DOWN_I";
+                    #binding-cells = <0>;
+                    bindings = <&mmv MOVE_Y(MMV_FAST_SPEED)>, <&mmv MOVE_Y(MMV_SLOW_SPEED)>;
+                    mods = <(MOD_LALT | MOD_RALT)>;
+                };
+                
+                alt_x_left_i: alt_x_left_i {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "ALT_X_LEFT_I";
+                    #binding-cells = <0>;
+                    bindings = <&mmv MOVE_X(-MMV_FAST_SPEED)>, <&mmv MOVE_X(-MMV_SLOW_SPEED)>;
+                    mods = <(MOD_LALT | MOD_RALT)>;
+                };
+                
+                alt_x_right_i: alt_x_right_i {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "ALT_X_RIGHT_I";
+                    #binding-cells = <0>;
+                    bindings = <&mmv MOVE_X(MMV_FAST_SPEED)>, <&mmv MOVE_X(MMV_SLOW_SPEED)>;
+                    mods = <(MOD_LALT | MOD_RALT)>;
+                };
     };
 
     combos {
