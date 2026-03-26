@@ -1,8 +1,8 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
 // Константы для перемещений
-#define MMV_SLOW_SPEED 230
-#define MMV_FAST_SPEED 750
+#define MMV_SLOW_SPEED 250
+#define MMV_FAST_SPEED 800
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
