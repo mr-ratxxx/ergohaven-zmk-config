@@ -54,7 +54,7 @@
                     compatible = "zmk,behavior-mod-morph";
                     label = "ALT_Y_UP";
                     #binding-cells = <0>;
-                    bindings = <&mmv MOVE_Y(-250)>, <&mmv MOVE_Y(-780)>;
+                    bindings = <&mmv MOVE_Y(-700)>, <&mmv MOVE_Y(-230)>;
                     mods = <(MOD_LALT | MOD_RALT)>;
                 };
                 
@@ -62,7 +62,7 @@
                     compatible = "zmk,behavior-mod-morph";
                     label = "ALT_Y_DOWN";
                     #binding-cells = <0>;
-                    bindings = <&mmv MOVE_Y(250)>, <&mmv MOVE_Y(780)>;
+                    bindings = <&mmv MOVE_Y(700)>, <&mmv MOVE_Y(230)>;
                     mods = <(MOD_LALT | MOD_RALT)>;
                 };
                 
@@ -70,7 +70,7 @@
                     compatible = "zmk,behavior-mod-morph";
                     label = "ALT_X_LEFT";
                     #binding-cells = <0>;
-                    bindings = <&mmv MOVE_X(-250)>, <&mmv MOVE_X(-780)>;
+                    bindings = <&mmv MOVE_X(-700)>, <&mmv MOVE_X(-230)>;
                     mods = <(MOD_LALT | MOD_RALT)>;
                 };
                 
@@ -78,7 +78,7 @@
                                     compatible = "zmk,behavior-mod-morph";
                                     label = "ALT_X_RIGHT";
                                     #binding-cells = <0>;
-                                    bindings = <&mmv MOVE_X(250)>, <&mmv MOVE_X(780)>;
+                                    bindings = <&mmv MOVE_X(700)>, <&mmv MOVE_X(230)>;
                                     mods = <(MOD_LALT | MOD_RALT)>;
                                 };
     };
