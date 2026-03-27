@@ -58,7 +58,6 @@
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
               
-        #курсор с alt ускорением      
         alt_y_up: alt_y_up {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_Y_UP";
