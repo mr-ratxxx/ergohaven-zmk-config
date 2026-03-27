@@ -3,10 +3,10 @@
 // Константы для перемещений
 
 #define MMV_SLOW_ALT_SPEED 250
-#define MMV_FAST_ALT_SPEED 600
+#define MMV_FAST_ALT_SPEED 700
 
 #define MMV_SLOW_SPEED 250
-#define MMV_FAST_SPEED 820
+#define MMV_FAST_SPEED 880
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
