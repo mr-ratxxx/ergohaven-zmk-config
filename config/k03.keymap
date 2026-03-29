@@ -49,18 +49,18 @@
                     mods = <(MOD_LCTL | MOD_RCTL)>;
                 };
                 
-                ctrl_i_left_bracket: ctrl_i_left_bracket {
+                ctrl_left_bracket: ctrl_left_bracket {
                                     compatible = "zmk,behavior-mod-morph";
-                                    label = "CTRL_I_LEFT_BRACKET";
+                                    label = "CTRL_LEFT_BRACKET";
                                     #binding-cells = <0>;
-                                    bindings = <&kp I>, <&kp LEFT_BRACKET>;        
+                                    bindings = <&kp COMMA>, <&kp LEFT_BRACKET>;        
                                     mods = <(MOD_LCTL | MOD_RCTL)>;
                                 };
-                ctrl_o_right_bracket: ctrl_o_right_bracket {
+                ctrl_right_bracket: ctrl_right_bracket {
                                     compatible = "zmk,behavior-mod-morph";
-                                    label = "CTRL_O_RIGHT_BRACKET";
+                                    label = "CTRL_RIGHT_BRACKET";
                                     #binding-cells = <0>;
-                                    bindings = <&kp O>, <&kp RIGHT_BRACKET>;        
+                                    bindings = <&kp DOT>, <&kp RIGHT_BRACKET>;        
                                     mods = <(MOD_LCTL | MOD_RCTL)>;
                                 };                                
 
@@ -235,9 +235,9 @@
         base {
             bindings = <
 &kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9      &kp F10              &kp F11        &kp F12
-&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &ctrl_i_left_bracket       &ctrl_o_right_bracket                &kp P          &kp GRAVE
+&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kpI      &kp O               &kp P          &kp GRAVE
 &none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
-&lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT              &ctrl_bslh       &lt 7 BSLH
+&lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &ctrl_left_bracket   &ctrl_right_bracket              &ctrl_bslh       &lt 7 BSLH
                          &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 6 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT  &lt 7 RIGHT_BRACKET
             >;
 
