@@ -299,7 +299,7 @@
             bindings = <
 &trans           &trans          &trans                &trans                 &trans           &trans                                        &trans                 &trans                        &trans                        &trans                       &trans                       &trans
 &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP          &kp PAGE_DOWN          &kp PG_UP        &msc SCRL_LEFT                                &msc SCRL_RIGHT        &kp PAGE_UP                   &kp PAGE_DOWN                 &msc SCRL_UP                 &msc SCRL_DOWN               &trans
-&msc SCRL_RIGHT  &kp LEFT        &kp DOWN              &kp UP                 &kp RIGHT_ARROW  &kp LG(LEFT_BRACKET)                          &kp LEFT_BRACKET       &kp RSHFT                     &kp RALT                      &kp RCTRL                    &kp RGUI                     &trans
+&msc SCRL_RIGHT  &kp LEFT        &kp DOWN              &kp UP                 &kp RIGHT_ARROW  &kp LG(LEFT_BRACKET)                          &kp RG(LEFT_BRACKET)   &kp RSHFT                     &kp RALT                      &kp RCTRL                    &kp RGUI                     &trans
 &trans           &alt_x_left     &alt_y_up             &alt_y_down            &alt_x_right     &kp LG(RIGHT_BRACKET)  &trans        &none    &kp RG(RIGHT_BRACKET)  &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &mo 7
                                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB          &kp SPACE              &kp DELETE    &kp ESC  &kp CAPSLOCK           &kp BACKSPACE                 &kp RG(LEFT_BRACKET)          &kp RG(RIGHT_BRACKET)
             >;
