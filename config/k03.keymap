@@ -40,13 +40,20 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
+        
+        ctrl_bslh: ctrl_bslh {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "CTRL_BSLH";
+                    #binding-cells = <0>;
+                    bindings = <&kp FSLH>, <&kp BACKSLASH>;        
+                    mods = <(MOD_LCTL | MOD_RCTL)>;
+                };
 
         alt_scrl_up: alt_scrl_up {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_SCRL_UP";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc MOVE_Y(50)>;
-
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -55,7 +62,6 @@
             label = "ALT_SCRL_DOWN";
             #binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc MOVE_Y(-50)>;
-
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -216,7 +222,7 @@
 &kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9      &kp F10              &kp F11        &kp F12
 &kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I       &kp O                &kp P          &kp GRAVE
 &none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
-&lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT              &kp FSLH       &lt 7 BSLH
+&lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT              &ctrl_bslh       &lt 7 BSLH
                          &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 6 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT  &lt 7 RIGHT_BRACKET
             >;
 
