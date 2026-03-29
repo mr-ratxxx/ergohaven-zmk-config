@@ -42,13 +42,27 @@
         };
 
         ctrl_bslh: ctrl_bslh {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_BSLH";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BACKSLASH>;
-
-            mods = <(MOD_LCTL | MOD_RCTL)>;
-        };
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "CTRL_BSLH";
+                    #binding-cells = <0>;
+                    bindings = <&kp FSLH>, <&kp BACKSLASH>;        
+                    mods = <(MOD_LCTL | MOD_RCTL)>;
+                };
+                
+                ctrl_i_left_bracket: ctrl_i_left_bracket {
+                                    compatible = "zmk,behavior-mod-morph";
+                                    label = "CTRL_I_LEFT_BRACKET";
+                                    #binding-cells = <0>;
+                                    bindings = <&kp I>, <&kp LEFT_BRACKET>;        
+                                    mods = <(MOD_LCTL | MOD_RCTL)>;
+                                };
+                ctrl_o_right_bracket: ctrl_o_right_bracket {
+                                    compatible = "zmk,behavior-mod-morph";
+                                    label = "CTRL_O_RIGHT_BRACKET";
+                                    #binding-cells = <0>;
+                                    bindings = <&kp O>, <&kp RIGHT_BRACKET>;        
+                                    mods = <(MOD_LCTL | MOD_RCTL)>;
+                                };                                
 
         alt_scrl_up: alt_scrl_up {
             compatible = "zmk,behavior-mod-morph";
