@@ -250,7 +250,7 @@
         base {
             bindings = <
 &kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9              &kp F10              &kp F11        &kp F12
-&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kpI                &kp O                &ctrl_p_sqt    &kp GRAVE
+&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I                &kp O                &ctrl_p_sqt    &kp GRAVE
 &none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K          &mt RCTRL L          &mt RGUI SEMI  &kp SQT
 &lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &ctrl_left_bracket  &ctrl_right_bracket  &ctrl_bslh     &lt 7 BSLH
                          &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 6 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT          &lt 7 RIGHT_BRACKET
