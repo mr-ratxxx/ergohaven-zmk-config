@@ -245,7 +245,7 @@
 
         l-gui-tab {
             bindings = <&kp LG(TAB)>;
-            key-positions = <16 15>;
+            key-positions = <13 14>;
         };
     };
 
