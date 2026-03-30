@@ -242,6 +242,11 @@
             bindings = <&kp CAPS>;
             key-positions = <44 45>;
         };
+
+        l-gui-tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <16 15>;
+        };
     };
 
     keymap {
