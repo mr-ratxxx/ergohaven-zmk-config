@@ -75,8 +75,10 @@
             bindings = <&kp P>, <&kp SQT>;
 
             mods = <(MOD_LCTL | MOD_RCTL)>;
-        };        
-#not work
+        };
+
+        #not work
+
         alt_scrl_up: alt_scrl_up {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_SCRL_UP";
@@ -94,7 +96,8 @@
 
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
-###
+
+        ###
 
         alt_y_up: alt_y_up {
             compatible = "zmk,behavior-mod-morph";
@@ -138,7 +141,7 @@
                 <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
 
             mods = <(MOD_LALT | MOD_RALT)>;
-        };                
+        };
     };
 
     combos {
@@ -211,11 +214,11 @@
 
         base {
             bindings = <
-&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9              &kp F10              &kp F11        &kp F12
-&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I               &kp O                &kp P    &kp GRAVE
-&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K          &mt RCTRL L          &mt RGUI SEMI  &kp SQT
-&lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &kp COMMA &kp DOT  &ctrl_bslh     &lt 7 BSLH
-                         &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT          &lt 7 RIGHT_BRACKET
+&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9      &kp F10              &kp F11        &kp F12
+&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I       &kp O                &kp P          &kp GRAVE
+&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
+&lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT              &ctrl_bslh     &lt 7 BSLH
+                         &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT  &lt 7 RIGHT_BRACKET
             >;
 
             display-name = "base";
@@ -247,11 +250,11 @@
 
         nav-r {
             bindings = <
-&trans  &trans                        &trans                       &trans                        &trans                       &trans                                           &trans                 &trans         &trans                &trans                 &trans           &trans
-&trans  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_LEFT                                   &msc SCRL_RIGHT        &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP           &&msc SCRL_DOWN   &msc SCRL_LEFT
-&trans  &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(LEFT_BRACKET)                             &kp RG(LEFT_BRACKET)   &kp LEFT       &kp UP                &kp DOWN               &kp RIGHT_ARROW  &msc SCRL_RIGHT
-&trans  &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LG(RIGHT_BRACKET)  &trans        &trans      &kp RG(RIGHT_BRACKET)  &alt_x_left    &alt_y_up             &alt_y_down            &alt_x_right     &mo 7
-                                      &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE              &kp DELETE    &kp ESCAPE  &kp CAPSLOCK           &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+&trans                        &trans                       &trans                        &trans                       &trans                 &trans                                                     &trans           &trans                &trans                 &trans           &trans           &trans
+&trans                        &msc SCRL_DOWN               &msc SCRL_UP                  &kp PAGE_DOWN                &kp PAGE_UP            &msc SCRL_LEFT                                             &msc SCRL_RIGHT  &kp PG_UP             &kp PAGE_DOWN          &msc SCRL_UP     &msc SCRL_LEFT   &trans
+&kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(LEFT_BRACKET)   &kp RG(LEFT_BRACKET)                                       &kp LEFT         &kp UP                &kp DOWN               &kp RIGHT_ARROW  &msc SCRL_RIGHT  &trans
+&mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LG(RIGHT_BRACKET)  &trans                &trans        &kp RG(RIGHT_BRACKET)  &alt_x_left      &alt_y_up             &alt_y_down            &alt_x_right     &mo 7            &kp LG(LEFT_BRACKET)
+                                                           &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE              &kp DELETE            &kp ESCAPE    &kp CAPSLOCK           &kp BACKSPACE    &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
             display-name = "nav-r";
@@ -262,7 +265,7 @@
 &trans           &trans          &trans                &trans                 &trans           &trans                                        &trans                 &trans                        &trans                        &trans                       &trans                       &trans
 &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP          &kp PAGE_DOWN          &kp PG_UP        &msc SCRL_LEFT                                &msc SCRL_RIGHT        &kp PAGE_UP                   &kp PAGE_DOWN                 &msc SCRL_UP                 &msc SCRL_DOWN               &trans
 &msc SCRL_RIGHT  &kp LEFT        &kp DOWN              &kp UP                 &kp RIGHT_ARROW  &kp LG(LEFT_BRACKET)                          &kp RG(LEFT_BRACKET)   &kp RSHFT                     &kp RALT                      &kp RCTRL                    &kp RGUI                     &trans
-&trans           &alt_x_left     &alt_y_down             &alt_y_up            &alt_x_right     &kp LG(RIGHT_BRACKET)  &trans        &none    &kp RG(RIGHT_BRACKET)  &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &mo 7
+&trans           &alt_x_left     &alt_y_down           &alt_y_up              &alt_x_right     &kp LG(RIGHT_BRACKET)  &trans        &none    &kp RG(RIGHT_BRACKET)  &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &mo 7
                                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB          &kp SPACE              &kp DELETE    &kp ESC  &kp CAPSLOCK           &kp BACKSPACE                 &kp RG(LEFT_BRACKET)          &kp RG(RIGHT_BRACKET)
             >;
 
@@ -271,11 +274,11 @@
 
         num {
             bindings = <
-&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4        &kp N5                                &kp N6        &kp N7         &kp N8            &kp N9        &kp N0       &kp EQUAL
-&trans     &kp EQUAL    &kp N9        &kp N8       &kp N7        &kp MINUS                             &kp MINUS     &kp N7         &kp N8            &kp N9        &kp EQUAL    &none
-&trans     &mt LGUI N0  &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp EQUAL                             &kp EQUAL     &mt RSHIFT N4  &mt RIGHT_ALT N5  &mt RCTRL N6  &mt RGUI N0  &none
-&trans     &kp MINUS    &kp N3        &kp N2       &kp N1        &kp BACKSPACE  &trans        &trans   &kp DEL       &kp N1         &kp N2            &kp N3        &kp MINUS    &mo 7
-                        &trans        &trans       &kp TAB       &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans            &trans
+&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4        &kp N5                            &kp N6        &kp N7         &kp N8            &kp N9        &kp N0       &kp EQUAL
+&trans     &kp MINUS    &kp N9        &kp N8       &kp N7        &kp PLUS                          &kp PLUS      &kp N7         &kp N8            &kp N9        &kp MINUS    &none
+&trans     &mt LGUI N0  &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp MINUS                         &kp MINUS     &mt RSHIFT N4  &mt RIGHT_ALT N5  &mt RCTRL N6  &mt RGUI N0  &none
+&trans     &kp EQUAL    &kp N3        &kp N2       &kp N1        &kp EQUAL  &trans        &trans   &kp EQUAL     &kp N1         &kp N2            &kp N3        &kp EQUAL    &mo 7
+                        &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans            &trans
             >;
 
             label = "num";
