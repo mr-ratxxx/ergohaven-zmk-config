@@ -77,8 +77,6 @@
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
-        #not work
-
         alt_scrl_up: alt_scrl_up {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_SCRL_UP";
@@ -96,8 +94,6 @@
 
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
-
-        ###
 
         alt_y_up: alt_y_up {
             compatible = "zmk,behavior-mod-morph";
