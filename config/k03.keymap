@@ -14,7 +14,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <170>;
     flavor = "hold-preferred";
     require-prior-idle-ms = <70>;
 };
