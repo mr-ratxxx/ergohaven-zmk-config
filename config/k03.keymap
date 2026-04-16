@@ -246,11 +246,11 @@
 
         nav-r {
             bindings = <
-&trans  &trans                        &trans                       &trans                        &trans                       &trans                                           &trans                 &trans         &trans                &trans                 &trans           &trans
-&trans  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_LEFT                                   &msc SCRL_RIGHT        &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN   &msc SCRL_LEFT
-&trans  &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(LEFT_BRACKET)                             &kp RG(LEFT_BRACKET)   &kp LEFT       &kp UP                &kp DOWN               &kp RIGHT_ARROW  &msc SCRL_RIGHT
-&trans  &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LG(RIGHT_BRACKET)  &trans        &trans      &kp RG(RIGHT_BRACKET)  &alt_x_left    &alt_y_up             &alt_y_down            &alt_x_right     &mo 7
-                                      &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE              &kp DELETE    &kp ESCAPE  &kp CAPSLOCK           &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+&trans  &trans                        &trans                       &trans                        &trans                       &trans                                    &trans          &trans         &trans                &trans                 &trans           &trans
+&trans  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_LEFT                            &msc SCRL_LEFT  &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN   &msc SCRL_RIGHT
+&trans  &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(TAB)                               &kp RG(TAB)     &kp LEFT       &kp UP                &kp DOWN               &kp RIGHT_ARROW  &none
+&trans  &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LEFT_ALT    &trans        &trans      &kp RIGHT_ALT   &alt_x_left    &alt_y_up             &alt_y_down            &alt_x_right     &mo 7
+                                      &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE       &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
             display-name = "nav-r";
@@ -296,7 +296,7 @@
             bindings = <
 &to 0  &kp C_PREV        &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &to 8        &none       &none     &none      &none     &to 0
 &to 0  &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT     &trans                             &none        &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
-&to 0  &kp LGUI          &kp LCTRL         &kp LALT      &kp LSHIFT         &tog 0                             &tog 0       &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
+&to 0  &kp LGUI          &kp LCTRL         &kp LALT      &kp LSHIFT         &tog 0                             &tog 0       &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
 &to 0  &kp LGUI          &kp LCTRL         &kp LALT      &kp LSHFT          &kp LG(TAB)      &trans    &trans  &kp RG(TAB)  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
                          &tog 1            &tog 5        &tog 6             &tog 4           &tog 2    &tog 2  &tog 3       &tog 5      &tog 6    &tog 1
             >;
