@@ -151,7 +151,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RALT_Y_DOWN2";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED)>;
+            bindings = <&kp UP>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED)>;
             mods = <(MOD_RALT)>;
         };
 
@@ -286,7 +286,7 @@
             bindings = <
 &trans          &trans                        &trans                       &trans                        &trans                       &trans                                     &trans          &trans         &trans                &trans                           &trans           &trans
 &msc SCRL_LEFT  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_RIGHT                            &msc SCRL_LEFT  &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP                     &msc SCRL_DOWN   &msc SCRL_RIGHT
-&none           &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(TAB)                                &kp RG(TAB)     &kp LEFT       &alt_y_up2            &alt_y_down2                     &kp RIGHT_ARROW  &none
+&none           &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(TAB)                                &kp RG(TAB)     &ralt_x_up2       &ralt_x_down2            &kp DOWN  &kp RIGHT_ARROW  &none
 &trans          &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LEFT_ALT     &trans        &trans      &kp RIGHT_ALT   &ralt_x_left2    &ralt_x_right2    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED)   &mmv MOVE_X(MMV_SLOW_ALT_SPEED)     &kp RIGHT_ALT
                                               &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE        &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &mt RG(RIGHT_BRACKET) RIGHT_ALT
             >;
