@@ -168,7 +168,7 @@
                     label = "ALT_X_LEFT2";
                     #binding-cells = <0>;
                     bindings =
-                        <&mmv MOVE_X(-MMV_SLOW_ALT_SPEED)>,
+                        <&mmv MOVE_Y(-MMV_SLOW_ALT_SPEED)>,
                         <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
         
                     mods = <(MOD_LALT | MOD_RALT)>;
@@ -179,7 +179,7 @@
                     label = "ALT_X_RIGHT2";
                     #binding-cells = <0>;
                     bindings =
-                        <&mmv MOVE_X(MMV_SLOW_ALT_SPEED)>,
+                        <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED)>,
                         <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
         
                     mods = <(MOD_LALT | MOD_RALT)>;
@@ -295,7 +295,7 @@
 &trans          &trans                        &trans                       &trans                        &trans                       &trans                                     &trans          &trans         &trans                &trans                 &trans           &trans
 &msc SCRL_LEFT  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_RIGHT                            &msc SCRL_LEFT  &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN   &msc SCRL_RIGHT
 &none           &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(TAB)                                &kp RG(TAB)     &kp LEFT       &alt_y_up2                &alt_y_down2               &kp RIGHT_ARROW  &none
-&trans          &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LEFT_ALT     &trans        &trans      &kp RIGHT_ALT   &alt_x_left    &alt_y_up2             &alt_y_down2            &alt_x_right     &kp RIGHT_ALT
+&trans          &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LEFT_ALT     &trans        &trans      &kp RIGHT_ALT   &alt_x_left    &alt_x_left2             &alt_x_right2            &alt_x_right     &kp RIGHT_ALT
                                               &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE        &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
