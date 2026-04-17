@@ -168,7 +168,7 @@
                     label = "ALT_X_LEFT2";
                     #binding-cells = <0>;
                     bindings =
-                        <&alt_y_up>,
+                        <&mmv MOVE_X(-MMV_SLOW_ALT_SPEED)>,
                         <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
         
                     mods = <(MOD_LALT | MOD_RALT)>;
@@ -179,7 +179,7 @@
                     label = "ALT_X_RIGHT2";
                     #binding-cells = <0>;
                     bindings =
-                        <&alt_y_down>,
+                        <&mmv MOVE_X(MMV_SLOW_ALT_SPEED)>,
                         <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
         
                     mods = <(MOD_LALT | MOD_RALT)>;
