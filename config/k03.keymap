@@ -149,7 +149,7 @@
                         <&kp UP>,
                         <&mmv MOVE_Y(-MMV_FAST_ALT_SPEED)>;
         
-                    mods = <(MOD_LALT | MOD_RALT)>;
+                    mods = <(MOD_RALT)>;
                 };
         
                 alt_y_down2: alt_y_down2 {
@@ -160,7 +160,7 @@
                         <&kp DOWN>,
                         <&mmv MOVE_Y(MMV_FAST_ALT_SPEED)>;
         
-                    mods = <(MOD_LALT | MOD_RALT)>;
+                    mods = <(MOD_RALT)>;
                 };
         
                 alt_x_left2: alt_x_left2 {
@@ -171,7 +171,7 @@
                         <&mmv MOVE_Y(-MMV_SLOW_ALT_SPEED)>,
                         <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
         
-                    mods = <(MOD_LALT | MOD_RALT)>;
+                    mods = <(MOD_RALT)>;
                 };
         
                 alt_x_right2: alt_x_right2 {
@@ -182,7 +182,7 @@
                         <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED)>,
                         <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
         
-                    mods = <(MOD_LALT | MOD_RALT)>;
+                    mods = <(MOD_RALT)>;
                 };
     };
 
