@@ -249,7 +249,7 @@
 &trans          &trans                        &trans                       &trans                        &trans                       &trans                                     &trans          &trans         &trans                &trans                 &trans           &trans
 &msc SCRL_LEFT  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_RIGHT                            &msc SCRL_LEFT  &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN   &msc SCRL_RIGHT
 &none           &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(TAB)                                &kp RG(TAB)     &kp LEFT       &kp UP                &kp DOWN               &kp RIGHT_ARROW  &none
-&trans          &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LEFT_ALT     &trans        &trans      &kp RIGHT_ALT   &alt_x_left    &alt_y_up             &alt_y_down            &alt_x_right     &mo 7
+&trans          &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LEFT_ALT     &trans        &trans      &kp RIGHT_ALT   &alt_x_left    &alt_y_up             &alt_y_down            &alt_x_right     &kp RIGHT_ALT
                                               &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE        &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
