@@ -146,7 +146,7 @@
                     label = "ALT_Y_UP2";
                     #binding-cells = <0>;
                     bindings =
-                        <&kp UP)>,
+                        <&kp UP>,
                         <&mmv MOVE_Y(-MMV_FAST_ALT_SPEED)>;
         
                     mods = <(MOD_LALT | MOD_RALT)>;
