@@ -288,9 +288,9 @@
             bindings = <
 &trans          &trans                        &trans                       &trans                        &trans                       &trans                                           &trans                 &trans         &trans                &trans                           &trans                           &trans
 &msc SCRL_LEFT  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_RIGHT                                  &msc SCRL_LEFT         &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP                     &msc SCRL_DOWN                   &msc SCRL_RIGHT
-&none           &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(LEFT_BRACKET)                             &kp RG(TAB)            &ralt_y_up2    &ralt_y_down2         &kp DOWN                         &kp RIGHT_ARROW                  &none
+&none           &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(LEFT_BRACKET)                             &kp RG(TAB)            &ralt_y_up2    &ralt_y_down2         &kp DOWN                         &kp RIGHT_ARROW                  &kp RALT
 &trans          &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &kp LG(RIGHT_BRACKET)  &trans        &trans      &kp RG(RIGHT_BRACKET)  &ralt_x_left2  &ralt_x_right2        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED)  &mmv MOVE_X(MMV_SLOW_ALT_SPEED)  &kp RIGHT_ALT
-                                              &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE              &kp DELETE    &kp ESCAPE  &kp CAPSLOCK           &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RIGHT_ALT
+                                              &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE              &kp DELETE    &kp ESCAPE  &kp CAPSLOCK           &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_ALT)
             >;
 
             display-name = "nav-r";
