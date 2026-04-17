@@ -3,7 +3,7 @@
 // Константы для перемещений
 
 #define MMV_SLOW_ALT_SPEED 250
-#define MMV_FAST_ALT_SPEED 920
+#define MMV_FAST_ALT_SPEED 950
 #define MMV_SLOW_SPEED 250
 #define MMV_FAST_SPEED 900
 
@@ -162,7 +162,7 @@
             label = "RALT_X_LEFT2";
             #binding-cells = <0>;
             bindings =
-                <&mmv MOVE_X(-MMV_SLOW_ALT_SPEED)>,
+                <&mmv MOVE_X(-MMV_SLOW_SPEED)>,
                 <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
 
             mods = <(MOD_RALT)>;
@@ -173,7 +173,7 @@
             label = "RALT_X_RIGHT2";
             #binding-cells = <0>;
             bindings =
-                <&mmv MOVE_X(MMV_SLOW_ALT_SPEED)>,
+                <&mmv MOVE_Y(-MMV_SLOW_SPEED)>,
                 <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
 
             mods = <(MOD_RALT)>;
