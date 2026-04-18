@@ -157,65 +157,46 @@
             mods = <(MOD_RALT)>;
         };
 
-        rctrl_x_left_let: rctrl_x_left_let {
+        ralt_x_left2: ralt_x_left2 {
             compatible = "zmk,behavior-mod-morph";
-            label = "RCTRL_X_LEFT2_LET";
+            label = "RALT_X_LEFT2";
             #binding-cells = <0>;
             bindings =
-                <&mt RSHIFT J>,
+                <&mmv MOVE_X(-MMV_SLOW_SPEED)>,
                 <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
 
-            mods = <(MOD_RCTRL)>;
+            mods = <(MOD_RALT)>;
         };
 
-        rctrl_x_right2_let: rctrl_x_right2_let {
+        ralt_x_right2: ralt_x_right2 {
             compatible = "zmk,behavior-mod-morph";
-            label = "RCTRL_X_RIGHT2_LET";
+            label = "RALT_X_RIGHT2";
             #binding-cells = <0>;
             bindings =
-                <&kp K>,
+                <&mmv MOVE_Y(-MMV_SLOW_SPEED)>,
                 <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
-            mods = <(MOD_RCTRL)>;
+
+            mods = <(MOD_RALT)>;
         };
         
-        ralt_y_up2: ralt_y_up2 {
+        rctrl_x_left_let: rctrl_x_left_let {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "RALT_Y_UP2";
-                    #binding-cells = <0>;
-                    bindings = <&kp U>, <&mmv MOVE_Y(-MMV_FAST_ALT_SPEED)>;
-        
-                    mods = <(MOD_RCTRL)>;
-                };
-        
-                ralt_y_down2: ralt_y_down2 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "RALT_Y_DOWN2";
-                    #binding-cells = <0>;
-                    bindings = <&kp I>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED)>;
-        
-                    mods = <(MOD_RCTRL)>;
-                };
-        
-                ralt_x_left2: ralt_x_left2 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "RALT_X_LEFT2";
+                    label = "RCTRL_X_LEFT2_LET";
                     #binding-cells = <0>;
                     bindings =
-                        <&mmv MOVE_X(-MMV_SLOW_SPEED)>,
+                        <&mt RSHIFT J>,
                         <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
-        
-                    mods = <(MOD_RALT)>;
+                    mods = <(MOD_RCTRL)>;
                 };
         
-                ralt_x_right2: ralt_x_right2 {
+                rctrl_x_right2_let: rctrl_x_right2_let {
                     compatible = "zmk,behavior-mod-morph";
-                    label = "RALT_X_RIGHT2";
+                    label = "RCTRL_X_RIGHT2_LET";
                     #binding-cells = <0>;
                     bindings =
-                        <&mmv MOVE_Y(-MMV_SLOW_SPEED)>,
+                        <&mt RALT K>,
                         <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
-        
-                    mods = <(MOD_RALT)>;
+                    mods = <(MOD_RCTRL)>;
                 };
     };
 
@@ -291,7 +272,7 @@
             bindings = <
 &kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9      &kp F10              &kp F11        &kp F12
 &kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I       &kp O                &kp P          &kp GRAVE
-&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &rctrl_x_left_let     &mt RALT K  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
+&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &rctrl_x_left_let     &rctrl_x_right2_let  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
 &lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT              &ctrl_bslh     &lt 7 BSLH
                          &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT  &lt 7 RIGHT_BRACKET
             >;
