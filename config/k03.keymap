@@ -184,7 +184,7 @@
                     label = "RCTRL_X_LEFT2_LET";
                     #binding-cells = <0>;
                     bindings =
-                        <&kp LA(RALT K)>,
+                        <&mt RSHIFT J>,
                         <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
                     mods = <(MOD_RCTRL)>;
                 };
@@ -194,7 +194,7 @@
                     label = "RCTRL_X_RIGHT2_LET";
                     #binding-cells = <0>;
                     bindings =
-                        <&mt RALT K>,
+                        <&kp K>,
                         <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
                     mods = <(MOD_RCTRL)>;
                 };
