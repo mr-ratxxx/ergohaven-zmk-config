@@ -6,11 +6,15 @@
 #define MMV_FAST_ALT_SPEED 950
 #define MMV_SLOW_SPEED 250
 
-#define MMV_FAST_SPEED 900
+#define MMV_FAST_SPEED 1100
+#define MMV_FAST_SPEED_L -MMV_FAST_SPEED      
+#define MMV_FAST_SPEED_U -MMV_FAST_SPEED
+#define MMV_FAST_SPEED_D MMV_FAST_SPEED
+#define MMV_FAST_SPEED_R MMV_FAST_SPEED
 
 #define MMV_SUPER_FAST_SPEED_L -1500
-#define MMV_SUPER_FAST_SPEED_U 1500
-#define MMV_SUPER_FAST_SPEED_D -1500
+#define MMV_SUPER_FAST_SPEED_U -1500
+#define MMV_SUPER_FAST_SPEED_D 1500
 #define MMV_SUPER_FAST_SPEED_R 1500
 
 #include <behaviors.dtsi>
@@ -336,7 +340,7 @@
 &trans          &trans                        &trans                       &trans                        &trans                       &trans                                     &trans          &trans         &trans                &trans                           &trans                           &trans
 &msc SCRL_LEFT  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_RIGHT                            &msc SCRL_LEFT  &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP                     &msc SCRL_DOWN                   &msc SCRL_RIGHT
 &none           &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(TAB)                                &kp RG(TAB)     &kp LEFT    &ralt_y_up3         &ralt_y_down3                         &kp RIGHT_ARROW                  &kp RALT
-&trans          &mmv MOVE_X(-MMV_FAST_SPEED)  &mmv MOVE_Y(MMV_FAST_SPEED)  &mmv MOVE_Y(-MMV_FAST_SPEED)  &mmv MOVE_X(MMV_FAST_SPEED)  &none            &trans        &trans      &kp RALT        &mmv MOVE_X(-MMV_SLOW_SPEED)  &ralt_x_left3        &ralt_x_right3  &mmv MOVE_X(MMV_SLOW_ALT_SPEED)  &kp RIGHT_ALT
+&trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none            &trans        &trans      &kp RALT        &mmv MOVE_X(-MMV_SLOW_SPEED)  &ralt_x_left3        &ralt_x_right3  &mmv MOVE_X(MMV_SLOW_ALT_SPEED)  &kp RIGHT_ALT
                                               &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE        &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
