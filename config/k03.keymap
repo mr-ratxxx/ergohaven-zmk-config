@@ -15,13 +15,6 @@
 #define MMV_FAST_ALT_SPEED_D MMV_FAST_ALT_SPEED_X
 #define MMV_FAST_ALT_SPEED_R MMV_FAST_ALT_SPEED_Y
 
-#define MMV_SLOW_SPEED_X 250
-#define MMV_SLOW_SPEED_Y 250
-#define MMV_SLOW_SPEED_L -MMV_SLOW_SPEED_X
-#define MMV_SLOW_SPEED_U -MMV_SLOW_SPEED_Y
-#define MMV_SLOW_SPEED_D MMV_SLOW_SPEED_X
-#define MMV_SLOW_SPEED_R MMV_SLOW_SPEED_Y
-
 #define MMV_FAST_SPEED 1200
 #define MMV_FAST_SPEED_L -MMV_FAST_SPEED
 #define MMV_FAST_SPEED_U -MMV_FAST_SPEED
@@ -120,51 +113,7 @@
             bindings = <&msc SCRL_DOWN>, <&msc MOVE_Y(-50)>;
 
             mods = <(MOD_LSFT | MOD_RSFT)>;
-        };
-
-        alt_y_up: alt_y_up {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_Y_UP";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)>,
-                <&mmv MOVE_Y(-MMV_FAST_ALT_SPEED)>;
-
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
-
-        alt_y_down: alt_y_down {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_Y_DOWN";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED)>,
-                <&mmv MOVE_Y(MMV_FAST_ALT_SPEED)>;
-
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
-
-        alt_x_left: alt_x_left {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_X_LEFT";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)>,
-                <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
-
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
-
-        alt_x_right: alt_x_right {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_X_RIGHT";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)>,
-                <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
-
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
+        };        
 
         ralt_y_up3: ralt_y_up3 {
             compatible = "zmk,behavior-mod-morph";
@@ -189,7 +138,7 @@
             label = "RALT_X_LEFT3";
             #binding-cells = <0>;
             bindings =
-                <&mmv MOVE_Y(MMV_SLOW_SPEED_U)>,
+                <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)>,
                 <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
 
             mods = <(MOD_RALT)>;
