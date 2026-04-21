@@ -7,27 +7,23 @@
 #define MMV_SLOW_ALT_SPEED_U -MMV_SLOW_ALT_SPEED
 #define MMV_SLOW_ALT_SPEED_D MMV_SLOW_ALT_SPEED
 #define MMV_SLOW_ALT_SPEED_R MMV_SLOW_ALT_SPEED
-
 #define MMV_FAST_ALT_SPEED_X 950
 #define MMV_FAST_ALT_SPEED_Y 950
 #define MMV_FAST_ALT_SPEED_L -MMV_FAST_ALT_SPEED_X
 #define MMV_FAST_ALT_SPEED_U -MMV_FAST_ALT_SPEED_Y
 #define MMV_FAST_ALT_SPEED_D MMV_FAST_ALT_SPEED_X
 #define MMV_FAST_ALT_SPEED_R MMV_FAST_ALT_SPEED_Y
-
 #define MMV_SLOW_SPEED_X 250
 #define MMV_SLOW_SPEED_Y 250
 #define MMV_SLOW_SPEED_L -MMV_SLOW_SPEED_X
 #define MMV_SLOW_SPEED_U -MMV_SLOW_SPEED_Y
 #define MMV_SLOW_SPEED_D MMV_SLOW_SPEED_X
 #define MMV_SLOW_SPEED_R MMV_SLOW_SPEED_Y
-
 #define MMV_FAST_SPEED 1200
-#define MMV_FAST_SPEED_L -MMV_FAST_SPEED      
+#define MMV_FAST_SPEED_L -MMV_FAST_SPEED
 #define MMV_FAST_SPEED_U -MMV_FAST_SPEED
 #define MMV_FAST_SPEED_D MMV_FAST_SPEED
 #define MMV_FAST_SPEED_R MMV_FAST_SPEED
-
 #define MMV_SUPER_FAST_SPEED 1700
 #define MMV_SUPER_FAST_SPEED_L -MMV_SUPER_FAST_SPEED
 #define MMV_SUPER_FAST_SPEED_U -MMV_SUPER_FAST_SPEED
@@ -205,47 +201,46 @@
 
             mods = <(MOD_RALT)>;
         };
-        
-        
+
         ralt_y_up3: ralt_y_up3 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "RALT_Y_UP3";
-                    #binding-cells = <0>;
-                    bindings = <&kp UP>,
-                    <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;        
-                    mods = <(MOD_RALT)>;
-                };
-        
-                ralt_y_down3: ralt_y_down3 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "RALT_Y_DOWN3";
-                    #binding-cells = <0>;
-                    bindings = <&kp DOWN>, 
-                    <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;        
-                    mods = <(MOD_RALT)>;
-                };
-        
-                ralt_x_left3: ralt_x_left3 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "RALT_X_LEFT3";
-                    #binding-cells = <0>;
-                    bindings =
-                        <&mmv MOVE_Y(MMV_SLOW_SPEED_U)>,
-                        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
-        
-                    mods = <(MOD_RALT)>;
-                };
-        
-                ralt_x_right3: ralt_x_right3 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "RALT_X_RIGHT3";
-                    #binding-cells = <0>;
-                    bindings =
-                        <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_R)>,
-                        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
-        
-                    mods = <(MOD_RALT)>;
-                };
+            compatible = "zmk,behavior-mod-morph";
+            label = "RALT_Y_UP3";
+            #binding-cells = <0>;
+            bindings = <&kp UP>, <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+
+            mods = <(MOD_RALT)>;
+        };
+
+        ralt_y_down3: ralt_y_down3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RALT_Y_DOWN3";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN>, <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+
+            mods = <(MOD_RALT)>;
+        };
+
+        ralt_x_left3: ralt_x_left3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RALT_X_LEFT3";
+            #binding-cells = <0>;
+            bindings =
+                <&mmv MOVE_Y(MMV_SLOW_SPEED_U)>,
+                <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
+
+            mods = <(MOD_RALT)>;
+        };
+
+        ralt_x_right3: ralt_x_right3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RALT_X_RIGHT3";
+            #binding-cells = <0>;
+            bindings =
+                <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_R)>,
+                <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+
+            mods = <(MOD_RALT)>;
+        };
     };
 
     combos {
@@ -354,11 +349,11 @@
 
         nav-r {
             bindings = <
-&trans          &trans                        &trans                       &trans                        &trans                       &trans                                     &trans          &trans         &trans                &trans                           &trans                           &trans
-&msc SCRL_LEFT  &msc SCRL_DOWN                &msc SCRL_UP                 &kp PAGE_DOWN                 &kp PAGE_UP                  &msc SCRL_RIGHT                            &msc SCRL_LEFT  &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP                     &msc SCRL_DOWN                   &msc SCRL_RIGHT
-&none           &kp LGUI                      &kp LCTRL                    &kp LALT                      &kp LSHFT                    &kp LG(TAB)                                &kp RG(TAB)     &kp LEFT    &ralt_y_up3         &ralt_y_down3                         &kp RIGHT_ARROW                  &kp RALT
-&trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none            &trans        &trans      &kp RALT        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &ralt_x_left3        &ralt_x_right3  &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp RIGHT_ALT
-                                              &kp LG(LEFT_BRACKET)         &kp LG(RIGHT_BRACKET)         &kp TAB                      &kp SPACE        &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+&trans          &trans                         &trans                         &trans                         &trans                         &trans                                     &trans          &trans                             &trans                &trans                 &trans                             &trans
+&msc SCRL_LEFT  &msc SCRL_DOWN                 &msc SCRL_UP                   &kp PAGE_DOWN                  &kp PAGE_UP                    &msc SCRL_RIGHT                            &msc SCRL_LEFT  &kp PG_UP                          &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN                     &msc SCRL_RIGHT
+&none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)                                &kp RG(TAB)     &kp LEFT                           &ralt_y_up3           &ralt_y_down3          &kp RIGHT_ARROW                    &kp RALT
+&trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none            &trans        &trans      &kp RALT        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &ralt_x_left3         &ralt_x_right3         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp RIGHT_ALT
+                                               &kp LG(LEFT_BRACKET)           &kp LG(RIGHT_BRACKET)          &kp TAB                        &kp SPACE        &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE                      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
 
             display-name = "nav-r";
@@ -378,11 +373,11 @@
 
         num {
             bindings = <
-&kp MINUS  &kp N1       &kp N2        &kp N3       &kp N4        &kp N5                            &kp N6        &kp N7         &kp N8            &kp N9        &kp N0       &kp EQUAL
-&trans     &kp MINUS    &kp N9        &kp N8       &kp N7        &kp PLUS                          &kp PLUS      &kp N7         &kp N8            &kp N9        &kp MINUS    &none
-&trans     &mt LGUI N0  &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp MINUS                         &kp MINUS     &mt RSHIFT N4  &mt RIGHT_ALT N5  &mt RCTRL N6  &mt RGUI N0  &none
-&trans     &kp EQUAL    &kp N3        &kp N2       &kp N1        &kp EQUAL  &trans        &trans   &kp EQUAL     &kp N1         &kp N2            &kp N3        &kp EQUAL    &mo 7
-                        &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans            &trans
+&kp MINUS  &kp N1         &kp N2        &kp N3       &kp N4        &kp N5                            &kp N6        &kp N7         &kp N8            &kp N9        &kp N0         &kp EQUAL
+&trans     &kp LS(MINUS)  &kp N9        &kp N8       &kp N7        &kp PLUS                          &kp PLUS      &kp N7         &kp N8            &kp N9        &kp RS(MINUS)  &none
+&trans     &mt LGUI N0    &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp MINUS                         &kp MINUS     &mt RSHIFT N4  &mt RIGHT_ALT N5  &mt RCTRL N6  &mt RGUI N0    &none
+&trans     &kp PERIOD     &kp N3        &kp N2       &kp N1        &kp EQUAL  &trans        &trans   &kp EQUAL     &kp N1         &kp N2            &kp N3        &kp PERIOD     &mo 7
+                          &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans            &trans
             >;
 
             label = "num";
