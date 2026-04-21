@@ -170,7 +170,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RALT_Y_UP2";
             #binding-cells = <0>;
-            bindings = <&kp LEFT>, <&mmv MOVE_Y(-MMV_FAST_ALT_SPEED)>;
+            bindings = <&kp LEFT>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED_U)>;
 
             mods = <(MOD_RALT)>;
         };
@@ -179,7 +179,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RALT_Y_DOWN2";
             #binding-cells = <0>;
-            bindings = <&kp UP>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED)>;
+            bindings = <&kp UP>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED_D)>;
 
             mods = <(MOD_RALT)>;
         };
@@ -190,7 +190,7 @@
             #binding-cells = <0>;
             bindings =
                 <&mmv MOVE_X(MMV_SLOW_SPEED_L)>,
-                <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
+                <&mmv MOVE_X(MMV_FAST_ALT_SPEED_L)>;
 
             mods = <(MOD_RALT)>;
         };
@@ -201,7 +201,7 @@
             #binding-cells = <0>;
             bindings =
                 <&mmv MOVE_Y(MMV_SLOW_SPEED_U)>,
-                <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
+                <&mmv MOVE_X(MMV_FAST_ALT_SPEED_R)>;
 
             mods = <(MOD_RALT)>;
         };
