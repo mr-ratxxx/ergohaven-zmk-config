@@ -5,9 +5,13 @@
 #define MMV_SLOW_ALT_SPEED 250
 #define MMV_FAST_ALT_SPEED 950
 #define MMV_SLOW_SPEED 250
+
 #define MMV_FAST_SPEED 900
 
-#define MMV_SUPER_FAST_SPEED 1500
+#define MMV_SUPER_FAST_SPEED_L -1500
+#define MMV_SUPER_FAST_SPEED_U 1500
+#define MMV_SUPER_FAST_SPEED_D -1500
+#define MMV_SUPER_FAST_SPEED_R 1500
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -186,8 +190,8 @@
                     compatible = "zmk,behavior-mod-morph";
                     label = "RALT_Y_UP3";
                     #binding-cells = <0>;
-                    bindings = <&kp UP>, <&mmv MOVE_Y(-MMV_FAST_ALT_SPEED)>;
-        
+                    bindings = <&kp UP>,
+                    <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;        
                     mods = <(MOD_RALT)>;
                 };
         
@@ -195,8 +199,8 @@
                     compatible = "zmk,behavior-mod-morph";
                     label = "RALT_Y_DOWN3";
                     #binding-cells = <0>;
-                    bindings = <&kp DOWN>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED)>;
-        
+                    bindings = <&kp DOWN>, 
+                    <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;        
                     mods = <(MOD_RALT)>;
                 };
         
@@ -206,7 +210,7 @@
                     #binding-cells = <0>;
                     bindings =
                         <&mmv MOVE_Y(-MMV_SLOW_SPEED)>,
-                        <&mmv MOVE_X(-MMV_FAST_ALT_SPEED)>;
+                        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
         
                     mods = <(MOD_RALT)>;
                 };
@@ -217,7 +221,7 @@
                     #binding-cells = <0>;
                     bindings =
                         <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED)>,
-                        <&mmv MOVE_X(MMV_FAST_ALT_SPEED)>;
+                        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
         
                     mods = <(MOD_RALT)>;
                 };
