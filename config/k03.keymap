@@ -166,46 +166,6 @@
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
-        ralt_y_up2: ralt_y_up2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_Y_UP2";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED_U)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_y_down2: ralt_y_down2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_Y_DOWN2";
-            #binding-cells = <0>;
-            bindings = <&kp UP>, <&mmv MOVE_Y(MMV_FAST_ALT_SPEED_D)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_x_left2: ralt_x_left2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_X_LEFT2";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_X(MMV_SLOW_SPEED_L)>,
-                <&mmv MOVE_X(MMV_FAST_ALT_SPEED_L)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_x_right2: ralt_x_right2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_X_RIGHT2";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_Y(MMV_SLOW_SPEED_U)>,
-                <&mmv MOVE_X(MMV_FAST_ALT_SPEED_R)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
         ralt_y_up3: ralt_y_up3 {
             compatible = "zmk,behavior-mod-morph";
             label = "RALT_Y_UP3";
