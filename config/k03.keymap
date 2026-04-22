@@ -119,7 +119,7 @@
                             compatible = "zmk,behavior-mod-morph";
                             label = "ALT_BSLH";
                             #binding-cells = <0>;
-                            bindings = <&kp BSLH>, <&lt 7>;
+                            bindings = <&kp BSLH>, <&mo 3>;
                             mods = <(MOD_LALT | MOD_RALT)>;
                         };                                                                        
 
