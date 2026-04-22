@@ -114,12 +114,12 @@
                             mods = <(MOD_LALT | MOD_RALT)>;
                         };
                         
-                // \ alt-to7
+                // \ alt-lt7
                 alt_bslh: alt_bslh {
                             compatible = "zmk,behavior-mod-morph";
                             label = "ALT_BSLH";
                             #binding-cells = <0>;
-                            bindings = <&kp BSLH>, <&to 7>;
+                            bindings = <&kp BSLH>, <&lt 7>;
                             mods = <(MOD_LALT | MOD_RALT)>;
                         };                                                                        
 
