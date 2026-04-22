@@ -78,7 +78,7 @@
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
         
-        //en.
+        //ru-en alt-en точка
         alt_ru_en_dot: alt_ru_en_dot {
                     compatible = "zmk,behavior-mod-morph";
                     label = "ALT_RU_EN_DOT";
