@@ -1,25 +1,32 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
 // Константы для перемещений
+
 #define MMV_SLOW_ALT_SPEED 250
 #define MMV_SLOW_ALT_SPEED_L -250
 #define MMV_SLOW_ALT_SPEED_U -250
 #define MMV_SLOW_ALT_SPEED_D 250
 #define MMV_SLOW_ALT_SPEED_R 250
+
 //
+
 #define MMV_FAST_ALT_SPEED_X 950
 #define MMV_FAST_ALT_SPEED_Y 950
 #define MMV_FAST_ALT_SPEED_L -950
 #define MMV_FAST_ALT_SPEED_U -950
 #define MMV_FAST_ALT_SPEED_D 950
 #define MMV_FAST_ALT_SPEED_R 950
+
 //
+
 #define MMV_FAST_SPEED 1200
 #define MMV_FAST_SPEED_L -1200
 #define MMV_FAST_SPEED_U -1200
 #define MMV_FAST_SPEED_D 1200
 #define MMV_FAST_SPEED_R 1200
+
 //
+
 #define MMV_SUPER_FAST_SPEED_X 1700
 #define MMV_SUPER_FAST_SPEED_Y 1400
 #define MMV_SUPER_FAST_SPEED_L -MMV_SUPER_FAST_SPEED_X
@@ -226,11 +233,11 @@
 
         base {
             bindings = <
-&kp ESC      &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9      &kp F10              &kp F11        &kp F12
-&kp LG(TAB)  &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I       &kp O                &kp P          &kp GRAVE
-&none        &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
-&lt 7 ENTER  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT              &ctrl_bslh     &lt 7 BSLH
-                         &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT  &lt 7 RIGHT_BRACKET
+&kp ESC                &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9      &kp F10              &kp F11        &kp F12
+&kp LG(TAB)            &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I       &kp O                &kp P          &kp GRAVE
+&kp LG(LEFT_BRACKET)   &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L          &mt RGUI SEMI  &kp SQT
+&kp LG(RIGHT_BRACKET)  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &kp COMMA   &kp DOT              &ctrl_bslh     &lt 7 BSLH
+                                   &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT  &lt 7 RIGHT_BRACKET
             >;
 
             display-name = "base";
