@@ -20,7 +20,7 @@
 //
 
 #define MMV_FAST_SPEED_X 1200
-#define MMV_FAST_SPEED_Y 1200
+#define MMV_FAST_SPEED_Y 800
 #define MMV_FAST_SPEED_L -MMV_FAST_SPEED_X
 #define MMV_FAST_SPEED_U -MMV_FAST_SPEED_Y
 #define MMV_FAST_SPEED_D MMV_FAST_SPEED_Y
@@ -293,7 +293,7 @@
 &trans          &trans                             &trans                             &trans                             &trans                             &trans                                  &trans          &trans                        &trans                        &trans                       &trans                       &trans
 &msc SCRL_LEFT  &msc SCRL_DOWN                     &msc SCRL_UP                       &kp PAGE_DOWN                      &kp PG_UP                          &msc SCRL_RIGHT                         &msc SCRL_LEFT  &kp PAGE_UP                   &kp PAGE_DOWN                 &msc SCRL_UP                 &msc SCRL_DOWN               &msc SCRL_RIGHT
 &none           &kp LEFT                           &kp DOWN                           &kp UP                             &kp RIGHT_ARROW                    &kp LG(TAB)                             &none           &kp RSHFT                     &kp RALT                      &kp RCTRL                    &kp RGUI                     &none
-&trans          &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)  &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp LEFT_ALT     &trans        &none    &kp RIGHT_ALT   &mmv MOVE_X(-MMV_FAST_SPEED_R)  &mmv MOVE_Y(-MMV_FAST_SPEED_U)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_X(MMV_FAST_SPEED_L)  &kp RIGHT_ALT
+&trans          &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)  &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp LEFT_ALT     &trans        &none    &kp RIGHT_ALT   &mmv MOVE_X(MMV_FAST_SPEED_R)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_X(MMV_FAST_SPEED_L)  &kp RIGHT_ALT
                                                    &kp LG(LEFT_BRACKET)               &kp LG(RIGHT_BRACKET)              &kp TAB                            &kp SPACE        &kp DELETE    &kp ESC  &kp CAPSLOCK    &kp BACKSPACE                 &kp RG(LEFT_BRACKET)          &kp RG(RIGHT_BRACKET)
             >;
 
