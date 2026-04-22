@@ -114,7 +114,7 @@
                             mods = <(MOD_LALT | MOD_RALT)>;
                         };
                         
-                // \ alt-lt7
+                // bslh-\ alt-lt7
                 alt_bslh: alt_bslh {
                             compatible = "zmk,behavior-mod-morph";
                             label = "ALT_BSLH";
