@@ -82,7 +82,7 @@
                     compatible = "zmk,behavior-mod-morph";
                     label = "ALT_DOTCOMMA";
                     #binding-cells = <0>;
-                    bindings = <&kp DOT>, <&kp RS(N7)>
+                    bindings = <&kp DOT>, <&kp RS(N7)>;
                     mods = <(MOD_LALT | MOD_RALT)>;
                 };
 
