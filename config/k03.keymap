@@ -115,13 +115,14 @@
                         };
                         
                 // bslh-\ alt-lt7
-                alt_bslh: alt_bslh {
-                            compatible = "zmk,behavior-mod-morph";
-                            label = "ALT_BSLH";
-                            #binding-cells = <0>;
-                            bindings = <&kp BSLH>, <&mo 3>;
-                            mods = <(MOD_LALT | MOD_RALT)>;
-                        };                                                                        
+                //alt_bslh: alt_bslh {
+                //            compatible = "zmk,behavior-mod-morph";
+                //            label = "ALT_BSLH";
+                //            #binding-cells = <0>;
+                //            bindings = <&kp BSLH>, <&mo 3>;
+                //            mods = <(MOD_LALT | MOD_RALT)>;
+                //        };               
+                                                                                      
 
         ctrl_left_bracket: ctrl_left_bracket {
             compatible = "zmk,behavior-mod-morph";
@@ -282,7 +283,7 @@
 &kp ESC                &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                   &kp F7               &kp F8           &kp F9      &kp F10              &kp F11        &kp F12
 &kp LG(TAB)            &kp Q       &kp W        &kp E        &kp R        &kp T                                    &kp Y                &kp U            &kp I       &kp O                &kp P          &kp GRAVE
 &kp LG(LEFT_BRACKET)   &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                    &kp H                &mt RSHIFT J     &mt RALT K  &mt RCTRL L          &alt_ru_en_semi  &alt_ru_en_sqt
-&kp LG(RIGHT_BRACKET)  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &alt_ru_en_comma   &alt_ru_en_dot              &ctrl_bslh     &alt_bslh
+&kp LG(RIGHT_BRACKET)  &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 ENTER    &lt 7 ENTER  &kp N                &kp M            &alt_ru_en_comma   &alt_ru_en_dot              &ctrl_bslh     &kp BSLH
                                    &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL      &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT  &lt 7 RIGHT_BRACKET
             >;
 
