@@ -284,10 +284,10 @@
             bindings = <&kp CAPS>;
             key-positions = <44 45>;
         };
-
-        l-gui-tab {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <13 14>;
+        
+        shift_toggle {
+           bindings = <&kt LSHIFT>;
+           key-positions = <31 28>;
         };
     };
 
