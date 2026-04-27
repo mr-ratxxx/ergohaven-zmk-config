@@ -334,7 +334,7 @@
         nav-r {
             bindings = <
             
-            /* ряд 1 L*/
+/* ряд 1 L*/
 &trans          &trans                         &trans                         &trans                         &trans                         &trans
 /* ряд 1 R*/                                     
 &trans          &trans                             &trans                &trans                 &trans                             &trans
@@ -350,7 +350,9 @@
 &kp RG(TAB)     &kp LEFT_ARROW          &kp UP           &kp DOWN          &kp RIGHT_ARROW                    &kp RALT
                           
 /* ряд 4 L*/                          
-&trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none &trans
+&trans
+&mmv MOVE_X(MMV_FAST_SPEED_L)
+&mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none &trans
 /* ряд 4 R*/
 &trans      &kt RALT        &ralt_x_left3  &ralt_y_up3   &ralt_y_down3    &ralt_x_right3  &kp RIGHT_ALT
             
