@@ -181,8 +181,7 @@
             label = "ALT_SCRL_DOWN";
             #binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc MOVE_Y(-50)>;
-
-            mods = <(MOD_LSFT | MOD_RSFT)>;
+             mods = <(MOD_RALT)>;
         };
 
         ralt_y_up3: ralt_y_up3 {
@@ -342,7 +341,7 @@
 /* ряд 2 L*/
 &msc SCRL_LEFT  &msc SCRL_DOWN                 &msc SCRL_UP                   &kp PAGE_DOWN                  &kp PAGE_UP                    &msc SCRL_RIGHT   
 /* ряд 2 R*/
-&msc SCRL_LEFT  &kp PG_UP                          &kp PAGE_DOWN         &alt_scrl_up           &msc SCRL_DOWN                     &msc SCRL_RIGHT
+&msc SCRL_LEFT  &kp PG_UP                          &kp PAGE_DOWN         &alt_scrl_up           &alt_scrl_down                     &msc SCRL_RIGHT
 
 /* ряд 3 L*/
 &none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)      
