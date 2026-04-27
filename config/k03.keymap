@@ -368,11 +368,11 @@
 
         symb {
             bindings = <
-&kp LS(MINUS)      &kp LS(N1)         &kp LS(N2)            &kp LS(N3)             &kp LS(N4)        &kp LS(N5)                            &kp RS(N6)    &kp RS(N7)         &kp RS(N8)       &kp RS(N9)        &kp RS(N0)       &kp RS(EQUAL)
-&trans             &kp LEFT_BRACKET   &kp LS(N9)            &kp LS(N8)             &kp LS(N7)        &kp ESCAPE                            &kp MINUS     &kp RS(N6)         &kp RS(N7)       &kp RS(N8)        &kp RS(N5)       &kp RS(N2)
-&kp DOUBLE_QUOTES  &mt LS(N0) LWIN    &mt LS(N6) LCTRL      &mt LS(N5) LALT        &mt RS(N4) LSHFT  &kp CAPSLOCK                          &kp EQUAL     &mt RS(N5) RSHIFT  &mt RS(N6) RALT  &mt RS(N7) RCTRL  &mt RS(N8) RWIN  &kp SINGLE_QUOTE
-&trans             &kp RIGHT_BRACKET  &kp RS(N3)            &kp RS(N2)             &kp RS(N1)        &kp BACKSPACE  &trans        &trans   &kp SLASH     &kp RS(N1)         &kp RS(N2)       &kp RS(N3)        &kp RS(N4)       &kp BACKSLASH
-                                      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB           &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE      &kp RS(N9)       &kp RS(N9)
+&kp LS(MINUS)      &kp LS(N1)         &kp LS(N2)            &kp LS(N3)             &kp LS(N4)        &kp LS(N5)                            &kp RS(N6)    &kp RS(N7)         &kp RS(N8)            &kp RS(N9)             &kp RS(N0)       &kp RS(EQUAL)
+&trans             &kp LEFT_BRACKET   &kp LS(N9)            &kp LS(N8)             &kp LS(N7)        &kp ESCAPE                            &kp MINUS     &kp RS(N6)         &kp RS(N7)            &kp RS(N8)             &kp RS(N5)       &kp RS(N2)
+&kp DOUBLE_QUOTES  &mt LS(N0) LWIN    &mt LS(N6) LCTRL      &mt LS(N5) LALT        &mt RS(N4) LSHFT  &kp CAPSLOCK                          &kp EQUAL     &mt RS(N5) RSHIFT  &mt RS(N6) RALT       &mt RS(N7) RCTRL       &mt RS(N8) RWIN  &kp SINGLE_QUOTE
+&trans             &kp RIGHT_BRACKET  &kp RS(N3)            &kp RS(N2)             &kp RS(N1)        &kp BACKSPACE  &trans        &trans   &kp SLASH     &kp RS(N1)         &kp RS(N2)            &kp RS(N3)             &kp RS(N4)       &kp BACKSLASH
+                                      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB           &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
 
             label = "symb";
