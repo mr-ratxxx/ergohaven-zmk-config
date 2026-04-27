@@ -332,29 +332,13 @@
 
         nav-r {
             bindings = <
-            /* ряд 1 */
-&trans          &trans                         &trans                         &trans                         &trans                         &trans                                     &trans          &trans                             &trans                &trans                 &trans                             &trans
-
-/* ряд 2 left*/
-&msc SCRL_LEFT  &msc SCRL_DOWN                 &msc SCRL_UP                   &kp PAGE_DOWN                  &kp PAGE_UP                    &msc SCRL_RIGHT &msc SCRL_LEFT
-/* ряд 2 right*/
- &kp PG_UP                          &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN                     &msc SCRL_RIGHT
-
-/* ряд 3 left*/
-&none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)
-/* ряд 3 right*/
-&kp RG(TAB)     &ralt_y_up3      &ralt_y_down3      &kp DOWN          &kp RIGHT_ARROW                    &kp RALT
-
-/* ряд 4 left*/
-&trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_X(MMV_FAST_SPEED_R)
-/* ряд 4 right*/ 
- &none            &trans        &trans      &kp RALT  &ralt_x_left3         &ralt_x_right3     &mmv MOVE_X(MMV_SLOW_ALT_SPEED_D)    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp RIGHT_ALT
-
-/* ряд 5 left*/
-&kp LG(LEFT_BRACKET)           &kp LG(RIGHT_BRACKET)          &kp TAB                        &kp SPACE        &kp DELETE    
-/* ряд 5 left*/
-&kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE                      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+&trans          &trans                         &trans                         &trans                         &trans                         &trans                                     &trans          &trans         &trans                &trans                             &trans                             &trans
+&msc SCRL_LEFT  &msc SCRL_DOWN                 &msc SCRL_UP                   &kp PAGE_DOWN                  &kp PAGE_UP                    &msc SCRL_RIGHT                            &msc SCRL_LEFT  &kp PG_UP      &kp PAGE_DOWN         &msc SCRL_UP                       &msc SCRL_DOWN                     &msc SCRL_RIGHT
+&none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)                                &kp RG(TAB)     &ralt_y_up3    &ralt_y_down3         &kp DOWN                           &kp RIGHT_ARROW                    &kp RALT
+&trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none            &trans        &trans      &kt RALT        &ralt_x_left3  &ralt_x_right3        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_D)  &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp RIGHT_ALT
+                                               &kp LG(LEFT_BRACKET)           &kp LG(RIGHT_BRACKET)          &kp TAB                        &kp SPACE        &kp DELETE    &kp ESCAPE  &kp CAPSLOCK    &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
+
             display-name = "nav-r";
         };
 
@@ -384,18 +368,13 @@
 
         symb {
             bindings = <
-        /* ряд 1 */
-        &kp LS(MINUS)      &kp LS(N1)         &kp LS(N2)            &kp LS(N3)             &kp LS(N4)        &kp LS(N5)                            &kp RS(N6)    &kp RS(N7)         &kp RS(N8)            &kp RS(N9)             &kp RS(N0)       &kp RS(EQUAL)
-        /* ряд 2 - первые 6 зеркально последним 6 */
-        &kp RS(N2)         &kp RS(N5)         &kp RS(N8)            &kp RS(N7)             &kp RS(N6)        &kp MINUS                             &kp MINUS     &kp RS(N6)         &kp RS(N7)            &kp RS(N8)             &kp RS(N5)       &kp RS(N2)
-        /* ряд 3 - первые 6 зеркально последним 6 */
-        &kp SINGLE_QUOTE   &mt RS(N8) RWIN    &mt RS(N7) RCTRL      &mt RS(N6) RALT        &mt RS(N5) RSHIFT &kp EQUAL                             &kp EQUAL     &mt RS(N5) RSHIFT  &mt RS(N6) RALT       &mt RS(N7) RCTRL       &mt RS(N8) RWIN  &kp SINGLE_QUOTE
-        /* ряд 4 - первые 6 зеркально последним 6 */
-        &kp BACKSLASH      &kp RS(N4)         &kp RS(N3)            &kp RS(N2)             &kp RS(N1)        &kp SLASH                             &trans        &trans             &kp SLASH             &kp RS(N1)             &kp RS(N2)       &kp RS(N3)            &kp RS(N4)       &kp BACKSLASH
-        /* ряд 5 */
-        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB           &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LS(MINUS)     &kp LS(N1)       &kp LS(N2)            &kp LS(N3)             &kp LS(N4)         &kp LS(N5)                         &kp RS(N6)    &kp RS(N7)         &kp RS(N8)            &kp RS(N9)             &kp RS(N0)       &kp RS(EQUAL)
+&kp RS(N2)        &kp RS(N5)       &kp RS(N8)            &kp RS(N7)             &kp RS(N6)         &kp MINUS                          &kp MINUS     &kp RS(N6)         &kp RS(N7)            &kp RS(N8)             &kp RS(N5)       &kp RS(N2)
+&kp SINGLE_QUOTE  &mt RS(N8) RWIN  &mt RS(N7) RCTRL      &mt RS(N6) RALT        &mt RS(N5) RSHIFT  &kp EQUAL                          &kp EQUAL     &mt RS(N5) RSHIFT  &mt RS(N6) RALT       &mt RS(N7) RCTRL       &mt RS(N8) RWIN  &kp SINGLE_QUOTE
+&kp BACKSLASH     &kp RS(N4)       &kp RS(N3)            &kp RS(N2)             &kp RS(N1)         &kp SLASH   &trans        &trans   &kp SLASH     &kp RS(N1)         &kp RS(N2)            &kp RS(N3)             &kp RS(N4)       &kp BACKSLASH
+                                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB            &kp SPACE   &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
-        
+
             label = "symb";
         };
 
