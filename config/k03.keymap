@@ -335,11 +335,15 @@
             /* ряд 1 */
 &trans          &trans                         &trans                         &trans                         &trans                         &trans                                     &trans          &trans                             &trans                &trans                 &trans                             &trans
 
-/* ряд 2 */
-&msc SCRL_LEFT  &msc SCRL_DOWN                 &msc SCRL_UP                   &kp PAGE_DOWN                  &kp PAGE_UP                    &msc SCRL_RIGHT                            &msc SCRL_LEFT  &kp PG_UP                          &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN                     &msc SCRL_RIGHT
+/* ряд 2 left*/
+&msc SCRL_LEFT  &msc SCRL_DOWN                 &msc SCRL_UP                   &kp PAGE_DOWN                  &kp PAGE_UP                    &msc SCRL_RIGHT &msc SCRL_LEFT
+/* ряд 2 right*/
+ &kp PG_UP                          &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN                     &msc SCRL_RIGHT
 
-/* ряд 3 */
-&none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)                                &kp RG(TAB)     &ralt_y_up3      &ralt_y_down3      &kp DOWN          &kp RIGHT_ARROW                    &kp RALT
+/* ряд 3 left*/
+&none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)
+/* ряд 3 right*/
+&kp RG(TAB)     &ralt_y_up3      &ralt_y_down3      &kp DOWN          &kp RIGHT_ARROW                    &kp RALT
 
 /* ряд 4 left*/
 &trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_X(MMV_FAST_SPEED_R)
