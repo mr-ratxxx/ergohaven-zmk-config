@@ -210,7 +210,7 @@
             label = "RALT_X_LEFT3";
             #binding-cells = <0>;
             bindings =
-                <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_L)>,
+                <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)>,
                 <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
 
             mods = <(MOD_RALT)>;
@@ -221,9 +221,8 @@
             label = "RALT_X_RIGHT3";
             #binding-cells = <0>;
             bindings =
-                <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_R)>,
+                <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)>,
                 <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
-
             mods = <(MOD_RALT)>;
         };
     };
@@ -348,7 +347,7 @@
 /* ряд 3 L*/
 &none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)      
 /* ряд 3 R*/                          
-                          &kp RG(TAB)     &kp LEFT                           &ralt_y_up3           &ralt_y_down3          &kp RIGHT_ARROW                    &kp RALT
+&kp RG(TAB)     &kp LEFT_ARROW          &kp UP           &kp DOWN          &kp RIGHT_ARROW                    &kp RALT
                           
 /* ряд 4 L*/                          
 &trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none &trans
