@@ -353,7 +353,7 @@
 /* ряд 4 L*/                          
 &trans          &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none &trans
 /* ряд 4 R*/
-&trans      &kt RALT        &ralt_x_left3  &ralt_x_up3    &&ralt_x_down3    &ralt_x_right3  &kp RIGHT_ALT
+&trans      &kt RALT        &ralt_x_left3  &ralt_x_up3    &ralt_x_down3    &ralt_x_right3  &kp RIGHT_ALT
             
 /* ряд 5 L*/            
 &kp LG(LEFT_BRACKET)           &kp LG(RIGHT_BRACKET)          &kp TAB                        &kp SPACE        &kp DELETE    
