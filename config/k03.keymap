@@ -368,10 +368,10 @@
 
         symb {
             bindings = <
-&kp LS(MINUS)      &kp LS(N1)         &kp LS(N2)            &kp LS(N3)             &kp LS(N4)  &kp LS(N5)                            &kp RS(N6)    &kp RS(N7)     &kp RS(N8)  &kp RS(N9)     &kp RS(N0)         &kp RS(EQUAL)
-&trans             &kp LEFT_BRACKET   &kp LS(N9)            &kp LS(N8)             &kp LS(N7)  &kp ESCAPE                            &kp TAB       &kp RS(N6)     &kp RS(N7)  &kp SEMICOLON  &kp RS(SEMICOLON)  &none
-&kp DOUBLE_QUOTES  &kp LS(N0)         &kp LS(N6)            &kp LS(N5)             &kp RS(N4)  &kp CAPSLOCK                          &kp SPACE     &kp RS(N5)     &kp RS(N6)  &kp RS(N7)     &kp RS(N8)         &kp SINGLE_QUOTE
-&trans             &kp RIGHT_BRACKET  &kp RS(N3)            &kp RS(N2)             &kp RS(N1)  &kp BACKSPACE  &trans        &trans   &kp DELETE    &kp RS(N1)     &kp RS(N2)  &kp RS(N3)     &kp RS(N4)         &mo 7
+&kp LS(MINUS)      &kp LS(N1)         &kp LS(N2)            &kp LS(N3)             &kp LS(N4)  &kp LS(N5)                            &kp RS(N6)    &kp RS(N7)     &kp RS(N8)  &kp RS(N9)  &kp RS(N0)  &kp RS(EQUAL)
+&trans             &kp LEFT_BRACKET   &kp LS(N9)            &kp LS(N8)             &kp LS(N7)  &kp ESCAPE                            &kp TAB       &kp RS(N6)     &kp RS(N7)  &kp RS(N8)  &kp RS(N5)  &none
+&kp DOUBLE_QUOTES  &kp LS(N0)         &kp LS(N6)            &kp LS(N5)             &kp RS(N4)  &kp CAPSLOCK                          &kp SPACE     &kp RS(N5)     &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp SINGLE_QUOTE
+&trans             &kp RIGHT_BRACKET  &kp RS(N3)            &kp RS(N2)             &kp RS(N1)  &kp BACKSPACE  &trans        &trans   &kp DELETE    &kp RS(N1)     &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &mo 7
                                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB     &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &kp RS(N9)  &kp RS(N9)
             >;
 
