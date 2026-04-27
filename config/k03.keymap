@@ -171,9 +171,9 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_SCRL_UP";
             #binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc MOVE_Y(50)>;
-
-            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&msc SCRL_UP>,
+            <&msc MOVE_Y(50)>;
+            mods = <(MOD_RALT)>;
         };
 
         alt_scrl_down: alt_scrl_down {
@@ -342,7 +342,7 @@
 /* ряд 2 L*/
 &msc SCRL_LEFT  &msc SCRL_DOWN                 &msc SCRL_UP                   &kp PAGE_DOWN                  &kp PAGE_UP                    &msc SCRL_RIGHT   
 /* ряд 2 R*/
-&msc SCRL_LEFT  &kp PG_UP                          &kp PAGE_DOWN         &msc SCRL_UP           &msc SCRL_DOWN                     &msc SCRL_RIGHT
+&msc SCRL_LEFT  &kp PG_UP                          &kp PAGE_DOWN         &alt_scrl_up           &msc SCRL_DOWN                     &msc SCRL_RIGHT
 
 /* ряд 3 L*/
 &none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)      
