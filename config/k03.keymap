@@ -499,30 +499,25 @@
 &kp RS(N8)            &kp RS(N9)             &kp RS(N0)       &kp RS(EQUAL)
 
 /* row 2 L*/
-&trans
-&kp LEFT_BRACKET
-&kp LS(N9)
-&kp LS(N8)
-&kp LS(N7)
-&kp ESCAPE
+&trans  &kp LEFT_BRACKET    &kp LS(N9)  &kp LS(N8)  &kp LS(N7)  &kp ESCAPE
 
 /* row 2 R*/
-&kp RIGHT_PARENTHESIS     &kp RS(N6)         &kp RS(N7)            &kp RS(N8)             &kp RS(N5)       &kp RS(N2)
+&kp RIGHT_PARENTHESIS   &kp RS(N6)  &kp RS(N7)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RS(N2)
 
 /* row 3 L*/
-&kp DOUBLE_QUOTES  &kp LS(N0)    &kp LS(N6)      &kp LS(N5)        &kp RS(N4)  &kp CAPSLOCK
+&kp DOUBLE_QUOTES   &kp LS(N0)   &kp LS(N6) &kp LS(N5) &kp RS(N4)   &kp CAPSLOCK
 /* row 3 R*/   
-&kp LEFT_PARENTHESIS     &kp RS(N5)  &kp RS(N6)       &kp RS(N7)       &kp RS(N8)  &kp SINGLE_QUOTE
+&kp LEFT_PARENTHESIS    &kp RS(N5)  &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp SINGLE_QUOTE
 
 /* row 4 L*/
-&trans             &kp RIGHT_BRACKET  &kp RS(N3)            &kp RS(N2)             &kp RS(N1)        &kp BACKSPACE  &trans
+&trans  &kp RIGHT_BRACKET  &kp RS(N3)   &kp RS(N2)  &kp RS(N1)  &kp BACKSPACE  &trans
 /* row 4 R*/
-&trans   &kp SLASH     &kp RS(N1)         &kp RS(N2)            &kp RS(N3)             &kp RS(N4)       &kp BACKSLASH
+&trans   &kp SLASH  &kp RS(N1)   &kp RS(N2)    &kp RS(N3)  &kp RS(N4)  &kp BACKSLASH
 
 /* row 5 L*/
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB           &kp SPACE      &kp DELETE    
+&kp RS(N8)  &kp RS(N5)  &kp TAB    &kp SPACE   &kp DELETE    
 /* row 5 R*/
-&kp ESC  &kp CAPSLOCK  &kp BACKSPACE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp ESC  &kp CAPSLOCK  &kp BACKSPACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 
             >;
             label = "symb";
