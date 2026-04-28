@@ -330,9 +330,19 @@
             key-positions = <44 45>;
         };
         
-        shift_toggle {
+        SHIFT_TOGGLE {
            bindings = <&kt LSHIFT>;
            key-positions = <31 28>;
+        };
+        
+        R_ALT_TOGGLE {
+                    bindings = <&kt RALT>;
+                    key-positions = <58 59>;
+                };
+        
+        TO_NAV_R {
+            bindings = <&to 3>;
+            key-positions = <44 45>;
         };
     };
 
