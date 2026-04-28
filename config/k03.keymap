@@ -270,7 +270,7 @@
                     compatible = "zmk,behavior-hold-tap";
                     label = "LAYER_HOLD_TAP";
                     #binding-cells = <2>;
-                    tapping-term-ms = <200>;           // Интервал в мс для определения тапа (можно настроить под себя)
+                    tapping-term-ms = <180>;           // Интервал в мс для определения тапа (можно настроить под себя)
                     quick-tap-ms = <0>;                // Отключаем быстрый тап
                     flavor = "tap-preferred";          // Приоритет тапа при быстрых нажатиях
                     bindings = <&tog>, <&kp>;           // <удержание>, <тап>
@@ -280,7 +280,7 @@
                                     compatible = "zmk,behavior-hold-tap";
                                     label = "LAYER_TO_TAP";
                                     #binding-cells = <2>;
-                                    tapping-term-ms = <200>;           // Интервал в мс для определения тапа (можно настроить под себя)
+                                    tapping-term-ms = <180>;           // Интервал в мс для определения тапа (можно настроить под себя)
                                     quick-tap-ms = <0>;                // Отключаем быстрый тап
                                     flavor = "tap-preferred";          // Приоритет тапа при быстрых нажатиях
                                     bindings = <&to>, <&kp>;           // <удержание>, <тап>
@@ -600,8 +600,8 @@
 &kp RS(N2)
 &kp RS(N7)
 &kp RS(N6)
-&kp RIGHT_PARENTHESIS
 &kp LEFT_PARENTHESIS
+&kp RIGHT_PARENTHESIS
 &kp EQUAL
 
 /* row 2 R*/
