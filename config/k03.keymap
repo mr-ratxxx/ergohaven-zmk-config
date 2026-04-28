@@ -166,7 +166,7 @@
 
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
-
+/*
         alt_scrl_up: alt_scrl_up {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_SCRL_UP";
@@ -184,6 +184,7 @@
             <&msc MOVE_Y(-100)>;
              mods = <(MOD_RALT)>;
         };
+        */
 
         ralt_y_up3: ralt_y_up3 {
             compatible = "zmk,behavior-mod-morph";
@@ -431,7 +432,7 @@
 /* ряд 2 L*/
 &msc SCRL_LEFT  &msc SCRL_DOWN                 &msc SCRL_UP                   &kp PAGE_DOWN                  &kp PAGE_UP                    &msc SCRL_RIGHT   
 /* ряд 2 R*/
-&msc SCRL_LEFT  &kp PG_UP                          &kp PAGE_DOWN         &alt_scrl_up           &alt_scrl_down                     &msc SCRL_RIGHT
+&msc SCRL_LEFT  &kp PG_UP                          &kp PAGE_DOWN         &&msc SCRL_UP           &&msc SCRL_DOWN                     &msc SCRL_RIGHT
 
 /* ряд 3 L*/
 &none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)      
