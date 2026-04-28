@@ -241,7 +241,7 @@
                 
     ralt_base_up: ralt_base_up {
                 compatible = "zmk,behavior-mod-morph";
-                label = "ralt_base_up";
+                label = "RALT_BASE_UP";
                 #binding-cells = <0>;
                 bindings = 
                 <&kp COMMA>, 
@@ -264,7 +264,7 @@
                 label = "ralt_base_right";
                 #binding-cells = <0>;
                 bindings =
-                    <&kp />,
+                    <&kp BSLH/>,
                     <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
                 mods = <(MOD_RALT)>;
             };
@@ -360,7 +360,12 @@
 /* row 4 L*/
 &alt_to_5             &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 CAPS    &lt 7 ENTER
 /* row 4 R*/
-kp N                &kp M            &alt_ru_en_comma  &alt_ru_en_dot       &ctrl_bslh       &kp BSLH
+&kp N
+&ralt_base_left
+&ralt_base_up
+&ralt_base_down
+&ralt_base_right
+&kp BSLH
 
 /* row 5 L*/
 &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL
