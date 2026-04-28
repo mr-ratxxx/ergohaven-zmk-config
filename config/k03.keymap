@@ -172,7 +172,7 @@
             label = "ALT_SCRL_UP";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>,
-            <&msc MOVE_Y(50)>;
+            <&msc MOVE_Y(100)>;
             mods = <(MOD_RALT)>;
         };
 
@@ -180,7 +180,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_SCRL_DOWN";
             #binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc MOVE_Y(-50)>;
+            bindings = <&msc SCRL_DOWN>,
+            <&msc MOVE_Y(-100)>;
              mods = <(MOD_RALT)>;
         };
 
@@ -225,6 +226,50 @@
             mods = <(MOD_RALT)>;
         };
     };
+    
+    /* base mouse */
+    
+    ralt_base_left: ralt_base_left {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "ralt_base_left";
+                    #binding-cells = <0>;
+                    bindings =
+                        <&kp M>,
+                        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;        
+                    mods = <(MOD_RALT)>;
+                };
+                
+    ralt_base_up: ralt_base_up {
+                compatible = "zmk,behavior-mod-morph";
+                label = "ralt_base_up";
+                #binding-cells = <0>;
+                bindings = 
+                <&kp COMMA>, 
+                <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+                mods = <(MOD_RALT)>;
+            };
+    
+            ralt_base_down: ralt_base_down {
+                compatible = "zmk,behavior-mod-morph";
+                label = "ralt_base_down";
+                #binding-cells = <0>;
+                bindings = 
+                <&kp DOT>, 
+                <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+                mods = <(MOD_RALT)>;
+            };
+    
+            ralt_base_right: ralt_base_right {
+                compatible = "zmk,behavior-mod-morph";
+                label = "ralt_base_right";
+                #binding-cells = <0>;
+                bindings =
+                    <&kp />,
+                    <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+                mods = <(MOD_RALT)>;
+            };
+        };
+        /* end base mouse */
 
     combos {
         compatible = "zmk,combos";
@@ -296,13 +341,33 @@
 
         base {
             bindings = <
-&kp ESC               &kp F2      &kp F3       &kp F4       &kp F5       &kp F6                                  &kp F7               &kp F8           &kp F9            &kp F10              &kp F11          &kp F12
-&kp LG(TAB)           &kp Q       &kp W        &kp E        &kp R        &kp T                                   &kp Y                &kp U            &kp I             &kp O                &kp P            &kp GRAVE
-&kp LG(LEFT_BRACKET)  &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G                                   &kp H                &mt RSHIFT J     &mt RALT K        &mt RCTRL L          &alt_ru_en_semi  &alt_ru_en_sqt
-&alt_to_5             &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 CAPS    &lt 7 ENTER  &kp N                &kp M            &alt_ru_en_comma  &alt_ru_en_dot       &ctrl_bslh       &kp BSLH
-                                  &lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL     &lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT        &lt 7 RIGHT_BRACKET
-            >;
+            
+/* row 1 L*/
+&kp ESC               &kp F2      &kp F3       &kp F4       &kp F5       &kp F6
+/* row 1 R*/
+&kp F7               &kp F8           &kp F9            &kp F10              &kp F11          &kp F12
 
+/* row 2 L*/
+&kp LG(TAB)           &kp Q       &kp W        &kp E        &kp R        &kp T
+/* row 2 R*/
+&kp Y                &kp U            &kp I             &kp O                &kp P            &kp GRAVE
+
+/* row 3 L*/
+&kp LG(LEFT_BRACKET)  &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G
+/* row 3 R*/
+&kp H                &mt RSHIFT J     &mt RALT K        &mt RCTRL L          &alt_ru_en_semi  &alt_ru_en_sqt
+
+/* row 4 L*/
+&alt_to_5             &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 CAPS    &lt 7 ENTER
+/* row 4 R*/
+kp N                &kp M            &alt_ru_en_comma  &alt_ru_en_dot       &ctrl_bslh       &kp BSLH
+
+/* row 5 L*/
+&lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL
+/* row 5 R*/
+&lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT        &lt 7 RIGHT_BRACKET
+
+            >;
             display-name = "base";
         };
 
