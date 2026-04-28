@@ -337,12 +337,12 @@
         
         R_ALT_TOGGLE {
                     bindings = <&kt RALT>;
-                    key-positions = <58 59>;
+                    key-positions = <44 45>;
                 };
         
         TO_NAV_R {
             bindings = <&to 3>;
-            key-positions = <44 45>;
+            key-positions = <45 56 46>;
         };
     };
 
