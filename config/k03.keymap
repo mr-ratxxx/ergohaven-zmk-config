@@ -360,9 +360,9 @@
             bindings = <
             
 /* row 1 L*/
-&kp ESC               &kp F2      &layer_hold_tap F3 5       &layer_hold_tap F4 6       &layer_hold_tap F5 4       &layer_hold_tap F6 2
+&kp ESC               &kp F2      &layer_hold_tap 5 F3       &layer_hold_tap 6 F4      &layer_hold_tap 4 F5 &layer_hold_tap 2 F6
 /* row 1 R*/
-&layer_hold_tap F7 3    &layer_hold_tap F8 2    &layer_hold_tap F9 5    &layer_hold_tap F10 6   &kp F11 &kp F12
+&layer_hold_tap 3 F7    &layer_hold_tap 2 F8    &layer_hold_tap 5 F9    &layer_hold_tap 6 F10   &kp F11 &kp F12
 
 /* row 2 L*/
 &kp LG(TAB)           &kp Q       &kp W        &kp E        &kp R        &kp T
