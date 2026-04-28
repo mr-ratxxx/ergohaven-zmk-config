@@ -101,24 +101,20 @@
         };
 
         //ru-ж en/alt-ru ;
-
         alt_ru_en_semi: alt_ru_en_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_RU_EN_SEMI";
             #binding-cells = <0>;
             bindings = <&mt RGUI SEMI>, <&kp RS(N8)>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
         //ru-э en/alt-ru "
-
         alt_ru_en_sqt: alt_ru_en_sqt {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_RU_EN_SQT";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp RS(N2)>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
@@ -361,7 +357,7 @@
 /* row 3 L*/
 &kp LG(LEFT_BRACKET)  &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G
 /* row 3 R*/
-&kp H                &mt RSHIFT J     &mt RALT K        &mt RCTRL L          &alt_ru_en_semi  &alt_ru_en_sqt
+&kp H                &mt RSHIFT J     &mt RALT K        &mt RCTRL L &mt RGUI SEMI   &kp SQT
 
 /* row 4 L*/
 &alt_to_5
