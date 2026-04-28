@@ -390,9 +390,19 @@
 &kp GRAVE
 
 /* row 3 L*/
-&kp LG(LEFT_BRACKET)  &mt LGUI A  &mt LCTRL S  &mt LALT D   &mt LSHFT F  &kp G
+&kp LG(LEFT_BRACKET)
+&mt LGUI A
+&mt LCTRL S
+&mt LALT D
+&mt LSHFT F
+&kp G
 /* row 3 R*/
-&kp H                &mt RSHIFT J     &mt RALT K        &mt RCTRL L &mt RGUI SEMI   &kp SQT
+&kp H
+&mt RSHIFT J
+&mt RALT K
+&mt RCTRL L
+&mt RGUI SEMI
+&kp SQT
 
 /* row 4 L*/
 &alt_to_5
