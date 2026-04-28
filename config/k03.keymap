@@ -341,7 +341,7 @@
                 };
         
         TO_NAV_R {
-            bindings = <&to 3>;
+            bindings = <&tog 3>;
             key-positions = <45 56 46>;
         };
     };
