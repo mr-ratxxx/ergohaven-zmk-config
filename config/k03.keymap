@@ -263,7 +263,7 @@
                 label = "ralt_base_right";
                 #binding-cells = <0>;
                 bindings =
-                    <&kp BSLH>,
+                    <&kp SLASH>,
                     <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
                 mods = <(MOD_RALT)>;
             };        
