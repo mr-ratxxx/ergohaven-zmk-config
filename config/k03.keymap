@@ -362,7 +362,7 @@
 /* row 1 L*/
 &kp ESC               &kp F2      &kp F3       &kp F4       &kp F5       &kp F6
 /* row 1 R*/
-f7_hold_tap F7 3               &kp F8           &kp F9            &kp F10              &kp F11          &kp F12
+&f7_hold_tap F7 3               &kp F8           &kp F9            &kp F10              &kp F11          &kp F12
 
 /* row 2 L*/
 &kp LG(TAB)           &kp Q       &kp W        &kp E        &kp R        &kp T
