@@ -332,13 +332,13 @@
         };
         
         R_ALT_TOGGLE {
-                    bindings = <&kt RALT>;
-                    key-positions = <44 45>;
-                };
+           bindings = <&kt RALT>;
+           key-positions = <44 45>;
+        };
         
         TO_NAV_R {
             bindings = <&tog 3>;
-            key-positions = <45 56 46>;
+            key-positions = <56 32 31>;
         };
     };
 
