@@ -266,8 +266,7 @@
                     <&kp BSLH>,
                     <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
                 mods = <(MOD_RALT)>;
-            };
-        };
+            };        
         /* end base mouse */
         
         };
