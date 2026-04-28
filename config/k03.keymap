@@ -368,7 +368,14 @@
 &kp H                &mt RSHIFT J     &mt RALT K        &mt RCTRL L          &alt_ru_en_semi  &alt_ru_en_sqt
 
 /* row 4 L*/
-&alt_to_5             &kp Z       &kp X        &kp C        &kp V        &kp B        &lt 7 CAPS    &lt 7 ENTER
+&alt_to_5
+&kp Z
+&kp X        
+&kp C        
+&kp V        
+&kp B        
+&lt 7 CAPS    
+&lt 7 ENTER
 /* row 4 R*/
 &kp N
 &ralt_base_left
@@ -378,9 +385,17 @@
 &kp BSLH
 
 /* row 5 L*/
-&lt 7 MINUS  &lt 5 EQUAL  &lt 6 TAB    &lt 4 SPACE  &lt 2 DEL
+&lt 7 MINUS
+&lt 5 EQUAL
+&lt 6 TAB
+&lt 4 SPACE
+&lt 2 DEL
 /* row 5 R*/
-&lt 2 ESC    &lt 3 RG(RC(SPACE))  &lt 5 BACKSPACE  &lt 6 LBKT        &lt 7 RIGHT_BRACKET
+&lt 2 ESC
+&lt 3 RG(RC(SPACE))
+&lt 5 BACKSPACE
+&lt 6 LBKT
+&lt 7 RIGHT_BRACKET
 
             >;
             display-name = "base";
