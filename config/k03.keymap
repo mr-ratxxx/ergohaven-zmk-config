@@ -454,9 +454,19 @@
             bindings = <
             
 /* row 1 L*/
-&kp MINUS  &kp N1       &kp N2                &kp N3                 &kp N4         &kp N5                             &kp N6
+&trans
+&trans
+&trans
+&trans
+&trans
+&trans
 /* row 1 R*/
-&kp N7         &kp N8                &kp N9                 &kp N0       &kp EQUAL
+&trans
+&trans
+&trans
+&trans
+&trans
+&trans
 
 /* row 2 L*/
 &trans     &kp F3       &kp F9                &kp F8                 &kp F7         &kp ESCAPE
@@ -531,8 +541,27 @@
 
         num {
             bindings = <
-&kp MINUS  &kp N1         &kp N2        &kp N3       &kp N4        &kp N5                            &kp N6        &kp N7         &kp N8            &kp N9        &kp N0          &kp EQUAL
-&trans     &kp LS(MINUS)  &kp N9        &kp N8       &kp N7        &kp PLUS                          &kp PLUS      &kp N7         &kp N8            &kp N9        &kp RS(MINUS)   &none
+            
+/* row 1 L*/
+&trans
+&trans
+&trans
+&trans
+&trans
+&trans
+/* row 1 R*/
+&trans
+&trans
+&trans
+&trans
+&trans
+&trans
+
+/* row 2 L*/
+&trans     &kp LS(MINUS)  &kp N9        &kp N8       &kp N7        &kp PLUS
+/* row 2 R*/
+&kp PLUS      &kp N7         &kp N8            &kp N9        &kp RS(MINUS)   &none
+
 &trans     &mt LGUI N0    &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp MINUS                         &kp MINUS     &mt RSHIFT N4  &mt RIGHT_ALT N5  &mt RCTRL N6  &mt RGUI N0     &none
 &trans     &kp PERIOD     &kp N3        &kp N2       &kp N1        &kp EQUAL  &trans        &trans   &kp EQUAL     &kp N1         &kp N2            &kp N3        &alt_ru_en_dot  &mo 7
                           &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans            &trans
