@@ -336,6 +336,11 @@
             bindings = <&tog 3>;
             key-positions = <56 32 31>;
         };
+        
+        TO_NAV_R_2 {
+                    bindings = <&tog 3>;
+                    key-positions = <45 56 46>;
+                };
     };
 
     keymap {
