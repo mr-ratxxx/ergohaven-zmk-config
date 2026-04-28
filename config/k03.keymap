@@ -224,8 +224,7 @@
                 <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)>,
                 <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
             mods = <(MOD_RALT)>;
-        };
-    };
+        };   
     
     /* base mouse */
     
@@ -270,6 +269,8 @@
             };
         };
         /* end base mouse */
+        
+        };
 
     combos {
         compatible = "zmk,combos";
