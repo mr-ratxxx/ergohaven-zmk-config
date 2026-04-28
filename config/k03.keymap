@@ -581,17 +581,20 @@
 
         symb {
             bindings = <
-/* row 1 L*/            
-&kp LS(MINUS)
-&kp LS(N1)
-&kp LS(N2)
-&kp LS(N3)
-&kp LS(N4)
-&kp LS(N5)
-/* row 1 R*/                            
-&kp RS(N6)
-&kp RS(N7)
-&kp RS(N8)            &kp RS(N9)             &kp RS(N0)       &kp RS(EQUAL)
+/* row 1 L*/
+&trans
+&trans
+&trans
+&trans
+&trans
+&trans
+/* row 1 R*/
+&trans
+&trans
+&trans
+&trans
+&trans
+&trans
 
 /* row 2 L*/
 &trans  &kp LEFT_BRACKET    &kp LS(N9)  &kp LS(N8)  &kp LS(N7)  &kp ESCAPE
