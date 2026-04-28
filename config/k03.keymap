@@ -324,11 +324,6 @@
             bindings = <&mkp MB2>;
             key-positions = <40 39 38>;
         };
-
-        CAPS_RIGHT {
-            bindings = <&kp CAPS>;
-            key-positions = <44 45>;
-        };
         
         SHIFT_TOGGLE {
            bindings = <&kt LSHIFT>;
