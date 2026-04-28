@@ -266,6 +266,16 @@
             };        
         /* end base mouse */
         
+        f7_hold_tap: f7_hold_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "F7_HOLD_TAP";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <200>;           // Интервал в мс для определения тапа (можно настроить под себя)
+                    quick-tap-ms = <0>;                // Отключаем быстрый тап
+                    flavor = "tap-preferred";          // Приоритет тапа при быстрых нажатиях
+                    bindings = <&kp>, <&tog>;           // <удержание>, <тап>
+                };
+        
         };
 
     combos {
@@ -352,7 +362,7 @@
 /* row 1 L*/
 &kp ESC               &kp F2      &kp F3       &kp F4       &kp F5       &kp F6
 /* row 1 R*/
-&kp F7               &kp F8           &kp F9            &kp F10              &kp F11          &kp F12
+f7_hold_tap F7 3               &kp F8           &kp F9            &kp F10              &kp F11          &kp F12
 
 /* row 2 L*/
 &kp LG(TAB)           &kp Q       &kp W        &kp E        &kp R        &kp T
