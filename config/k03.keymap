@@ -632,15 +632,28 @@
 &kp RS(N3)
 &kp RS(N1)
 &kp SLASH
-&trans             
+&trans
 /* row 4 R*/
-&trans   &kp SLASH  &kp RS(N1)   &kp RS(N2)    &kp RS(N3)  &kp RS(N4)  &kp BACKSLASH
+&trans
+&kp SLASH
+&kp RS(N1)
+&kp RS(N2)
+&kp RS(N3)
+&kp RS(N4)
+&kp BACKSLASH
 
 /* row 5 L*/
-&kp RS(N8) &kp RS(N5)  &kp TAB    &kp SPACE   &kp DELETE    
+&trans
+&trans
+&kp TAB
+&kp SPACE
+&kp DELETE    
 /* row 5 R*/
-&kp ESC  &kp CAPSLOCK  &kp BACKSPACE    &kp RS(N5) &kp RS(N8) 
-
+&kp ESC
+&kp CAPSLOCK
+&kp BACKSPACE
+&trans
+&trans
             >;
             label = "symb";
         };
