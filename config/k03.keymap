@@ -545,7 +545,6 @@
 &trans          &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)  &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp LEFT_ALT     &trans        &none    &kp RIGHT_ALT   &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &kp RIGHT_ALT
                                                    &kp LG(LEFT_BRACKET)               &kp LG(RIGHT_BRACKET)              &kp TAB                            &kp SPACE        &kp DELETE    &kp ESC  &kp CAPSLOCK    &kp BACKSPACE                  &kp RG(LEFT_BRACKET)           &kp RG(RIGHT_BRACKET)
             >;
-
             display-name = "nav-l";
         };
 
@@ -605,11 +604,11 @@
 &kp EQUAL
 
 /* row 2 R*/
+&kp PLUS
+&kp MINUS
 &kp EQUAL
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
-&kp RS(N6)
-&kp RS(N7)
 &kp RS(N2)
 
 /* row 3 L*/
@@ -620,7 +619,12 @@
 &kp RS(N5)
 &kp MINUS        
 /* row 3 R*/   
-&kp MINUS &kp RS(N5)  &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp SINGLE_QUOTE
+&kp RS(MINUS)
+&kp RS(N5)
+&kp RS(N6)
+&kp RS(N7)
+&kp RS(N8)
+&kp SINGLE_QUOTE
 
 /* row 4 L*/
 &kp BACKSLASH
