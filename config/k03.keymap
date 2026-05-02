@@ -611,10 +611,10 @@
 &kp PLUS
 /* row 2 R*/
 &kp PLUS
-&kp MINUS
-&kp EQUAL
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
+&kp MINUS
+&kp RS(MINUS)
 &kp RS(N2)
 
 /* row 3 L*/
@@ -625,7 +625,7 @@
 &kp RS(N5)
 &kp RS(MINUS)        
 /* row 3 R*/   
-&kp RS(MINUS)
+&kp MINUS
 &kp RS(N5)
 &kp RS(N6)
 &kp RS(N7)
