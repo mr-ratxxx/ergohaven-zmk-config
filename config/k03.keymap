@@ -614,7 +614,7 @@
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
 &kp EQUAL
-&kp RS(MINUS)
+&kp SLASH
 &kp RS(N2)
 
 /* row 3 L*/
@@ -642,7 +642,7 @@
 &trans
 /* row 4 R*/
 &trans
-&kp SLASH
+&kp RS(MINUS)
 &kp RS(N1)
 &kp RS(N2)
 &kp RS(N3)
