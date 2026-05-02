@@ -531,11 +531,11 @@
 &lt LG(LEFT_BRACKET)
 &lt LG(RIGHT_BRACKET)
 &lt 6 TAB
-&lt 4 SPACE
+&lt 0 SPACE
 &lt 2 DEL
 /* row 5 R*/
 &lt 2 ESC
-&lt 3 RG(RC(SPACE))
+&lt 0 RG(RC(SPACE))
 &lt 5 BACKSPACE
 &kp RG(LEFT_BRACKET)
 &kp RG(RIGHT_BRACKET)
