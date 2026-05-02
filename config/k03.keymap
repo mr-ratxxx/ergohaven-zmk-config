@@ -349,7 +349,7 @@
         
         R_ALT_TOGGLE {
            bindings = <&kt RALT>;
-           key-positions = <44 45>;
+           key-positions = <44 43>;
         };
         
         TO_NAV_R {
@@ -613,7 +613,7 @@
 &kp PLUS
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
-&kp MINUS
+&kp EQUALS
 &kp RS(MINUS)
 &kp RS(N2)
 
