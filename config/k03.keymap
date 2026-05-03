@@ -118,6 +118,7 @@
             mods = <(MOD_LALT | MOD_RALT)>;
         };
 
+/*
         alt_to_5: alt_to_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_TO_5";
@@ -126,6 +127,7 @@
 
             mods = <(MOD_LALT | MOD_RALT)>;
         };
+        *\
 
         // bslh-\ alt-lt7
         //alt_bslh: alt_bslh {
@@ -415,7 +417,7 @@
 &kp SQT
 
 /* base D L*/
-&alt_to_5
+&kp LG(RIGHT_BRACKET)
 &kp Z
 &kp X        
 &kp C        
