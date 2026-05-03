@@ -223,7 +223,7 @@
             mods = <(MOD_RALT)>;
         };   
     
-    /* base mouse */
+    /* mouse 0 layer */
     
     ralt_base_left: ralt_base_left {
                     compatible = "zmk,behavior-mod-morph";
@@ -264,7 +264,7 @@
                     <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
                 mods = <(MOD_RALT)>;
             };        
-        /* end base mouse */
+        /* end mouse 0 layer */
         
         layer_hold_tap: layer_hold_tap {
                     compatible = "zmk,behavior-hold-tap";
@@ -369,14 +369,14 @@
         base {
             bindings = <
             
-/* row 1 L*/
+/* base A L*/
 &kp ESC
 &layer_to_tap 0 F2
 &layer_hold_tap 5 F3
 &layer_hold_tap 6 F4
 &layer_hold_tap 4 F5
 &layer_hold_tap 2 F6
-/* row 1 R*/
+/* base A R*/
 &layer_hold_tap 2 F7
 &layer_hold_tap 3 F8
 &layer_hold_tap 5 F9
@@ -384,14 +384,14 @@
 &layer_to_tap 0 F11
 &kp F12
 
-/* row 2 L*/
+/* base B L*/
 &kp LG(TAB)
 &kp Q
 &kp W
 &kp E
 &kp R
 &kp T
-/* row 2 R*/
+/* base B R*/
 &kp Y
 &kp U
 &kp I
@@ -399,14 +399,14 @@
 &kp P
 &kp GRAVE
 
-/* row 3 L*/
+/* base C L*/
 &kp LG(LEFT_BRACKET)
 &mt LGUI A
 &mt LCTRL S
 &mt LALT D
 &mt LSHFT F
 &kp G
-/* row 3 R*/
+/* base C R*/
 &kp H
 &mt RSHIFT J
 &mt RALT K
@@ -414,7 +414,7 @@
 &mt RGUI SEMI
 &kp SQT
 
-/* row 4 L*/
+/* base D L*/
 &alt_to_5
 &kp Z
 &kp X        
@@ -423,7 +423,7 @@
 &kp B        
 &lt 7 CAPS    
 &lt 7 ENTER
-/* row 4 R*/
+/* base D R*/
 &kp N
 &ralt_base_left
 &ralt_base_up
@@ -431,19 +431,18 @@
 &ralt_base_right
 &kp BSLH
 
-/* row 5 L*/
+/* base T L*/
 &lt 7 MINUS
 &lt 5 EQUAL
 &lt 6 TAB
 &lt 4 SPACE
 &lt 2 DEL
-/* row 5 R*/
+/* base T R*/
 &lt 2 ESC
 &lt 3 RG(RC(SPACE))
 &lt 5 BACKSPACE
 &lt 6 LBKT
 &lt 7 RIGHT_BRACKET
-
             >;
             display-name = "base";
         };
@@ -641,37 +640,37 @@
 &trans
 &trans
 
-/* symb row B L*/
+/* symb B L*/
 &kp GRAVE
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
 &kp EQUAL
 &kp MINUS
 &kp PLUS
-/* symv row B R*/
+/* symb B R*/
 &kp PLUS
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
 &kp EQUAL
 &kp SLASH
-&kp SLASH
+&kp GRAVE
 
-/* symb row C L*/
+/* symb C L*/
 &kp SINGLE_QUOTE
 &kp RS(N8)
 &kp RS(N7)
 &kp RS(N6)
 &kp RS(N5)
 &kp RS(MINUS)        
-/* symb row C R*/   
+/* symb C R*/   
 &kp MINUS
 &kp RS(N5)
 &kp RS(N6)
 &kp RS(N7)
 &kp RS(N8)
-&kp GRAVE
+&kp SQT
 
-/* symb row D L*/
+/* symb D L*/
 &kp BACKSLASH
 &kp RS(N4)
 &kp RS(N3)
@@ -679,7 +678,7 @@
 &kp RS(N1)
 &kp SLASH
 &trans
-/* symb row D R*/
+/* symb D R*/
 &trans
 &kp RS(MINUS)
 &kp RS(N1)
@@ -688,13 +687,13 @@
 &kp RS(N4)
 &kp BACKSLASH
 
-/* row 5 L*/
+/* symb T L*/
 &trans
 &trans
 &kp TAB
 &kp SPACE
-&kp DELETE    
-/* row 5 R*/
+&kp DELETE
+/* symb T R*/
 &kp ESC
 &kp CAPSLOCK
 &kp BACKSPACE
