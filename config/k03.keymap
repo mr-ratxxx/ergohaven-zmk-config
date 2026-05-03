@@ -651,9 +651,9 @@
 &kp PLUS
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
-&kp EQUAL
+&kp RS(N2)
 &kp SLASH
-&kp GRAVE
+&kp SLASH
 
 /* symb C L*/
 &kp SINGLE_QUOTE
@@ -682,7 +682,7 @@
 &trans
 &kp RS(MINUS)
 &kp RS(N1)
-&kp RS(N2)
+&kp EQUAL
 &kp RS(N3)
 &kp RS(N4)
 &kp BACKSLASH
