@@ -629,13 +629,13 @@
 &kp EQUAL
 &kp MINUS
 &kp PLUS
-/* symv row B R*/
-&kp PLUS
-&kp LEFT_PARENTHESIS
-&kp RIGHT_PARENTHESIS
-&kp EQUAL
-&kp SLASH
-&kp RS(N2)
+/* symv r   
+&kp MINUS
+&kp RS(N5)
+&kp RS(N6)
+&kp RS(N7)
+&kp RS(N8)
+&kp GRAVEow B R*/
 
 /* symb row C L*/
 &kp SINGLE_QUOTE
@@ -644,13 +644,13 @@
 &kp RS(N6)
 &kp RS(N5)
 &kp RS(MINUS)        
-/* symb row C R*/   
-&kp MINUS
-&kp RS(N5)
-&kp RS(N6)
-&kp RS(N7)
-&kp RS(N8)
-&kp GRAVE
+/* symb row C R*/
+&kp PLUS
+&kp LEFT_PARENTHESIS
+&kp RIGHT_PARENTHESIS
+&kp EQUAL
+&kp SLASH
+&kp SLASH
 
 /* symb row D L*/
 &kp BACKSLASH
