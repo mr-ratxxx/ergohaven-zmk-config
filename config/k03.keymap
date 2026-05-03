@@ -673,8 +673,8 @@
 &kp SQT
 
 /* symb D L*/
-&kp BACKSLASH
 &kp SLASH
+&kp BACKSLASH
 &kp RS(N3)
 &kp EQUAL
 &kp RS(N1)
