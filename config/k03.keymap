@@ -535,25 +535,44 @@
 &msc SCRL_DOWN
 &msc SCRL_RIGHT
 
-/* ряд 3 L*/
-&none           &kp LGUI                       &kp LCTRL                      &kp LALT                       &kp LSHFT                      &kp LG(TAB)      
+/* nav-r row C L*/
+&none
+&kp LGUI
+&kp LCTRL
+&kp LALT
+&kp LSHFT
+&kp LG(TAB)      
 /* ряд 3 R*/                          
-&kp RG(TAB)     &kp LEFT_ARROW          &kp UP           &kp DOWN          &kp RIGHT_ARROW                    &kp RALT
+&kp RG(TAB)
+&kp LEFT_ARROW
+&kp UP
+&kp DOWN
+&kp RIGHT_ARROW
+&kp RALT
                           
-/* ряд 4 L*/                          
+/* nav-r row D L*/                          
 &trans
 &mmv MOVE_X(MMV_FAST_SPEED_L)
-&mmv MOVE_Y(MMV_FAST_SPEED_D)  &mmv MOVE_Y(MMV_FAST_SPEED_U)  &mmv MOVE_X(MMV_FAST_SPEED_R)  &none &trans
-/* ряд 4 R*/
-&trans      &kt RALT        &ralt_x_left3  &ralt_y_up3   &ralt_y_down3    &ralt_x_right3  &kp RIGHT_ALT
+&mmv MOVE_Y(MMV_FAST_SPEED_D)
+&mmv MOVE_Y(MMV_FAST_SPEED_U)
+&mmv MOVE_X(MMV_FAST_SPEED_R)
+&none &trans
+/* nav-r row D R*/
+&trans
+&kt RALT
+&ralt_x_left3
+&ralt_y_up3
+&ralt_y_down3
+&ralt_x_right3
+&kp RIGHT_ALT
 
-/* row 5 L*/
-&kp RG(RIGHT_BRACKET)
+/* nav-r row T L*/
 &kp RG(LEFT_BRACKET)
+&kp RG(RIGHT_BRACKET)
 &lt 6 TAB
 &lt 0 SPACE
 &lt 2 DEL
-/* row 5 R*/
+/* nav-r row T R*/
 &lt 2 ESC
 &lt 0 RG(RC(SPACE))
 &lt 5 BACKSPACE
@@ -629,13 +648,13 @@
 &kp EQUAL
 &kp MINUS
 &kp PLUS
-/* symv r   
-&kp MINUS
-&kp RS(N5)
-&kp RS(N6)
-&kp RS(N7)
-&kp RS(N8)
-&kp GRAVEow B R*/
+/* symv row B R*/
+&kp PLUS
+&kp LEFT_PARENTHESIS
+&kp RIGHT_PARENTHESIS
+&kp EQUAL
+&kp SLASH
+&kp SLASH
 
 /* symb row C L*/
 &kp SINGLE_QUOTE
@@ -644,13 +663,13 @@
 &kp RS(N6)
 &kp RS(N5)
 &kp RS(MINUS)        
-/* symb row C R*/
-&kp PLUS
-&kp LEFT_PARENTHESIS
-&kp RIGHT_PARENTHESIS
-&kp EQUAL
-&kp SLASH
-&kp SLASH
+/* symb row C R*/   
+&kp MINUS
+&kp RS(N5)
+&kp RS(N6)
+&kp RS(N7)
+&kp RS(N8)
+&kp GRAVE
 
 /* symb row D L*/
 &kp BACKSLASH
