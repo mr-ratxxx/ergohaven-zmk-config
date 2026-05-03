@@ -643,11 +643,11 @@
 &trans
 
 /* symb B L*/
-&kp GRAVE
+&kp SLASH
+&kp RS(N4)
+&kp RS(N2)
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
-&kp EQUAL
-&kp MINUS
 &kp PLUS
 /* symb B R*/
 &kp PLUS
@@ -658,12 +658,12 @@
 &kp SLASH
 
 /* symb C L*/
-&kp SINGLE_QUOTE
+&kp SQT
 &kp RS(N8)
 &kp RS(N7)
 &kp RS(N6)
 &kp RS(N5)
-&kp RS(MINUS)        
+&kp MINUS        
 /* symb C R*/   
 &kp MINUS
 &kp RS(N5)
@@ -674,11 +674,11 @@
 
 /* symb D L*/
 &kp BACKSLASH
-&kp RS(N4)
-&kp RS(N3)
-&kp RS(N3)
-&kp RS(N1)
 &kp SLASH
+&kp RS(N3)
+&kp EQUAL
+&kp RS(N1)
+&kp RS(MINUS)
 &trans
 /* symb D R*/
 &trans
