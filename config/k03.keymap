@@ -370,7 +370,7 @@
             bindings = <
             
 /* base A L*/
-&kp ESC
+&layer_to_tap 0 ESC
 &layer_to_tap 0 F2
 &layer_hold_tap 5 F3
 &layer_hold_tap 6 F4
@@ -382,7 +382,7 @@
 &layer_hold_tap 5 F9
 &layer_hold_tap 6 F10
 &layer_to_tap 0 F11
-&kp F12
+&layer_to_tap 0 F12
 
 /* base B L*/
 &kp LG(TAB)
