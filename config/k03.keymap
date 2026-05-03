@@ -729,7 +729,7 @@
             display-name = "Adjust";
         };
         
-        base-ov {
+        base-override {
                     bindings = <
                     
         /* base A L*/
@@ -807,7 +807,7 @@
         &lt 6 LBKT
         &lt 7 RIGHT_BRACKET
                     >;
-                    display-name = "base-ov";
+                    display-name = "base-override";
                 };
     };
 };
