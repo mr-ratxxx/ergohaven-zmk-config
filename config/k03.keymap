@@ -618,7 +618,7 @@
 &kp PLUS      &kp N7         &kp N8            &kp N9        &kp RS(MINUS)   &none
 
 &trans     &mt LGUI N0    &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp MINUS                         &kp MINUS     &mt RSHIFT N4  &mt RIGHT_ALT N5  &mt RCTRL N6  &mt RGUI N0     &none
-&trans     &kp PERIOD     &kp N3        &kp N2       &kp N1        &kp EQUAL  &trans        &trans   &kp EQUAL     &kp N1         &kp N2            &kp N3        &alt_ru_en_dot  &mo 7
+&trans     &kp PERIOD     &kp N3        &kp N2       &kp N1        &kp EQUAL  &trans        &trans   &kp EQUAL     &kp N1         &kp N2            &kp N3        &DOT  &mo 7
                           &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans            &trans
             >;
 
