@@ -2,6 +2,7 @@
 
 // Константы для перемещений
 
+#define BASE_MIRROR_LAYER 1
 #define NAV_R_LAYER 2
 #define NAV_L_LAYER 3
 #define FUNCT_LAYER 4
@@ -532,13 +533,13 @@
 /* nav-r T L*/
 &kp RG(LEFT_BRACKET)
 &kp RG(RIGHT_BRACKET)
-&lt 6 TAB
-&lt 9 SPACE
-&lt 2 DEL
+&lt SYMB_LAYER TAB
+&lt BASE_OVERRIDE_LAYER SPACE
+&lt FUNCT_LAYER DEL
 /* nav-r T R*/
-&lt 2 ESC
-&lt 9 RG(RC(SPACE))
-&lt 5 BACKSPACE
+&lt FUNCT_LAYER ESC
+&lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+&lt NUM_LAYER BACKSPACE
 &kp RG(LEFT_BRACKET)
 &kp RG(RIGHT_BRACKET)
 >;
@@ -758,11 +759,39 @@
 
         layers {
             bindings = <
-&to 0  &kp C_PREV        &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &kp F14       &kp F15       &none     &none      &none     &to 8
-&to 0  &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT     &kp ESCAPE                         &kp TAB     &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
-&to 0  &kp LGUI          &kp LCTRL         &kp LALT      &kp LSHIFT         &kp CAPSLOCK                       &kp SPACE   &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
-&to 0  &kp LGUI          &kp LCTRL         &kp LALT      &kp LSHFT          &kp DELETE       &trans    &trans  &kp DELETE  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
-                         &tog 1            &tog 5        &tog 6             &tog 4           &tog 2    &tog 2  &tog 3      &tog 5      &tog 6    &tog 1
+            
+/* layers A L*/
+&to 0  &kp C_PREV        &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+/* layers A R*/
+&kp F14       &kp F15       &none     &none      &none     &to 8
+
+/* layers B L*/
+&to 0  &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT     &kp ESCAPE
+/* layers B R*/
+&kp TAB     &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
+
+/* layers C L*/
+&to 0  &kp LGUI          &kp LCTRL         &kp LALT      &kp LSHIFT         &kp CAPSLOCK
+/* layers C R*/
+&kp SPACE   &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
+
+/* layers D L*/
+&to 0  &kp LGUI          &kp LCTRL         &kp LALT      &kp LSHFT          &kp DELETE       &trans
+/* layers D R*/
+&trans  &kp DELETE  &kp RSHIFT  &kp RALT  &kp RCTRL  &kp RGUI  &to 0
+
+/* layers T L*/
+&tog BASE_MIRROR_LAYER
+&tog NUM_LAYER
+&tog SYMB_LAYER
+&tog NAV_L_LAYER
+&tog FUNCT_LAYER
+/* layers T R*/
+&tog FUNCT_LAYER
+&tog NAV_R_LAYER
+&tog NUM_LAYER
+&tog SYMB_LAYER
+&tog BASE_MIRROR_LAYER
             >;
 
             label = "layers";
