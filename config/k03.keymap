@@ -480,8 +480,8 @@
 
 /* nav-r B L*/
 &msc SCRL_LEFT
-&msc SCRL_DOWN
 &msc SCRL_UP
+&msc SCRL_DOWN
 &kp PAGE_DOWN
 &kp PAGE_UP
 &msc SCRL_RIGHT   
@@ -489,8 +489,8 @@
 &msc SCRL_LEFT
 &kp PG_UP
 &kp PAGE_DOWN
-&msc SCRL_UP
 &msc SCRL_DOWN
+&msc SCRL_UP
 &msc SCRL_RIGHT
 
 /* nav-r C L*/
