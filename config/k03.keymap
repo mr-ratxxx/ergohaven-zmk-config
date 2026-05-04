@@ -4,7 +4,12 @@
 
 #define NAV_R_LAYER 2
 #define NAV_L_LAYER 3
-#define FUNCT_LAYER 4 
+#define FUNCT_LAYER 4
+#define NUM_LAYER 5
+#define SYMB_LAYER 6
+#define LAYERS_LAYER 7
+#define ADJ_LAYER 8
+#define BASE_OVERRIDE_LAYER 9 
 
 #define MMV_SLOW_ALT_SPEED 250
 #define MMV_SLOW_ALT_SPEED_L -250
@@ -373,9 +378,9 @@
 &layer_to_tap 0 ESC
 &layer_to_tap 0 F2
 &layer_hold_tap FUNCT_LAYER F3
-&layer_hold_tap 6 F4
-&layer_hold_tap 4 F5
-&layer_hold_tap 2 F6
+&layer_hold_tap NAV_L_LAYER F4
+&layer_hold_tap SYMB_LAYER F5
+&layer_hold_tap NUM_LAYER F6
 /* base A R*/
 &layer_hold_tap 2 F7
 &layer_hold_tap 3 F8
