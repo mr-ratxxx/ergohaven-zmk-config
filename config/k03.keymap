@@ -511,7 +511,7 @@
 &kp UP
 &kp DOWN
 &kp RIGHT_ARROW
-&kp RG(X)
+&kp LG(TAB)
                           
 /* nav-r D L*/                          
 &kp RG(X)
@@ -528,7 +528,7 @@
 &ralt_y_up3
 &ralt_y_down3
 &ralt_x_right3
-&kp LG(TAB)
+&kp RG(X)
 
 /* nav-r T L*/
 &kp RG(LEFT_BRACKET)
