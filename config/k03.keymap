@@ -316,7 +316,6 @@
         UI_REVERT {
             bindings = <&kp RG(Z)>;
             key-positions = <20 19>;
-            layers = <0 1 3 4 4 5>;
         };
 
         UIO_REPEAT {
