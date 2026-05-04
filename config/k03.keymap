@@ -494,9 +494,9 @@
 &kp LCTRL
 &kp LALT
 &kp LSHFT
-&kp LG(TAB)      
+&kp RG(C)      
 /* nav-r C R*/                          
-&kp RG(TAB)
+&kp RG(C)
 &kp LEFT_ARROW
 &kp UP
 &kp DOWN
@@ -509,10 +509,11 @@
 &mmv MOVE_Y(MMV_FAST_SPEED_D)
 &mmv MOVE_Y(MMV_FAST_SPEED_U)
 &mmv MOVE_X(MMV_FAST_SPEED_R)
-&none &trans
+&kp RG(V)
+&trans
 /* nav-r D R*/
 &trans
-&kt RALT
+&kp RG(V)
 &ralt_x_left3
 &ralt_y_up3
 &ralt_y_down3
