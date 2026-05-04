@@ -875,17 +875,17 @@
         &kp BSLH
         
         /* base T L*/
-        &lt 7 MINUS
-        &lt 5 EQUAL
-        &lt 6 TAB
-        &lt 4 SPACE
-        &lt 2 DEL
+        &kp MINUS
+        &kp EQUAL
+        &kp TAB
+        &kp SPACE
+        &kp DEL
         /* base T R*/
-        &lt 2 ESC
-        &lt 3 RG(RC(SPACE))
-        &lt 5 BACKSPACE
-        &lt 6 LBKT
-        &lt 7 RIGHT_BRACKET
+        &kp ESC
+        &kp RG(RC(SPACE))
+        &kp BACKSPACE
+        &kp LBKT
+        &kp RIGHT_BRACKET
                     >;
                     display-name = "base-override";
                 };
