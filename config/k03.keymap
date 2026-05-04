@@ -2,6 +2,10 @@
 
 // Константы для перемещений
 
+#define NAV_R_LAYER 2
+#define NAV_L_LAYER 3
+#define FUNCT_LAYER 4 
+
 #define MMV_SLOW_ALT_SPEED 250
 #define MMV_SLOW_ALT_SPEED_L -250
 #define MMV_SLOW_ALT_SPEED_U -250
@@ -368,7 +372,7 @@
 /* base A L*/
 &layer_to_tap 0 ESC
 &layer_to_tap 0 F2
-&layer_hold_tap 5 F3
+&layer_hold_tap FUNCT_LAYER F3
 &layer_hold_tap 6 F4
 &layer_hold_tap 4 F5
 &layer_hold_tap 2 F6
