@@ -312,6 +312,16 @@
             bindings = <&kp ENTER>;
             key-positions = <53 28>;
         };
+        
+        R_ENTER2 {
+                    bindings = <&kp ENTER>;
+                    key-positions = <32 56>;            
+                };
+        
+                L_ENTER2 {
+                    bindings = <&kp ENTER>;
+                    key-positions = <53 27>;
+                };
 
         UI_REVERT {
             bindings = <&kp RG(Z)>;
