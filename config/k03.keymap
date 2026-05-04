@@ -382,10 +382,10 @@
 &layer_hold_tap SYMB_LAYER F5
 &layer_hold_tap NUM_LAYER F6
 /* base A R*/
-&layer_hold_tap 2 F7
-&layer_hold_tap 3 F8
-&layer_hold_tap 5 F9
-&layer_hold_tap 6 F10
+&layer_hold_tap FUNCT_LAYER F7
+&layer_hold_tap NAV_R_LAYER F8
+&layer_hold_tap NUM_LAYER F9
+&layer_hold_tap SYMB_LAYER F10
 &layer_to_tap 0 F11
 &layer_to_tap 0 F12
 
@@ -437,17 +437,17 @@
 &kp BSLH
 
 /* base T L*/
-&lt 7 MINUS
-&lt 5 EQUAL
-&lt 6 TAB
-&lt 4 SPACE
-&lt 2 DEL
+&lt LAYERS_LAYER MINUS
+&lt NUM_LAYER EQUAL
+&lt SYMB_LAYER TAB
+&lt NAV_L_LAYER SPACE
+&lt FUNCT_LAYER DEL
 /* base T R*/
-&lt 2 ESC
-&lt 3 RG(RC(SPACE))
-&lt 5 BACKSPACE
-&lt 6 LBKT
-&lt 7 RIGHT_BRACKET
+&lt FUNCT_LAYER ESC
+&lt NAV_R_LAYER RG(RC(SPACE))
+&lt NUM_LAYER BACKSPACE
+&lt SYMB_LAYER LBKT
+&lt LAYERS_LAYER RIGHT_BRACKET
             >;
             display-name = "base";
         };
