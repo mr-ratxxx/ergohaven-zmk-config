@@ -305,8 +305,7 @@
 
         R_ENTER {
             bindings = <&kp ENTER>;
-            key-positions = <31 32>;
-            layers = <3 4>;
+            key-positions = <31 32>;            
         };
 
         L_ENTER {
@@ -323,19 +322,16 @@
         UIO_REPEAT {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <19 20 21>;
-            layers = <0 1 3 4 4 5>;
         };
 
         JK_MOUSE1 {
             bindings = <&mkp MB1>;
             key-positions = <45 46>;
-            layers = <3 4>;
         };
 
         JKL_MOUSE2 {
             bindings = <&mkp MB2>;
             key-positions = <45 46 47>;
-            layers = <3 4>;
         };
 
         DF_MOUSE1 {
