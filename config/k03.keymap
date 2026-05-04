@@ -489,22 +489,22 @@
 &msc SCRL_RIGHT
 
 /* nav-r C L*/
-&none
+&kp LG(TAB)
 &kp LGUI
 &kp LCTRL
 &kp LALT
 &kp LSHFT
-&kp RG(C)      
+&kp LG(C)      
 /* nav-r C R*/                          
 &kp RG(C)
 &kp LEFT_ARROW
 &kp UP
 &kp DOWN
 &kp RIGHT_ARROW
-&kp RALT
+&kp RG(X)
                           
 /* nav-r D L*/                          
-&trans
+&kp RG(X)
 &mmv MOVE_X(MMV_FAST_SPEED_L)
 &mmv MOVE_Y(MMV_FAST_SPEED_D)
 &mmv MOVE_Y(MMV_FAST_SPEED_U)
@@ -518,7 +518,7 @@
 &ralt_y_up3
 &ralt_y_down3
 &ralt_x_right3
-&kp RIGHT_ALT
+&kp LG(TAB)
 
 /* nav-r T L*/
 &kp RG(LEFT_BRACKET)
