@@ -293,21 +293,15 @@
     combos {
         compatible = "zmk,combos";
 
-        M__ENTER {
-            bindings = <&kp ENTER>;
-            key-positions = <45 46>;
-            layers = <0 5 6 1 2 7>;
-        };
-
-        JK_ENTER {
+        R_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
             layers = <3 4>;
         };
 
-        VB_ENTER {
+        L_ENTER {
             bindings = <&kp ENTER>;
-            key-positions = <41 40>;
+            key-positions = <28 27>;
         };
 
         UI_REVERT {
@@ -690,7 +684,7 @@
 &trans
 
 /* symb B L*/
-&kp SLASH
+&kp SQT
 &kp RS(N4)
 &kp RS(N2)
 &kp LEFT_PARENTHESIS
@@ -702,22 +696,22 @@
 &kp RIGHT_PARENTHESIS
 &kp RS(N2)
 &kp RS(N4)
-&kp SLASH
+&kp SQT
 
 /* symb C L*/
-&kp SQT
+&kp RS(SQT)
 &kp RS(N8)
 &kp RS(N7)
 &kp RS(N6)
 &kp RS(N5)
-&kp MINUS        
+&kp MINUS      
 /* symb C R*/   
 &kp MINUS
 &kp RS(N5)
 &kp RS(N6)
 &kp RS(N7)
 &kp RS(N8)
-&kp SQT
+&kp RS(SQT)
 
 /* symb D L*/
 &kp SLASH
