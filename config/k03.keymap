@@ -547,7 +547,49 @@
             >;
             display-name = "nav-l";
         };
+        
+        funct {
+            bindings = <
+            
+/* row 1 L*/
+&trans
+&trans
+&trans
+&trans
+&trans
+&trans
+/* row 1 R*/
+&trans
+&trans
+&trans
+&trans
+&trans
+&trans
 
+/* row 2 L*/
+&trans     &kp F3       &kp F9                &kp F8                 &kp F7         &kp ESCAPE
+/* row 2 R*/
+&kp TAB       &kp F7         &kp F8                &kp F9                 &kt F3       &none
+
+/* row 3 L*/
+&trans     &mt LGUI F2  &mt LCTRL F6          &mt LALT F5            &mt LSHIFT F4  &kp CAPS
+/* row 3 R*/
+&kp SPACE     &mt RSHFT F4   &mt RALT F5           &mt RCTRL F6           &mt RGUI F2  &none
+
+/* row 4 L*/
+&trans     &kp F1       &kp F12               &kp F11                &kp F10        &kp BACKSPACE  &trans
+/* row 4 R*/
+&trans   &kp DELETE    &kp F10        &kp F11               &kp F12                &kp F1       &mo 7
+
+/* row 5 L*/
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB        &kp SPACE      &kp DEL
+/* row 5 R*/
+&kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
+            >;
+
+            display-name = "funct";
+        };
+        
         num {
             bindings = <            
 /* num A L*/
@@ -621,48 +663,6 @@
 &trans
 &trans
             >;
-            
-        funct {
-            bindings = <
-            
-/* row 1 L*/
-&trans
-&trans
-&trans
-&trans
-&trans
-&trans
-/* row 1 R*/
-&trans
-&trans
-&trans
-&trans
-&trans
-&trans
-
-/* row 2 L*/
-&trans     &kp F3       &kp F9                &kp F8                 &kp F7         &kp ESCAPE
-/* row 2 R*/
-&kp TAB       &kp F7         &kp F8                &kp F9                 &kt F3       &none
-
-/* row 3 L*/
-&trans     &mt LGUI F2  &mt LCTRL F6          &mt LALT F5            &mt LSHIFT F4  &kp CAPS
-/* row 3 R*/
-&kp SPACE     &mt RSHFT F4   &mt RALT F5           &mt RCTRL F6           &mt RGUI F2  &none
-
-/* row 4 L*/
-&trans     &kp F1       &kp F12               &kp F11                &kp F10        &kp BACKSPACE  &trans
-/* row 4 R*/
-&trans   &kp DELETE    &kp F10        &kp F11               &kp F12                &kp F1       &mo 7
-
-/* row 5 L*/
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp TAB        &kp SPACE      &kp DEL
-/* row 5 R*/
-&kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
-            >;
-
-            display-name = "funct";
-        };
 
             label = "num";
         };
