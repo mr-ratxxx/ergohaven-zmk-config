@@ -333,7 +333,7 @@ R_ENTER1 {
             key-positions = <53 28>;
         };
         
-        R_ENTER2 {
+        R_ENTER222 {
                     bindings = <&kp ENTER>;
                     key-positions = <32 56>;            
                 };
