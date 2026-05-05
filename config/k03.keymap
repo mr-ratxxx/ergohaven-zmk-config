@@ -303,6 +303,26 @@
     combos {
         compatible = "zmk,combos";
 
+R_ENTER1 {
+            bindings = <&kp ENTER>;
+            key-positions = <31 32 >;            
+        };
+        
+        R_ENTER1L {
+                    bindings = <&kp ENTER>;
+                    key-positions = < 27 28 >;            
+                };
+                
+                R_ENTER2L {
+                                    bindings = <&kp ENTER>;
+                                    key-positions = < 26 27 >;            
+                                };
+        
+        R_ENTER2 {
+                    bindings = <&kp ENTER>;
+                    key-positions = <32 33 >;            
+                };
+
         R_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <31 56>;            
