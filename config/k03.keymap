@@ -310,27 +310,17 @@
             layers = <BASE_LAYER FUNCT_LAYER NUM_LAYER SYMB_LAYER LAYERS_LAYER BASE_OVERRIDE_LAYER>;
         };
         
-        ENTER_L_NAV {
+        ENTER_L {
                     bindings = <&kp ENTER>;
-                    key-positions = <41 40>;
-                    layers = <layers = <NAV_L_LAYER NAV_R_LAYER>;>;
+                    key-positions = <15 16>;
+                    <layers = <NAV_L_LAYER NAV_R_LAYER>;>;
                 };
 
         ENTER_R_NAV {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
             layers = <NAV_L_LAYER NAV_R_LAYER>;
-        };
-
-        UI_REVERT {
-            bindings = <&kp RG(Z)>;
-            key-positions = <20 19>;
-        };
-
-        UIO_REPEAT {
-            bindings = <&kp LS(LG(Z))>;
-            key-positions = <19 20 21>;
-        };
+        };        
 
         MOUSE1_R_NAV {
             bindings = <&mkp MB1>;
@@ -353,6 +343,16 @@
             bindings = <&mkp MB2>;
             key-positions = <40 39 38>;
         };
+        
+        UI_REVERT {
+                    bindings = <&kp RG(Z)>;
+                    key-positions = <20 19>;
+                };
+        
+                UIO_REPEAT {
+                    bindings = <&kp LS(LG(Z))>;
+                    key-positions = <19 20 21>;
+                };
         
         SHIFT_TOGGLE {
            bindings = <&kt LSHIFT>;
