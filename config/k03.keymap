@@ -2,6 +2,7 @@
 
 // Константы для перемещений
 
+#define BASE_LAYER 0
 #define BASE_MIRROR_LAYER 1
 #define NAV_R_LAYER 2
 #define NAV_L_LAYER 3
@@ -303,20 +304,20 @@
     combos {
         compatible = "zmk,combos";
 
-        M__ENTER {
+        ENTER_R_BASE {
             bindings = <&kp ENTER>;
             key-positions = <45 46>;
             layers = <0 5 6 1 2 7>;
             layers = <0 FUNCT_LAYER NUM_LAYER SYMB_LAYER LAYERS_LAYER BASE_OVERRIDE_LAYER>;
         };
 
-        JK_ENTER {
+        ENTER_R_NAV {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
             layers = <NAV_L_LAYER NAV_R_LAYER>;
         };
 
-        VB_ENTER {
+        ENTER_L_BASE {
             bindings = <&kp ENTER>;
             key-positions = <41 40>;
         };
@@ -331,24 +332,24 @@
             key-positions = <19 20 21>;
         };
 
-        JK_MOUSE1 {
+        MOUSE1_R_NAV {
             bindings = <&mkp MB1>;
             key-positions = <45 46>;
             layers = <NAV_L_LAYER NAV_R_LAYER>;
         };
 
-        JKL_MOUSE2 {
+        MOUSE2_R_NAV {
             bindings = <&mkp MB2>;
             key-positions = <45 46 47>;
             layers = <NAV_L_LAYER NAV_R_LAYER>;
         };
 
-        DF_MOUSE1 {
+        MOUSE1_L_BASE {
             bindings = <&mkp MB1>;
             key-positions = <40 39>;
         };
 
-        SDF_MOUSE2 {
+        MOUSE2_L_BASE {
             bindings = <&mkp MB2>;
             key-positions = <40 39 38>;
         };
@@ -360,13 +361,14 @@
         
         R_ALT_TOGGLE {
            bindings = <&kt RALT>;
-           key-positions = <44 43 45>;
+           key-positions = <43 44>;
+           layers = <BASE_LAYER>;
         };
         
         TO_NAV_R {
-                    bindings = <&tog 3>;
-                    key-positions = <45 56 46>;
-                };
+            bindings = <&tog 3>;
+            key-positions = <45 56 46>;
+        };
     };
 
     keymap {
