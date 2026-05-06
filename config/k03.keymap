@@ -663,8 +663,8 @@
 &kp N1
 &kp N2
 &kp N3
-&kp BACKSLASH
 &kp SLASH
+&kp BACKSLASH
 
 /* num T L*/
 &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE
