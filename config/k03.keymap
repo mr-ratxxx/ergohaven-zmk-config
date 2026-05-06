@@ -306,20 +306,20 @@
 
         ENTER_R_BASE {
             bindings = <&kp ENTER>;
-            key-positions = <45 46>;
-            layers = <0 5 6 1 2 7>;
-            layers = <0 FUNCT_LAYER NUM_LAYER SYMB_LAYER LAYERS_LAYER BASE_OVERRIDE_LAYER>;
+            key-positions = <45 46>;         
+            layers = <BASE_LAYER FUNCT_LAYER NUM_LAYER SYMB_LAYER LAYERS_LAYER BASE_OVERRIDE_LAYER>;
         };
+        
+        ENTER_L_NAV {
+                    bindings = <&kp ENTER>;
+                    key-positions = <41 40>;
+                    layers = <layers = <NAV_L_LAYER NAV_R_LAYER>;>;
+                };
 
         ENTER_R_NAV {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
             layers = <NAV_L_LAYER NAV_R_LAYER>;
-        };
-
-        ENTER_L_BASE {
-            bindings = <&kp ENTER>;
-            key-positions = <41 40>;
         };
 
         UI_REVERT {
