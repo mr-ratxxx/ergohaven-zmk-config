@@ -633,7 +633,7 @@
 &none
 
 /* num C L*/
-&trans
+&kp DOT
 &mt LGUI N0
 &mt LCTRL N6
 &mt LALT N5
@@ -645,11 +645,11 @@
 &mt RIGHT_ALT N5
 &mt RCTRL N6
 &mt RGUI N0
-&none
+&kp DOT
 
 /* num D L*/
-&trans
-&kp PERIOD
+&kp SLASH
+&kp BACKSLASH
 &kp N3
 &kp N2
 &kp N1        
@@ -661,8 +661,8 @@
 &kp N1
 &kp N2
 &kp N3
-&kp DOT
-&mo 7
+&kp BACKSLASH
+&kp SLASH
 
 /* num T L*/
 &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE
@@ -696,8 +696,8 @@
 
 /* symb B L*/
 &kp SQT
-&kp RS(N4)
 &kp RS(N2)
+&kp RS(N4)
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
 &kp PLUS
@@ -705,8 +705,8 @@
 &kp PLUS
 &kp LEFT_PARENTHESIS
 &kp RIGHT_PARENTHESIS
-&kp RS(N2)
 &kp RS(N4)
+&kp RS(N2)
 &kp SQT
 
 /* symb C L*/
@@ -728,15 +728,15 @@
 &kp SLASH
 &kp BACKSLASH
 &kp RS(N3)
-&kp EQUAL
-&kp RS(N1)
 &kp RS(MINUS)
+&kp RS(N1)
+&kp EQUAL
 &trans
 /* symb D R*/
 &trans
-&kp RS(MINUS)
-&kp RS(N1)
 &kp EQUAL
+&kp RS(N1)
+&kp RS(MINUS)
 &kp RS(N3)
 &kp SLASH
 &kp BACKSLASH
