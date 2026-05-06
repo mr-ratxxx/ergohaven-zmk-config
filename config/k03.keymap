@@ -313,7 +313,7 @@
         ENTER_L {
                     bindings = <&kp ENTER>;
                     key-positions = <15 16>;
-                    <layers = <NAV_L_LAYER NAV_R_LAYER>;>;
+                    <layers = <NAV_L_LAYER NAV_R_LAYER>;
                 };
 
         ENTER_R_NAV {
