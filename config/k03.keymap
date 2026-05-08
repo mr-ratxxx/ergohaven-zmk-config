@@ -304,6 +304,12 @@
     combos {
         compatible = "zmk,combos";
 
+        TO_ADJ_LAYER {
+            bindings = <&kp ENTER>;
+            key-positions = <10 11>;
+            layers = <8>;
+        };
+
         ENTER_R_BASE {
             bindings = <&kp ENTER>;
             key-positions = <45 46>;         
@@ -772,10 +778,10 @@
 /* layers A R*/
 &kp F14
 &kp F15
-&none
-&none
-&none
-&to 8
+&kp F16
+&kp F17
+&kp F18
+&to 0
 
 /* layers B L*/
 &to 0
@@ -793,19 +799,19 @@
 &to 0
 
 /* layers C L*/
-&to 0
-&kp LGUI
-&kp LCTRL
-&kp LALT
-&kp LSHIFT
+&to BASE_LAYER
+&to SYMB_LAYER
+&to NUM_LAYER
+&to NAV_L_LAYER
+&to FUNCT_LAYER
 &kp CAPSLOCK
 /* layers C R*/
 &kp SPACE
-&kp RSHIFT
-&kp RALT
-&kp RCTRL
-&kp RGUI
-&to 0
+&to FUNCT_LAYER
+&to NAV_R_LAYER
+&kp NUM_LAYER
+&kp SYMB_LAYER
+&to BASE_LAYER
 
 /* layers D L*/
 &to 0
