@@ -362,18 +362,13 @@
         
         SHIFT_TOGGLE {
            bindings = <&kt LSHIFT>;
-           key-positions = <31 28>;
+           key-positions = < 30 31 28 29>;
         };
         
         R_ALT_TOGGLE {
            bindings = <&kt RALT>;
            key-positions = <43 44>;
-           layers = <BASE_LAYER>;
-        };
-        
-        TO_NAV_R {
-            bindings = <&tog 3>;
-            key-positions = <45 56 46>;
+           layers = <NAV_R_LAYER>;
         };
     };
 
