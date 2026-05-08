@@ -863,19 +863,19 @@
                     bindings = <
                     
         /* base A L*/
-        &layer_to_tap 0 ESC
-        &layer_to_tap 0 F2
-        &layer_hold_tap 5 F3
-        &layer_hold_tap 6 F4
-        &layer_hold_tap 4 F5
-        &layer_hold_tap 2 F6
+        &layer_to_tap BASE_LAYER ESC
+        &layer_to_tap SYMB_LAYER F2
+        &layer_hold_tap NUM_LAYER F3
+        &layer_hold_tap NAV_R_LAYER F4
+        &layer_hold_tap FUNCT_LAYER F5
+        &layer_hold_tap BASE_LAYER F6
         /* base A R*/
-        &layer_hold_tap 2 F7
-        &layer_hold_tap 3 F8
-        &layer_hold_tap 5 F9
-        &layer_hold_tap 6 F10
-        &layer_to_tap 0 F11
-        &layer_to_tap 0 F12
+        &layer_hold_tap BASE_LAYER F7
+        &layer_hold_tap FUNCT_LAYER F8
+        &layer_hold_tap NAV_R_LAYER F9
+        &layer_hold_tap NUM_LAYER F10
+        &layer_to_tap SYMB_LAYER F11
+        &layer_to_tap BASE_LAYER F12
         
         /* base B L*/
         &kp LG(TAB)
