@@ -800,8 +800,8 @@
 
 /* layers C L*/
 &to BASE_LAYER
-&to SYMB_LAYER
 &to NUM_LAYER
+&to SYMB_LAYER
 &to NAV_L_LAYER
 &to FUNCT_LAYER
 &kp CAPSLOCK
@@ -809,8 +809,8 @@
 &kp SPACE
 &to FUNCT_LAYER
 &to NAV_R_LAYER
-&kp NUM_LAYER
-&kp SYMB_LAYER
+&to NUM_LAYER
+&to SYMB_LAYER
 &to BASE_LAYER
 
 /* layers D L*/
