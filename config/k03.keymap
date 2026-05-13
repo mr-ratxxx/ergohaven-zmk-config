@@ -659,7 +659,7 @@
         &trans
 
         /* num B L */
-        &trans
+        &kp MINUS
         &kp LS(MINUS)
         &kp N9
         &kp N8
@@ -671,7 +671,7 @@
         &kp N8
         &kp N9
         &kp RS(MINUS)
-        &none
+        &kp MINUS
 
         /* num C L */
         &kp DOT
@@ -679,9 +679,9 @@
         &mt LCTRL N6
         &mt LALT N5
         &mt LSHFT N4
-        &kp MINUS
+        &kp N0
         /* num C R */
-        &kp MINUS
+        &kp N0
         &mt RSHIFT N4
         &mt RIGHT_ALT N5
         &mt RCTRL N6
