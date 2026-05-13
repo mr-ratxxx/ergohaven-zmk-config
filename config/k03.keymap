@@ -779,11 +779,11 @@
         /* symb D R */
         &trans
         &kp MINUS
+        &kp RS(N1)
         &kp RS(N5)
         &kp RS(N6)
         &kp RS(N7)
         &kp RS(N8)
-        &kp RS(SQT)
 
         /* symb T L */
         &trans
