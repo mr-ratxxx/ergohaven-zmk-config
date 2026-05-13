@@ -724,19 +724,19 @@
     symb {
       bindings = <
         /* symb row 1 L */
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
+        &kp RS(SQT)
+        &kp RS(N8)
+        &kp RS(N7)
+        &kp RS(N6)
+        &kp RS(N5)
+        &kp MINUS
         /* row 1 R */
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
+        &kp MINUS
+        &kp RS(N5)
+        &kp RS(N6)
+        &kp RS(N7)
+        &kp RS(N8)
+        &kp RS(SQT)
 
         /* symb B L */
         &kp SQT
@@ -763,7 +763,7 @@
         /* symb C R */
         &kp MINUS
         &kp RS(N5)
-        &kp RS(N6)
+        &kp MINUS
         &kp RS(N7)
         &kp RS(N8)
         &kp RS(SQT)
