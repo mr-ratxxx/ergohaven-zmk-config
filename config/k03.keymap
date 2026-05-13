@@ -769,21 +769,19 @@
         &kp RS(SQT)
 
         /* symb D L */
-        &kp SLASH
-        &kp BACKSLASH
-        &kp RS(N3)
-        &kp RS(MINUS)
-        &kp RS(N1)
-        &kp EQUAL
-        &trans
+        &kp RS(SQT)
+        &kp RS(N8)
+        &kp RS(N7)
+        &kp RS(N6)
+        &kp RS(N5)
+        &kp MINUS
         /* symb D R */
-        &trans
-        &kp EQUAL
-        &kp RS(N1)
-        &kp RS(MINUS)
-        &kp RS(N3)
-        &kp SLASH
-        &kp BACKSLASH
+        &kp MINUS
+        &kp RS(N5)
+        &kp RS(N6)
+        &kp RS(N7)
+        &kp RS(N8)
+        &kp RS(SQT)
 
         /* symb T L */
         &trans
