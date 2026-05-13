@@ -764,8 +764,8 @@
         &kp MINUS
         &kp MINUS
         &kp EQUAL
-        &kp RS(N7)
-        &kp RS(N8)
+        &kp RS(MINUS)
+        &kp PLUS
         &kp RS(SQT)
 
         /* symb D L */
