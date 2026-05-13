@@ -746,7 +746,7 @@
         &kp RIGHT_PARENTHESIS
         &kp PLUS
         /* symb B R */
-        &kp PLUS
+        &kp SLASH
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &kp RS(N4)
@@ -778,7 +778,7 @@
         &trans
         /* symb D R */
         &trans
-        &kp MINUS
+        &kp BACKSLASH
         &kp RS(N1)
         &kp RS(N5)
         &kp RS(N6)
