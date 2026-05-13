@@ -775,7 +775,9 @@
         &kp RS(N6)
         &kp RS(N5)
         &kp MINUS
+        &trans
         /* symb D R */
+        &trans
         &kp MINUS
         &kp RS(N5)
         &kp RS(N6)
