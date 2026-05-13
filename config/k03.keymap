@@ -659,7 +659,7 @@
         &trans
 
         /* num B L */
-        &kp MINUS
+        &trans
         &kp LS(MINUS)
         &kp N9
         &kp N8
@@ -679,7 +679,7 @@
         &mt LCTRL N6
         &mt LALT N5
         &mt LSHFT N4
-        &kp N0
+        &kp MINUS
         /* num C R */
         &kp N0
         &mt RSHIFT N4
@@ -724,19 +724,19 @@
     symb {
       bindings = <
         /* symb row 1 L */
-        &kp RS(SQT)
-        &kp RS(N8)
-        &kp RS(N7)
-        &kp RS(N6)
-        &kp RS(N5)
-        &kp MINUS
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
         /* row 1 R */
-        &kp MINUS
-        &kp RS(N5)
-        &kp RS(N6)
-        &kp RS(N7)
-        &kp RS(N8)
-        &kp RS(SQT)
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
 
         /* symb B L */
         &kp SQT
@@ -769,12 +769,12 @@
         &kp RS(SQT)
 
         /* symb D L */
-        &kp RS(SQT)
-        &kp RS(N8)
-        &kp RS(N7)
-        &kp RS(N6)
-        &kp RS(N5)
-        &kp MINUS
+        &kp SLASH
+        &kp BACKSLASH
+        &kp RS(N3)
+        &kp RS(MINUS)
+        &kp RS(N1)
+        &kp EQUAL
         &trans
         /* symb D R */
         &trans
