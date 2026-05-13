@@ -761,10 +761,10 @@
         &kp RS(N5)
         &kp MINUS
         /* symb C R */
-        &kp RS(MINUS)
+        &kp RS(N3)
         &kp MINUS
         &kp EQUAL
-        &kp RS(N1)
+        &kp RS(MINUS)
         &kp PLUS
         &kp RS(SQT)
 
