@@ -626,17 +626,17 @@
         &mo 7
 
         /* funct T L */
-        &kp LG(LEFT_BRACKET)
-        &kp LG(RIGHT_BRACKET)
-        &kp TAB
-        &kp SPACE
-        &kp DEL
+        &layer_to_tap LAYERS_LAYER RG(LEFT_BRACKET)
+        &layer_to_tap NUM_LAYER RG(RIGHT_BRACKET)
+        &lt SYMB_LAYER TAB
+        &lt BASE_OVERRIDE_LAYER SPACE
+        &lt FUNCT_LAYER DEL
         /* funct T R */
-        &kp ESC
-        &kp CAPSLOCK
-        &kp BACKSPACE
-        &kp RG(LEFT_BRACKET)
-        &kp RG(RIGHT_BRACKET)
+        &lt FUNCT_LAYER ESC
+        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+        &lt NUM_LAYER BACKSPACE
+        &layer_to_tap SYMB_LAYER RG(LEFT_BRACKET)
+        &layer_to_tap LAYERS_LAYER RG(RIGHT_BRACKET)
       >;
       display-name = "funct";
     };
