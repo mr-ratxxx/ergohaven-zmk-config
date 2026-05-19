@@ -525,7 +525,7 @@
         &ralt_y_up3
         &ralt_y_down3
         &ralt_x_right3
-        &kp RG(X)
+        &kt RALT
 
         /* nav-r T L */
         &layer_to_tap LAYERS_LAYER RG(LEFT_BRACKET)
