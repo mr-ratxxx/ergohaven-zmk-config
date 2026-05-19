@@ -755,17 +755,17 @@
 
         /* symb C L */
         &kp RS(SQT)
-        &kp RS(N8)
-        &kp RS(N7)
-        &kp RS(N6)
-        &kp RS(N5)
+        &mt LGUI RS(N8)
+        &mt LCTRL RS(N7)
+        &mt LALT RS(N6)
+        &mt LSHIFT RS(N5)
         &kp MINUS
         /* symb C R */
         &kp RS(N3)
-        &kp MINUS
-        &kp EQUAL
-        &kp RS(MINUS)
-        &kp PLUS
+        &mt RSHFT MINUS
+        &mt RALT EQUAL
+        &mt RCTRL RS(MINUS)
+        &mt RGUI PLUS
         &kp RS(SQT)
 
         /* symb D L */
