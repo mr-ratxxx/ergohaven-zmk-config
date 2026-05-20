@@ -280,6 +280,16 @@
             <&tog NAV_R_LAYER>;
           mods = <(MOD_RALT)>;
         };
+        
+    ralt_to_base: ralt_to_base {
+              compatible = "zmk,behavior-mod-morph";
+              label = "RALT_TO_BASE";
+              #binding-cells = <0>;
+              bindings =
+                <&kp CAPS>,
+                <&tog BASE_LAYER>;
+              mods = <(MOD_RALT)>;
+            };
 
     layer_hold_tap: layer_hold_tap {
       compatible = "zmk,behavior-hold-tap";
@@ -1052,7 +1062,7 @@
         &kp DEL
         /* base T R */
         &kp ESC
-        &kp RG(RC(SPACE))
+        &kp ralt_to_base
         &kp BACKSPACE
         &kp LBKT
         &kp RIGHT_BRACKET
