@@ -503,7 +503,7 @@
         &kp LSHFT
         &kp LG(C)
         /* nav-r C R */
-        &msc SCRL_DOWN
+        &msc SCRL_UP
         &kp LEFT_ARROW
         &kp UP
         &kp DOWN
@@ -520,7 +520,7 @@
         &trans
         /* nav-r D R */
         &trans
-        &msc SCRL_UP
+        &msc SCRL_DOWN
         &ralt_x_left3
         &ralt_y_up3
         &ralt_y_down3
