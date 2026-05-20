@@ -448,7 +448,7 @@
         &lt FUNCT_LAYER DEL
         /* base T R */
         &lt FUNCT_LAYER ESC
-        &lt NAV_R_LAYER RG(RC(SPACE))
+        &ralt_to_nav_r
         &lt NUM_LAYER BACKSPACE
         &lt SYMB_LAYER LBKT
         &lt LAYERS_LAYER RIGHT_BRACKET
