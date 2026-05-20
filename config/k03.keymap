@@ -579,7 +579,7 @@
         &trans
 
         /* funct B L */
-        &trans
+        &msc SCRL_UP
         &kp F3
         &kp F9
         &kp F8
@@ -591,10 +591,10 @@
         &kp F8
         &kp F9
         &kt F3
-        &none
+        &msc SCRL_UP
 
         /* funct C L */
-        &trans
+        &msc SCRL_DOWN
         &mt LGUI F2
         &mt LCTRL F6
         &mt LALT F5
@@ -606,7 +606,7 @@
         &mt RALT F5
         &mt RCTRL F6
         &mt RGUI F2
-        &none
+        &msc SCRL_DOWN
 
         /* funct D L */
         &trans
