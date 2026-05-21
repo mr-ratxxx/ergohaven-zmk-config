@@ -577,12 +577,12 @@ nav-l {
     &trans
 
     /* nav-l B L */
-    &msc SCRL_RIGHT
+    &msc SCRL_LEFT
     &msc SCRL_UP
     &msc SCRL_DOWN
     &kp PAGE_DOWN
     &kp PAGE_UP
-    &msc SCRL_LEFT
+    &msc SCRL_RIGHT
     /* nav-l B R */
     &msc SCRL_RIGHT
     &kp PAGE_DOWN
@@ -609,8 +609,8 @@ nav-l {
     /* nav-l D L */
     &kt LALT
     &ralt_x_left3
-    &ralt_y_up3
     &ralt_y_down3
+    &ralt_y_up3    
     &ralt_x_right3
     &msc SCRL_DOWN
     &trans
