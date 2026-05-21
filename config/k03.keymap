@@ -342,6 +342,18 @@
       key-positions = <31 32>;
       layers = <NAV_L_LAYER NAV_R_LAYER>;
     };
+    
+    0_R {
+              bindings = <&kp N0>;
+              key-positions = <32 33>;
+                    layers = <NAV_L_LAYER NAV_R_LAYER>;          
+            };
+            
+            0_L {
+                          bindings = <&kp N0>;
+                          key-positions = <26 27>;
+                                layers = <NAV_L_LAYER NAV_R_LAYER>;          
+                        };
 
     MOUSE1_R_NAV {
       bindings = <&mkp MB1>;
