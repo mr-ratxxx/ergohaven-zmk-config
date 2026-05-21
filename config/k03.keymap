@@ -326,11 +326,15 @@
       key-positions = <45 46>;
       layers = <BASE_LAYER FUNCT_LAYER NUM_LAYER SYMB_LAYER LAYERS_LAYER BASE_OVERRIDE_LAYER>;
     };
+    
+    ENTER_R_BASE2 {
+          bindings = <&kp ENTER>;
+          key-positions = <46 47>;          
+        };
 
     ENTER_L {
       bindings = <&kp ENTER>;
-      key-positions = <15 16>;
-      layers = <NAV_L_LAYER NAV_R_LAYER>;
+      key-positions = < 38 39 40>;
     };
 
     ENTER_R_NAV {
@@ -358,7 +362,7 @@
 
     MOUSE2_L_BASE {
       bindings = <&mkp MB2>;
-      key-positions = <40 39 38>;
+      key-positions = < 38 39 40>;
     };
 
     UI_REVERT {
