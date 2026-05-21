@@ -280,6 +280,16 @@
             <&tog NAV_R_LAYER>;
           mods = <(MOD_RALT)>;
         };
+        
+    alt_to_nav_l: alt_to_nav_l {
+              compatible = "zmk,behavior-mod-morph";
+              label = "ALT_TO_NAV_L";
+              #binding-cells = <0>;
+              bindings =
+                <&lt NAV_L_LAYER SPACE>,
+                <&tog NAV_L_LAYER>;
+              mods = <(MOD_LALT)>;
+            };
 
     layer_hold_tap: layer_hold_tap {
       compatible = "zmk,behavior-hold-tap";
@@ -440,7 +450,7 @@
         &lt LAYERS_LAYER MINUS
         &lt NUM_LAYER EQUAL
         &lt SYMB_LAYER TAB
-        &lt NAV_L_LAYER SPACE
+        &alt_to_nav_l
         &lt FUNCT_LAYER DEL
         /* base T R */
         &lt FUNCT_LAYER ESC
