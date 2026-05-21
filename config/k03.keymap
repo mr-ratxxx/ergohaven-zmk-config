@@ -388,6 +388,18 @@
       key-positions = <19 20 21>;
       layers = <NAV_L_LAYER NAV_R_LAYER FUNCT_LAYER LAYERS_LAYER>;
     };
+    
+    UI_REVERT_L {
+          bindings = <&kp RG(Z)>;
+          key-positions = <15 16>;
+          layers = <NAV_L_LAYER NAV_R_LAYER FUNCT_LAYER LAYERS_LAYER>;
+        };
+    
+        UIO_REPEAT_L {
+          bindings = <&kp LS(LG(Z))>;
+          key-positions = <14 15 16>;
+          layers = <NAV_L_LAYER NAV_R_LAYER FUNCT_LAYER LAYERS_LAYER>;
+        };
 
     SHIFT_TOGGLE {
       bindings = <&kt LSHIFT>;
