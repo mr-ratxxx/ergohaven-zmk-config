@@ -578,25 +578,25 @@ nav-l {
 
     /* nav-l B L */
     &msc SCRL_RIGHT
-    &kp PAGE_UP
-    &kp PAGE_DOWN
-    &msc SCRL_DOWN
     &msc SCRL_UP
+    &msc SCRL_DOWN
+    &kp PAGE_DOWN
+    &kp PAGE_UP
     &msc SCRL_LEFT
     /* nav-l B R */
     &msc SCRL_RIGHT
-    &msc SCRL_UP
-    &msc SCRL_DOWN
     &kp PAGE_DOWN
     &kp PAGE_UP
+    &msc SCRL_UP
+    &msc SCRL_DOWN
     &msc SCRL_LEFT
 
     /* nav-l C L */
     &kp LG(TAB)
-    &kp RIGHT_ARROW
+    &kp LEFT_ARROW
     &kp DOWN
     &kp UP
-    &kp LEFT_ARROW
+    &kp RIGHT_ARROW
     &msc SCRL_UP
     /* nav-l C R */
     &kp LG(C)
