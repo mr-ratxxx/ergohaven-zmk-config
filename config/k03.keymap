@@ -415,7 +415,7 @@
         &kp GRAVE
 
         /* base C L */
-        &kp LG(LEFT_BRACKET)
+        &kp CAPS
         &mt LGUI A
         &mt LCTRL S
         &mt LALT D
@@ -430,7 +430,7 @@
         &kp SQT
 
         /* base D L */
-        &kp LG(RIGHT_BRACKET)
+        &kp SPACE
         &kp Z
         &kp X
         &kp C
@@ -1081,7 +1081,7 @@ nav-l {
         &kp GRAVE
 
         /* base C L */
-        &kp RG(RC(SPACE))
+        &kp CAPS
         &mt LGUI A
         &mt LCTRL S
         &mt LALT D
