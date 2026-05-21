@@ -329,12 +329,12 @@
     
     ENTER_R_BASE2 {
           bindings = <&kp ENTER>;
-          key-positions = <46 47>;          
-        };
+          key-positions = <46 47>;
+          };
 
     ENTER_L {
       bindings = <&kp ENTER>;
-      key-positions = < 38 39 40>;
+      key-positions = <38 39 40>;
     };
 
     ENTER_R_NAV {
@@ -343,13 +343,13 @@
       layers = <NAV_L_LAYER NAV_R_LAYER>;
     };
     
-    0_R {
+    N_R {
               bindings = <&kp N0>;
               key-positions = <32 33>;
                     layers = <NAV_L_LAYER NAV_R_LAYER>;          
             };
             
-            0_L {
+            N_L {
                           bindings = <&kp N0>;
                           key-positions = <26 27>;
                                 layers = <NAV_L_LAYER NAV_R_LAYER>;          
@@ -374,7 +374,7 @@
 
     MOUSE2_L_BASE {
       bindings = <&mkp MB2>;
-      key-positions = < 38 39 40>;
+      key-positions = <38 39 40>;
     };
 
     UI_REVERT {
