@@ -559,23 +559,85 @@
       display-name = "nav-r";
     };
 
-    nav-l {
-      bindings = <
-        &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans
-        &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &kp PAGE_DOWN &kp PG_UP &msc SCRL_RIGHT
-        &msc SCRL_LEFT &kp PAGE_UP &kp PAGE_DOWN &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT
-        &none &kp LEFT &kp DOWN &kp UP &kp RIGHT_ARROW &kp LG(TAB)
-        &none &kp RSHFT &kp RALT &kp RCTRL &kp RGUI &none
-        &trans &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L) &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U) &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R) &kp LEFT_ALT
-        &trans &none &kp RIGHT_ALT &mmv MOVE_X(MMV_FAST_SPEED_L)
-        &mmv MOVE_Y(MMV_FAST_SPEED_U) &mmv MOVE_Y(MMV_FAST_SPEED_D) &mmv MOVE_X(MMV_FAST_SPEED_R)
-        &kp RIGHT_ALT &kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET) &kp TAB &kp SPACE
-        &kp DELETE &kp ESC &kp CAPSLOCK &kp BACKSPACE &kp RG(LEFT_BRACKET) &kp RG(RIGHT_BRACKET)
-      >;
-      display-name = "nav-l";
-    };
+nav-l {
+  bindings = <
+    /* nav-l A L */
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    /* nav-l A R */
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+
+    /* nav-l B L */
+    &msc SCRL_LEFT
+    &msc SCRL_DOWN
+    &msc SCRL_UP
+    &kp PAGE_DOWN
+    &kp PG_UP
+    &msc SCRL_RIGHT
+    /* nav-l B R */
+    &msc SCRL_LEFT
+    &kp PAGE_UP
+    &kp PAGE_DOWN
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+    &msc SCRL_RIGHT
+
+    /* nav-l C L */
+    &none
+    &kp LEFT
+    &kp DOWN
+    &kp UP
+    &kp RIGHT_ARROW
+    &kp LG(TAB)
+    /* nav-l C R */
+    &none
+    &kp RSHFT
+    &kp RALT
+    &kp RCTRL
+    &kp RGUI
+    &none
+
+    /* nav-l D L */
+    &trans
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+    &kp LEFT_ALT
+    /* nav-l D R */
+    &trans
+    &none
+    &kp RIGHT_ALT
+    &mmv MOVE_X(MMV_FAST_SPEED_L)
+    &mmv MOVE_Y(MMV_FAST_SPEED_U)
+    &mmv MOVE_Y(MMV_FAST_SPEED_D)
+    &mmv MOVE_X(MMV_FAST_SPEED_R)
+
+    /* nav-l T L */
+    &kp RIGHT_ALT
+    &kp LG(LEFT_BRACKET)
+    &kp LG(RIGHT_BRACKET)
+    &kp TAB
+    &kp SPACE
+    /* nav-l T R */
+    &kp DELETE
+    &kp ESC
+    &kp CAPSLOCK
+    &kp BACKSPACE
+    &kp RG(LEFT_BRACKET)
+    &kp RG(RIGHT_BRACKET)
+  >;
+  display-name = "nav-l";
+};
 
     funct {
       bindings = <
