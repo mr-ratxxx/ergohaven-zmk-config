@@ -584,12 +584,12 @@ nav-l {
     &kp PAGE_UP
     &msc SCRL_RIGHT
     /* nav-l B R */
-    &msc SCRL_RIGHT
-    &kp PAGE_DOWN
-    &kp PAGE_UP
-    &msc SCRL_UP
-    &msc SCRL_DOWN
     &msc SCRL_LEFT
+    &kp PAGE_UP
+    &kp PAGE_DOWN
+    &msc SCRL_DOWN    
+    &msc SCRL_UP    
+    &msc SCRL_RIGHT
 
     /* nav-l C L */
     &kp LG(TAB)
