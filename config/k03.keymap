@@ -315,7 +315,7 @@
   combos {
     compatible = "zmk,combos";
 
-    TO_ADJ_LAYER {
+    FROM_LAYERS_TO_ADJ_LAYER {
       bindings = <&kp ENTER>;
       key-positions = <10 11>;
       layers = <8>;
@@ -373,13 +373,7 @@
 
     SHIFT_TOGGLE {
       bindings = <&kt LSHIFT>;
-      key-positions = <30 31 28 29>;
-    };
-
-    R_ALT_TOGGLE {
-      bindings = <&kt RALT>;
-      key-positions = <43 44>;
-      layers = <NAV_R_LAYER>;
+      key-positions = <31 28>;
     };
   };
 
@@ -1062,7 +1056,7 @@
         &kp DEL
         /* base T R */
         &kp ESC
-        &kp ralt_to_base
+        &ralt_to_base
         &kp BACKSPACE
         &kp LBKT
         &kp RIGHT_BRACKET
