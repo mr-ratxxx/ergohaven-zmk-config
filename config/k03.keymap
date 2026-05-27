@@ -720,11 +720,11 @@ nav-l {
         &kp F12
         &kp F11
         &kp F10
-        &kp BACKSPACE
+        &msc SCRL_DOWN
         &trans
         /* funct D R */
         &trans
-        &kp DELETE
+        &msc SCRL_DOWN
         &kp F10
         &kp F11
         &kp F12
