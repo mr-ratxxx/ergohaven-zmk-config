@@ -721,7 +721,7 @@ nav-l {
         &kp F11
         &kp F10
         &msc SCRL_DOWN
-        &trans
+        &none
         /* funct D R */
         &trans
         &msc SCRL_DOWN
@@ -729,7 +729,7 @@ nav-l {
         &kp F11
         &kp F12
         &kp F1
-        &mo 7
+        &none
 
         /* funct T L */
         &layer_to_tap LAYERS_LAYER RG(LEFT_BRACKET)
