@@ -603,12 +603,12 @@
         &msc SCRL_RIGHT
 
         /* nav-r C L */
-        &kp LG(TAB)
-        &kp LGUI
-        &kp LCTRL
-        &kp LALT
-        &kp LSHFT
         &kp LG(C)
+        &mt LGUI LEFT_ARROW
+        &mt LCTRL UP
+        &mt LALT DOWN
+        &mt LSHFT RIGHT_ARROW
+        &msc SCRL_UP
         /* nav-r C R */
         &msc SCRL_UP
         &kp LEFT_ARROW
@@ -618,12 +618,12 @@
         &kp LG(TAB)
 
         /* nav-r D L */
-        &kp RG(X)
+        &kp RG(V)
         &mmv MOVE_X(MMV_FAST_SPEED_L)
         &mmv MOVE_Y(MMV_FAST_SPEED_D)
         &mmv MOVE_Y(MMV_FAST_SPEED_U)
         &mmv MOVE_X(MMV_FAST_SPEED_R)
-        &kp RG(V)
+        &msc SCRL_DOWN
         &trans
         /* nav-r D R */
         &trans
@@ -787,7 +787,7 @@ nav-l {
         &none
         /* funct D R */
         &trans
-        &msc SCRL_DOWN
+        &msc SCRL_DOWNg
         &kp F10
         &kp F11
         &kp F12
