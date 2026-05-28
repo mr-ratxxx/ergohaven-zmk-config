@@ -346,13 +346,13 @@
     N_R {
               bindings = <&kp N0>;
               key-positions = <32 33>;
-                    layers = <NAV_L_LAYER NAV_R_LAYER>;          
+                    layers = <NUM_LAYER>;          
             };
             
             N_L {
                           bindings = <&kp N0>;
                           key-positions = <26 27>;
-                                layers = <NAV_L_LAYER NAV_R_LAYER>;          
+                                layers = <NUM_LAYER>;          
                         };
 
     MOUSE1_R_NAV {
