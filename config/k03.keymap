@@ -492,18 +492,81 @@
 
     base_mirror {
       bindings = <
-        &kp ESC     &kp F8         &kp F9       &kp F10     &kp F11          &kp F12
-        &kp F2      &kp F3         &kp F4       &kp F5      &kp F6           &kp F7
-        &kp GRAVE   &kp P          &kp O        &kp I       &kp U            &kp Y
-        &kp T       &kp R          &kp E        &kp W       &kp Q            &kp LG(TAB)
-        &kp SQT     &mt RGUI SEMI  &mt RCTRL L  &mt RALT K  &mt RSHIFT J     &kp H
-        &kp G       &mt LSHFT F    &mt LALT D   &mt LCTRL S &mt LGUI A       &none
-        &lt 7 BSLH  &kp FSLH       &kp DOT      &kp COMMA   &kp M            &kp N
-        &trans      &trans         &kp B        &kp V       &kp C            &kp X
-        &kp Z       &to 0
-        &kp LBKT    &lt 5 RBKT      &lt 6 BACKSPACE &lt 4 LC(SPACE) &lt 2 ESC
-        &lt 2 DEL   &lt 3 SPACE     &lt 5 TAB     &lt 6 EQUAL &kp MINUS
-      >;
+              /* base-m A L */
+              &layer_to_tap BASE_LAYER ESC
+              &layer_hold_tap SYMB_LAYER F2
+              &layer_hold_tap NUM_LAYER F3
+              &layer_hold_tap NAV_R_LAYER F4
+              &layer_hold_tap FUNCT_LAYER F5
+              &layer_to_tap BASE_LAYER F6
+              /* base-m A R */
+              &layer_to_tap BASE_LAYER F7
+              &layer_hold_tap FUNCT_LAYER F8
+              &layer_hold_tap NAV_R_LAYER F9
+              &layer_hold_tap NUM_LAYER F10
+              &layer_hold_tap SYMB_LAYER F11
+              &layer_to_tap BASE_LAYER F12
+      
+              /* base-m B L */
+              &kp LG(TAB)
+              &kp Q
+              &kp W
+              &kp E
+              &kp R
+              &kp T
+              /* base-m B R */
+              &kp Y
+              &kp U
+              &kp I
+              &kp O
+              &kp P
+              &kp GRAVE
+      
+              /* base-m C L */
+              &kp CAPS
+              &mt LGUI A
+              &mt LCTRL S
+              &mt LALT D
+              &mt LSHFT F
+              &kp G
+              /* base-m C R */
+              &kp H
+              &mt RSHIFT J
+              &mt RALT K
+              &mt RCTRL L
+              &mt RGUI SEMI
+              &kp SQT
+      
+              /* base-m D L */
+              &kp SPACE
+              &kp Z
+              &kp X
+              &kp C
+              &kp V
+              &kp B
+              &lt 7 CAPS
+              &lt 7 ENTER
+              /* base-m D R */
+              &kp N
+              &ralt_base_left
+              &ralt_base_up
+              &ralt_base_down
+              &ralt_base_right
+              &kp BSLH
+      
+              /* base-m T L */
+              &lt LAYERS_LAYER MINUS
+              &lt NUM_LAYER EQUAL
+              &lt SYMB_LAYER TAB
+              &alt_to_nav_l
+              &lt FUNCT_LAYER DEL
+              /* base-m T R */
+              &lt FUNCT_LAYER ESC
+              &ralt_to_nav_r
+              &lt NUM_LAYER BACKSPACE
+              &lt SYMB_LAYER LBKT
+              &lt LAYERS_LAYER RIGHT_BRACKET
+            >;
       display-name = "base-mirror";
     };
 
