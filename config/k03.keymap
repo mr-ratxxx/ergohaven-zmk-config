@@ -690,12 +690,12 @@ nav-l {
     &kp RIGHT_ARROW
     &msc SCRL_UP
     /* nav-l C R */
-    &kp LG(C)
+    &msc SCRL_UP
     &kp LSHFT
     &kp LALT
     &kp LCTRL
     &kp LGUI
-    &kp LG(TAB)
+    &kp RG(C)
 
     /* nav-l D L */
     &kt LALT
@@ -707,12 +707,12 @@ nav-l {
     &trans
     /* nav-l D R */
     &trans
-    &kp RG(V)
+    &msc SCRL_DOWN
     &mmv MOVE_X(MMV_FAST_SPEED_L)
     &mmv MOVE_Y(MMV_FAST_SPEED_U)
     &mmv MOVE_Y(MMV_FAST_SPEED_D)
     &mmv MOVE_X(MMV_FAST_SPEED_R)
-    &kp RG(X)
+    &kp RG(V)
 
     /* nav-l T L */
     &layer_to_tap LAYERS_LAYER RG(RIGHT_BRACKET)
