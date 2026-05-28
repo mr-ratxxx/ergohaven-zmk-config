@@ -1141,19 +1141,19 @@ nav-l {
 
     base-override {
       bindings = <
-        /* base A L */
+        /* base-ovveride A L */
         &layer_to_tap BASE_LAYER ESC
-        &layer_to_tap SYMB_LAYER F2
+        &layer_hold_tap SYMB_LAYER F2
         &layer_hold_tap NUM_LAYER F3
         &layer_hold_tap NAV_R_LAYER F4
         &layer_hold_tap FUNCT_LAYER F5
-        &layer_hold_tap BASE_LAYER F6
+        &layer_to_tap BASE_LAYER F6
         /* base A R */
-        &layer_hold_tap BASE_LAYER F7
+        &layer_to_tap BASE_LAYER F7
         &layer_hold_tap FUNCT_LAYER F8
         &layer_hold_tap NAV_R_LAYER F9
         &layer_hold_tap NUM_LAYER F10
-        &layer_to_tap SYMB_LAYER F11
+        &layer_hold_tap SYMB_LAYER F11
         &layer_to_tap BASE_LAYER F12
 
         /* base B L */
