@@ -778,16 +778,16 @@ nav-l {
         &kp LG(TAB)
 
         /* funct D L */
-        &trans
+        &none
         &kp F1
         &kp F12
         &kp F11
         &kp F10
         &msc SCRL_DOWN
-        &none
+        &trans
         /* funct D R */
         &trans
-        &msc SCRL_DOWNg
+        &msc SCRL_DOWN
         &kp F10
         &kp F11
         &kp F12
