@@ -414,9 +414,9 @@
       bindings = <
         /* base A L */
         &layer_to_tap BASE_LAYER ESC
-        &layer_hold_tap SYMB_LAYER F2
-        &layer_hold_tap NUM_LAYER F3
-        &layer_hold_tap NAV_R_LAYER F4
+        &layer_hold_tap NUM_LAYER F2
+        &layer_hold_tap SYMB_LAYER F3
+        &layer_hold_tap NAV_L_LAYER F4
         &layer_hold_tap FUNCT_LAYER F5
         &layer_to_tap BASE_LAYER F6
         /* base A R */
