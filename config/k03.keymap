@@ -682,10 +682,10 @@
         /* nav-r D R */
         &trans
         &msc SCRL_DOWN
-        &ralt_x_left3
-        &ralt_y_up3
-        &ralt_y_down3
-        &ralt_x_right3
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_U)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp ENTER
 
         /* nav-r T L */
