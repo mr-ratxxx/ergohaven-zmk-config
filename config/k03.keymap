@@ -1046,7 +1046,7 @@ nav-l {
         &kp RGUI
         &to 0
 
-        /* layers T L 
+        /* layers T L */
         &tog BASE_MIRROR_LAYER
         &tog NUM_LAYER
         &tog SYMB_LAYER
