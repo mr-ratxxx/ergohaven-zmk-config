@@ -1002,16 +1002,16 @@ nav-l {
         /* layers B L */
         &to 0
         &to NUM_LAYER F2
-                &to SYMB_LAYER F3
-                &to NAV_L_LAYER F4
-                &to FUNCT_LAYER F5
+                &to SYMB_LAYER
+                &to NAV_L_LAYER
+                &to FUNCT_LAYER
         &kp ESCAPE
         /* layers B R */
         &kp TAB
-        &to FUNCT_LAYER F8
-                &to NAV_R_LAYER F9
-                &to NUM_LAYER F10
-                &to SYMB_LAYER F11
+        &to FUNCT_LAYER
+                &to NAV_R_LAYER
+                &to NUM_LAYER
+                &to SYMB_LAYER
         &to 0
 
         /* layers C L */
