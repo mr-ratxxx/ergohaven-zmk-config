@@ -666,8 +666,8 @@
         /* nav-r C R */
         &msc SCRL_UP
         &ralt_x_left_f
-        &ralt_x_up_f
-        &ralt_x_down_f
+        &ralt_y_up_f
+        &ralt_y_down_f
         &ralt_x_right_f
         &kp LG(TAB)
 
