@@ -1156,14 +1156,14 @@ nav-l {
                 &layer_hold_tap SYMB_LAYER F11
                 &layer_to_tap BASE_LAYER F12
 
-        /* base B L */
+        /* base-o B L */
         &kp LG(TAB)
         &kp Q
         &kp W
         &kp E
         &kp R
         &kp T
-        /* base B R */
+        /* base-o B R */
         &kp Y
         &kp U
         &kp I
@@ -1171,14 +1171,14 @@ nav-l {
         &kp P
         &kp GRAVE
 
-        /* base C L */
+        /* base-o C L */
         &kp CAPS
         &mt LGUI A
         &mt LCTRL S
         &mt LALT D
         &mt LSHFT F
         &kp G
-        /* base C R */
+        /* base-o C R */
         &kp H
         &mt RSHIFT J
         &mt RALT K
@@ -1186,7 +1186,7 @@ nav-l {
         &mt RGUI SEMI
         &kp SQT
 
-        /* base D L */
+        /* base-o D L */
         &kp SPACE
         &kp Z
         &kp X
@@ -1194,8 +1194,8 @@ nav-l {
         &kp V
         &kp B
         &lt 7 CAPS
-        &lt 7 ENTER
-        /* base D R */
+        /* base-o D R */
+        &lt 7 SPACE
         &kp N
         &ralt_base_left
         &ralt_base_up
@@ -1203,13 +1203,13 @@ nav-l {
         &ralt_base_right
         &kp BSLH
 
-        /* base T L */
+        /* base-o T L */
         &kp MINUS
         &kp EQUAL
         &kp TAB
         &kp SPACE
         &kp DEL
-        /* base T R */
+        /* base-o T R */
         &kp ESC
         &kp CAPS
         &kp BACKSPACE
