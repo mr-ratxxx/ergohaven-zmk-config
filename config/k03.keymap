@@ -315,6 +315,18 @@
   combos {
     compatible = "zmk,combos";
 
+    TOGGLE_R_ALT_L {
+          bindings = <&kt RALT>;          
+            key-positions = <50 51>;
+          layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
+        }
+        
+        TOGGLE_R_ALT_R {
+                  bindings = <&kt RALT>;
+                   key-positions = <58 59>;
+                  layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
+                };
+
     FROM_LAYERS_TO_ADJ_LAYER {
       bindings = <&kp ENTER>;
       key-positions = <10 11>;
@@ -632,7 +644,7 @@
         &ralt_y_up3
         &ralt_y_down3
         &ralt_x_right3
-        &kt RALT
+        &kp ENTER
 
         /* nav-r T L */
         &layer_to_tap LAYERS_LAYER RG(LEFT_BRACKET)
@@ -698,7 +710,7 @@ nav-l {
     &kp RG(C)
 
     /* nav-l D L */
-    &kt LALT
+    &kp ENTER
     &ralt_x_left3
     &ralt_y_down3
     &ralt_y_up3    
