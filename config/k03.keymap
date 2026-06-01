@@ -1046,7 +1046,20 @@ nav-l {
         &kp RGUI
         &to 0
 
-        /* layers T L */
+/* layers T L 
+        &none
+        &none
+        &none
+        &none
+        &none
+        /* layers T R */
+        &none
+        &none
+        &none
+        &none
+        &none
+        &none
+        /* layers T L 
         &tog BASE_MIRROR_LAYER
         &tog NUM_LAYER
         &tog SYMB_LAYER
@@ -1057,7 +1070,7 @@ nav-l {
         &tog NAV_R_LAYER
         &tog NUM_LAYER
         &tog SYMB_LAYER
-        &tog BASE_MIRROR_LAYER
+        &tog BASE_MIRROR_LAYER*/
       >;
       label = "layers";
     };
