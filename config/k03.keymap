@@ -228,6 +228,48 @@
         <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
       mods = <(MOD_RALT)>;
     };
+    
+    /* */
+    ralt_y_up_f: ralt_y_up_f {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_y_up_f";
+          #binding-cells = <0>;
+          bindings = 
+            <&kp UP_ARROW>,
+            <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+          mods = <(MOD_RALT)>;
+        };
+    
+        ralt_y_down_f: ralt_y_down3 {
+          compatible = "zmk,behavior-mod-morph";
+          label = "RALT_Y_DOWN3";
+          #binding-cells = <0>;
+          bindings = 
+            <&kp DOWN>,
+            <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+          mods = <(MOD_RALT)>;
+        };
+    
+        ralt_x_left_f: ralt_x_left3 {
+          compatible = "zmk,behavior-mod-morph";
+          label = "RALT_X_LEFT3";
+          #binding-cells = <0>;
+          bindings =
+            <&kp LEFT>,
+            <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
+          mods = <(MOD_RALT)>;
+        };
+    
+        ralt_x_right_f: ralt_x_right3 {
+          compatible = "zmk,behavior-mod-morph";
+          label = "RALT_X_RIGHT3";
+          #binding-cells = <0>;
+          bindings =
+            <&kp RIGHT>,
+            <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+          mods = <(MOD_RALT)>;
+        };
+    /* */
 
     /* mouse 0 layer */
     ralt_base_left: ralt_base_left {
@@ -623,10 +665,10 @@
         &msc SCRL_UP
         /* nav-r C R */
         &msc SCRL_UP
-        &kp LEFT_ARROW
-        &kp UP
-        &kp DOWN
-        &kp RIGHT_ARROW
+        &ralt_x_left_f
+        &ralt_x_up_f
+        &ralt_x_down_f
+        &ralt_x_right_f
         &kp LG(TAB)
 
         /* nav-r D L */
