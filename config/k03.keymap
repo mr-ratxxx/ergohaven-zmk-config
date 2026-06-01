@@ -319,7 +319,7 @@
           bindings = <&kt RALT>;          
             key-positions = <50 51>;
           layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
-        }
+        };
         
         TOGGLE_R_ALT_R {
                   bindings = <&kt RALT>;
