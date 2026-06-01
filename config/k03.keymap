@@ -345,13 +345,13 @@
     
     N_R {
               bindings = <&kp N0>;
-              key-positions = <32 33>;
+              key-positions = <31 32>;
                     layers = <NUM_LAYER>;          
             };
             
             N_L {
                           bindings = <&kp N0>;
-                          key-positions = <26 27>;
+                          key-positions = <25 26>;
                                 layers = <NUM_LAYER>;          
                         };
 
