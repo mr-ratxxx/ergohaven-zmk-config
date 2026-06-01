@@ -522,10 +522,10 @@
         /* base D R */
         &lt 7 SPACE
         &kp N
-        &ralt_base_left
-        &ralt_base_up
-        &ralt_base_down
-        &ralt_base_right
+        &kp M
+        &kp COMMA
+        &kp DOT
+        &kp SLASH
         &kp BSLH
 
         /* base T L */
@@ -683,8 +683,8 @@
         &trans
         &msc SCRL_DOWN
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_U)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp ENTER
 
