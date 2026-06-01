@@ -1001,17 +1001,17 @@ nav-l {
 
         /* layers B L */
         &to 0
-        &to NUM_LAYER F2
-                &to SYMB_LAYER
-                &to NAV_L_LAYER
-                &to FUNCT_LAYER
+        &kp LEFT_COMMAND
+        &kp LEFT_CONTROL
+        &kp LEFT_ALT
+        &kp LEFT_SHIFT
         &kp ESCAPE
         /* layers B R */
         &kp TAB
-        &to FUNCT_LAYER
-                &to NAV_R_LAYER
-                &to NUM_LAYER
-                &to SYMB_LAYER
+        &kp RSHIFT
+        &kp RALT
+        &kp RCTRL
+        &kp RGUI
         &to 0
 
         /* layers C L */
