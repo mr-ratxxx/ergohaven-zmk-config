@@ -465,8 +465,8 @@
         &kp V
         &kp B
         &lt 7 CAPS
-        &lt 7 ENTER
         /* base D R */
+        &lt 7 SPACE
         &kp N
         &ralt_base_left
         &ralt_base_up
@@ -545,8 +545,8 @@
               &kp V
               &kp B
               &lt 7 CAPS
-              &lt 7 ENTER
               /* base-m D R */
+              &lt 7 SPACE
               &kp N
               &ralt_base_left
               &ralt_base_up
