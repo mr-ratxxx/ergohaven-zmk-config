@@ -240,9 +240,9 @@
           mods = <(MOD_RALT)>;
         };
     
-        ralt_y_down_f: ralt_y_down3 {
+        ralt_y_down_f: ralt_y_down_f {
           compatible = "zmk,behavior-mod-morph";
-          label = "RALT_Y_DOWN3";
+          label = "ralt_y_down_f";
           #binding-cells = <0>;
           bindings = 
             <&kp DOWN>,
@@ -250,9 +250,9 @@
           mods = <(MOD_RALT)>;
         };
     
-        ralt_x_left_f: ralt_x_left3 {
+        ralt_x_left_f: ralt_x_left_f {
           compatible = "zmk,behavior-mod-morph";
-          label = "RALT_X_LEFT3";
+          label = "ralt_x_left_f";
           #binding-cells = <0>;
           bindings =
             <&kp LEFT>,
@@ -260,9 +260,9 @@
           mods = <(MOD_RALT)>;
         };
     
-        ralt_x_right_f: ralt_x_right3 {
+        ralt_x_right_f: ralt_x_right_f {
           compatible = "zmk,behavior-mod-morph";
-          label = "RALT_X_RIGHT3";
+          label = "ralt_x_right_f";
           #binding-cells = <0>;
           bindings =
             <&kp RIGHT>,
