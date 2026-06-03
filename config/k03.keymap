@@ -367,6 +367,18 @@
   combos {
     compatible = "zmk,combos";
 
+SPACE_L {
+            bindings = <&kt SPACE>;
+            key-positions = <28 29>;
+            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
+        };
+        
+        SPACE_R {
+                    bindings = <&kt SPACE>;
+                    key-positions = <30 31>;
+                    layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
+                };
+
     TOGGLE_R_ALT_L {
           bindings = <&kt RALT>;          
             key-positions = <50 51>;
