@@ -56,7 +56,7 @@
   tapping-term-ms = <180>;
   flavor = "balanced";
   quick-tap-ms = <0>;
-};
+}
 
 &msc {
   time-to-max-speed-ms = <8>;
@@ -332,6 +332,16 @@
                 <&tog NAV_L_LAYER>;
               mods = <(MOD_LALT)>;
             };
+
+    layer_lt_tap: layer_hold_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_HOLD_TAP";
+      #binding-cells = <2>;
+      tapping-term-ms = <180>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&lt>, <&kp>;
+    };
 
     layer_hold_tap: layer_hold_tap {
       compatible = "zmk,behavior-hold-tap";
@@ -689,8 +699,8 @@
         &kp ENTER
 
         /* nav-r T L */
-        &layer_to_tap LAYERS_LAYER RG(LEFT_BRACKET)
-        &layer_to_tap NUM_LAYER RG(RIGHT_BRACKET)
+        &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
         &lt SYMB_LAYER TAB
         &lt BASE_OVERRIDE_LAYER SPACE
         &lt FUNCT_LAYER DEL
@@ -698,8 +708,8 @@
         &lt FUNCT_LAYER ESC
         &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
-        &layer_to_tap SYMB_LAYER RG(LEFT_BRACKET)
-        &layer_to_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
       >;
       display-name = "nav-r";
     };
@@ -769,8 +779,8 @@ nav-l {
     &kp RG(V)
 
     /* nav-l T L */
-    &layer_to_tap LAYERS_LAYER RG(RIGHT_BRACKET)
-    &layer_to_tap SYMB_LAYER RG(LEFT_BRACKET)
+    &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+    &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
     &lt NUM_LAYER BACKSPACE
     &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
     &lt FUNCT_LAYER ESC
@@ -778,8 +788,8 @@ nav-l {
     &lt FUNCT_LAYER DEL
     &lt BASE_OVERRIDE_LAYER SPACE
     &lt SYMB_LAYER TAB
-    &layer_to_tap NUM_LAYER RG(RIGHT_BRACKET)
-    &layer_to_tap LAYERS_LAYER RG(LEFT_BRACKET)
+    &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+    &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
   >;
   display-name = "nav-l";
 };
@@ -849,8 +859,8 @@ nav-l {
         &none
 
         /* funct T L */
-        &layer_to_tap LAYERS_LAYER RG(LEFT_BRACKET)
-        &layer_to_tap NUM_LAYER RG(RIGHT_BRACKET)
+        &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
         &lt SYMB_LAYER TAB
         &lt BASE_OVERRIDE_LAYER SPACE
         &lt FUNCT_LAYER DEL
@@ -858,8 +868,8 @@ nav-l {
         &lt FUNCT_LAYER ESC
         &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
-        &layer_to_tap SYMB_LAYER RG(LEFT_BRACKET)
-        &layer_to_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
       >;
       display-name = "funct";
     };
