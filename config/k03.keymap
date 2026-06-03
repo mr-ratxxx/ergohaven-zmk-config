@@ -55,7 +55,7 @@
 &mt {
   tapping-term-ms = <180>;
   flavor = "balanced";
-  quick-tap-ms = <110>;
+  quick-tap-ms = <0>;
 };
 
 &msc {
