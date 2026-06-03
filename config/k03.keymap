@@ -56,7 +56,7 @@
   tapping-term-ms = <180>;
   flavor = "balanced";
   quick-tap-ms = <0>;
-}
+};
 
 &msc {
   time-to-max-speed-ms = <8>;
