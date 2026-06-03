@@ -333,9 +333,9 @@
               mods = <(MOD_LALT)>;
             };
 
-    layer_lt_tap: layer_hold_tap {
+    layer_lt_tap: layer_lt_tap {
       compatible = "zmk,behavior-hold-tap";
-      label = "LAYER_HOLD_TAP";
+      label = "LAYER_LT_TAP";
       #binding-cells = <2>;
       tapping-term-ms = <180>;
       quick-tap-ms = <0>;
