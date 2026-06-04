@@ -333,9 +333,9 @@
               mods = <(MOD_LALT)>;
             };
 
-mouse_h_m: ;v {
+mouse_h_m: mouse_h_m {
       compatible = "zmk,behavior-hold-tap";
-      label = ";v";
+      label = "mouse_h_m";
       #binding-cells = <2>;
       tapping-term-ms = <180>;
       quick-tap-ms = <0>;
