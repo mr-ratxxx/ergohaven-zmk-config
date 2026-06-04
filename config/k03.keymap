@@ -556,7 +556,7 @@ SPACE_L {
         &lt FUNCT_LAYER DEL
         /* base T R */
         &lt FUNCT_LAYER ESC
-        &ralt_to_nav_r NAV_R_LAYER RG(RC(SPACE)) NAV_R_LAYER
+        &lt NAV_R_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
         &lt SYMB_LAYER LBKT
         &lt LAYERS_LAYER RIGHT_BRACKET
@@ -636,7 +636,7 @@ SPACE_L {
               &lt FUNCT_LAYER DEL
               /* base-m T R */
               &lt FUNCT_LAYER ESC
-              &ralt_to_nav_r NAV_R_LAYER RG(RC(SPACE)) NAV_R_LAYER
+              &lt NAV_R_LAYER RG(RC(SPACE))
               &lt NUM_LAYER BACKSPACE
               &lt SYMB_LAYER LBKT
               &lt LAYERS_LAYER RIGHT_BRACKET
