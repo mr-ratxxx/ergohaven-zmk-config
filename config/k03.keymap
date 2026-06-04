@@ -316,11 +316,9 @@
     ralt_to_nav_r: ralt_to_nav_r {
           compatible = "zmk,behavior-mod-morph";
           label = "RALT_TO_NAV_R";
-          #binding-cells = <0>;
-          bindings =
-            <&lt NAV_R_LAYER RG(RC(SPACE))>,
-            <&tog NAV_R_LAYER>;
-          mods = <(MOD_RALT)>;
+          #binding-cells = <2>;
+          bindings = <&lt>, <&tog>;
+          mods = <(MOD_LALT)>;
         };
         
     alt_to_nav_l: alt_to_nav_l {
@@ -330,7 +328,7 @@
               bindings =
                 <&lt NAV_L_LAYER SPACE>,
                 <&tog NAV_L_LAYER>;
-              mods = <(MOD_LALT)>;
+              mods = <(MOD_RALT)>;
             };
 
     layer_lt_tap: layer_lt_tap {
@@ -558,7 +556,7 @@ SPACE_L {
         &lt FUNCT_LAYER DEL
         /* base T R */
         &lt FUNCT_LAYER ESC
-        &ralt_to_nav_r
+        &ralt_to_nav_r NAV_R_LAYER RG(RC(SPACE)) NAV_R_LAYER
         &lt NUM_LAYER BACKSPACE
         &lt SYMB_LAYER LBKT
         &lt LAYERS_LAYER RIGHT_BRACKET
@@ -638,7 +636,7 @@ SPACE_L {
               &lt FUNCT_LAYER DEL
               /* base-m T R */
               &lt FUNCT_LAYER ESC
-              &ralt_to_nav_r
+              &ralt_to_nav_r NAV_R_LAYER RG(RC(SPACE)) NAV_R_LAYER
               &lt NUM_LAYER BACKSPACE
               &lt SYMB_LAYER LBKT
               &lt LAYERS_LAYER RIGHT_BRACKET
