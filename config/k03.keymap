@@ -313,14 +313,6 @@
     };
     /* end mouse 0 layer */
     
-    ralt_to_nav_r: ralt_to_nav_r {
-          compatible = "zmk,behavior-mod-morph";
-          label = "RALT_TO_NAV_R";
-          #binding-cells = <2>;
-          bindings = <&lt>, <&tog>;
-          mods = <(MOD_LALT)>;
-        };
-        
     alt_to_nav_l: alt_to_nav_l {
               compatible = "zmk,behavior-mod-morph";
               label = "ALT_TO_NAV_L";
