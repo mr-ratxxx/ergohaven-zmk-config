@@ -714,10 +714,10 @@ SPACE_L {
         /* nav-r D R */
         &trans
         &msc SCRL_DOWN
-        mouse_h_m MOVE_X(MMV_FAST_ALT_SPEED_L) MOVE_X(MMV_SLOW_ALT_SPEED_L)
-        mouse_h_m MOVE_Y(MMV_FAST_ALT_SPEED_U) MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-        mouse_h_m MOVE_Y(MMV_FAST_ALT_SPEED_D) MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-        mouse_h_m MOVE_X(MMV_FAST_ALT_SPEED_R) MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &mouse_h_m MOVE_X(MMV_FAST_ALT_SPEED_L) MOVE_X(MMV_SLOW_ALT_SPEED_L)
+        &mouse_h_m MOVE_Y(MMV_FAST_ALT_SPEED_U) MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+        &mouse_h_m MOVE_Y(MMV_FAST_ALT_SPEED_D) MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+        &mouse_h_m MOVE_X(MMV_FAST_ALT_SPEED_R) MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp ENTER
 
         /* nav-r T L */
