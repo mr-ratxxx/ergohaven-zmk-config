@@ -505,17 +505,17 @@ SPACE_L {
 
         /* base B L */
         &kp LG(TAB)
-        &kp Q
-        &kp W
-        &kp E
-        &kp R
+        &mt LGUI Q
+        &mt LCTRL W
+        &mt LALT E
+        &mt LSHFT R
         &kp T
         /* base B R */
-        &kp Y
-        &kp U
-        &kp I
-        &kp O
-        &kp P
+        &kp Y        
+        &mt RSHIFT U
+        &mt RALT I
+        &mt RCTRL O
+        &mt RGUI P
         &kp GRAVE
 
         /* base C L */
@@ -1233,19 +1233,19 @@ nav-l {
                 &layer_to_tap BASE_LAYER F12
 
         /* base-o B L */
-        &kp LG(TAB)
-        &kp Q
-        &kp W
-        &kp E
-        &kp R
-        &kp T
-        /* base-o B R */
-        &kp Y
-        &kp U
-        &kp I
-        &kp O
-        &kp P
-        &kp GRAVE
+                &kp LG(TAB)
+                &mt LGUI Q
+                &mt LCTRL W
+                &mt LALT E
+                &mt LSHFT R
+                &kp T
+                /* base-o B R */
+                &kp Y        
+                &mt RSHIFT U
+                &mt RALT I
+                &mt RCTRL O
+                &mt RGUI P
+                &kp GRAVE
 
         /* base-o C L */
         &kp CAPS
