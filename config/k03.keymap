@@ -364,13 +364,13 @@ SPACE_L {
         };
         
         SPACE_R {
-                    bindings = <&kt SPACE>;
+                    bindings = <&kp SPACE>;
                     key-positions = <30 31>;
                     layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
                 };
 
     TOGGLE_R_ALT_L {
-          bindings = <&kt RALT>;          
+          bindings = <&kp RALT>;          
             key-positions = <50 51>;
           layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
         };
