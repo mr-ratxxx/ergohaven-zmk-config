@@ -1263,10 +1263,10 @@ nav-l {
         /* base-o D R */
         &lt 7 SPACE
         &kp N
-        &ralt_base_left
-        &ralt_base_up
-        &ralt_base_down
-        &ralt_base_right
+        &kp M
+        &kp COMMA
+        &kp DOT
+        &kp SLASH
         &kp BSLH
 
         /* base-o T L */
