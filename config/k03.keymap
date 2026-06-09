@@ -357,6 +357,16 @@
   combos {
     compatible = "zmk,combos";
 
+CAPS_L {
+            bindings = <&kt SPACE>;
+            key-positions = <28 31>;
+        };
+        
+        CAPS_R {
+                    bindings = <&kt SPACE>;
+                    key-positions = <52 56>;
+                };
+
 SPACE_L {
             bindings = <&kt SPACE>;
             key-positions = <28 29>;
