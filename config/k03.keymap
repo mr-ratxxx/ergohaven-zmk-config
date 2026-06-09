@@ -359,7 +359,7 @@
 
 CAPS_L {
             bindings = <&kp CAPS>;
-            key-positions = <28 52>;
+            key-positions = <28 53>;
         };
         
         CAPS_R {
