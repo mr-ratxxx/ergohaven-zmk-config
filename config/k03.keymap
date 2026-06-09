@@ -384,7 +384,7 @@ SPACE_L {
     FROM_LAYERS_TO_ADJ_LAYER {
       bindings = <&kp ENTER>;
       key-positions = <10 11>;
-      layers = <8>;
+      layers = <LAYERS_LAYER>;
     };
 
     ENTER_R_BASE {
