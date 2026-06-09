@@ -359,12 +359,12 @@
 
 CAPS_L {
             bindings = <&kt SPACE>;
-            key-positions = <28 31>;
+            key-positions = <28 52>;
         };
         
         CAPS_R {
                     bindings = <&kt SPACE>;
-                    key-positions = <52 56>;
+                    key-positions = <31 56>;
                 };
 
 SPACE_L {
