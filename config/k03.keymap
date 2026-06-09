@@ -358,17 +358,17 @@
     compatible = "zmk,combos";
 
 CAPS_L {
-            bindings = <&kt SPACE>;
+            bindings = <&kp CAPS>;
             key-positions = <28 52>;
         };
         
         CAPS_R {
-                    bindings = <&kt SPACE>;
+                    bindings = <&kp CAPS>;
                     key-positions = <31 56>;
                 };
 
 SPACE_L {
-            bindings = <&kt SPACE>;
+            bindings = <&kp SPACE>;
             key-positions = <28 29>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
         };
