@@ -531,7 +531,7 @@ SPACE_L {
         &mt RALT K
         &mt RCTRL L
         &mt RGUI SEMI
-        &kp SQT
+        &kp SLASH
 
         /* base D L */
         &kp SPACE
@@ -547,7 +547,7 @@ SPACE_L {
         &kp M
         &kp COMMA
         &kp DOT
-        &kp SLASH
+        &kp SQT
         &kp BSLH
 
         /* base T L */
