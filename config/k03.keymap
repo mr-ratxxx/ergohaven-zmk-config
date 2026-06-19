@@ -535,7 +535,7 @@ SPACE_L {
         &kp BSLH
 
         /* base T L */
-        &lt LAYERS_LAYER MINUS
+        &lt BASE_MIRROR_LAYER MINUS
         &lt NUM_LAYER EQUAL
         &lt SYMB_LAYER TAB
         &lt NAV_L_LAYER SPACE
@@ -545,7 +545,7 @@ SPACE_L {
         &lt NAV_R_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
         &lt SYMB_LAYER LBKT
-        &lt LAYERS_LAYER RIGHT_BRACKET
+        &lt BASE_MIRROR_LAYER RIGHT_BRACKET
       >;
       display-name = "base";
     };
