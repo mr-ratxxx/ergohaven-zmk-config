@@ -583,19 +583,19 @@ SPACE_L {
               &kp LG(TAB)   
                     
               /* base-m C L */
-              &kp CAPS
-              &mt LGUI A
-              &mt LCTRL S
-              &mt LALT D
-              &mt LSHFT F
-              &kp G
-              /* base-m C R */
-              &kp H
-              &mt RSHIFT J
-              &mt RALT K
-              &mt RCTRL L
-              &mt RGUI SEMI
               &kp SQT
+              &mt LGUI SEMI
+              &mt LCTRL L
+              &mt LALT K
+              &mt LSHFT J
+              &kp H
+              /* base-m C R */
+              &kp G
+              &mt RSHIFT F
+              &mt RALT D
+              &mt RCTRL S
+              &mt RGUI A
+              &kp CAPS
       
               /* base-m D L */
               &kp SPACE
