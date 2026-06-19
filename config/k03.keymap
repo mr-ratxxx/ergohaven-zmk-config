@@ -618,7 +618,7 @@ SPACE_L {
               &lt LAYERS_LAYER MINUS
               &lt NUM_LAYER EQUAL
               &lt SYMB_LAYER TAB
-              &alt_to_nav_l
+              &lt NAV_L_LAYER SPACE
               &lt FUNCT_LAYER DEL
               /* base-m T R */
               &lt FUNCT_LAYER ESC
