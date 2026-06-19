@@ -900,7 +900,7 @@ nav-l {
         &kp N8
         &kp N9
         &kp RS(MINUS)
-        &kp MINUS
+        &none
 
         /* num C L */
         &kp DOT
@@ -910,7 +910,7 @@ nav-l {
         &mt LSHFT N4
         &kp MINUS
         /* num C R */
-        &kp N0
+        &kp MINUS
         &mt RSHIFT N4
         &mt RIGHT_ALT N5
         &mt RCTRL N6
