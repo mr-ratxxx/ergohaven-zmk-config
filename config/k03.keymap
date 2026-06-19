@@ -598,21 +598,21 @@ SPACE_L {
               &kp CAPS
       
               /* base-m D L */
-              &kp SPACE
-              &kp Z
-              &kp X
-              &kp C
-              &kp V
-              &kp B
-              &lt 7 CAPS
-              /* base-m D R */
-              &lt 7 SPACE
-              &kp N
-              &ralt_base_left
-              &ralt_base_up
-              &ralt_base_down
-              &ralt_base_right
               &kp BSLH
+              &kp SLASH
+              &kp DOT
+              &kp COMMA
+              &kp M
+              &kp N
+              &lt 7 SPACE
+              /* base-m D R */
+              &lt 7 CAPS
+              &kp B
+              &kp V
+              &kp C
+              &kp X
+              &kp Z
+              &kp SPACE
       
               /* base-m T L */
               &lt LAYERS_LAYER MINUS
