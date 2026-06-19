@@ -1049,17 +1049,17 @@ nav-l {
 
         /* layers B L */
         &to 0
-        &kp LEFT_COMMAND
-        &kp LEFT_CONTROL
-        &kp LEFT_ALT
-        &kp LEFT_SHIFT
-        &kp ESCAPE
+        &kp C_PREV
+        &kp C_PLAY_PAUSE
+        &kp C_NEXT
+        &kp C_VOLUME_DOWN
+        &kp C_VOLUME_UP
         /* layers B R */
-        &kp TAB
-        &kp RSHIFT
-        &kp RALT
-        &kp RCTRL
-        &kp RGUI
+        &kp F14
+        &kp F15
+        &to 0
+        &to 0
+        &to 0
         &to 0
 
         /* layers C L */
