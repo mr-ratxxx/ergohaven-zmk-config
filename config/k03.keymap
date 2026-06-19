@@ -359,12 +359,12 @@
 
 CAPS_L {
             bindings = <&kp CAPS>;
-            key-positions = <28 53>;
+            key-positions = <40 42>;
         };
         
         CAPS_R {
                     bindings = <&kp CAPS>;
-                    key-positions = <31 56>;
+                    key-positions = <44 45>;
                 };
 
 SPACE_L {
@@ -396,14 +396,8 @@ SPACE_L {
       key-positions = <10 11>;
       layers = <LAYERS_LAYER>;
     };
-
-    ENTER_R_BASE {
-      bindings = <&kp ENTER>;
-      key-positions = <45 46>;
-      layers = <BASE_LAYER FUNCT_LAYER NUM_LAYER SYMB_LAYER LAYERS_LAYER BASE_OVERRIDE_LAYER>;
-    };
     
-    ENTER_R_BASE2 {
+    ENTER_R_BASE {
           bindings = <&kp ENTER>;
           key-positions = <46 47>;
           };
@@ -418,18 +412,18 @@ SPACE_L {
       key-positions = <31 32>;
       layers = <NAV_L_LAYER NAV_R_LAYER>;
     };
+
+    N0_L {
+                          bindings = <&kp N0>;
+                          key-positions = <26 27>;
+                                layers = <NUM_LAYER>;          
+                        };
     
-    N_R {
+    N0_R {
               bindings = <&kp N0>;
               key-positions = <31 32>;
                     layers = <NUM_LAYER>;          
             };
-            
-            N_L {
-                          bindings = <&kp N0>;
-                          key-positions = <25 26>;
-                                layers = <NUM_LAYER>;          
-                        };
 
     MOUSE1_R_NAV {
       bindings = <&mkp MB1>;
