@@ -552,36 +552,36 @@ SPACE_L {
 
     base_mirror {
       bindings = <
-        /* base-m A L */
+        /* base-m a l */
         &layer_to_tap BASE_LAYER ESC
-        &layer_hold_tap NUM_LAYER F2
-        &layer_hold_tap SYMB_LAYER F3
-        &layer_hold_tap NAV_L_LAYER F4
-        &layer_hold_tap FUNCT_LAYER F5
-        &layer_to_tap BASE_LAYER F6
+                &layer_hold_tap NUM_LAYER F2
+                &layer_hold_tap SYMB_LAYER F3
+                &layer_hold_tap NAV_L_LAYER F4
+                &layer_hold_tap FUNCT_LAYER F5
+                &layer_to_tap BASE_LAYER F6
         /* base-m A R */
         &layer_to_tap BASE_LAYER F7
-        &layer_hold_tap FUNCT_LAYER F8
-        &layer_hold_tap NAV_R_LAYER F9
-        &layer_hold_tap NUM_LAYER F10
-        &layer_hold_tap SYMB_LAYER F11
-        &layer_to_tap BASE_LAYER F12
+                &layer_hold_tap FUNCT_LAYER F8
+                &layer_hold_tap NAV_R_LAYER F9
+                &layer_hold_tap NUM_LAYER F10
+                &layer_hold_tap SYMB_LAYER F11
+                &layer_to_tap BASE_LAYER F12
       
               /* base-m B L */
-              &kp LG(TAB)
-              &kp Q
-              &kp W
-              &kp E
-              &kp R
-              &kp T
+                            &kp GRAVE
+                            &kp P
+                            &kp O
+                            &kp I
+                            &kp U
+                            &kp Y
               /* base-m B R */
-              &kp Y
-              &kp U
-              &kp I
-              &kp O
-              &kp P
-              &kp GRAVE
-      
+              &kp T
+              &kp R
+              &kp E
+              &kp W
+              &kp Q
+              &kp LG(TAB)   
+                    
               /* base-m C L */
               &kp CAPS
               &mt LGUI A
