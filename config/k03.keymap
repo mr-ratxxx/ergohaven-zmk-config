@@ -515,7 +515,7 @@ SPACE_L {
         &mt RALT K
         &mt RCTRL L
         &mt RGUI SEMI
-        &kp SQT1
+        &kp SQT
 
         /* base D L */
         &kp SPACE
