@@ -785,14 +785,14 @@ nav-l {
 
 nav-r-m {
       bindings = <
-        /* nav-r A L */
+        /* nav-r-m A L */
         &trans
         &trans
         &trans
         &trans
         &trans
         &trans
-        /* nav-r A R */
+        /* nav-r-m A R */
         &trans
         &trans
         &trans
@@ -800,14 +800,14 @@ nav-r-m {
         &trans
         &trans
 
-        /* nav-r B L */
+        /* nav-r-m B L */
         &msc SCRL_LEFT
         &msc SCRL_UP
         &msc SCRL_DOWN
         &kp PAGE_DOWN
         &kp PAGE_UP
         &msc SCRL_RIGHT
-        /* nav-r B R */
+        /* nav-r-m B R */
         &msc SCRL_LEFT
         &kp PG_UP
         &kp PAGE_DOWN
@@ -815,14 +815,14 @@ nav-r-m {
         &msc SCRL_UP
         &msc SCRL_RIGHT
 
-        /* nav-r C L */
+        /* nav-r-m C L */
         &kp LG(C)
         &mt LGUI LEFT_ARROW
         &mt LCTRL UP
         &mt LALT DOWN
         &mt LSHFT RIGHT_ARROW
         &msc SCRL_UP
-        /* nav-r C R */
+        /* nav-r-m C R */
         &msc SCRL_UP
         &ralt_x_left_f
         &ralt_y_up_f
@@ -830,7 +830,7 @@ nav-r-m {
         &ralt_x_right_f
         &kp LG(TAB)
 
-        /* nav-r D L */
+        /* nav-r-m D L */
         &kp RG(V)
         &mmv MOVE_X(MMV_FAST_SPEED_L)
         &mmv MOVE_Y(MMV_FAST_SPEED_D)
@@ -838,7 +838,7 @@ nav-r-m {
         &mmv MOVE_X(MMV_FAST_SPEED_R)
         &msc SCRL_DOWN
         &trans
-        /* nav-r D R */
+        /* nav-r-m D R */
         &trans
         &msc SCRL_DOWN
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
@@ -847,32 +847,32 @@ nav-r-m {
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp ENTER
 
-        /* nav-r T L */
+        /* nav-r-m T L */
         &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
         &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
         &lt SYMB_LAYER TAB
         &lt BASE_OVERRIDE_LAYER SPACE
         &lt FUNCT_LAYER DEL
-        /* nav-r T R */
+        /* nav-r-m T R */
         &lt FUNCT_LAYER ESC
         &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
         &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
         &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
       >;
-      display-name = "nav-r";
+      display-name = "nav-r-m";
     };
 
 nav-l-m {
   bindings = <
-    /* nav-l A L */
+    /* nav-l-m A L */
     &trans
     &trans
     &trans
     &trans
     &trans
     &trans
-    /* nav-l A R */
+    /* nav-l-m A R */
     &trans
     &trans
     &trans
@@ -880,14 +880,14 @@ nav-l-m {
     &trans
     &trans
 
-    /* nav-l B L */
+    /* nav-l-m B L */
     &msc SCRL_LEFT
     &msc SCRL_UP
     &msc SCRL_DOWN
     &kp PAGE_DOWN
     &kp PAGE_UP
     &msc SCRL_RIGHT
-    /* nav-l B R */
+    /* nav-l-m B R */
     &msc SCRL_LEFT
     &kp PAGE_UP
     &kp PAGE_DOWN
@@ -895,14 +895,14 @@ nav-l-m {
     &msc SCRL_UP    
     &msc SCRL_RIGHT
 
-    /* nav-l C L */
+    /* nav-l-m C L */
     &kp LG(TAB)
     &kp LEFT_ARROW
     &kp DOWN
     &kp UP
     &kp RIGHT_ARROW
     &msc SCRL_UP
-    /* nav-l C R */
+    /* nav-l-m C R */
     &msc SCRL_UP
     &mt LSHFT LEFT_ARROW
     &mt LALT DOWN
@@ -910,7 +910,7 @@ nav-l-m {
     &mt LGUI RIGHT_ARROW
     &kp RG(C)
 
-    /* nav-l D L */
+    /* nav-l-m D L */
     &kp ENTER
     &ralt_x_left3
     &ralt_y_down3
@@ -918,7 +918,7 @@ nav-l-m {
     &ralt_x_right3
     &msc SCRL_DOWN
     &trans
-    /* nav-l D R */
+    /* nav-l-m D R */
     &trans
     &msc SCRL_DOWN
     &mmv MOVE_X(MMV_FAST_SPEED_L)
@@ -927,20 +927,20 @@ nav-l-m {
     &mmv MOVE_X(MMV_FAST_SPEED_R)
     &kp RG(V)
 
-    /* nav-l T L */
+    /* nav-l-m T L */
     &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
     &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
     &lt NUM_LAYER BACKSPACE
     &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
     &lt FUNCT_LAYER ESC
-    /* nav-l T R */
+    /* nav-l-m T R */
     &lt FUNCT_LAYER DEL
     &lt BASE_OVERRIDE_LAYER SPACE
     &lt SYMB_LAYER TAB
     &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
     &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
   >;
-  display-name = "nav-l";
+  display-name = "nav-l-m";
 };
 
     funct {
