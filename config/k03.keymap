@@ -365,13 +365,13 @@ SPACE_L {
     TOGGLE_R_ALT_L {
           bindings = <&kp RALT>;          
             key-positions = <50 51>;
-          layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
+          layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
         };
         
         TOGGLE_R_ALT_R {
                   bindings = <&kt RALT>;
                    key-positions = <58 59>;
-                  layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
+                  layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
                 };
 
     FROM_LAYERS_TO_ADJ_LAYER {
@@ -470,12 +470,12 @@ SPACE_L {
         &layer_hold_tap NUM_LAYER F2
         &layer_hold_tap SYMB_LAYER F3
         &layer_hold_tap NAV_L_LAYER F4
-        &layer_hold_tap FUNCT_LAYER F5
-        &layer_to_tap BASE_LAYER F6
-        /* base A R */
-        &layer_to_tap BASE_LAYER F7
-        &layer_hold_tap FUNCT_LAYER F8
-        &layer_hold_tap NAV_R_LAYER F9
+        &layer_hold_tap NAV_L_M_LAYER F5
+        &layer_hold_tap FUNCT_LAYER F6
+        /* base A R */        
+        &layer_hold_tap FUNCT_LAYER F7
+        &layer_hold_tap NAV_R_LAYER F8
+        &layer_to_tap NAV_R_M_LAYER F9
         &layer_hold_tap NUM_LAYER F10
         &layer_hold_tap SYMB_LAYER F11
         &layer_to_tap BASE_LAYER F12
