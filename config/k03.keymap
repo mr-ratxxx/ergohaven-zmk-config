@@ -659,7 +659,7 @@ SPACE_L {
         &kp PAGE_DOWN
         &msc SCRL_LEFT
         &msc SCRL_RIGHT
-        &kp LG(C)
+        &kp LG(TAB)
 
         /* nav-r C L */        
         &kp LG(TAB)
@@ -674,7 +674,7 @@ SPACE_L {
         &ralt_y_up_f
         &ralt_y_down_f
         &ralt_x_right_f
-        &kp LG(TAB)
+        &kp LG(C)
 
         /* nav-r D L */
         &kp RG(V)
@@ -817,9 +817,9 @@ nav-r-m {
         &tog NAV_R_M_LAYER
         &kp PG_UP
         &kp PAGE_DOWN
-          &msc SCRL_LEFT
-                &msc SCRL_RIGHT
-        &kp LG(C)
+        &msc SCRL_LEFT
+        &msc SCRL_RIGHT
+        &kp LG(TAB)
 
         /* nav-r-m C L */
         &kp LG(C)
@@ -834,7 +834,7 @@ nav-r-m {
         &mmv MOVE_Y(MMV_FAST_SPEED_U)
         &mmv MOVE_Y(MMV_FAST_SPEED_D)
         &mmv MOVE_X(MMV_FAST_SPEED_R)
-        &kp LG(TAB)
+        &kp LG(C)
 
         /* nav-r-m D L */
         &kp RG(V)
@@ -851,7 +851,7 @@ nav-r-m {
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-        &kp ENTER
+        &kp LG(V)
 
         /* nav-r-m T L */
         &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
