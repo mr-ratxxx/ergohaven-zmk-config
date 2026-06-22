@@ -661,8 +661,8 @@ SPACE_L {
         &msc SCRL_RIGHT
         &kp LG(C)
 
-        /* nav-r C L */
-        &kp LG(C)
+        /* nav-r C L */        
+        &kp LG(TAB)
         &mt LGUI LEFT_ARROW
         &mt LCTRL UP
         &mt LALT DOWN
@@ -674,7 +674,7 @@ SPACE_L {
         &ralt_y_up_f
         &ralt_y_down_f
         &ralt_x_right_f
-        &kp LG(TAB)
+        &kp LG(C)
 
         /* nav-r D L */
         &kp RG(V)
