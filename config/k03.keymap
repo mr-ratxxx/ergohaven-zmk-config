@@ -368,11 +368,17 @@ SPACE_L {
           layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
         };
         
-        TOGGLE_R_ALT_R {
-                  bindings = <&kt RALT>;
-                   key-positions = <58 59>;
-                  layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
-                };
+    TOGGLE_R_M {
+        bindings = <&tog NAV_R_M_LAYER>;
+        key-positions = <58 59>;
+        layers = <NAV_R_LAYER>;
+        };
+    TOGGLE_R_M_R {
+            bindings = <&tog NAV_R_LAYER>;
+            key-positions = <58 59>;
+            layers = <NAV_R_M_LAYER>;
+            };    
+        
 
     FROM_LAYERS_TO_ADJ_LAYER {
       bindings = <&kp ENTER>;
