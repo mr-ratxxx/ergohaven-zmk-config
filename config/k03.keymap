@@ -374,7 +374,7 @@ SPACE_L {
         layers = <NAV_R_LAYER>;
         };
     TOGGLE_R_M_R {
-            bindings = <&tog NAV_R_LAYER>;
+            bindings = <&to NAV_R_LAYER>;
             key-positions = <58 59>;
             layers = <NAV_R_M_LAYER>;
             };    
