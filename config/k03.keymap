@@ -691,7 +691,7 @@ SPACE_L {
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-         &kp LG(V)
+        &kp LG(V)
 
         /* nav-r T L */
         &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
