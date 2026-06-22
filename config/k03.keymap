@@ -374,7 +374,7 @@ SPACE_L {
         layers = <NAV_R_LAYER>;
         };
     TOGGLE_R_M_R {
-            bindings = <&to NAV_R_LAYER>;
+            bindings = <&tog NAV_R_M_LAYER>;
             key-positions = <58 59>;
             layers = <NAV_R_M_LAYER>;
             };    
@@ -674,7 +674,7 @@ SPACE_L {
         &ralt_y_up_f
         &ralt_y_down_f
         &ralt_x_right_f
-        &kp LG(C)
+        &kp LG(TAB)
 
         /* nav-r D L */
         &kp RG(V)
@@ -814,12 +814,12 @@ nav-r-m {
         &kp PAGE_UP
         &msc SCRL_RIGHT
         /* nav-r-m B R */
-        &msc SCRL_LEFT
+        &tog NAV_R_M_LAYER
         &kp PG_UP
         &kp PAGE_DOWN
-        &msc SCRL_DOWN
-        &msc SCRL_UP
-        &msc SCRL_RIGHT
+          &msc SCRL_LEFT
+                &msc SCRL_RIGHT
+        &kp LG(C)
 
         /* nav-r-m C L */
         &kp LG(C)
