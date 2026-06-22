@@ -340,27 +340,27 @@
   combos {
     compatible = "zmk,combos";
 
-CAPS_L {
+        CAPS_L {
             bindings = <&kp CAPS>;
             key-positions = <40 42>;
         };
         
         CAPS_R {
-                    bindings = <&kp CAPS>;
-                    key-positions = <44 45>;
-                };
+            bindings = <&kp CAPS>;
+            key-positions = <44 45>;
+            };
 
-SPACE_L {
+        SPACE_L {
             bindings = <&kp SPACE>;
             key-positions = <28 29>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
         };
         
         SPACE_R {
-                    bindings = <&kp SPACE>;
-                    key-positions = <30 31>;
-                    layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
-                };
+            bindings = <&kp SPACE>;
+            key-positions = <30 31>;
+            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
+        };
 
     TOGGLE_R_ALT_L {
           bindings = <&kp RALT>;          
