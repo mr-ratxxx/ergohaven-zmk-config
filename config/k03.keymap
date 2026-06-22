@@ -654,12 +654,12 @@ SPACE_L {
         &kp PAGE_UP
         &msc SCRL_RIGHT
         /* nav-r B R */
-        &kp LG(TAB)
+        &tog NAV_R_M_LAYER
         &kp PG_UP
         &kp PAGE_DOWN
         &msc SCRL_LEFT
         &msc SCRL_RIGHT
-        &kp LG(TAB)
+        &kp LG(C)
 
         /* nav-r C L */
         &kp LG(C)
@@ -691,7 +691,7 @@ SPACE_L {
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-        &kp ENTER
+         &kp LG(V)
 
         /* nav-r T L */
         &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
