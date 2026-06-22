@@ -6,12 +6,14 @@
 #define BASE_MIRROR_LAYER 1
 #define NAV_R_LAYER 2
 #define NAV_L_LAYER 3
-#define FUNCT_LAYER 4
-#define NUM_LAYER 5
-#define SYMB_LAYER 6
-#define LAYERS_LAYER 7
-#define ADJ_LAYER 8
-#define BASE_OVERRIDE_LAYER 9
+#define NAV_R_M_LAYER 4
+#define NAV_L_M_LAYER 5
+#define FUNCT_LAYER 6
+#define NUM_LAYER 7
+#define SYMB_LAYER 8
+#define LAYERS_LAYER 9
+#define ADJ_LAYER 10
+#define BASE_OVERRIDE_LAYER 11
 
 #define MMV_SLOW_ALT_SPEED 250
 #define MMV_SLOW_ALT_SPEED_L -250
@@ -135,16 +137,7 @@
 
             mods = <(MOD_LALT | MOD_RALT)>;
         };
-        *\
-
-        // bslh-\ alt-lt7
-        //alt_bslh: alt_bslh {
-        //            compatible = "zmk,behavior-mod-morph";
-        //            label = "ALT_BSLH";
-        //            #binding-cells = <0>;
-        //            bindings = <&kp BSLH>, <&mo 3>;
-        //            mods = <(MOD_LALT | MOD_RALT)>;
-        //        };               
+        *\                       
 
     ctrl_left_bracket: ctrl_left_bracket {
       compatible = "zmk,behavior-mod-morph";
@@ -360,25 +353,25 @@ CAPS_L {
 SPACE_L {
             bindings = <&kp SPACE>;
             key-positions = <28 29>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
+            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
         };
         
         SPACE_R {
                     bindings = <&kp SPACE>;
                     key-positions = <30 31>;
-                    layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
+                    layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
                 };
 
     TOGGLE_R_ALT_L {
           bindings = <&kp RALT>;          
             key-positions = <50 51>;
-          layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
+          layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
         };
         
         TOGGLE_R_ALT_R {
                   bindings = <&kt RALT>;
                    key-positions = <58 59>;
-                  layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
+                  layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
                 };
 
     FROM_LAYERS_TO_ADJ_LAYER {
@@ -711,6 +704,166 @@ SPACE_L {
     };
 
 nav-l {
+  bindings = <
+    /* nav-l A L */
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    /* nav-l A R */
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+
+    /* nav-l B L */
+    &msc SCRL_LEFT
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+    &kp PAGE_DOWN
+    &kp PAGE_UP
+    &msc SCRL_RIGHT
+    /* nav-l B R */
+    &msc SCRL_LEFT
+    &kp PAGE_UP
+    &kp PAGE_DOWN
+    &msc SCRL_DOWN    
+    &msc SCRL_UP    
+    &msc SCRL_RIGHT
+
+    /* nav-l C L */
+    &kp LG(TAB)
+    &kp LEFT_ARROW
+    &kp DOWN
+    &kp UP
+    &kp RIGHT_ARROW
+    &msc SCRL_UP
+    /* nav-l C R */
+    &msc SCRL_UP
+    &mt LSHFT LEFT_ARROW
+    &mt LALT DOWN
+    &mt LCTRL UP
+    &mt LGUI RIGHT_ARROW
+    &kp RG(C)
+
+    /* nav-l D L */
+    &kp ENTER
+    &ralt_x_left3
+    &ralt_y_down3
+    &ralt_y_up3    
+    &ralt_x_right3
+    &msc SCRL_DOWN
+    &trans
+    /* nav-l D R */
+    &trans
+    &msc SCRL_DOWN
+    &mmv MOVE_X(MMV_FAST_SPEED_L)
+    &mmv MOVE_Y(MMV_FAST_SPEED_U)
+    &mmv MOVE_Y(MMV_FAST_SPEED_D)
+    &mmv MOVE_X(MMV_FAST_SPEED_R)
+    &kp RG(V)
+
+    /* nav-l T L */
+    &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+    &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+    &lt NUM_LAYER BACKSPACE
+    &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+    &lt FUNCT_LAYER ESC
+    /* nav-l T R */
+    &lt FUNCT_LAYER DEL
+    &lt BASE_OVERRIDE_LAYER SPACE
+    &lt SYMB_LAYER TAB
+    &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+    &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+  >;
+  display-name = "nav-l";
+};
+
+nav-r-m {
+      bindings = <
+        /* nav-r A L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        /* nav-r A R */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+
+        /* nav-r B L */
+        &msc SCRL_LEFT
+        &msc SCRL_UP
+        &msc SCRL_DOWN
+        &kp PAGE_DOWN
+        &kp PAGE_UP
+        &msc SCRL_RIGHT
+        /* nav-r B R */
+        &msc SCRL_LEFT
+        &kp PG_UP
+        &kp PAGE_DOWN
+        &msc SCRL_DOWN
+        &msc SCRL_UP
+        &msc SCRL_RIGHT
+
+        /* nav-r C L */
+        &kp LG(C)
+        &mt LGUI LEFT_ARROW
+        &mt LCTRL UP
+        &mt LALT DOWN
+        &mt LSHFT RIGHT_ARROW
+        &msc SCRL_UP
+        /* nav-r C R */
+        &msc SCRL_UP
+        &ralt_x_left_f
+        &ralt_y_up_f
+        &ralt_y_down_f
+        &ralt_x_right_f
+        &kp LG(TAB)
+
+        /* nav-r D L */
+        &kp RG(V)
+        &mmv MOVE_X(MMV_FAST_SPEED_L)
+        &mmv MOVE_Y(MMV_FAST_SPEED_D)
+        &mmv MOVE_Y(MMV_FAST_SPEED_U)
+        &mmv MOVE_X(MMV_FAST_SPEED_R)
+        &msc SCRL_DOWN
+        &trans
+        /* nav-r D R */
+        &trans
+        &msc SCRL_DOWN
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &kp ENTER
+
+        /* nav-r T L */
+        &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+        &lt SYMB_LAYER TAB
+        &lt BASE_OVERRIDE_LAYER SPACE
+        &lt FUNCT_LAYER DEL
+        /* nav-r T R */
+        &lt FUNCT_LAYER ESC
+        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+        &lt NUM_LAYER BACKSPACE
+        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+      >;
+      display-name = "nav-r";
+    };
+
+nav-l-m {
   bindings = <
     /* nav-l A L */
     &trans
