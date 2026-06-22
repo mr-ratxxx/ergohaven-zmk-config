@@ -654,12 +654,12 @@ SPACE_L {
         &kp PAGE_UP
         &msc SCRL_RIGHT
         /* nav-r B R */
-        &msc SCRL_LEFT
+        &kp LG(TAB)
         &kp PG_UP
         &kp PAGE_DOWN
-        &msc SCRL_DOWN
-        &msc SCRL_UP
+        &msc SCRL_LEFT
         &msc SCRL_RIGHT
+        &kp LG(TAB)
 
         /* nav-r C L */
         &kp LG(C)
