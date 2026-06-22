@@ -410,13 +410,11 @@
     MOUSE1_R_NAV {
       bindings = <&mkp MB1>;
       key-positions = <45 46>;
-      layers = <NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
     };
 
     MOUSE2_R_NAV {
       bindings = <&mkp MB2>;
       key-positions = <45 46 47>;
-      layers = <NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
     };
 
     MOUSE1_L_BASE {
