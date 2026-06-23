@@ -380,9 +380,9 @@
             };
 
     FROM_LAYERS_TO_ADJ_LAYER {
-      bindings = <&kp ENTER>;
-      key-positions = <10 11>;
-      layers = <LAYERS_LAYER>;
+      bindings = <&tog ADJ_LAYER>;
+      key-positions = <9 10 11>;
+      layers = <LAYERS_LAYER ADJ_LAYER>;
     };
     
     ENTER_R_BASE {
