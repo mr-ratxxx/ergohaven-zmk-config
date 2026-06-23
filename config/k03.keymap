@@ -514,9 +514,9 @@
         &kp C
         &kp V
         &kp B
-        &lt 7 CAPS
+        &lt LAYERS_LAYER CAPS
         /* base D R */
-        &lt 7 SPACE
+        &lt LAYERS_LAYER SPACE
         &kp N
         &kp M
         &kp COMMA
