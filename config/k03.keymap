@@ -407,36 +407,22 @@
                     layers = <NUM_LAYER>;          
             };
 
-    MOUSE1_R_NAV {
+    MOUSE1_R {
       bindings = <&mkp MB1>;
       key-positions = <45 46>;
-      layers = <NAV_R_LAYER NAV_L_LAYER>;
     };
 
-    MOUSE2_R_NAV {
+    MOUSE2_R {
       bindings = <&mkp MB2>;
       key-positions = <45 46 47>;
-      layers = <NAV_R_LAYER NAV_L_LAYER>;
     };
-    
-    MOUSE1_R_NAV22 {
-          bindings = <&mkp MB1>;
-          key-positions = <45 46>;
-          layers = <4 5>;
-        };
-    
-        MOUSE2_R_NAV22 {
-          bindings = <&mkp MB2>;
-          key-positions = <45 46 47>;
-          layers = <4 5>;
-        };
 
-    MOUSE1_L_BASE {
+    MOUSE1_L {
       bindings = <&mkp MB1>;
       key-positions = <40 39>;
     };
 
-    MOUSE2_L_BASE {
+    MOUSE2_L {
       bindings = <&mkp MB2>;
       key-positions = <38 39 40>;
     };
