@@ -362,7 +362,7 @@
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
         };
 
-    TOGGLE_R_ALT_L {
+       TOGGLE_R_ALT_L {
           bindings = <&kp RALT>;          
             key-positions = <50 51>;
           layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
@@ -445,11 +445,11 @@
           layers = <NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
     
-        UIO_REPEAT_L {
-          bindings = <&kp LS(LG(Z))>;
-          key-positions = <14 15 16>;
-          layers = <NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
-        };
+    UIO_REPEAT_L {
+      bindings = <&kp LS(LG(Z))>;
+      key-positions = <14 15 16>;
+      layers = <NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+    };
 
     SHIFT_TOGGLE {
       bindings = <&kt LSHIFT>;
