@@ -685,8 +685,8 @@
         &kp LG(V)
 
         /* nav-r T L */
-        &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
-        &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+        &lt NAV_R_M_LAYER RG(LEFT_BRACKET)
+        &lt NUM_LAYER RG(RIGHT_BRACKET)
         &lt SYMB_LAYER TAB
         &lt BASE_OVERRIDE_LAYER SPACE
         &lt FUNCT_LAYER DEL
@@ -694,8 +694,8 @@
         &lt FUNCT_LAYER ESC
         &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
-        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
-        &layer_hold_tap NAV_R_M_LAYER RG(RIGHT_BRACKET)
+        &lt SYMB_LAYER RG(LEFT_BRACKET)
+        &lt NAV_R_M_LAYER RG(RIGHT_BRACKET)
       >;
       display-name = "nav-r";
     };
@@ -765,8 +765,8 @@ nav-l {
     &kp RG(V)
 
     /* nav-l T L */
-    &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
-    &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+    &lt NAV_L_M_LAYER RG(LEFT_BRACKET)
+    &lt SYMB_LAYER RG(RIGHT_BRACKET)
     &lt NUM_LAYER BACKSPACE
     &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
     &lt FUNCT_LAYER ESC
@@ -774,8 +774,8 @@ nav-l {
     &lt FUNCT_LAYER DEL
     &lt BASE_OVERRIDE_LAYER SPACE
     &lt SYMB_LAYER TAB
-    &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
-    &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+    &lt NUM_LAYER RG(LEFT_BRACKET)
+    &lt NAV_L_M_LAYER RG(RIGHT_BRACKET)
   >;
   display-name = "nav-l";
 };
