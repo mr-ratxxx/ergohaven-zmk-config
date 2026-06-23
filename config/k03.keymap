@@ -652,12 +652,12 @@
         &trans
 
         /* nav-r B L */
+        &kp LG(TAB)
+        &msc SCRL_RIGHT
         &msc SCRL_LEFT
-        &msc SCRL_UP
-        &msc SCRL_DOWN
         &kp PAGE_DOWN
         &kp PAGE_UP
-        &msc SCRL_RIGHT
+        &tog NAV_R_M_LAYER
         /* nav-r B R */
         &tog NAV_R_M_LAYER
         &kp PG_UP
@@ -667,7 +667,7 @@
         &kp LG(TAB)
 
         /* nav-r C L */        
-        &kp LG(TAB)
+        &kp LG(C)
         &mt LGUI LEFT_ARROW
         &mt LCTRL UP
         &mt LALT DOWN
