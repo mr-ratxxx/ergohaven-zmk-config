@@ -878,51 +878,51 @@ nav-l-m {
     &trans
 
     /* nav-l-m B L */
-    &msc SCRL_LEFT
-    &msc SCRL_UP
-    &msc SCRL_DOWN
-    &kp PAGE_DOWN
-    &kp PAGE_UP
-    &msc SCRL_RIGHT
+    &tog NAV_R_M_LAYER
+            &kp PG_UP
+            &kp PAGE_DOWN
+            &msc SCRL_LEFT
+            &msc SCRL_RIGHT
+            &kp LG(TAB)
     /* nav-l-m B R */
-    &msc SCRL_LEFT
-    &kp PAGE_UP
-    &kp PAGE_DOWN
-    &msc SCRL_DOWN    
-    &msc SCRL_UP    
-    &msc SCRL_RIGHT
+    &kp LG(TAB)
+            &msc SCRL_LEFT
+            &msc SCRL_RIGHT
+            &kp PAGE_DOWN
+            &kp PAGE_UP
+            &tog NAV_R_M_LAYER
 
     /* nav-l-m C L */
-    &kp LG(TAB)
-    &kp LEFT_ARROW
-    &kp DOWN
-    &kp UP
-    &kp RIGHT_ARROW
     &msc SCRL_UP
+            &mmv MOVE_X(MMV_FAST_SPEED_L)
+            &mmv MOVE_Y(MMV_FAST_SPEED_U)
+            &mmv MOVE_Y(MMV_FAST_SPEED_D)
+            &mmv MOVE_X(MMV_FAST_SPEED_R)
+            &kp LG(C)
     /* nav-l-m C R */
-    &msc SCRL_UP
-    &mt LSHFT LEFT_ARROW
-    &mt LALT DOWN
-    &mt LCTRL UP
-    &mt LGUI RIGHT_ARROW
-    &kp RG(C)
+    &kp LG(C)
+            &mt LGUI LEFT_ARROW
+            &mt LCTRL UP
+            &mt LALT DOWN
+            &mt LSHFT RIGHT_ARROW
+            &msc SCRL_UP
 
     /* nav-l-m D L */
-    &kp ENTER
-    &ralt_x_left3
-    &ralt_y_down3
-    &ralt_y_up3    
-    &ralt_x_right3
-    &msc SCRL_DOWN
     &trans
+            &msc SCRL_DOWN
+            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+            &kp LG(V)
     /* nav-l-m D R */
-    &trans
-    &msc SCRL_DOWN
-    &mmv MOVE_X(MMV_FAST_SPEED_L)
-    &mmv MOVE_Y(MMV_FAST_SPEED_U)
-    &mmv MOVE_Y(MMV_FAST_SPEED_D)
-    &mmv MOVE_X(MMV_FAST_SPEED_R)
     &kp RG(V)
+            &mmv MOVE_X(MMV_FAST_SPEED_L)
+            &mmv MOVE_Y(MMV_FAST_SPEED_D)
+            &mmv MOVE_Y(MMV_FAST_SPEED_U)
+            &mmv MOVE_X(MMV_FAST_SPEED_R)
+            &msc SCRL_DOWN
+            &trans
 
     /* nav-l-m T L */
     &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
