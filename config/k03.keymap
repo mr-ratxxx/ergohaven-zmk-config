@@ -798,12 +798,12 @@ nav-r-m {
         &trans
 
         /* nav-r-m B L */
+        &kp LG(TAB)
         &msc SCRL_LEFT
-        &msc SCRL_UP
-        &msc SCRL_DOWN
+        &msc SCRL_RIGHT
         &kp PAGE_DOWN
         &kp PAGE_UP
-        &msc SCRL_RIGHT
+        &tog NAV_R_M_LAYER
         /* nav-r-m B R */
         &tog NAV_R_M_LAYER
         &kp PG_UP
