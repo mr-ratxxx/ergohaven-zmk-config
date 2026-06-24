@@ -468,13 +468,13 @@
         &layer_hold_tap SYMB_LAYER F3
         &layer_hold_tap NAV_L_LAYER F4
         &layer_hold_tap FUNCT_LAYER F5
-        &layer_hold_tap NAV_L_M_LAYER F6
+        &layer_hold_tap BASE_MIRROR_LAYER F6
         /* base A R */        
         &layer_hold_tap FUNCT_LAYER F7
         &layer_hold_tap NAV_R_LAYER F8       
         &layer_hold_tap NUM_LAYER F9
         &layer_hold_tap SYMB_LAYER F10
-        &layer_to_tap NAV_R_M_LAYER F11
+        &layer_to_tap BASE_MIRROR_LAYER F11
         &layer_to_tap BASE_LAYER F12
 
         /* base B L */
@@ -1218,9 +1218,9 @@ nav-l-m {
         &to SYMB_LAYER
         &to NAV_L_LAYER
         &to FUNCT_LAYER
-        &kp CAPSLOCK
+        &tog BASE_MIRROR_LAYER
         /* layers C R */
-        &kp SPACE
+        &tog BASE_MIRROR_LAYER
         &to FUNCT_LAYER
         &to NAV_R_LAYER
         &to NUM_LAYER
