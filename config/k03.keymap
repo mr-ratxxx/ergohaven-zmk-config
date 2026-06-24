@@ -594,9 +594,9 @@
               &kp COMMA
               &kp M
               &kp N
-              &lt 7 SPACE
+              &lt LAYERS_LAYER SPACE
               /* base-m D R */
-              &lt 7 CAPS
+              &lt LAYERS_LAYER CAPS
               &kp B
               &kp V
               &kp C
@@ -1403,9 +1403,9 @@ nav-l-m {
         &kp C
         &kp V
         &kp B
-        &lt 7 CAPS
+        &lt LAYERS_LAYER CAPS
         /* base-o D R */
-        &lt 7 SPACE
+        &lt LAYERS_LAYER SPACE
         &kp N
         &kp M
         &kp COMMA
