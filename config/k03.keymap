@@ -605,17 +605,17 @@
               &kp SPACE
       
               /* base-m T L */
-              &lt LAYERS_LAYER MINUS
-              &lt NUM_LAYER EQUAL
-              &lt SYMB_LAYER TAB
-              &lt NAV_L_LAYER SPACE
-              &lt FUNCT_LAYER DEL
-              /* base-m T R */
+              &lt SYMB_LAYER LBKT
+              &lt LAYERS_LAYER RIGHT_BRACKET              
               &lt FUNCT_LAYER ESC
               &lt NAV_R_LAYER RG(RC(SPACE))
               &lt NUM_LAYER BACKSPACE
-              &lt SYMB_LAYER LBKT
-              &lt LAYERS_LAYER RIGHT_BRACKET
+              /* base-m T R */
+              &lt SYMB_LAYER TAB
+              &lt NAV_L_LAYER SPACE
+              &lt FUNCT_LAYER DEL              
+              &lt NUM_LAYER EQUAL
+              &lt LAYERS_LAYER MINUS                            
             >;
       display-name = "base-mirror";
     };
