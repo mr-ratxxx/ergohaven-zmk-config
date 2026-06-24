@@ -1038,7 +1038,7 @@ nav-l-m {
         &trans
 
         /* num B L */
-        &none
+        &kp RS(N8)
         &kp LS(MINUS)
         &kp N9
         &kp N8
@@ -1050,7 +1050,7 @@ nav-l-m {
         &kp N8
         &kp N9
         &kp RS(MINUS)
-        &none
+        &kp RS(N8)
 
         /* num C L */
         &kp DOT
