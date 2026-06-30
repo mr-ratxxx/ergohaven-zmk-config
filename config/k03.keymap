@@ -744,12 +744,12 @@ nav-l {
     &trans
 
     /* nav-l B L */
+    &kp LG(TAB)
+    &msc SCRL_RIGHT
+    &msc SCRL_LEFT
+    &kp PAGE_DOWN
+    &kp PG_UP
     &tog NAV_R_M_LAYER
-            &kp PG_UP
-            &kp PAGE_DOWN
-            &msc SCRL_LEFT
-            &msc SCRL_RIGHT
-            &kp LG(TAB)
     /* nav-l B R */
      &kp LG(TAB)
             &msc SCRL_RIGHT
