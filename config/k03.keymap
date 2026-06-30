@@ -101,6 +101,24 @@
       mods = <(MOD_LALT | MOD_RALT)>;
     };
     
+    // ru-e-ё
+        alt_ru_e_e: alt_ru_e_e {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ALT_RU_E_E";
+          #binding-cells = <0>;
+          bindings = <&kp T> <&kp BSLH>;
+          mods = <(MOD_LALT | MOD_RALT)>;
+        };
+        
+        // ru-ь-ъ
+                alt_ru_m_m: alt_ru_m_m {
+                  compatible = "zmk,behavior-mod-morph";
+                  label = "ALT_RU_M_M";
+                  #binding-cells = <0>;
+                  bindings = <&kp M>, <&kp RBKT>;
+                  mods = <(MOD_LALT | MOD_RALT)>;
+                };
+
     // ru-б en/alt-ru ,
     alt_ru_en_comma: alt_ru_en_comma {
       compatible = "zmk,behavior-mod-morph";
