@@ -761,8 +761,8 @@ nav-l {
     /* nav-l C L */
     &kp LG(C)
             &mt LGUI LEFT_ARROW
-            &mt LCTRL UP
             &mt LALT DOWN
+            &mt LCTRL UP
             &mt LSHFT RIGHT_ARROW
             &msc SCRL_UP
     /* nav-l C R */
@@ -774,13 +774,13 @@ nav-l {
             &kp LG(C)
 
     /* nav-l D L */
-    &trans
-            &msc SCRL_DOWN
-            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-            &kp LG(V)
+    &kp LG(V)
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+    &msc SCRL_DOWN
+            &trans
     /* nav-l D R */
     &kp RG(V)
             &mmv MOVE_X(MMV_FAST_SPEED_L)
