@@ -106,7 +106,7 @@
           compatible = "zmk,behavior-mod-morph";
           label = "ALT_RU_E_E";
           #binding-cells = <0>;
-          bindings = <&kp Y>, <&kp BSLH>;
+          bindings = <&kp T> <&kp BSLH>;
           mods = <(MOD_LALT | MOD_RALT)>;
         };
         
@@ -525,9 +525,9 @@
         &mt LCTRL W
         &mt LALT E
         &mt LSHFT R
-        &kp T
+        &alt_ru_e_e
         /* base B R */
-        &alt_ru_e_e        
+        &kp Y        
         &mt RSHIFT U
         &mt RALT I
         &mt RCTRL O
@@ -605,9 +605,9 @@
                             &kp O
                             &kp I
                             &kp U
-                            &alt_ru_e_e
+                            &kp Y
               /* base-m B R */
-              &kp T
+              &alt_ru_e_e
               &kp R
               &kp E
               &kp W
@@ -1414,9 +1414,9 @@ nav-l-m {
                 &mt LCTRL W
                 &mt LALT E
                 &mt LSHFT R
-                &kp T
+                &alt_ru_e_e
                 /* base-o B R */
-                &alt_ru_e_e        
+                &kp Y        
                 &mt RSHIFT U
                 &mt RALT I
                 &mt RCTRL O
