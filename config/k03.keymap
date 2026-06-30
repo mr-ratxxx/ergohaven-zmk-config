@@ -751,12 +751,12 @@ nav-l {
     &kp PG_UP
     &tog NAV_R_M_LAYER
     /* nav-l B R */
-     &kp LG(TAB)
-            &msc SCRL_RIGHT
+    &tog NAV_R_M_LAYER
+    &kp PAGE_UP
+    &kp PAGE_DOWN            
             &msc SCRL_LEFT
-            &kp PAGE_DOWN
-            &kp PAGE_UP
-            &tog NAV_R_M_LAYER
+            &msc SCRL_RIGHT
+            &kp LG(TAB)
 
     /* nav-l C L */
     &kp LG(C)
@@ -774,13 +774,13 @@ nav-l {
             &kp LG(C)
 
     /* nav-l D L */
-    &kp LG(V)
-    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+    &trans
     &msc SCRL_DOWN
-            &trans
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)    
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)                    
+            &kp LG(V)
     /* nav-l D R */
     &kp RG(V)
             &mmv MOVE_X(MMV_FAST_SPEED_L)
