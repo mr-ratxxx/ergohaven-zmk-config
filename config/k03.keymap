@@ -840,10 +840,10 @@ nav-r-m {
 
         /* nav-r-m C L */
         &kp LG(C)
-        &mt LGUI LEFT_ARROW
-        &mt LCTRL UP
-        &mt LALT DOWN
-        &mt LSHFT RIGHT_ARROW
+        &kp LEFT_ARROW
+        &kp UP
+        &kp DOWN
+        &kp RIGHT_ARROW
         &msc SCRL_UP
         /* nav-r-m C R */
         &msc SCRL_UP
