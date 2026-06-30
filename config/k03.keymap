@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
-
+ 
 // Константы для перемещений
 
 #define BASE_LAYER 0
