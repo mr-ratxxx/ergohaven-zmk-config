@@ -356,16 +356,15 @@
   };
 
   combos {
-    compatible = "zmk,combos";
-    
+    compatible = "zmk,combos";    
         CMD_TAB_L {
-                    bindings = <&kp CAPS>;
+                    bindings = <&kp LG(TAB)>;
                     key-positions = <13 14>;
                 };
                 
         CMD_TAB_R {
-            bindings = <&kp CAPS>;
-            key-positions = <21 22>;
+            bindings = <&kp LG(TAB)>;
+            key-positions = <22 23>;
         };                
     
         CAPS_L {
