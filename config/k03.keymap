@@ -106,7 +106,7 @@
           compatible = "zmk,behavior-mod-morph";
           label = "ALT_RU_E_E";
           #binding-cells = <0>;
-          bindings = <&kp У>, <&kp \>;
+          bindings = <&kp Y>, <&kp \>;
           mods = <(MOD_LALT | MOD_RALT)>;
         };
         
@@ -115,7 +115,7 @@
                   compatible = "zmk,behavior-mod-morph";
                   label = "ALT_RU_M_M";
                   #binding-cells = <0>;
-                  bindings = <&kp m>, <&kp ]>;
+                  bindings = <&kp M>, <&kp ]>;
                   mods = <(MOD_LALT | MOD_RALT)>;
                 };
 
@@ -527,7 +527,7 @@
         &mt LSHFT R
         &kp T
         /* base B R */
-        &kp Y        
+        &alt_ru_e_e        
         &mt RSHIFT U
         &mt RALT I
         &mt RCTRL O
@@ -560,7 +560,7 @@
         /* base D R */
         &lt LAYERS_LAYER SPACE
         &kp N
-        &kp M
+        &alt_ru_m_m
         &kp COMMA
         &kp DOT
         &kp SLASH
@@ -605,7 +605,7 @@
                             &kp O
                             &kp I
                             &kp U
-                            &kp Y
+                            &alt_ru_e_e
               /* base-m B R */
               &kp T
               &kp R
@@ -634,7 +634,7 @@
               &kp SLASH
               &kp DOT
               &kp COMMA
-              &kp M
+              &alt_ru_m_m
               &kp N
               &lt LAYERS_LAYER SPACE
               /* base-m D R */
@@ -1416,7 +1416,7 @@ nav-l-m {
                 &mt LSHFT R
                 &kp T
                 /* base-o B R */
-                &kp Y        
+                &alt_ru_e_e        
                 &mt RSHIFT U
                 &mt RALT I
                 &mt RCTRL O
@@ -1449,7 +1449,7 @@ nav-l-m {
         /* base-o D R */
         &lt LAYERS_LAYER SPACE
         &kp N
-        &kp M
+        &alt_ru_m_m
         &kp COMMA
         &kp DOT
         &kp SLASH
