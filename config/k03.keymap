@@ -500,9 +500,9 @@
         &mt LCTRL W
         &mt LALT E
         &mt LSHFT R
-        &kp T
-        /* base B R */
         &alt_ru_e_e
+        /* base B R */
+        &kp Y
         &mt RSHIFT U
         &mt RALT I
         &mt RCTRL O
@@ -580,15 +580,14 @@
                             &kp O
                             &kp I
                             &kp U
-                            &alt_ru_e_e
+                            &kp Y
               /* base-m B R */
-              &kp T
+              &alt_ru_e_e
               &kp R
               &kp E
               &kp W
               &kp Q
-              &kp LG(TAB)   
-                    
+              &kp LG(TAB)
               /* base-m C L */
               &kp SQT
               &mt LGUI SEMI
@@ -1389,9 +1388,9 @@ nav-l-m {
                 &mt LCTRL W
                 &mt LALT E
                 &mt LSHFT R
-                &kp T
-                /* base-o B R */
                 &alt_ru_e_e
+                /* base-o B R */
+                &kp Y
                 &mt RSHIFT U
                 &mt RALT I
                 &mt RCTRL O
