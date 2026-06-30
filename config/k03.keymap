@@ -340,25 +340,25 @@
   combos {
     compatible = "zmk,combos";
 
-        CHE_CHS {
+        CHE_CHS_L {
             bindings = <&kp CAPS>;
             key-positions = <14 15>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER>;
         };
         
-        CHE_CHS {
+        CHE_CHS_R {
             bindings = <&kp CAPS>;
             key-positions = <20 21>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER>;
         };
         
-        CHE_E {
+        CHE_E_L {
                     bindings = <&kp CAPS>;
                      key-positions = <16 17>;
                      layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER>;
                 };
                 
-                CHE_E {
+                CHE_E_R {
                     bindings = <&kp CAPS>;
                      key-positions = <18 19>;
                      layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER>;
@@ -376,13 +376,13 @@
 
         SPACE_L {
             bindings = <&kp SPACE>;
-            key-positions = <28 29>;
+            key-positions = <27 28>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
         };
         
         SPACE_R {
             bindings = <&kp SPACE>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
         };
 
