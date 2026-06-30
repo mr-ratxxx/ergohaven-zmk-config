@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
- 
+
 // Константы для перемещений
 
 #define BASE_LAYER 0
@@ -502,7 +502,7 @@
         &mt LSHFT R
         &kp T
         /* base B R */
-        &kp Y        
+        &alt_ru_e_e
         &mt RSHIFT U
         &mt RALT I
         &mt RCTRL O
@@ -580,7 +580,7 @@
                             &kp O
                             &kp I
                             &kp U
-                            &kp Y
+                            &alt_ru_e_e
               /* base-m B R */
               &kp T
               &kp R
@@ -1391,7 +1391,7 @@ nav-l-m {
                 &mt LSHFT R
                 &kp T
                 /* base-o B R */
-                &kp Y        
+                &alt_ru_e_e
                 &mt RSHIFT U
                 &mt RALT I
                 &mt RCTRL O
