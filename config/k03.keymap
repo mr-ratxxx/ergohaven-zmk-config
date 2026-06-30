@@ -744,19 +744,19 @@ nav-l {
     &trans
 
     /* nav-l B L */
-    &msc SCRL_LEFT
-    &msc SCRL_UP
-    &msc SCRL_DOWN
-    &kp PAGE_DOWN
-    &kp PAGE_UP
-    &msc SCRL_RIGHT
+    &tog NAV_R_M_LAYER
+            &kp PG_UP
+            &kp PAGE_DOWN
+            &msc SCRL_LEFT
+            &msc SCRL_RIGHT
+            &kp LG(TAB)
     /* nav-l B R */
-    &msc SCRL_LEFT
-    &kp PAGE_UP
-    &kp PAGE_DOWN
-    &msc SCRL_DOWN    
-    &msc SCRL_UP    
-    &msc SCRL_RIGHT
+     &kp LG(TAB)
+            &msc SCRL_RIGHT
+            &msc SCRL_LEFT
+            &kp PAGE_DOWN
+            &kp PAGE_UP
+            &tog NAV_R_M_LAYER
 
     /* nav-l C L */
     &kp LG(TAB)
