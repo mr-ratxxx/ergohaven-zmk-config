@@ -106,7 +106,7 @@
           compatible = "zmk,behavior-mod-morph";
           label = "ALT_RU_E_E";
           #binding-cells = <0>;
-          bindings = <&kp Y>, <&kp BSLH>;
+          bindings = <&kp T>, <&kp BSLH>;
           mods = <(MOD_LALT | MOD_RALT)>;
         };
         
@@ -357,31 +357,6 @@
 
   combos {
     compatible = "zmk,combos";
-
-        CHE_CHS_L {
-            bindings = <&kp CAPS>;
-            key-positions = <14 15>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER>;
-        };
-        
-        CHE_CHS_R {
-            bindings = <&kp CAPS>;
-            key-positions = <20 21>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER>;
-        };
-        
-        CHE_E_L {
-                    bindings = <&kp CAPS>;
-                     key-positions = <16 17>;
-                     layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER>;
-                };
-                
-                CHE_E_R {
-                    bindings = <&kp CAPS>;
-                     key-positions = <18 19>;
-                     layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER>;
-                };
-
         CAPS_L {
             bindings = <&kp CAPS>;
             key-positions = <40 42>;
@@ -394,13 +369,13 @@
 
         SPACE_L {
             bindings = <&kp SPACE>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
         };
         
         SPACE_R {
             bindings = <&kp SPACE>;
-            key-positions = <31 32>;
+            key-positions = <30 31>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
         };
 
