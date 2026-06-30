@@ -106,7 +106,7 @@
           compatible = "zmk,behavior-mod-morph";
           label = "ALT_RU_E_E";
           #binding-cells = <0>;
-          bindings = <&kp Y>, <&kp \>;
+          bindings = <&kp Y>, <&kp BSLH>;
           mods = <(MOD_LALT | MOD_RALT)>;
         };
         
@@ -115,7 +115,7 @@
                   compatible = "zmk,behavior-mod-morph";
                   label = "ALT_RU_M_M";
                   #binding-cells = <0>;
-                  bindings = <&kp M>, <&kp ]>;
+                  bindings = <&kp M>, <&kp RBKT>;
                   mods = <(MOD_LALT | MOD_RALT)>;
                 };
 
