@@ -942,18 +942,18 @@ nav-l-m {
             &mmv MOVE_X(MMV_FAST_SPEED_R)                        
             &kp RG(V)
 
-    /* nav-l-m T L */
-    &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
-    &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
-    &lt NUM_LAYER BACKSPACE
-    &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-    &lt FUNCT_LAYER ESC
-    /* nav-l-m T R */
-    &lt FUNCT_LAYER DEL
-    &lt BASE_OVERRIDE_LAYER SPACE
-    &lt SYMB_LAYER TAB
-    &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
-    &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+    /* nav-l-m T L */    
+            &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+            &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+            &lt SYMB_LAYER TAB
+            &lt BASE_OVERRIDE_LAYER SPACE
+            &lt FUNCT_LAYER DEL
+            /* nav-l-m T R */
+            &lt FUNCT_LAYER ESC
+            &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+            &lt NUM_LAYER BACKSPACE
+            &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+            &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
   >;
   display-name = "nav-l-m";
 };
