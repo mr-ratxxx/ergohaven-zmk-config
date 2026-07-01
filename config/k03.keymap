@@ -774,34 +774,33 @@ nav-l {
             &kp LG(C)
 
     /* nav-l D L */
-    &trans
-    &msc SCRL_DOWN
+    &kp LG(V)
     &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
     &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)    
-    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)                    
-            &kp LG(V)
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+    &msc SCRL_DOWN    
+    &trans    
     /* nav-l D R */
+    &trans
+    &mmv MOVE_X(MMV_FAST_SPEED_L)
+    &mmv MOVE_Y(MMV_FAST_SPEED_U)    
+    &mmv MOVE_Y(MMV_FAST_SPEED_D)
+    &mmv MOVE_X(MMV_FAST_SPEED_R)
     &kp RG(V)
-            &mmv MOVE_X(MMV_FAST_SPEED_L)
-            &mmv MOVE_Y(MMV_FAST_SPEED_D)
-            &mmv MOVE_Y(MMV_FAST_SPEED_U)
-            &mmv MOVE_X(MMV_FAST_SPEED_R)
-            &msc SCRL_DOWN
-            &trans
-
-    /* nav-l T L */
-    &lt FUNCT_LAYER ESC
-            &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-            &lt NUM_LAYER BACKSPACE
-            &lt SYMB_LAYER RG(LEFT_BRACKET)
-            &lt NAV_R_M_LAYER RG(RIGHT_BRACKET)
-    /* nav-l T R */
+    &msc SCRL_DOWN
+    /* nav-l T L */            
     &lt NAV_R_M_LAYER RG(LEFT_BRACKET)
             &lt NUM_LAYER RG(RIGHT_BRACKET)
             &lt SYMB_LAYER TAB
             &lt BASE_OVERRIDE_LAYER SPACE
             &lt FUNCT_LAYER DEL
+    /* nav-l T R */
+    &lt FUNCT_LAYER ESC
+                &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+                &lt NUM_LAYER BACKSPACE
+                &lt SYMB_LAYER RG(LEFT_BRACKET)
+                &lt NAV_R_M_LAYER RG(RIGHT_BRACKET)
   >;
   display-name = "nav-l";
 };
