@@ -387,19 +387,14 @@
             bindings = <&kp SPACE>;
             key-positions = <30 31>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
-        };
-
-       TOGGLE_R_ALT_L {
-          bindings = <&kp RALT>;          
-          key-positions = <50 51>;
-          layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER>;
-        };
+        };      
         
     TOGGLE_R_M {
         bindings = <&tog NAV_R_M_LAYER>;
         key-positions = <58 59>;
         layers = <NAV_R_LAYER>;
         };
+        
     TOGGLE_R_M_R {
             bindings = <&tog NAV_R_M_LAYER>;
             key-positions = <58 59>;
@@ -749,9 +744,9 @@ nav-l {
     &msc SCRL_LEFT
     &kp PAGE_DOWN
     &kp PG_UP
-    &tog NAV_R_M_LAYER
+    &tog NAV_L_M_LAYER
     /* nav-l B R */
-    &tog NAV_R_M_LAYER
+    &tog NAV_L_M_LAYER
     &kp PAGE_UP
     &kp PAGE_DOWN            
             &msc SCRL_LEFT
