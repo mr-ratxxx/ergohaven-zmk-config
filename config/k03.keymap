@@ -356,7 +356,17 @@
   };
 
   combos {
-    compatible = "zmk,combos";    
+    compatible = "zmk,combos";
+    
+    CMD_TAB_L2 {
+                bindings = <&kp LG(TAB)>;
+                key-positions = <16 17>;
+            };
+            
+            CMD_TAB_R2 {
+                        bindings = <&kp LG(TAB)>;
+                        key-positions = <18 19>;
+                    };    
         CMD_TAB_L {
                     bindings = <&kp LG(TAB)>;
                     key-positions = <13 14>;
