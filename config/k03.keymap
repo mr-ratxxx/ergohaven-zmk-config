@@ -358,16 +358,15 @@
   combos {
     compatible = "zmk,combos";
     
-    CMD_TAB_L {
+    CMD_TAB_L3 {
                     bindings = <&kp LG(TAB)>;
-                    key-positions = <16 17>;
+                    key-positions = <15 16>;
                 };
                 
-                CMD_TAB_R {
+                CMD_TAB_R3 {
                             bindings = <&kp LG(TAB)>;
-                            key-positions = <18 19>;
-                        };    
-    
+                            key-positions = <19 20>;
+                        };
     
     CMD_TAB_L2 {
                 bindings = <&kp LG(TAB)>;
