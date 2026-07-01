@@ -463,7 +463,7 @@
 
     SHIFT_TOGGLE {
       bindings = <&kt LSHIFT>;
-      key-positions = <30 31 27 28>;
+      key-positions = <30 31 28 29>;
     };
   };
 
