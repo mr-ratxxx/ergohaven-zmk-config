@@ -387,19 +387,7 @@
             bindings = <&kp SPACE>;
             key-positions = <30 31>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_R_M_LAYER NAV_L_M_LAYER>;
-        };      
-        
-    TOGGLE_R_M {
-        bindings = <&tog NAV_R_M_LAYER>;
-        key-positions = <58 59>;
-        layers = <NAV_R_LAYER>;
         };
-        
-    TOGGLE_R_M_R {
-            bindings = <&tog NAV_R_M_LAYER>;
-            key-positions = <58 59>;
-            layers = <NAV_R_M_LAYER>;
-            };
 
     FROM_LAYERS_TO_ADJ_LAYER {
       bindings = <&tog ADJ_LAYER>;
@@ -407,7 +395,7 @@
       layers = <LAYERS_LAYER ADJ_LAYER>;
     };
     
-    ENTER_R_BASE {
+    ENTER_R {
         bindings = <&kp ENTER>;
         key-positions = <46 47>;
         };
@@ -475,7 +463,7 @@
 
     SHIFT_TOGGLE {
       bindings = <&kt LSHIFT>;
-      key-positions = <31 28>;
+      key-positions = <30 31 27 28>;
     };
   };
 
