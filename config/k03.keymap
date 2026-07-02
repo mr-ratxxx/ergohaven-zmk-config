@@ -358,6 +358,10 @@
   combos {
     compatible = "zmk,combos";
             
+            CMD_TAB_L2 {
+                                    bindings = <&kp LG(TAB)>;
+                                    key-positions = <16 17>;
+            
             CMD_TAB_R2 {
                         bindings = <&kp LG(TAB)>;
                         key-positions = <18 19>;
@@ -668,9 +672,9 @@
 
         /* nav-r C L */        
         &kp LG(C)
-        &kp LGUI        
-        &kp LALT
+        &kp LGUI
         &kp LCTRL
+        &kp LALT
         &kp LSHFT
         &msc SCRL_UP
         /* nav-r C R */
