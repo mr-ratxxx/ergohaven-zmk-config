@@ -668,10 +668,10 @@
 
         /* nav-r C L */        
         &kp LG(C)
-        &mt LGUI LEFT_ARROW        
-        &mt LALT DOWN
-        &mt LCTRL UP
-        &mt LSHFT RIGHT_ARROW
+        &kp LGUI        
+        &kp LALT
+        &kp LCTRL
+        &kp LSHFT
         &msc SCRL_UP
         /* nav-r C R */
         &msc SCRL_UP
