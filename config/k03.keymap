@@ -361,6 +361,7 @@
             CMD_TAB_L2 {
                                     bindings = <&kp LG(TAB)>;
                                     key-positions = <16 17>;
+                                    }
             
             CMD_TAB_R2 {
                         bindings = <&kp LG(TAB)>;
