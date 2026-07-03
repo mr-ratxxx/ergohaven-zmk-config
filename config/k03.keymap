@@ -1150,7 +1150,7 @@ nav-l-m {
         &kp RS(N4)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
-        &kp PLUS
+        &kp SLASH
         /* symb B R */
         &kp SLASH
         &kp LEFT_PARENTHESIS
@@ -1161,11 +1161,11 @@ nav-l-m {
 
         /* symb C L */
         &kp RS(SQT)
-        &mt LGUI RS(N8)
-        &mt LCTRL RS(N7)
-        &mt LALT RS(N6)
-        &mt LSHIFT RS(N5)
-        &kp MINUS
+        &mt RGUI PLUS
+        &mt RCTRL RS(MINUS)
+        &mt RALT EQUAL
+        &mt RSHFT MINUS
+        &kp RS(N3)
         /* symb C R */
         &kp RS(N3)
         &mt RSHFT MINUS
@@ -1175,12 +1175,12 @@ nav-l-m {
         &kp RS(SQT)
 
         /* symb D L */
-        &kp SLASH
-        &kp BACKSLASH
-        &kp RS(N3)
-        &kp RS(MINUS)
+        &kp RS(N8)
+        &kp RS(N7)
+        &kp RS(N6)
+        &kp RS(N5)
         &kp RS(N1)
-        &kp EQUAL
+        &kp BACKSLASH
         &trans
         /* symb D R */
         &trans
