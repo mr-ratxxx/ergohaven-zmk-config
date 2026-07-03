@@ -434,6 +434,18 @@
         key-positions = <31 32>;
         layers = <NUM_LAYER>;          
     };
+    
+    N0_L1 {
+            bindings = <&kp N0>;
+            key-positions = <39 40>;
+            layers = <NUM_LAYER>;
+        };
+        
+        N0_R2 {
+            bindings = <&kp N0>;
+            key-positions = <45 46>;
+            layers = <NUM_LAYER>;          
+        };
 
     MOUSE1_R {
       bindings = <&mkp MB1>;
