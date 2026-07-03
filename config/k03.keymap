@@ -106,7 +106,7 @@
           compatible = "zmk,behavior-mod-morph";
           label = "ALT_RU_SH_H";
           #binding-cells = <0>;
-          bindings = <&kp LBKT>, <&kp O>;
+          bindings = <&kp O>, <&kp LBKT>;
           mods = <(MOD_LALT | MOD_RALT)>;
         };    
     
