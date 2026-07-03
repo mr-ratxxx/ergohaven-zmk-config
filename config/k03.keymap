@@ -99,16 +99,7 @@
       #binding-cells = <0>;
       bindings = <&kp DOT>, <&kp RS(N7)>;
       mods = <(MOD_LALT | MOD_RALT)>;
-    };
-    
-    // ru-щ-х
-        alt_ru_sh_h: alt_ru_sh_h {
-          compatible = "zmk,behavior-mod-morph";
-          label = "ALT_RU_SH_H";
-          #binding-cells = <0>;
-          bindings = <&kp O>, <&kp LBKT>;
-          mods = <(MOD_LALT | MOD_RALT)>;
-        };    
+    };    
     
     // ru-e-ё
         alt_ru_e_e: alt_ru_e_e {
@@ -528,7 +519,7 @@
         &kp Y
         &kp U
         &kp I
-        &alt_ru_sh_h
+        &kp O
         &kp P
         &kp GRAVE
 
@@ -600,7 +591,7 @@
               /* base-m B L */
                             &kp GRAVE
                             &kp P
-                            &alt_ru_sh_h
+                            &kp O
                             &kp I
                             &kp U
                             &kp Y
@@ -1416,7 +1407,7 @@ nav-l-m {
                 &kp Y
                 &kp U
                 &kp I
-                &alt_ru_sh_h
+                &kp O
                 &kp P
                 &kp GRAVE
 
