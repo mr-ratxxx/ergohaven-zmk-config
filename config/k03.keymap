@@ -101,6 +101,15 @@
       mods = <(MOD_LALT | MOD_RALT)>;
     };
     
+    // ru-щ-х
+        alt_ru_sh_h: alt_ru_sh_h {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ALT_RU_SH_H";
+          #binding-cells = <0>;
+          bindings = <&kp LBKT>, <&kp O>;
+          mods = <(MOD_LALT | MOD_RALT)>;
+        };    
+    
     // ru-e-ё
         alt_ru_e_e: alt_ru_e_e {
           compatible = "zmk,behavior-mod-morph";
@@ -356,8 +365,7 @@
   };
 
   combos {
-    compatible = "zmk,combos";
-            
+    compatible = "zmk,combos";            
             CMD_TAB_L2 {
                                     bindings = <&kp LG(TAB)>;
                                     key-positions = <16 17>;
@@ -499,17 +507,17 @@
 
         /* base B L */
         &kp LG(TAB)
-        &mt LGUI Q
-        &mt LCTRL W
-        &mt LALT E
-        &mt LSHFT R
+        &kp Q
+        &kp W
+        &kp E
+        &kp R
         &alt_ru_e_e
         /* base B R */
         &kp Y
-        &mt RSHIFT U
-        &mt RALT I
-        &mt RCTRL O
-        &mt RGUI P
+        &kp U
+        &kp I
+        &alt_ru_sh_h
+        &kp P
         &kp GRAVE
 
         /* base C L */
@@ -580,7 +588,7 @@
               /* base-m B L */
                             &kp GRAVE
                             &kp P
-                            &kp O
+                            &alt_ru_sh_h
                             &kp I
                             &kp U
                             &kp Y
@@ -591,6 +599,7 @@
               &kp W
               &kp Q
               &kp LG(TAB)
+              
               /* base-m C L */
               &kp SQT
               &mt LGUI SEMI
@@ -1386,17 +1395,17 @@ nav-l-m {
 
         /* base-o B L */
                 &kp LG(TAB)
-                &mt LGUI Q
-                &mt LCTRL W
-                &mt LALT E
-                &mt LSHFT R
+                &kp Q
+                &kp W
+                &kp E
+                &kp R
                 &alt_ru_e_e
                 /* base-o B R */
                 &kp Y
-                &mt RSHIFT U
-                &mt RALT I
-                &mt RCTRL O
-                &mt RGUI P
+                &kp U
+                &kp I
+                &alt_ru_sh_h
+                &kp P
                 &kp GRAVE
 
         /* base-o C L */
