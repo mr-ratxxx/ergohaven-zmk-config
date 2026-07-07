@@ -931,10 +931,10 @@ nav-l-m {
             &msc SCRL_UP
     /* nav-l-m C R */    
     &msc SCRL_UP
-            &mt LGUI LEFT_ARROW
-            &mt LCTRL UP
-            &mt LALT DOWN
-            &mt LSHFT RIGHT_ARROW
+            &kp LEFT_ARROW
+            &kp UP
+            &kp DOWN
+            &kp RIGHT_ARROW
             &kp LG(C)
             
     /* nav-l-m D L */
