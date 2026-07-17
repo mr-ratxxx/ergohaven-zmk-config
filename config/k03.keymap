@@ -542,7 +542,7 @@ M_RIGHT_L {
 
     SHIFT_TOGGLE {
       bindings = <&kt LSHIFT>;
-      key-positions = <30 29>;
+      key-positions = <29 30 31 32>;
     };
   };
 
