@@ -398,7 +398,7 @@
                                                };
                                                
 M_LEFT_L {
-                bindings = <&msc SCRL_LEFT>;
+                bindings = <&msc SCRL_RIGHT>;
                 key-positions = <29 41>;
             };                    
                     M_LEFT_R {
@@ -407,7 +407,7 @@ M_LEFT_L {
                             };
                             
 M_RIGHT_L {
-                bindings = <&msc SCRL_RIGHT>;
+                bindings = <&msc SCRL_LEFT>;
                 key-positions = <38 26>;
             };                    
                     M_RIGHT_R {
