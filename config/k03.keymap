@@ -693,9 +693,9 @@ M_RIGHT_L {
               &kp COMMA
               &alt_ru_m_m
               &kp N
-              &lt LAYERS_LAYER SPACE
+              &trans
               /* base-m D R */
-              &lt LAYERS_LAYER CAPS
+              &trans
               &kp B
               &kp V
               &kp C
