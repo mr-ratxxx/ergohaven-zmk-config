@@ -359,41 +359,41 @@
     compatible = "zmk,combos";
     
     PG_DOWN_L {
-                bindings = <&kp PAGE_DOWN>;
+                bindings = <&kp PAGE_UP>;
                 key-positions = <15 27>;
             };                    
                     PG_DOWN_R {
-                                bindings = <&kp PAGE_DOWN>;
+                                bindings = <&kp PAGE_UP>;
                                 key-positions = <20 32>;
                             };
                             
                             CMD_PG_UP_L {
-                                                                    bindings = <&kp PAGE_UP>;
+                                                                    bindings = <&kp PAGE_DOWN>;
                                                                     key-positions = <16 28>;
                                                                 };
                             
                             CMD_PG_UP_R {
-                                        bindings = <&kp PAGE_UP>;
+                                        bindings = <&kp PAGE_DOWN>;
                                         key-positions = <19 31>;
                                     };
                                     
                                     
            M_DOWN_L {
-                           bindings = <&msc SCRL_DOWN>;
+                           bindings = <&msc SCRL_UP>;
                            key-positions = <27 39>;
                        };                    
                                M_DOWN_R {
-                                           bindings = <&msc SCRL_DOWN>;
+                                           bindings = <&msc SCRL_UP>;
                                            key-positions = <32 46>;
                                        };
                                        
                                        M_UP_L {
-                                                                               bindings = <&msc SCRL_UP>;
+                                                                               bindings = <&msc SCRL_DOWN>;
                                                                                key-positions = <28 40>;
                                                                            };
                                        
                                        M_UP_R {
-                                                   bindings = <&msc SCRL_UP>;
+                                                   bindings = <&msc SCRL_DOWN>;
                                                    key-positions = <31 45>;
                                                };
                                                
