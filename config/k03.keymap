@@ -750,10 +750,10 @@ M_RIGHT_L {
         &msc SCRL_UP
         /* nav-r C R */
         &msc SCRL_UP
-        &ralt_x_left_f
-        &ralt_y_up_f
-        &ralt_y_down_f
-        &ralt_x_right_f
+        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
+        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
         &kp LG(C)
 
         /* nav-r D L */
