@@ -603,9 +603,9 @@ M_RIGHT_L {
         &kp C
         &kp V
         &kp B
-        &lt LAYERS_LAYER CAPS
+        &layer_to_tap NAV_MOUSE_LAYER CAPS
         /* base D R */
-        &lt LAYERS_LAYER SPACE
+        &layer_to_tap NAV_MOUSE_LAYER SPACE
         &kp N
         &alt_ru_m_m
         &kp COMMA
@@ -728,17 +728,17 @@ M_RIGHT_L {
 
         /* nav-r B L */
         &kp LG(TAB)
-        &msc SCRL_RIGHT
-        &msc SCRL_LEFT
-        &kp PAGE_DOWN
-        &kp PAGE_UP
+        &kp LEFT_ARROW
+                &kp DOWN
+                &kp UP
+                &kp RIGHT_ARROW
         &tog NAV_MOUSE_LAYER
         /* nav-r B R */
         &tog NAV_MOUSE_LAYER
-        &kp PG_UP
-        &kp PAGE_DOWN
-        &msc SCRL_LEFT
-        &msc SCRL_RIGHT
+        &kp LEFT_ARROW
+                &kp UP
+                &kp DOWN
+                &kp RIGHT_ARROW
         &kp LG(TAB)
 
         /* nav-r C L */        
