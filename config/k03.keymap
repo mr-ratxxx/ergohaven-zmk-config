@@ -374,7 +374,7 @@
                             
                             CMD_PG_UP_R {
                                         bindings = <&kp PAGE_UP>;
-                                        key-positions = <9 21>;
+                                        key-positions = <7 19>;
                                     };
                 
             CMD_TAB_L2 {
