@@ -376,6 +376,26 @@
                                         bindings = <&kp PAGE_UP>;
                                         key-positions = <7 19>;
                                     };
+                                    
+                                    
+           M_DOWN_L {
+                           bindings = <&msc SCRL_DOWN>;
+                           key-positions = <14 19>;
+                       };                    
+                               M_DOWN_R {
+                                           bindings = <&msc SCRL_DOWN>;
+                                           key-positions = <8 20>;
+                                       };
+                                       
+                                       M_UP_L {
+                                                                               bindings = <&msc SCRL_UP>;
+                                                                               key-positions = <15 27>;
+                                                                           };
+                                       
+                                       M_UP_R {
+                                                   bindings = <&msc SCRL_UP>;
+                                                   key-positions = <20 32>;
+                                               };                         
                 
             CMD_TAB_L2 {
                                     bindings = <&kp LG(TAB)>;
