@@ -384,12 +384,12 @@
                        };                    
                                M_DOWN_R {
                                            bindings = <&msc SCRL_DOWN>;
-                                           key-positions = <8 20>;
+                                           key-positions = <9 27>;
                                        };
                                        
                                        M_UP_L {
                                                                                bindings = <&msc SCRL_UP>;
-                                                                               key-positions = <16 28>;
+                                                                               key-positions = <21 35>;
                                                                            };
                                        
                                        M_UP_R {
