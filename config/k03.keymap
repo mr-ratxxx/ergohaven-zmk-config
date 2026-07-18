@@ -116,27 +116,27 @@
       label = "ALT_RU_M_M";
       #binding-cells = <0>;
       bindings = <&kp M>, <&kp RBKT>;
-      mods = <(MOD_LALT | MOD_RALT)>;
+      mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
     };
-    
-    // ru-х-n
-    alt_ru_n_lbkt: ru_n_lbkt {
+
+    // ru-б en/alt-ru ,
+    alt_ru_en_comma: alt_ru_en_comma {
       compatible = "zmk,behavior-mod-morph";
-      label = "ALT_RU_N_LBKT";
+      label = "ALT_RU_EN_COMMA";
       #binding-cells = <0>;
-      bindings = <&kp n>, <&kp LBKT>;
+      bindings = <&kp COMMA>, <&kp RS(N6)>;
       mods = <(MOD_LALT | MOD_RALT)>;
     };
-    
-    // ru-ё-\
-    alt_ru_t_bslh: ru_t_bslh {
+
+    // ru-ж en/alt-ru ;
+    alt_ru_en_semi: alt_ru_en_semi {
       compatible = "zmk,behavior-mod-morph";
-      label = "ALT_RU_T_BSLH";
+      label = "ALT_RU_EN_SEMI";
       #binding-cells = <0>;
-      bindings = <&kp T>, <&kp BSLH>;
+      bindings = <&mt RGUI SEMI>, <&kp RS(N8)>;
       mods = <(MOD_LALT | MOD_RALT)>;
     };
-    
+
     // ru-э en/alt-ru "
     alt_ru_en_sqt: alt_ru_en_sqt {
       compatible = "zmk,behavior-mod-morph";
