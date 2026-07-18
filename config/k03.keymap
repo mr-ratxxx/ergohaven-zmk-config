@@ -118,6 +118,24 @@
       bindings = <&kp M>, <&kp RBKT>;
       mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
     };
+    
+    // ru-х-n
+        alt_ru_n_[: alt_ru_n_[ {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ALT_RU_N_[";
+          #binding-cells = <0>;
+          bindings = <&kp n>, <&kp LBKT>;
+          mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+        };
+        
+        // ru-ё-\
+                alt_ru_t_e: alt_ru_t_e {
+                  compatible = "zmk,behavior-mod-morph";
+                  label = "ALT_RU_T_E";
+                  #binding-cells = <0>;
+                  bindings = <&kp T>, <&kp BSLH>;
+                  mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+                };
 
     // ru-б en/alt-ru ,
     alt_ru_en_comma: alt_ru_en_comma {
@@ -582,7 +600,7 @@ M_RIGHT_L {
         &kp W
         &kp E
         &kp R
-        &alt_ru_e_e
+        &alt_ru_t_e
         /* base B R */
         &kp Y
         &kp U
@@ -616,7 +634,7 @@ M_RIGHT_L {
         &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
         /* base D R */
         &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
-        &kp N
+        &alt_ru_n_
         &alt_ru_m_m
         &kp COMMA
         &kp DOT
