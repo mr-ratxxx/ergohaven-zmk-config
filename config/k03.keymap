@@ -120,9 +120,9 @@
     };
     
     // ru-х-n
-        alt_ru_n_[: alt_ru_n_[ {
+        alt_ru_n_lbkt: alt_ru_n_lbkt {
           compatible = "zmk,behavior-mod-morph";
-          label = "ALT_RU_N_[";
+          label = "alt_ru_n_lbkt";
           #binding-cells = <0>;
           bindings = <&kp n>, <&kp LBKT>;
           mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
@@ -634,7 +634,7 @@ M_RIGHT_L {
         &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
         /* base D R */
         &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
-        &alt_ru_n_[
+        &alt_ru_n_lbkt
         &alt_ru_m_m
         &kp COMMA
         &kp DOT
