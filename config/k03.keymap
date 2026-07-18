@@ -853,14 +853,14 @@ nav-l {
     &kp LALT
     &kp LCTRL
     &kp LGUI
-            &kp LG(C)
+    &kp LG(C)
 
     /* nav-l D L */
     &kp LG(V)
     &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
-                    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
-                            &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
-                            &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
+    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
     &msc SCRL_DOWN    
     &trans    
     /* nav-l D R */
