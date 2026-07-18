@@ -388,7 +388,7 @@
             };
             
 PG_D_R {
-                bindings = <&kp DOWN;
+                bindings = <&kp DOWN>;
                 key-positions = <34 35>;
             };
             
