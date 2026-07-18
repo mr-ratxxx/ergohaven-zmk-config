@@ -110,14 +110,14 @@
           mods = <(MOD_LALT | MOD_RALT)>;
         };
         
-        // ru-ь-ъ
-                alt_ru_m_m: alt_ru_m_m {
-                  compatible = "zmk,behavior-mod-morph";
-                  label = "ALT_RU_M_M";
-                  #binding-cells = <0>;
-                  bindings = <&kp M>, <&kp RBKT>;
-                  mods = <(MOD_LALT | MOD_RALT)>;
-                };
+    // ru-ь-ъ
+    alt_ru_m_m: alt_ru_m_m {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_M_M";
+      #binding-cells = <0>;
+      bindings = <&kp M>, <&kp RBKT>;
+      mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+    };
 
     // ru-б en/alt-ru ,
     alt_ru_en_comma: alt_ru_en_comma {
