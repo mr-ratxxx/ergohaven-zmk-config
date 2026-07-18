@@ -1512,7 +1512,7 @@ nav-l-m {
         &lt LAYERS_LAYER CAPS
         /* base-o D R */
         &lt LAYERS_LAYER SPACE
-        &kp N
+        &alt_ru_n_lbkr
         &alt_ru_m_rbkr
         &kp COMMA
         &kp DOT
