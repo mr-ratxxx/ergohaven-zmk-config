@@ -116,7 +116,7 @@
       label = "ALT_RU_M_M";
       #binding-cells = <0>;
       bindings = <&kp M>, <&kp RBKT>;
-      mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+      mods = <(MOD_LCTL | MOD_RCTL) | ( MOD_LALT | MOD_RALT)>;
     };
     
     // ru-х-n
