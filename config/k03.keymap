@@ -835,10 +835,10 @@ nav-l {
     &tog NAV_MOUSE_LAYER
     /* nav-l B R */
     &tog NAV_MOUSE_LAYER
-    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
-                &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
-                        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
-                        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
             &kp LG(TAB)
     /* nav-l C L */
     &kp LG(C)
@@ -857,10 +857,10 @@ nav-l {
 
     /* nav-l D L */
     &kp LG(V)
-    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+                    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+                            &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
+                            &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
     &msc SCRL_DOWN    
     &trans    
     /* nav-l D R */
