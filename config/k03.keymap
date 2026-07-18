@@ -100,15 +100,6 @@
       bindings = <&kp DOT>, <&kp RS(N7)>;
       mods = <(MOD_LALT | MOD_RALT)>;
     };
-    
-    // ru-х-n
-            alt_ru_n_bslh: alt_ru_n_bslh {
-              compatible = "zmk,behavior-mod-morph";
-              label = "ALT_RU_N_BSLH";
-              #binding-cells = <0>;
-              bindings = <&kp n>, <&kp LBKT>;
-              mods = <(MOD_LALT | MOD_RALT)>;
-            };
                 
     // ru-e-ё
         alt_ru_e_e: alt_ru_e_e {
