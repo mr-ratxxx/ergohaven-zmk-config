@@ -790,7 +790,7 @@ M_RIGHT_L {
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
                 &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
                 &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)(
+                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp LG(V)
 
         /* nav-r T L */
@@ -1224,7 +1224,7 @@ nav-l-m {
         &trans
         &trans
 
-        /* symb B L */ к
+        /* symb B L */
         &kp SQT
         &kp RS(N2)
         &kp RS(N4)
