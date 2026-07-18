@@ -777,9 +777,9 @@ M_RIGHT_L {
 
         /* nav-r D L */
         &kp RG(V)
-        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
-                        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
+        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)                        
                         &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+                        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
                         &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
         &msc SCRL_DOWN
         &trans
@@ -787,9 +787,9 @@ M_RIGHT_L {
         &trans
         &msc SCRL_DOWN
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp LG(V)
 
         /* nav-r T L */
