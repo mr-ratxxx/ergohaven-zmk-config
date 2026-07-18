@@ -111,13 +111,22 @@
         };
         
     // ru-ь-ъ
-    alt_ru_m_m: alt_ru_m_m {
+    alt_ru_m_rbkr: alt_ru_m_rbkt {
       compatible = "zmk,behavior-mod-morph";
-      label = "ALT_RU_M_M";
+      label = "ALT_RU_M_RBKT";
       #binding-cells = <0>;
       bindings = <&kp M>, <&kp RBKT>;
       mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
     };
+    
+    // ru-n-lbkt
+        alt_ru_n_lbkr: alt_ru_n_lbkt {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ALT_RU_N_LBKT";
+          #binding-cells = <0>;
+          bindings = <&kp N>, <&kp LBKT>;
+          mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+        };
 
     // ru-б en/alt-ru ,
     alt_ru_en_comma: alt_ru_en_comma {
@@ -616,8 +625,8 @@ M_RIGHT_L {
         &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
         /* base D R */
         &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
-        &kp N
-        &alt_ru_m_m
+        &alt_ru_n_lbkr
+        &alt_ru_m_rbkr
         &kp COMMA
         &kp DOT
         &kp SLASH
@@ -691,7 +700,7 @@ M_RIGHT_L {
               &kp SLASH
               &kp DOT
               &kp COMMA
-              &alt_ru_m_m
+              &alt_ru_m_rbkr
               &kp N
               &trans
               /* base-m D R */
@@ -1504,7 +1513,7 @@ nav-l-m {
         /* base-o D R */
         &lt LAYERS_LAYER SPACE
         &kp N
-        &alt_ru_m_m
+        &alt_ru_m_rbkr
         &kp COMMA
         &kp DOT
         &kp SLASH
@@ -1520,7 +1529,7 @@ nav-l-m {
         &kp ESC
         &kp CAPS
         &kp BACKSPACE
-        &kp LBKT
+        &alt_ru_m_rbkr
         &kp RIGHT_BRACKET
       >;
       display-name = "base-override";
