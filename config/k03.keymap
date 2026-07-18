@@ -120,18 +120,18 @@
     };
     
     // ru-х-n
-    alt_ru_n_lbkt: alt_ru_n_lbkt {
+    alt_ru_n_lbkt: ru_n_lbkt {
       compatible = "zmk,behavior-mod-morph";
-      label = "alt_ru_n_lbkt";
+      label = "ALT_RU_N_LBKT";
       #binding-cells = <0>;
       bindings = <&kp n>, <&kp LBKT>;
       mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
     };
-        
+    
     // ru-ё-\
-    alt_ru_t_e: alt_ru_t_e {
+    alt_ru_t_bslh: ru_t_bslh {
       compatible = "zmk,behavior-mod-morph";
-      label = "ALT_RU_T_E";
+      label = "ALT_RU_T_BSLH";
       #binding-cells = <0>;
       bindings = <&kp T>, <&kp BSLH>;
       mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
