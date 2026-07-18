@@ -173,7 +173,7 @@
 
             mods = <(MOD_LALT | MOD_RALT)>;
         };
-        *\                       
+        \*                       
 
     ctrl_left_bracket: ctrl_left_bracket {
       compatible = "zmk,behavior-mod-morph";
