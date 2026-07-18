@@ -102,12 +102,12 @@
     };
                 
     // ru-e-ё
-        alt_ru_e_e: alt_ru_e_e {
+        alt_ru_t_e: alt_ru_t_e {
           compatible = "zmk,behavior-mod-morph";
-          label = "ALT_RU_E_E";
+          label = "ALT_RU_T_E";
           #binding-cells = <0>;
           bindings = <&kp T>, <&kp BSLH>;
-          mods = <(MOD_LALT | MOD_RALT)>;
+          mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
         };
         
     // ru-ь-ъ
@@ -582,7 +582,7 @@ M_RIGHT_L {
         &kp W
         &kp E
         &kp R
-        &alt_ru_e_e
+        &alt_ru_t_e
         /* base B R */
         &kp Y
         &kp U
@@ -664,7 +664,7 @@ M_RIGHT_L {
                             &kp U
                             &kp Y
               /* base-m B R */
-              &alt_ru_e_e
+              &alt_ru_t_e
               &kp R
               &kp E
               &kp W
@@ -1469,7 +1469,7 @@ nav-l-m {
                 &kp W
                 &kp E
                 &kp R
-                &alt_ru_e_e
+                &alt_ru_t_e
                 /* base-o B R */
                 &kp Y
                 &kp U
