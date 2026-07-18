@@ -381,26 +381,25 @@
                 bindings = <&kp PAGE_DOWN>;
                 key-positions = <15 27>;
             };                    
-                    PG_DOWN_R {
-                                bindings = <&kp PAGE_DOWN>;
-                                key-positions = <20 32>;
-                            };
-                            
-                            CMD_PG_UP_L {
-                                                                    bindings = <&kp PAGE_UP>;
-                                                                    key-positions = <16 28>;
-                                                                    };
-                            
-                            CMD_PG_UP_R {
-                                        bindings = <&kp PAGE_UP>;
-                                        key-positions = <19 31>;
-                                    };
-                                    
-                                    
-           M_DOWN_L {
-                           bindings = <&msc SCRL_UP>;
-                           key-positions = <27 39>;
-                       };
+    PG_DOWN_R {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <20 32>;
+        };
+        
+    CMD_PG_UP_L {
+        bindings = <&kp PAGE_UP>;
+        key-positions = <16 28>;
+        };
+        
+    CMD_PG_UP_R {
+                bindings = <&kp PAGE_UP>;
+                key-positions = <19 31>;
+            };                                
+                                
+       M_DOWN_L {
+                       bindings = <&msc SCRL_DOWN>;
+                       key-positions = <27 39>;
+                   };
                                            
         M_DOWN_R {
             bindings = <&msc SCRL_DOWN>;
@@ -408,28 +407,29 @@
         };
         
         M_UP_L {
-                                                bindings = <&msc SCRL_UP>;
-                                                key-positions = <28 40>;
-                                            };
+            bindings = <&msc SCRL_UP>;
+            key-positions = <28 40>;
+        };
         
         M_UP_R {
-                    bindings = <&msc SCRL_UP>;
-                    key-positions = <31 45>;
-                };
+            bindings = <&msc SCRL_UP>;
+            key-positions = <31 45>;
+        };
                                                
-M_LEFT_L {
-                bindings = <&msc SCRL_RIGHT>;
-                key-positions = <29 41>;
-            };                    
+    M_LEFT_L {
+        bindings = <&msc SCRL_RIGHT>;
+        key-positions = <29 41>;
+    };                    
                     M_LEFT_R {
                                 bindings = <&msc SCRL_LEFT>;
                                 key-positions = <44 30>;
                             };
                             
 M_RIGHT_L {
-                bindings = <&msc SCRL_LEFT>;
-                key-positions = <38 26>;
-            };                    
+bindings = <&msc SCRL_LEFT>;
+key-positions = <38 26>;
+};
+                    
                     M_RIGHT_R {
                                 bindings = <&msc SCRL_RIGHT>;
                                 key-positions = <47 33>;
