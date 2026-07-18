@@ -377,6 +377,26 @@
   combos {
     compatible = "zmk,combos";
     
+    PG_RIGHT_R {
+                bindings = <&kp LEFT>;
+                key-positions = <30 31>;
+            };
+            
+    PG_U_R {
+                bindings = <&kp UP>;
+                key-positions = <32 33>;
+            };
+            
+PG_D_R {
+                bindings = <&kp DOWN;
+                key-positions = <34 35>;
+            };
+            
+PG_R_R {
+                bindings = <&kp RIGHT>;
+                key-positions = <36 37>;
+            };
+    
     PG_DOWN_L {
                 bindings = <&kp PAGE_DOWN>;
                 key-positions = <15 27>;
