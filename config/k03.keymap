@@ -387,12 +387,15 @@
                             };
                             
                             CMD_PG_UP_L {
-                                                                    bindings = <&kp PAGE_DOWN>;
+                                                                    bindings = <&kp PAGE_UP>;
                                                                     key-positions = <16 28>;
-                                                                };
+         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+                 &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                 &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                 &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)                                                       };
                             
                             CMD_PG_UP_R {
-                                        bindings = <&kp PAGE_DOWN>;
+                                        bindings = <&kp PAGE_UP>;
                                         key-positions = <19 31>;
                                     };
                                     
@@ -400,21 +403,22 @@
            M_DOWN_L {
                            bindings = <&msc SCRL_UP>;
                            key-positions = <27 39>;
-                       };                    
-                               M_DOWN_R {
-                                           bindings = <&msc SCRL_DOWN>;
-                                           key-positions = <32 46>;
-                                       };
-                                       
-                                       M_UP_L {
-                                                                               bindings = <&msc SCRL_UP>;
-                                                                               key-positions = <28 40>;
-                                                                           };
-                                       
-                                       M_UP_R {
-                                                   bindings = <&msc SCRL_UP>;
-                                                   key-positions = <31 45>;
-                                               };
+                       };
+                                           
+        M_DOWN_R {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <32 46>;
+        };
+        
+        M_UP_L {
+                                                bindings = <&msc SCRL_UP>;
+                                                key-positions = <28 40>;
+                                            };
+        
+        M_UP_R {
+                    bindings = <&msc SCRL_UP>;
+                    key-positions = <31 45>;
+                };
                                                
 M_LEFT_L {
                 bindings = <&msc SCRL_RIGHT>;
@@ -789,7 +793,7 @@ M_RIGHT_L {
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
                 &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
                 &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)(
         &kp LG(V)
 
         /* nav-r T L */
