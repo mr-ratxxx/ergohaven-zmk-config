@@ -125,7 +125,7 @@
       label = "ALT_RU_N_LBKT";
       #binding-cells = <0>;
       bindings = <&kp n>, <&kp LBKT>;
-      mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+      mods = <(MOD_LCTL | MOD_RCTL) | ( MOD_LALT | MOD_RALT)>;
     };
     
     // ru-ё-\
@@ -134,7 +134,7 @@
       label = "ALT_RU_T_BSLH";
       #binding-cells = <0>;
       bindings = <&kp T>, <&kp BSLH>;
-      mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+      mods = <(MOD_LCTL | MOD_RCTL) | ( MOD_LALT | MOD_RALT)>;
     };
 
     // ru-б en/alt-ru ,
