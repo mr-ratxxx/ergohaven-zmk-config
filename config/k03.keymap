@@ -634,7 +634,7 @@ M_RIGHT_L {
         &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
         /* base D R */
         &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
-        &alt_ru_n_
+        &alt_ru_n_[
         &alt_ru_m_m
         &kp COMMA
         &kp DOT
