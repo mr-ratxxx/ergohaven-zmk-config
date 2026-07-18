@@ -99,7 +99,25 @@
       #binding-cells = <0>;
       bindings = <&kp DOT>, <&kp RS(N7)>;
       mods = <(MOD_LALT | MOD_RALT)>;
-    };    
+    };
+    
+    // ru-х-n
+            alt_ru_n_bslh: alt_ru_n_bslh {
+              compatible = "zmk,behavior-mod-morph";
+              label = "ALT_RU_N_BSLH";
+              #binding-cells = <0>;
+              bindings = <&kp n>, <&kp LBKT>;
+              mods = <(MOD_LALT | MOD_RALT)>;
+            };
+            
+            // ru-ё-\
+                    alt_ru_t_e: alt_ru_t_e {
+                      compatible = "zmk,behavior-mod-morph";
+                      label = "ALT_RU_T_E";
+                      #binding-cells = <0>;
+                      bindings = <&kp T>, <&kp BSLH>;
+                      mods = <(MOD_LALT | MOD_RALT)>;
+                    };    
     
     // ru-e-ё
         alt_ru_e_e: alt_ru_e_e {
@@ -128,7 +146,7 @@
       mods = <(MOD_LALT | MOD_RALT)>;
     };
 
-    // ru-ж en/alt-ru ;
+    // ru-ж en/alt-ru
     alt_ru_en_semi: alt_ru_en_semi {
       compatible = "zmk,behavior-mod-morph";
       label = "ALT_RU_EN_SEMI";
@@ -378,18 +396,18 @@
                             };
                             
                             CMD_PG_UP_L {
-                                                                    bindings = <&kp PAGE_UP>;
+                                                                    bindings = <&kp PAGE_DOWN>;
                                                                     key-positions = <16 28>;
                                                                 };
                             
                             CMD_PG_UP_R {
-                                        bindings = <&kp PAGE_UP>;
+                                        bindings = <&kp PAGE_DOWN>;
                                         key-positions = <19 31>;
                                     };
                                     
                                     
            M_DOWN_L {
-                           bindings = <&msc SCRL_DOWN>;
+                           bindings = <&msc SCRL_UP>;
                            key-positions = <27 39>;
                        };                    
                                M_DOWN_R {
