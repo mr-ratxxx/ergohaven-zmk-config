@@ -377,6 +377,7 @@
   combos {
     compatible = "zmk,combos";
     
+    */
     PG_RIGHT_R {
                 bindings = <&kp LEFT>;
                 key-positions = <30 31>;
@@ -404,7 +405,7 @@ PG_R_R {
     PG_DOWN_R {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <20 32>;
-        };
+        };*/
         
     CMD_PG_UP_L {
         bindings = <&kp PAGE_UP>;
