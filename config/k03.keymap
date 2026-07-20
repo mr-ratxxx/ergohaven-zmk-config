@@ -377,7 +377,7 @@
   combos {
     compatible = "zmk,combos";
     
-    */
+    
     PG_RIGHT_R {
                 bindings = <&kp LEFT>;
                 key-positions = <30 31>;
@@ -405,7 +405,7 @@ PG_R_R {
     PG_DOWN_R {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <20 32>;
-        };*/
+        };
         
     CMD_PG_UP_L {
         bindings = <&kp PAGE_UP>;
@@ -779,8 +779,7 @@ key-positions = <38 26>;
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)        
-        &mmv MOVE_X(MMV_FAST_SPEED_L)        
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp LG(TAB)
         /* nav-r C L */        
         &kp LG(C)
