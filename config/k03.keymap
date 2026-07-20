@@ -374,112 +374,104 @@
     };
   };
 
-  combos {
-    compatible = "zmk,combos";
-    
-    
-    PG_RIGHT_R {
-                bindings = <&kp LEFT>;
-                key-positions = <30 31>;
-            };
-            
-    PG_U_R {
-                bindings = <&kp UP>;
-                key-positions = <32 33>;
-            };
-            
-PG_D_R {
-                bindings = <&kp DOWN>;
-                key-positions = <34 35>;
-            };
-            
-PG_R_R {
-                bindings = <&kp RIGHT>;
-                key-positions = <36 37>;
-            };
-    
-    PG_DOWN_L {
-                bindings = <&kp PAGE_DOWN>;
-                key-positions = <15 27>;
-            };                    
-    PG_DOWN_R {
+    combos {
+        compatible = "zmk,combos";
+
+        PG_U_R {
+            bindings = <&kp UP>;
+            key-positions = <46 58>;
+        };
+
+        PG_D_R {
+            bindings = <&kp DOWN>;
+            key-positions = <47 59>;
+        };
+
+        PG_DOWN_L {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <20 32>;
+            key-positions = <26 38>;
         };
-        
-    CMD_PG_UP_L {
-        bindings = <&kp PAGE_UP>;
-        key-positions = <16 28>;
+
+        PG_DOWN_R {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <33 47>;
         };
-        
-    CMD_PG_UP_R {
-                bindings = <&kp PAGE_UP>;
-                key-positions = <19 31>;
-            };                                
-                                
-       M_DOWN_L {
-                       bindings = <&msc SCRL_DOWN>;
-                       key-positions = <27 39>;
-                   };
-                                           
-        M_DOWN_R {
-            bindings = <&msc SCRL_DOWN>;
+
+        CMD_PG_UP_L {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <27 39>;
+        };
+
+        CMD_PG_UP_R {
+            bindings = <&kp PAGE_UP>;
             key-positions = <32 46>;
         };
-        
+
+        M_DOWN_L {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <27 39>;
+        };
+
+        M_DOWN_R {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <21 33>;
+        };
+
         M_UP_L {
             bindings = <&msc SCRL_UP>;
-            key-positions = <28 40>;
+            key-positions = <15 27>;
         };
-        
+
         M_UP_R {
             bindings = <&msc SCRL_UP>;
-            key-positions = <31 45>;
+            key-positions = <20 32>;
         };
-                                               
-    M_LEFT_L {
-        bindings = <&msc SCRL_RIGHT>;
-        key-positions = <29 41>;
-    };                    
-                    M_LEFT_R {
-                                bindings = <&msc SCRL_LEFT>;
-                                key-positions = <44 30>;
-                            };
-                            
-M_RIGHT_L {
-bindings = <&msc SCRL_LEFT>;
-key-positions = <38 26>;
-};
-                    
-                    M_RIGHT_R {
-                                bindings = <&msc SCRL_RIGHT>;
-                                key-positions = <47 33>;
-                            };                                                                                                    
-                
-            CMD_TAB_L2 {
-                                    bindings = <&kp LG(TAB)>;
-                                    key-positions = <16 17>;
-                                    };
-            
-            CMD_TAB_R2 {
-                        bindings = <&kp LG(TAB)>;
-                        key-positions = <18 19>;
-                    };    
+
+        M_LEFT_L {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <28 16>;
+        };
+
+        M_LEFT_R {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <19 31>;
+        };
+
+        M_RIGHT_L {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <13 25>;
+        };
+
+        M_RIGHT_R {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <22 34>;
+        };
+
+        CMD_TAB_L2 {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <16 17>;
+        };
+
+        CMD_TAB_R2 {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <18 19>;
+        };
+
         CMD_TAB_L {
-                    bindings = <&kp LG(TAB)>;
-                    key-positions = <13 14>;
-                };
-                
+            bindings = <&kp LG(TAB)>;
+            key-positions = <13 14>;
+        };
+
         CMD_TAB_R {
             bindings = <&kp LG(TAB)>;
             key-positions = <21 22>;
-        };                
-    
+        };
+
         CAPS_L {
             bindings = <&kp CAPS>;
             key-positions = <40 41>;
         };
-        
+
         CAPS_R {
             bindings = <&kp CAPS>;
             key-positions = <44 45>;
@@ -490,102 +482,102 @@ key-positions = <38 26>;
             key-positions = <28 29>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER>;
         };
-        
+
         SPACE_R {
             bindings = <&kp SPACE>;
             key-positions = <30 31>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER>;
         };
 
-    FROM_LAYERS_TO_ADJ_LAYER {
-      bindings = <&tog ADJ_LAYER>;
-      key-positions = <9 10 11>;
-      layers = <LAYERS_LAYER ADJ_LAYER>;
-    };
-    
-    ENTER_R {
-        bindings = <&kp ENTER>;
-        key-positions = <46 47>;
+        FROM_LAYERS_TO_ADJ_LAYER {
+            bindings = <&tog ADJ_LAYER>;
+            key-positions = <9 10 11>;
+            layers = <LAYERS_LAYER ADJ_LAYER>;
         };
 
-    ENTER_L {
-      bindings = <&kp ENTER>;
-      key-positions = <38 39>;
-    };
+        ENTER_R {
+            bindings = <&kp ENTER>;
+            key-positions = <46 47>;
+        };
 
-    N0_L {
-        bindings = <&kp N0>;
-        key-positions = <27 28>;
-        layers = <NUM_LAYER>;
-    };
-    
-    N0_R {
-        bindings = <&kp N0>;
-        key-positions = <31 32>;
-        layers = <NUM_LAYER>;          
-    };
-    
-    N0_L1 {
+        ENTER_L {
+            bindings = <&kp ENTER>;
+            key-positions = <38 39>;
+        };
+
+        N0_L {
+            bindings = <&kp N0>;
+            key-positions = <27 28>;
+            layers = <NUM_LAYER>;
+        };
+
+        N0_R {
+            bindings = <&kp N0>;
+            key-positions = <31 32>;
+            layers = <NUM_LAYER>;
+        };
+
+        N0_L1 {
             bindings = <&kp N0>;
             key-positions = <39 40>;
             layers = <NUM_LAYER>;
         };
-        
+
         N0_R2 {
             bindings = <&kp N0>;
             key-positions = <45 46>;
-            layers = <NUM_LAYER>;          
+            layers = <NUM_LAYER>;
         };
 
-    MOUSE1_R {
-      bindings = <&mkp MB1>;
-      key-positions = <45 46>;
-    };
-
-    MOUSE2_R {
-      bindings = <&mkp MB2>;
-      key-positions = <45 46 47>;
-    };
-
-    MOUSE1_L {
-      bindings = <&mkp MB1>;
-      key-positions = <40 39>;
-    };
-
-    MOUSE2_L {
-      bindings = <&mkp MB2>;
-      key-positions = <38 39 40>;
-    };
-
-    UI_REVERT {
-      bindings = <&kp RG(Z)>;
-      key-positions = <20 19>;
-      layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
-    };
-
-    UIO_REPEAT {
-      bindings = <&kp LS(LG(Z))>;
-      key-positions = <19 20 21>;
-      layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
-    };
-    
-    UI_REVERT_L {
-          bindings = <&kp RG(Z)>;
-          key-positions = <15 16>;
-          layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+        MOUSE1_R {
+            bindings = <&mkp MB1>;
+            key-positions = <45 46>;
         };
-    
-    UIO_REPEAT_L {
-      bindings = <&kp LS(LG(Z))>;
-      key-positions = <14 15 16>;
-      layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
-    };
 
-    SHIFT_TOGGLE {
-      bindings = <&kt LSHIFT>;
-      key-positions = <29 30 31 32>;
+        MOUSE2_R {
+            bindings = <&mkp MB2>;
+            key-positions = <45 46 47>;
+        };
+
+        MOUSE1_L {
+            bindings = <&mkp MB1>;
+            key-positions = <40 39>;
+        };
+
+        MOUSE2_L {
+            bindings = <&mkp MB2>;
+            key-positions = <38 39 40>;
+        };
+
+        UI_REVERT {
+            bindings = <&kp RG(Z)>;
+            key-positions = <20 19>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+        };
+
+        UIO_REPEAT {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <19 20 21>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+        };
+
+        UI_REVERT_L {
+            bindings = <&kp RG(Z)>;
+            key-positions = <15 16>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+        };
+
+        UIO_REPEAT_L {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <14 15 16>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+        };
+
+        SHIFT_TOGGLE {
+            bindings = <&kt LSHIFT>;
+            key-positions = <29 30 31 32>;
+        };
     };
-  };
 
   keymap {
     compatible = "zmk,keymap";
