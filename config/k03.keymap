@@ -768,10 +768,10 @@
         &tog NAV_MOUSE_LAYER
         /* nav-r B R */
         &tog NAV_MOUSE_LAYER
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &kp LEFT_ARROW
+        &kp UP
+        &kp DOWN
+        &kp RIGHT_ARROW
         &kp LG(TAB)
         /* nav-r C L */        
         &kp LG(C)
@@ -782,10 +782,10 @@
         &msc SCRL_UP
         /* nav-r C R */
         &msc SCRL_UP
-        &kp LEFT_ARROW
-                        &kp UP
-                        &kp DOWN
-                        &kp RIGHT_ARROW
+        &mmv MOVE_X(MMV_FAST_SPEED_L)
+        &mmv MOVE_Y(MMV_FAST_SPEED_U)
+        &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+        &mmv MOVE_X(MMV_FAST_SPEED_R)        
         &kp LG(C)
 
         /* nav-r D L */
@@ -799,10 +799,10 @@
         /* nav-r D R */
         &trans
         &msc SCRL_DOWN
-        &mmv MOVE_X(MMV_FAST_SPEED_L)
-        &mmv MOVE_Y(MMV_FAST_SPEED_U)
-        &mmv MOVE_Y(MMV_FAST_SPEED_D)        
-        &mmv MOVE_X(MMV_FAST_SPEED_R)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp LG(V)
 
         /* nav-r T L */
