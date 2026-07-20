@@ -840,17 +840,17 @@ nav-l {
 
     /* nav-l B L */
     &kp LG(TAB)
-    &kp LEFT_ARROW                            
-    &kp DOWN
-    &kp UP
-    &kp RIGHT_ARROW
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)        
+            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
     &msc SCRL_UP
     /* nav-l B R */
     &msc SCRL_UP
-    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)        
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+    &kp LEFT_ARROW                            
+        &kp DOWN
+        &kp UP
+        &kp RIGHT_ARROW
             &kp LG(TAB)
     /* nav-l C L */
     &kp LG(C)    
