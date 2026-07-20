@@ -899,7 +899,7 @@ nav-l {
   display-name = "nav-l";
 };
 
-nav-mouse {
+nav-mouse-r {
       bindings = <
               /* nav-m-r A L */
               &trans
@@ -975,7 +975,7 @@ nav-mouse {
               &lt SYMB_LAYER RG(LEFT_BRACKET)
               &lt NAV_MOUSE_R_LAYER RG(RIGHT_BRACKET)
             >;
-      display-name = "nav-mouse";
+      display-name = "nav-mouse-r";
     };
 
 nav-l-m {
