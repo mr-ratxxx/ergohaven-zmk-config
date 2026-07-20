@@ -1113,11 +1113,11 @@ nav-l-m {
         &kp F12
         &kp F11
         &kp F10
-        &msc SCRL_DOWN
+        &none
         &trans
         /* funct D R */
         &trans
-        &msc SCRL_DOWN
+        &none
         &kp F10
         &kp F11
         &kp F12
