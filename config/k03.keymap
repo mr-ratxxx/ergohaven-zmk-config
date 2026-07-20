@@ -768,10 +768,10 @@
         &msc SCRL_UP
         /* nav-r B R */
         &msc SCRL_UP
-        &kp LEFT_ARROW
-        &kp UP
-        &kp DOWN
-        &kp RIGHT_ARROW
+        &mmv MOVE_X(MMV_FAST_SPEED_L)
+               &mmv MOVE_Y(MMV_FAST_SPEED_U)
+               &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+               &mmv MOVE_X(MMV_FAST_SPEED_R)        
         &kp LG(TAB)
         /* nav-r C L */        
         &kp LG(C)
@@ -781,11 +781,11 @@
         &kp LSHFT
         &tog NAV_R_LAYER
         /* nav-r C R */
-        &tog NAV_R_LAYER 
-        &mmv MOVE_X(MMV_FAST_SPEED_L)
-        &mmv MOVE_Y(MMV_FAST_SPEED_U)
-        &mmv MOVE_Y(MMV_FAST_SPEED_D)        
-        &mmv MOVE_X(MMV_FAST_SPEED_R)        
+        &tog NAV_R_LAYER
+         &kp LEFT_ARROW
+                &kp UP
+                &kp DOWN
+                &kp RIGHT_ARROW
         &kp LG(C)
 
         /* nav-r D L */
