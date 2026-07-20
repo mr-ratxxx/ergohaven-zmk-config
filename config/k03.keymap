@@ -855,12 +855,12 @@ nav-l {
     /* nav-l C L */
     &kp LG(C)     
     &kp LEFT_ARROW
-                      &kp DOWN
-                             &kp UP            
-                             &kp RIGHT_ARROW   
-                    &tog NAV_L_LAYER
+    &kp DOWN
+    &kp UP            
+    &kp RIGHT_ARROW   
+    &tog NAV_L_LAYER
     /* nav-l C R */
-            &tog NAV_L_LAYER
+    &tog NAV_L_LAYER
     &kp LSHFT
     &kp LALT
     &kp LCTRL
