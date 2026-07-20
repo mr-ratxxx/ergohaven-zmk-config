@@ -901,161 +901,159 @@ nav-l {
 
 nav-mouse {
       bindings = <
-        /* nav-mouse A L */
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        /* nav-mouse A R */
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-
-        /* nav-mouse B L */
-        &kp LG(TAB)
-        &kp LEFT_ARROW
-        &kp DOWN
-        &kp UP
-        &kp RIGHT_ARROW
-        &msc SCRL_UP
-        /* nav-mouse B R */
-        &msc SCRL_UP
-        &kp LEFT_ARROW
-        &kp UP
-        &kp DOWN
-        &kp RIGHT_ARROW
-        &kp LG(TAB)
-
-        /* nav-mouse C L */
-        &kp LG(C)
-        &mmv MOVE_X(MMV_FAST_SPEED_L)                
-                &mmv MOVE_Y(MMV_FAST_SPEED_D)
-                &mmv MOVE_Y(MMV_FAST_SPEED_U)
-                &mmv MOVE_X(MMV_FAST_SPEED_R)
-        &tog NAV_MOUSE_R_LAYER
-        /* nav-mouse C R */
-        &tog NAV_MOUSE_R_LAYER
-        &mmv MOVE_X(MMV_FAST_SPEED_L)
-        &mmv MOVE_Y(MMV_FAST_SPEED_U)
-        &mmv MOVE_Y(MMV_FAST_SPEED_D)
-        &mmv MOVE_X(MMV_FAST_SPEED_R)
-        &kp LG(C)
-
-        /* nav-mouse D L */
-        &kp RG(V)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)                
-                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-        &msc SCRL_DOWN
-        &trans
-        /* nav-mouse D R */
-        &trans
-        &msc SCRL_DOWN
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-        &kp LG(V)
-
-        /* nav-mouse T L */
-        &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
-        &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
-        &lt SYMB_LAYER TAB
-        &lt BASE_OVERRIDE_LAYER SPACE
-        &lt FUNCT_LAYER DEL
-        /* nav-mouse T R */
-        &lt FUNCT_LAYER ESC
-        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-        &lt NUM_LAYER BACKSPACE
-        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
-        &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
-      >;
+              /* nav-m-r A L */
+              &trans
+              &trans
+              &trans
+              &trans
+              &trans
+              &trans
+              /* nav-m-r A R */
+              &trans
+              &trans
+              &trans
+              &trans
+              &trans
+              &trans
+      
+              /* nav-m-r B L */
+              &kp LG(TAB)
+              &kp LEFT_ARROW
+                      &kp DOWN
+                      &kp UP
+                      &kp RIGHT_ARROW
+              &msc SCRL_UP
+              /* nav-m-r B R */
+              &msc SCRL_UP
+              &kp LEFT_ARROW
+              &kp UP
+              &kp DOWN
+              &kp RIGHT_ARROW
+              &kp LG(TAB)
+              /* nav-m-r C L */        
+              &kp LG(C)
+              &kp LGUI
+              &kp LCTRL
+              &kp LALT
+              &kp LSHFT
+              &tog NAV_R_LAYER
+              /* nav-m-r C R */
+              &tog NAV_R_LAYER 
+              &mmv MOVE_X(MMV_FAST_SPEED_L)
+              &mmv MOVE_Y(MMV_FAST_SPEED_U)
+              &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+              &mmv MOVE_X(MMV_FAST_SPEED_R)        
+              &kp LG(C)
+      
+              /* nav-m-r D L */
+              &kp RG(V)
+              &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+              &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+              &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
+              &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+              &msc SCRL_DOWN
+              &trans
+              /* nav-m-r D R */
+              &trans
+              &msc SCRL_DOWN
+              &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+                      &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                      &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                      &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+              &kp LG(V)
+      
+              /* nav-m-r T L */
+              &lt NAV_MOUSE_R_LAYER RG(LEFT_BRACKET)
+              &lt NUM_LAYER RG(RIGHT_BRACKET)
+              &lt SYMB_LAYER TAB
+              &lt BASE_OVERRIDE_LAYER SPACE
+              &lt FUNCT_LAYER DEL
+              /* nav-m-r T R */
+              &lt FUNCT_LAYER ESC
+              &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+              &lt NUM_LAYER BACKSPACE
+              &lt SYMB_LAYER RG(LEFT_BRACKET)
+              &lt NAV_MOUSE_R_LAYER RG(RIGHT_BRACKET)
+            >;
       display-name = "nav-mouse";
     };
 
 nav-l-m {
   bindings = <
-    /* nav-l-m A L */
-    &trans
-    &trans
-    &trans
-    &trans
-    &trans
-    &trans
-    /* nav-l-m A R */
-    &trans
-    &trans
-    &trans
-    &trans
-    &trans
-    &trans
-
-    /* nav-l-m B L */
-            &kp LG(TAB)
-                        &msc SCRL_LEFT
-                        &msc SCRL_RIGHT
-            &kp PAGE_DOWN
-            &kp PG_UP            
-            &tog NAV_MOUSE_R_LAYER            
-    /* nav-l-m B R */
-    &tog NAV_MOUSE_R_LAYER            
-            &kp PAGE_UP
-            &kp PAGE_DOWN
-            &msc SCRL_LEFT
-            &msc SCRL_RIGHT
-            &kp LG(TAB)
-
-    /* nav-l-m C L */
-    &kp LG(C)    
-            &mmv MOVE_X(MMV_FAST_SPEED_L)
-            &mmv MOVE_Y(MMV_FAST_SPEED_D)
-            &mmv MOVE_Y(MMV_FAST_SPEED_U)
-            &mmv MOVE_X(MMV_FAST_SPEED_R)
-            &msc SCRL_UP
-    /* nav-l-m C R */    
-    &msc SCRL_UP
-            &kp LEFT_ARROW
-            &kp UP
-            &kp DOWN
-            &kp RIGHT_ARROW
-            &kp LG(C)
-            
-    /* nav-l-m D L */
-    &kp LG(V)
-            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)            
-            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-            &msc SCRL_DOWN
-    &trans        
-    /* nav-l-m D R */
-    &trans
-    &msc SCRL_DOWN
-            &mmv MOVE_X(MMV_FAST_SPEED_L)
-            &mmv MOVE_Y(MMV_FAST_SPEED_U)
-            &mmv MOVE_Y(MMV_FAST_SPEED_D)            
-            &mmv MOVE_X(MMV_FAST_SPEED_R)                        
-            &kp RG(V)
-
-    /* nav-l-m T L */    
-            &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
-            &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
-            &lt SYMB_LAYER TAB
-            &lt BASE_OVERRIDE_LAYER SPACE
-            &lt FUNCT_LAYER DEL
-            /* nav-l-m T R */
-            &lt FUNCT_LAYER ESC
-            &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-            &lt NUM_LAYER BACKSPACE
-            &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
-            &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
-  >;
+          /* nav-r A L */
+          &trans
+          &trans
+          &trans
+          &trans
+          &trans
+          &trans
+          /* nav-r A R */
+          &trans
+          &trans
+          &trans
+          &trans
+          &trans
+          &trans
+  
+          /* nav-r B L */
+          &kp LG(TAB)
+          &kp LEFT_ARROW
+                  &kp DOWN
+                  &kp UP
+                  &kp RIGHT_ARROW
+          &msc SCRL_UP
+          /* nav-r B R */
+          &msc SCRL_UP
+          &mmv MOVE_X(MMV_FAST_SPEED_L)
+                    &mmv MOVE_Y(MMV_FAST_SPEED_U)
+                    &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+                    &mmv MOVE_X(MMV_FAST_SPEED_R)        
+          &kp LG(TAB)
+          /* nav-r C L */        
+          &kp LG(C)
+          &kp LGUI
+          &kp LCTRL
+          &kp LALT
+          &kp LSHFT
+          &tog NAV_R_LAYER
+          /* nav-r C R */
+          &tog NAV_R_LAYER
+          &kp LEFT_ARROW
+                    &kp UP
+                    &kp DOWN
+                    &kp RIGHT_ARROW
+          &kp LG(C)
+  
+          /* nav-r D L */
+          &kp RG(V)
+          &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+          &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+          &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
+          &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+          &msc SCRL_DOWN
+          &trans
+          /* nav-r D R */
+          &trans
+          &msc SCRL_DOWN
+          &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+                  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                  &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+          &kp LG(V)
+  
+          /* nav-r T L */
+          &lt NAV_MOUSE_R_LAYER RG(LEFT_BRACKET)
+          &lt NUM_LAYER RG(RIGHT_BRACKET)
+          &lt SYMB_LAYER TAB
+          &lt BASE_OVERRIDE_LAYER SPACE
+          &lt FUNCT_LAYER DEL
+          /* nav-r T R */
+          &lt FUNCT_LAYER ESC
+          &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+          &lt NUM_LAYER BACKSPACE
+          &lt SYMB_LAYER RG(LEFT_BRACKET)
+          &lt NAV_MOUSE_R_LAYER RG(RIGHT_BRACKET)
+        >;
   display-name = "nav-l-m";
 };
 
