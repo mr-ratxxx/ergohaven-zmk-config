@@ -7,7 +7,7 @@
 #define NAV_R_LAYER 2
 #define NAV_L_LAYER 3
 #define NAV_MOUSE_R_LAYER 4
-#define NAV_L_M_LAYER 5
+#define NAV_MOUSE_L_LAYER 5
 #define FUNCT_LAYER 6
 #define NUM_LAYER 7
 #define SYMB_LAYER 8
@@ -480,13 +480,13 @@
         SPACE_L {
             bindings = <&kp SPACE>;
             key-positions = <28 29>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER>;
+            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
         SPACE_R {
             bindings = <&kp SPACE>;
             key-positions = <30 31>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER>;
+            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
         FROM_LAYERS_TO_ADJ_LAYER {
@@ -552,25 +552,25 @@
         UI_REVERT {
             bindings = <&kp RG(Z)>;
             key-positions = <20 19>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
 
         UIO_REPEAT {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <19 20 21>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
 
         UI_REVERT_L {
             bindings = <&kp RG(Z)>;
             key-positions = <15 16>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
 
         UIO_REPEAT_L {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <14 15 16>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
 
         SHIFT_TOGGLE {
