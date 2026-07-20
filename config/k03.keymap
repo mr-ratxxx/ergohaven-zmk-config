@@ -856,7 +856,7 @@ nav-l {
     &kp LG(C)     
     &kp LEFT_ARROW
     &kp DOWN
-    &kp UP            
+    &kp UP
     &kp RIGHT_ARROW   
     &tog NAV_L_LAYER
     /* nav-l C R */
