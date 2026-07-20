@@ -919,9 +919,9 @@ nav-mouse-r {
               /* nav-m-r B L */
               &kp LG(TAB)
               &kp LEFT_ARROW
-                      &kp DOWN
-                      &kp UP
-                      &kp RIGHT_ARROW
+              &kp DOWN
+              &kp UP
+              &kp RIGHT_ARROW
               &msc SCRL_UP
               /* nav-m-r B R */
               &msc SCRL_UP
@@ -936,9 +936,9 @@ nav-mouse-r {
               &kp LCTRL
               &kp LALT
               &kp LSHFT
-              &tog NAV_R_LAYER
+              &tog NAV_MOUSE_R_LAYER
               /* nav-m-r C R */
-              &tog NAV_R_LAYER 
+              &tog NAV_MOUSE_R_LAYER
               &mmv MOVE_X(MMV_FAST_SPEED_L)
               &mmv MOVE_Y(MMV_FAST_SPEED_U)
               &mmv MOVE_Y(MMV_FAST_SPEED_D)        
@@ -998,16 +998,16 @@ nav-l-m {
           /* nav-l-m B L */
           &kp LG(TAB)
           &kp LEFT_ARROW
-                  &kp DOWN
-                  &kp UP
-                  &kp RIGHT_ARROW
+          &kp DOWN
+          &kp UP
+          &kp RIGHT_ARROW
           &msc SCRL_UP
           /* nav-l-m B R */
           &msc SCRL_UP
           &mmv MOVE_X(MMV_FAST_SPEED_L)
-                    &mmv MOVE_Y(MMV_FAST_SPEED_U)
-                    &mmv MOVE_Y(MMV_FAST_SPEED_D)        
-                    &mmv MOVE_X(MMV_FAST_SPEED_R)        
+          &mmv MOVE_Y(MMV_FAST_SPEED_U)
+          &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+          &mmv MOVE_X(MMV_FAST_SPEED_R)        
           &kp LG(TAB)
           /* nav-l-m C L */        
           &kp LG(C)
@@ -1015,13 +1015,13 @@ nav-l-m {
           &kp LCTRL
           &kp LALT
           &kp LSHFT
-          &tog NAV_R_LAYER
+          &tog NAV_MOUSE_L_LAYER
           /* nav-l-m C R */
-          &tog NAV_R_LAYER
+          &tog NAV_MOUSE_L_LAYER
           &kp LEFT_ARROW
-                    &kp UP
-                    &kp DOWN
-                    &kp RIGHT_ARROW
+          &kp UP
+          &kp DOWN
+          &kp RIGHT_ARROW
           &kp LG(C)
   
           /* nav-l-m D L */
