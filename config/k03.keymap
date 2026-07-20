@@ -6,7 +6,7 @@
 #define BASE_MIRROR_LAYER 1
 #define NAV_R_LAYER 2
 #define NAV_L_LAYER 3
-#define NAV_MOUSE_LAYER 4
+#define NAV_MOUSE_R_LAYER 4
 #define NAV_L_M_LAYER 5
 #define FUNCT_LAYER 6
 #define NUM_LAYER 7
@@ -480,13 +480,13 @@
         SPACE_L {
             bindings = <&kp SPACE>;
             key-positions = <28 29>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER>;
+            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER>;
         };
 
         SPACE_R {
             bindings = <&kp SPACE>;
             key-positions = <30 31>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER>;
+            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER>;
         };
 
         FROM_LAYERS_TO_ADJ_LAYER {
@@ -552,25 +552,25 @@
         UI_REVERT {
             bindings = <&kp RG(Z)>;
             key-positions = <20 19>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
 
         UIO_REPEAT {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <19 20 21>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
 
         UI_REVERT_L {
             bindings = <&kp RG(Z)>;
             key-positions = <15 16>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
 
         UIO_REPEAT_L {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <14 15 16>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
         };
 
         SHIFT_TOGGLE {
@@ -636,9 +636,9 @@
         &kp C
         &kp V
         &kp B
-        &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
+        &layer_hold_tap2 NAV_MOUSE_R_LAYER BASE_LAYER
         /* base D R */
-        &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
+        &layer_hold_tap2 NAV_MOUSE_R_LAYER BASE_LAYER
         &alt_ru_n_lbkr
         &alt_ru_m_rbkr
         &kp COMMA
@@ -806,7 +806,7 @@
         &kp LG(V)
 
         /* nav-r T L */
-        &lt NAV_MOUSE_LAYER RG(LEFT_BRACKET)
+        &lt NAV_MOUSE_R_LAYER RG(LEFT_BRACKET)
         &lt NUM_LAYER RG(RIGHT_BRACKET)
         &lt SYMB_LAYER TAB
         &lt BASE_OVERRIDE_LAYER SPACE
@@ -816,7 +816,7 @@
         &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
         &lt SYMB_LAYER RG(LEFT_BRACKET)
-        &lt NAV_MOUSE_LAYER RG(RIGHT_BRACKET)
+        &lt NAV_MOUSE_R_LAYER RG(RIGHT_BRACKET)
       >;
       display-name = "nav-r";
     };
@@ -884,7 +884,7 @@ nav-l {
     &mmv MOVE_X(MMV_FAST_SPEED_R)
     &kp RG(V)
     /* nav-l T L */            
-    &lt NAV_MOUSE_LAYER RG(LEFT_BRACKET)
+    &lt NAV_MOUSE_R_LAYER RG(LEFT_BRACKET)
             &lt NUM_LAYER RG(RIGHT_BRACKET)
             &lt SYMB_LAYER TAB
             &lt BASE_OVERRIDE_LAYER SPACE
@@ -894,7 +894,7 @@ nav-l {
                 &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
                 &lt NUM_LAYER BACKSPACE
                 &lt SYMB_LAYER RG(LEFT_BRACKET)
-                &lt NAV_MOUSE_LAYER RG(RIGHT_BRACKET)
+                &lt NAV_MOUSE_R_LAYER RG(RIGHT_BRACKET)
   >;
   display-name = "nav-l";
 };
@@ -922,9 +922,9 @@ nav-mouse {
         &kp DOWN
         &kp UP
         &kp RIGHT_ARROW
-        &tog NAV_MOUSE_LAYER
+        &msc SCRL_UP
         /* nav-mouse B R */
-        &tog NAV_MOUSE_LAYER
+        &msc SCRL_UP
         &kp LEFT_ARROW
         &kp UP
         &kp DOWN
@@ -937,9 +937,9 @@ nav-mouse {
                 &mmv MOVE_Y(MMV_FAST_SPEED_D)
                 &mmv MOVE_Y(MMV_FAST_SPEED_U)
                 &mmv MOVE_X(MMV_FAST_SPEED_R)
-        &msc SCRL_UP
+        &tog NAV_MOUSE_R_LAYER
         /* nav-mouse C R */
-        &msc SCRL_UP
+        &tog NAV_MOUSE_R_LAYER
         &mmv MOVE_X(MMV_FAST_SPEED_L)
         &mmv MOVE_Y(MMV_FAST_SPEED_U)
         &mmv MOVE_Y(MMV_FAST_SPEED_D)
@@ -1002,9 +1002,9 @@ nav-l-m {
                         &msc SCRL_RIGHT
             &kp PAGE_DOWN
             &kp PG_UP            
-            &tog NAV_MOUSE_LAYER            
+            &tog NAV_MOUSE_R_LAYER            
     /* nav-l-m B R */
-    &tog NAV_MOUSE_LAYER            
+    &tog NAV_MOUSE_R_LAYER            
             &kp PAGE_UP
             &kp PAGE_DOWN
             &msc SCRL_LEFT
