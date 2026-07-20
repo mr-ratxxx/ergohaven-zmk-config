@@ -1095,10 +1095,10 @@ nav-l-m {
         &mt LCTRL F6
         &mt LALT F5
         &mt LSHIFT F4
-        &tog NAV_L_LAYER
+        &tog NAV_MOUSE_R_LAYER
         
         /* funct C R */
-        &tog NAV_R_LAYER
+        &tog NAV_MOUSE_R_LAYER
         &mt RSHFT F4
         &mt RALT F5
         &mt RCTRL F6
