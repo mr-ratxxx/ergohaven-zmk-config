@@ -861,7 +861,7 @@ nav-l {
     &tog NAV_L_LAYER
     /* nav-l C R */
     &tog NAV_L_LAYER
-    &kp LSHFToo
+    &kp LSHFT
     &kp LALT
     &kp LCTRL
     &kp LGUI
