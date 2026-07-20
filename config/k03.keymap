@@ -110,21 +110,19 @@
           mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
         };
         
-         // ru-n-lbkt
-                alt_ru_n_lbkr: alt_ru_n_lbkt {
-                  compatible = "zmk,behavior-mod-morph";
-                  label = "ALT_RU_N_LBKT";
-                  #binding-cells = <0>;
-                  bindings = <&kp M>, <&kp LBKT>;
-                  mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
-                };
+        alt_ru_n_lbkr: alt_ru_n_lbkt {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ALT_RU_N_LBKT";
+          #binding-cells = <0>;
+          bindings = <&kp COMMA>, <&kp LBKT>;
+          mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+        };
         
-    // ru-ь-ъ
     alt_ru_m_rbkr: alt_ru_m_rbkt {
       compatible = "zmk,behavior-mod-morph";
       label = "ALT_RU_M_RBKT";
       #binding-cells = <0>;
-      bindings = <&kp COMMA>, <&kp RBKT>;
+      bindings = <&kp DOT>, <&kp RBKT>;
       mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
     };
 
@@ -640,9 +638,9 @@
         /* base D R */
         &layer_hold_tap2 NAV_MOUSE_R_LAYER BASE_LAYER
         &kp N
+        &kp M
         &alt_ru_n_lbkr
         &alt_ru_m_rbkr
-        &kp DOT
         &kp SLASH
         &kp BSLH
 
@@ -1525,9 +1523,9 @@ nav-l-m {
         /* base-o D R */
         &lt LAYERS_LAYER SPACE
         &kp N
+        &kp M
         &alt_ru_n_lbkr
         &alt_ru_m_rbkr
-        &kp DOT
         &kp SLASH
         &kp BSLH
 
