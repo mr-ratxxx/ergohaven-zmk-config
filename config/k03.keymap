@@ -980,14 +980,14 @@ nav-mouse-r {
 
 nav-l-m {
   bindings = <
-          /* nav-r A L */
+          /* nav-l-m A L */
           &trans
           &trans
           &trans
           &trans
           &trans
           &trans
-          /* nav-r A R */
+          /* nav-l-m A R */
           &trans
           &trans
           &trans
@@ -995,28 +995,28 @@ nav-l-m {
           &trans
           &trans
   
-          /* nav-r B L */
+          /* nav-l-m B L */
           &kp LG(TAB)
           &kp LEFT_ARROW
                   &kp DOWN
                   &kp UP
                   &kp RIGHT_ARROW
           &msc SCRL_UP
-          /* nav-r B R */
+          /* nav-l-m B R */
           &msc SCRL_UP
           &mmv MOVE_X(MMV_FAST_SPEED_L)
                     &mmv MOVE_Y(MMV_FAST_SPEED_U)
                     &mmv MOVE_Y(MMV_FAST_SPEED_D)        
                     &mmv MOVE_X(MMV_FAST_SPEED_R)        
           &kp LG(TAB)
-          /* nav-r C L */        
+          /* nav-l-m C L */        
           &kp LG(C)
           &kp LGUI
           &kp LCTRL
           &kp LALT
           &kp LSHFT
           &tog NAV_R_LAYER
-          /* nav-r C R */
+          /* nav-l-m C R */
           &tog NAV_R_LAYER
           &kp LEFT_ARROW
                     &kp UP
@@ -1024,7 +1024,7 @@ nav-l-m {
                     &kp RIGHT_ARROW
           &kp LG(C)
   
-          /* nav-r D L */
+          /* nav-l-m D L */
           &kp RG(V)
           &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
           &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
@@ -1032,7 +1032,7 @@ nav-l-m {
           &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
           &msc SCRL_DOWN
           &trans
-          /* nav-r D R */
+          /* nav-l-m D R */
           &trans
           &msc SCRL_DOWN
           &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
@@ -1041,13 +1041,13 @@ nav-l-m {
                   &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
           &kp LG(V)
   
-          /* nav-r T L */
+          /* nav-l-m T L */
           &lt NAV_MOUSE_R_LAYER RG(LEFT_BRACKET)
           &lt NUM_LAYER RG(RIGHT_BRACKET)
           &lt SYMB_LAYER TAB
           &lt BASE_OVERRIDE_LAYER SPACE
           &lt FUNCT_LAYER DEL
-          /* nav-r T R */
+          /* nav-l-m T R */
           &lt FUNCT_LAYER ESC
           &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
           &lt NUM_LAYER BACKSPACE
