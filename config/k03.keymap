@@ -14,6 +14,7 @@
 #define LAYERS_LAYER 9
 #define ADJ_LAYER 10
 #define BASE_OVERRIDE_LAYER 11
+
 #define MMV_SLOW_ALT_SPEED 250
 #define MMV_SLOW_ALT_SPEED_L -250
 #define MMV_SLOW_ALT_SPEED_U -250
@@ -31,18 +32,17 @@
 
 //
 
-#define MMV_FAST_SPEED_X 700
-#define MMV_FAST_SPEED_Y 480
+#define MMV_FAST_SPEED_X 1100
+#define MMV_FAST_SPEED_Y 750
 #define MMV_FAST_SPEED_L -MMV_FAST_SPEED_X
 #define MMV_FAST_SPEED_U -MMV_FAST_SPEED_Y
 #define MMV_FAST_SPEED_D MMV_FAST_SPEED_Y
 #define MMV_FAST_SPEED_R MMV_FAST_SPEED_X
 
 //
-// 1100x750, 700x480, 600x410
-
-#define MMV_SUPER_FAST_SPEED_X 1100
-#define MMV_SUPER_FAST_SPEED_Y 750
+// 1100x750, 700x480, 600x4100
+#define MMV_SUPER_FAST_SPEED_X 600
+#define MMV_SUPER_FAST_SPEED_Y 410
 #define MMV_SUPER_FAST_SPEED_L -MMV_SUPER_FAST_SPEED_X
 #define MMV_SUPER_FAST_SPEED_U -MMV_SUPER_FAST_SPEED_Y
 #define MMV_SUPER_FAST_SPEED_D MMV_SUPER_FAST_SPEED_Y
@@ -55,120 +55,116 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    tapping-term-ms = <180>;
-    flavor = "balanced";
-    quick-tap-ms = <50>;
+  tapping-term-ms = <180>;
+  flavor = "balanced";
+  quick-tap-ms = <50>;
 };
 
 &msc {
-    time-to-max-speed-ms = <8>;
-    acceleration-exponent = <5>;
+  time-to-max-speed-ms = <8>;
+  acceleration-exponent = <5>;
 };
 
 &mmv {
-    acceleration-exponent = <0>;
-    time-to-max-speed-ms = <100>;
-    delay-ms = <0>;
+  acceleration-exponent = <0>;
+  time-to-max-speed-ms = <100>;
+  delay-ms = <0>;
 };
 
-&lt { tapping-term-ms = <171>; };
+&lt {
+  tapping-term-ms = <171>;
+};
 
 / {
-    behaviors {
-        enc_vol: enc_vol {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_VOL";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+  behaviors {
+    enc_vol: enc_vol {
+      compatible = "zmk,behavior-sensor-rotate";
+      label = "ENC_VOL";
+      #sensor-binding-cells = <0>;
+      bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+    };
+
+    ctrl_bslh: ctrl_bslh {
+      compatible = "zmk,behavior-mod-morph";
+      label = "CTRL_BSLH";
+      #binding-cells = <0>;
+      bindings = <&kp FSLH>, <&kp BACKSLASH>;
+      mods = <(MOD_LCTL | MOD_RCTL)>;
+    };
+
+    // ru-ю en/alt-ru .
+    alt_ru_en_dot: alt_ru_en_dot {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_EN_DOT";
+      #binding-cells = <0>;
+      bindings = <&kp DOT>, <&kp RS(N7)>;
+      mods = <(MOD_LALT | MOD_RALT)>;
+    };    
+    
+    // ru-e-ё
+        alt_ru_e_e: alt_ru_e_e {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ALT_RU_E_E";
+          #binding-cells = <0>;
+          bindings = <&kp T>, <&kp BSLH>;
+          mods = <(MOD_LALT | MOD_RALT)>;
         };
-
-        ctrl_bslh: ctrl_bslh {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_BSLH";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BACKSLASH>;
-
-            mods = <(MOD_LCTL | MOD_RCTL)>;
+        
+    // ru-ь-ъ
+    alt_ru_m_m: alt_ru_m_m {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_M_M";
+      #binding-cells = <0>;
+      bindings = <&kp M>, <&kp RBKT>;
+      mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+    };
+    
+    // ru-х-n
+        alt_ru_n_[: alt_ru_n_[ {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ALT_RU_N_[";
+          #binding-cells = <0>;
+          bindings = <&kp n>, <&kp LBKT>;
+          mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
         };
+        
+        // ru-ё-\
+                alt_ru_t_e: alt_ru_t_e {
+                  compatible = "zmk,behavior-mod-morph";
+                  label = "ALT_RU_T_E";
+                  #binding-cells = <0>;
+                  bindings = <&kp T>, <&kp BSLH>;
+                  mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+                };
 
-        // ru-ю en/alt-ru .
+    // ru-б en/alt-ru ,
+    alt_ru_en_comma: alt_ru_en_comma {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_EN_COMMA";
+      #binding-cells = <0>;
+      bindings = <&kp COMMA>, <&kp RS(N6)>;
+      mods = <(MOD_LALT | MOD_RALT)>;
+    };
 
-        alt_ru_en_dot: alt_ru_en_dot {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_RU_EN_DOT";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp RS(N7)>;
+    // ru-ж en/alt-ru ;
+    alt_ru_en_semi: alt_ru_en_semi {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_EN_SEMI";
+      #binding-cells = <0>;
+      bindings = <&mt RGUI SEMI>, <&kp RS(N8)>;
+      mods = <(MOD_LALT | MOD_RALT)>;
+    };
 
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
+    // ru-э en/alt-ru "
+    alt_ru_en_sqt: alt_ru_en_sqt {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_EN_SQT";
+      #binding-cells = <0>;
+      bindings = <&kp SQT>, <&kp RS(N2)>;
+      mods = <(MOD_LALT | MOD_RALT)>;
+    };
 
-        // ru-e-ё
-
-        alt_ru_t_e: alt_ru_t_e {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_RU_T_E";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&kp BSLH>;
-
-            mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
-        };
-
-        // ru-ь-ъ
-
-        alt_ru_m_rbkr: alt_ru_m_rbkt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_RU_M_RBKT";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp RBKT>;
-
-            mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
-        };
-
-        // ru-n-lbkt
-
-        alt_ru_n_lbkr: alt_ru_n_lbkt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_RU_N_LBKT";
-            #binding-cells = <0>;
-            bindings = <&kp N>, <&kp LBKT>;
-
-            mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
-        };
-
-        // ru-б en/alt-ru ,
-
-        alt_ru_en_comma: alt_ru_en_comma {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_RU_EN_COMMA";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp RS(N6)>;
-
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
-
-        // ru-ж en/alt-ru
-
-        alt_ru_en_semi: alt_ru_en_semi {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_RU_EN_SEMI";
-            #binding-cells = <0>;
-            bindings = <&mt RGUI SEMI>, <&kp RS(N8)>;
-
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
-
-        // ru-э en/alt-ru "
-
-        alt_ru_en_sqt: alt_ru_en_sqt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_RU_EN_SQT";
-            #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp RS(N2)>;
-
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
-
-        /*
+/*
         alt_to_5: alt_to_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_TO_5";
@@ -222,520 +218,1344 @@
         };
         */
 
-        ralt_y_up3: ralt_y_up3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_Y_UP3";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)>,
-                <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+    ralt_y_up3: ralt_y_up3 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_Y_UP3";
+      #binding-cells = <0>;
+      bindings = 
+        <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)>,
+        <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+      mods = <(MOD_RALT)>;
+    };
 
-            mods = <(MOD_RALT)>;
+    ralt_y_down3: ralt_y_down3 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_Y_DOWN3";
+      #binding-cells = <0>;
+      bindings = 
+        <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)>,
+        <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+      mods = <(MOD_RALT)>;
+    };
+
+    ralt_x_left3: ralt_x_left3 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_X_LEFT3";
+      #binding-cells = <0>;
+      bindings =
+        <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)>,
+        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
+      mods = <(MOD_RALT)>;
+    };
+
+    ralt_x_right3: ralt_x_right3 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_X_RIGHT3";
+      #binding-cells = <0>;
+      bindings =
+        <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)>,
+        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+      mods = <(MOD_RALT)>;
+    };
+    
+    /* */
+    ralt_y_up_f: ralt_y_up_f {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_y_up_f";
+          #binding-cells = <0>;
+          bindings = 
+            <&kp UP_ARROW>,
+            <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+          mods = <(MOD_RALT)>;
         };
-
-        ralt_y_down3: ralt_y_down3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_Y_DOWN3";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)>,
-                <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_x_left3: ralt_x_left3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_X_LEFT3";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)>,
-                <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_x_right3: ralt_x_right3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_X_RIGHT3";
-            #binding-cells = <0>;
-            bindings =
-                <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)>,
-                <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        /* */
-
-        ralt_y_up_f: ralt_y_up_f {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ralt_y_up_f";
-            #binding-cells = <0>;
-            bindings = <&kp UP_ARROW>, <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
+    
         ralt_y_down_f: ralt_y_down_f {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ralt_y_down_f";
-            #binding-cells = <0>;
-            bindings = <&kp DOWN>, <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
-
-            mods = <(MOD_RALT)>;
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_y_down_f";
+          #binding-cells = <0>;
+          bindings = 
+            <&kp DOWN>,
+            <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+          mods = <(MOD_RALT)>;
         };
-
+    
         ralt_x_left_f: ralt_x_left_f {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ralt_x_left_f";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT>, <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
-
-            mods = <(MOD_RALT)>;
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_x_left_f";
+          #binding-cells = <0>;
+          bindings =
+            <&kp LEFT>,
+            <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
+          mods = <(MOD_RALT)>;
         };
-
+    
         ralt_x_right_f: ralt_x_right_f {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ralt_x_right_f";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT>, <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
-
-            mods = <(MOD_RALT)>;
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_x_right_f";
+          #binding-cells = <0>;
+          bindings =
+            <&kp RIGHT>,
+            <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+          mods = <(MOD_RALT)>;
         };
+    /* */
 
-        /* */
-        /* mouse 0 layer */
-
-        ralt_base_left: ralt_base_left {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ralt_base_left";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_base_up: ralt_base_up {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_BASE_UP";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_base_down: ralt_base_down {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ralt_base_down";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_base_right: ralt_base_right {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ralt_base_right";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
-
-            mods = <(MOD_RALT)>;
-        };
-
-        /* end mouse 0 layer */
-
-        layer_lt_tap: layer_lt_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_LT_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&lt>, <&kp>;
-        };
-
-        layer_hold_tap: layer_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_HOLD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&tog>, <&kp>;
-        };
-
-        layer_hold_tap2: layer_hold_tap2 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_HOLD_TAP2";
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&tog>, <&tog>;
-        };
-
-        layer_to_tap: layer_to_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TO_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&to>, <&kp>;
-        };
+    /* mouse 0 layer */
+    ralt_base_left: ralt_base_left {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ralt_base_left";
+      #binding-cells = <0>;
+      bindings =
+        <&kp M>,
+        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
+      mods = <(MOD_RALT)>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        PG_U_R {
-            bindings = <&kp UP>;
-            key-positions = <46 58>;
-        };
-
-        PG_D_R {
-            bindings = <&kp DOWN>;
-            key-positions = <47 59>;
-        };
-
-        PG_DOWN_L {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <26 38>;
-        };
-
-        PG_DOWN_R {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <33 47>;
-        };
-
-        CMD_PG_UP_L {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <27 39>;
-        };
-
-        CMD_PG_UP_R {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <32 46>;
-        };
-
-        M_DOWN_L {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <27 39>;
-        };
-
-        M_DOWN_R {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <21 33>;
-        };
-
-        M_UP_L {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <15 27>;
-        };
-
-        M_UP_R {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <20 32>;
-        };
-
-        M_LEFT_L {
-            bindings = <&msc SCRL_RIGHT>;
-            key-positions = <28 16>;
-        };
-
-        M_LEFT_R {
-            bindings = <&msc SCRL_LEFT>;
-            key-positions = <19 31>;
-        };
-
-        M_RIGHT_L {
-            bindings = <&msc SCRL_LEFT>;
-            key-positions = <13 25>;
-        };
-
-        M_RIGHT_R {
-            bindings = <&msc SCRL_RIGHT>;
-            key-positions = <22 34>;
-        };
-
-        CMD_TAB_L2 {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <16 17>;
-        };
-
-        CMD_TAB_R2 {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <18 19>;
-        };
-
-        CMD_TAB_L {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <13 14>;
-        };
-
-        CMD_TAB_R {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <21 22>;
-        };
-
-        CAPS_L {
-            bindings = <&kp CAPS>;
-            key-positions = <40 41>;
-        };
-
-        CAPS_R {
-            bindings = <&kp CAPS>;
-            key-positions = <44 45>;
-        };
-
-        SPACE_L {
-            bindings = <&kp SPACE>;
-            key-positions = <28 29>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER>;
-        };
-
-        SPACE_R {
-            bindings = <&kp SPACE>;
-            key-positions = <30 31>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER>;
-        };
-
-        FROM_LAYERS_TO_ADJ_LAYER {
-            bindings = <&tog ADJ_LAYER>;
-            key-positions = <9 10 11>;
-            layers = <LAYERS_LAYER ADJ_LAYER>;
-        };
-
-        ENTER_R {
-            bindings = <&kp ENTER>;
-            key-positions = <46 47>;
-        };
-
-        ENTER_L {
-            bindings = <&kp ENTER>;
-            key-positions = <38 39>;
-        };
-
-        N0_L {
-            bindings = <&kp N0>;
-            key-positions = <27 28>;
-            layers = <NUM_LAYER>;
-        };
-
-        N0_R {
-            bindings = <&kp N0>;
-            key-positions = <31 32>;
-            layers = <NUM_LAYER>;
-        };
-
-        N0_L1 {
-            bindings = <&kp N0>;
-            key-positions = <39 40>;
-            layers = <NUM_LAYER>;
-        };
-
-        N0_R2 {
-            bindings = <&kp N0>;
-            key-positions = <45 46>;
-            layers = <NUM_LAYER>;
-        };
-
-        MOUSE1_R {
-            bindings = <&mkp MB1>;
-            key-positions = <45 46>;
-        };
-
-        MOUSE2_R {
-            bindings = <&mkp MB2>;
-            key-positions = <45 46 47>;
-        };
-
-        MOUSE1_L {
-            bindings = <&mkp MB1>;
-            key-positions = <40 39>;
-        };
-
-        MOUSE2_L {
-            bindings = <&mkp MB2>;
-            key-positions = <38 39 40>;
-        };
-
-        UI_REVERT {
-            bindings = <&kp RG(Z)>;
-            key-positions = <20 19>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
-        };
-
-        UIO_REPEAT {
-            bindings = <&kp LS(LG(Z))>;
-            key-positions = <19 20 21>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
-        };
-
-        UI_REVERT_L {
-            bindings = <&kp RG(Z)>;
-            key-positions = <15 16>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
-        };
-
-        UIO_REPEAT_L {
-            bindings = <&kp LS(LG(Z))>;
-            key-positions = <14 15 16>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
-        };
-
-        SHIFT_TOGGLE {
-            bindings = <&kt LSHIFT>;
-            key-positions = <29 30 31 32>;
-        };
+    ralt_base_up: ralt_base_up {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_BASE_UP";
+      #binding-cells = <0>;
+      bindings = 
+        <&kp COMMA>,
+        <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+      mods = <(MOD_RALT)>;
     };
 
-    keymap {
-        compatible = "zmk,keymap";
-
-        base {
-            bindings = <
-&layer_to_tap BASE_LAYER ESC  &layer_hold_tap NUM_LAYER F2  &layer_hold_tap SYMB_LAYER F3  &layer_hold_tap NAV_L_LAYER F4  &layer_hold_tap FUNCT_LAYER F5  &layer_hold_tap BASE_MIRROR_LAYER F6                                                                                              &layer_hold_tap FUNCT_LAYER F7  &layer_hold_tap NAV_R_LAYER F8  &layer_hold_tap NUM_LAYER F9  &layer_hold_tap SYMB_LAYER F10       &layer_to_tap BASE_MIRROR_LAYER F11  &layer_to_tap BASE_LAYER F12
-&kp LG(TAB)                   &kp Q                         &kp W                          &kp E                           &kp R                           &alt_ru_t_e                                                                                                                       &kp Y                           &kp U                           &kp I                         &kp O                                &kp P                                &kp GRAVE
-&kp CAPS                      &mt LGUI A                    &mt LCTRL S                    &mt LALT D                      &mt LSHFT F                     &kp G                                                                                                                             &kp H                           &mt RSHIFT J                    &mt RALT K                    &mt RCTRL L                          &mt RGUI SEMI                        &kp SQT
-&kp SPACE                     &kp Z                         &kp X                          &kp C                           &kp V                           &kp B                                 &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER    &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER  &alt_ru_n_lbkr                  &alt_ru_m_rbkr                  &kp COMMA                     &kp DOT                              &kp SLASH                            &kp BSLH
-                                                            &lt BASE_MIRROR_LAYER MINUS    &lt NUM_LAYER EQUAL             &lt SYMB_LAYER TAB              &lt NAV_L_LAYER SPACE                 &lt FUNCT_LAYER DEL                            &lt FUNCT_LAYER ESC                          &lt NAV_R_LAYER RG(RC(SPACE))   &lt NUM_LAYER BACKSPACE         &lt SYMB_LAYER LBKT           &lt BASE_MIRROR_LAYER RIGHT_BRACKET
-            >;
-
-            display-name = "base";
-        };
-
-        base_mirror {
-            bindings = <
-&layer_to_tap BASE_LAYER ESC  &layer_hold_tap NUM_LAYER F2  &layer_hold_tap SYMB_LAYER F3  &layer_hold_tap NAV_L_LAYER F4  &layer_hold_tap FUNCT_LAYER F5  &layer_to_tap BASE_LAYER F6                                                   &layer_to_tap BASE_LAYER F7  &layer_hold_tap FUNCT_LAYER F8  &layer_hold_tap NAV_R_LAYER F9  &layer_hold_tap NUM_LAYER F10  &layer_hold_tap SYMB_LAYER F11  &layer_to_tap BASE_LAYER F12
-&kp GRAVE                     &kp P                         &kp O                          &kp I                           &kp U                           &kp Y                                                                         &alt_ru_t_e                  &kp R                           &kp E                           &kp W                          &kp Q                           &kp LG(TAB)
-&kp SQT                       &mt LGUI SEMI                 &mt LCTRL L                    &mt LALT K                      &mt LSHFT J                     &kp H                                                                         &kp G                        &mt RSHIFT F                    &mt RALT D                      &mt RCTRL S                    &mt RGUI A                      &kp CAPS
-&kp BSLH                      &kp SLASH                     &kp DOT                        &kp COMMA                       &alt_ru_m_rbkr                  &kp N                          &trans                     &trans              &kp B                        &kp V                           &kp C                           &kp X                          &kp Z                           &kp SPACE
-                                                            &lt SYMB_LAYER LBKT            &lt LAYERS_LAYER RIGHT_BRACKET  &lt FUNCT_LAYER ESC             &lt NAV_R_LAYER RG(RC(SPACE))  &lt NUM_LAYER BACKSPACE    &lt SYMB_LAYER TAB  &lt NAV_L_LAYER SPACE        &lt FUNCT_LAYER DEL             &lt NUM_LAYER EQUAL             &lt LAYERS_LAYER MINUS
-            >;
-
-            display-name = "base-mirror";
-        };
-
-        nav-r {
-            bindings = <
-&trans       &trans                               &trans                                &trans                               &trans                               &trans                                                                     &trans                                 &trans                             &trans                             &trans                                 &trans                             &trans
-&kp LG(TAB)  &kp LEFT_ARROW                       &kp DOWN                              &kp UP                               &kp RIGHT_ARROW                      &tog NAV_MOUSE_LAYER                                                       &tog NAV_MOUSE_LAYER                   &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)      &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp LG(TAB)
-&kp LG(C)    &kp LGUI                             &kp LCTRL                             &kp LALT                             &kp LSHFT                            &msc SCRL_UP                                                               &msc SCRL_UP                           &kp LEFT_ARROW                     &kp UP                             &kp DOWN                               &kp RIGHT_ARROW                    &kp LG(C)
-&kp RG(V)    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)  &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)   &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)  &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)  &msc SCRL_DOWN                 &trans                 &trans               &msc SCRL_DOWN                         &mmv MOVE_X(MMV_FAST_SPEED_L)      &mmv MOVE_Y(MMV_FAST_SPEED_U)      &mmv MOVE_Y(MMV_FAST_SPEED_D)          &mmv MOVE_X(MMV_FAST_SPEED_R)      &kp LG(V)
-                                                  &lt NAV_MOUSE_LAYER RG(LEFT_BRACKET)  &lt NUM_LAYER RG(RIGHT_BRACKET)      &lt SYMB_LAYER TAB                   &lt BASE_OVERRIDE_LAYER SPACE  &lt FUNCT_LAYER DEL    &lt FUNCT_LAYER ESC  &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))  &lt NUM_LAYER BACKSPACE            &lt SYMB_LAYER RG(LEFT_BRACKET)    &lt NAV_MOUSE_LAYER RG(RIGHT_BRACKET)
-            >;
-
-            display-name = "nav-r";
-        };
-
-        nav-l {
-            bindings = <
-&trans       &trans                               &trans                                &trans                               &trans                               &trans                                                                     &trans                                 &trans                             &trans                             &trans                                 &trans                             &trans
-&kp LG(TAB)  &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)     &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)    &tog NAV_MOUSE_LAYER                                                       &tog NAV_MOUSE_LAYER                   &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)      &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp LG(TAB)
-&kp LG(C)    &kp LEFT_ARROW                       &kp DOWN                              &kp UP                               &kp RIGHT_ARROW                      &msc SCRL_UP                                                               &msc SCRL_UP                           &kp LSHFT                          &kp LALT                           &kp LCTRL                              &kp LGUI                           &kp LG(C)
-&kp LG(V)    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)  &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)   &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)  &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)  &msc SCRL_DOWN                 &trans                 &trans               &msc SCRL_DOWN                         &mmv MOVE_X(MMV_FAST_SPEED_L)      &mmv MOVE_Y(MMV_FAST_SPEED_D)      &mmv MOVE_Y(MMV_FAST_SPEED_U)          &mmv MOVE_X(MMV_FAST_SPEED_R)      &kp RG(V)
-                                                  &lt NAV_MOUSE_LAYER RG(LEFT_BRACKET)  &lt NUM_LAYER RG(RIGHT_BRACKET)      &lt SYMB_LAYER TAB                   &lt BASE_OVERRIDE_LAYER SPACE  &lt FUNCT_LAYER DEL    &lt FUNCT_LAYER ESC  &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))  &lt NUM_LAYER BACKSPACE            &lt SYMB_LAYER RG(LEFT_BRACKET)    &lt NAV_MOUSE_LAYER RG(RIGHT_BRACKET)
-            >;
-
-            display-name = "nav-l";
-        };
-
-        nav-mouse {
-            bindings = <
-&trans       &trans                             &trans                                       &trans                                     &trans                             &trans                                                                     &trans                                 &trans                             &trans                                     &trans                                        &trans                             &trans
-&kp LG(TAB)  &kp LEFT_ARROW                     &kp DOWN                                     &kp UP                                     &kp RIGHT_ARROW                    &tog NAV_MOUSE_LAYER                                                       &tog NAV_MOUSE_LAYER                   &kp LEFT_ARROW                     &kp UP                                     &kp DOWN                                      &kp RIGHT_ARROW                    &kp LG(TAB)
-&kp LG(C)    &mmv MOVE_X(MMV_FAST_SPEED_L)      &mmv MOVE_Y(MMV_FAST_SPEED_D)                &mmv MOVE_Y(MMV_FAST_SPEED_U)              &mmv MOVE_X(MMV_FAST_SPEED_R)      &msc SCRL_UP                                                               &msc SCRL_UP                           &mmv MOVE_X(MMV_FAST_SPEED_L)      &mmv MOVE_Y(MMV_FAST_SPEED_U)              &mmv MOVE_Y(MMV_FAST_SPEED_D)                 &mmv MOVE_X(MMV_FAST_SPEED_R)      &kp LG(C)
-&kp RG(V)    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)          &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &msc SCRL_DOWN                 &trans                 &trans               &msc SCRL_DOWN                         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)          &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)             &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &kp LG(V)
-                                                &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)  &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)  &lt SYMB_LAYER TAB                 &lt BASE_OVERRIDE_LAYER SPACE  &lt FUNCT_LAYER DEL    &lt FUNCT_LAYER ESC  &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))  &lt NUM_LAYER BACKSPACE            &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)  &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
-            >;
-
-            display-name = "nav-mouse";
-        };
-
-        nav-l-m {
-            bindings = <
-&trans       &trans                             &trans                                       &trans                                     &trans                             &trans                                                                     &trans                                 &trans                         &trans                                     &trans                                        &trans                         &trans
-&kp LG(TAB)  &msc SCRL_LEFT                     &msc SCRL_RIGHT                              &kp PAGE_DOWN                              &kp PG_UP                          &tog NAV_MOUSE_LAYER                                                       &tog NAV_MOUSE_LAYER                   &kp PAGE_UP                    &kp PAGE_DOWN                              &msc SCRL_LEFT                                &msc SCRL_RIGHT                &kp LG(TAB)
-&kp LG(C)    &mmv MOVE_X(MMV_FAST_SPEED_L)      &mmv MOVE_Y(MMV_FAST_SPEED_D)                &mmv MOVE_Y(MMV_FAST_SPEED_U)              &mmv MOVE_X(MMV_FAST_SPEED_R)      &msc SCRL_UP                                                               &msc SCRL_UP                           &kp LEFT_ARROW                 &kp UP                                     &kp DOWN                                      &kp RIGHT_ARROW                &kp LG(C)
-&kp LG(V)    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)  &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)          &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)  &msc SCRL_DOWN                 &trans                 &trans               &msc SCRL_DOWN                         &mmv MOVE_X(MMV_FAST_SPEED_L)  &mmv MOVE_Y(MMV_FAST_SPEED_U)              &mmv MOVE_Y(MMV_FAST_SPEED_D)                 &mmv MOVE_X(MMV_FAST_SPEED_R)  &kp RG(V)
-                                                &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)  &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)  &lt SYMB_LAYER TAB                 &lt BASE_OVERRIDE_LAYER SPACE  &lt FUNCT_LAYER DEL    &lt FUNCT_LAYER ESC  &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))  &lt NUM_LAYER BACKSPACE        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)  &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
-            >;
-
-            display-name = "nav-l-m";
-        };
-
-        funct {
-            bindings = <
-&to 0           &kp C_PREV   &kp C_PLAY_PAUSE                             &kp C_NEXT                                 &kp C_VOLUME_DOWN   &kp C_VOLUME_UP                                                            &kp F14                                &kp F15                  &kp F16                                    &kp F17                                       &kp F18      &to 0
-&msc SCRL_LEFT  &kp F3       &kp F9                                       &kp F8                                     &kp F7              &msc SCRL_RIGHT                                                            &msc SCRL_LEFT                         &kp F7                   &kp F8                                     &kp F9                                        &kt F3       &msc SCRL_RIGHT
-&kp LG(TAB)     &mt LGUI F2  &mt LCTRL F6                                 &mt LALT F5                                &mt LSHIFT F4       &msc SCRL_UP                                                               &msc SCRL_UP                           &mt RSHFT F4             &mt RALT F5                                &mt RCTRL F6                                  &mt RGUI F2  &kp LG(TAB)
-&none           &kp F1       &kp F12                                      &kp F11                                    &kp F10             &msc SCRL_DOWN                 &trans                 &trans               &msc SCRL_DOWN                         &kp F10                  &kp F11                                    &kp F12                                       &kp F1       &none
-                             &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)  &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)  &lt SYMB_LAYER TAB  &lt BASE_OVERRIDE_LAYER SPACE  &lt FUNCT_LAYER DEL    &lt FUNCT_LAYER ESC  &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))  &lt NUM_LAYER BACKSPACE  &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)  &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
-            >;
-
-            display-name = "funct";
-        };
-
-        num {
-            bindings = <
-&trans      &trans         &trans        &trans       &trans        &trans                            &trans        &trans         &trans            &trans        &trans         &trans
-&kp RS(N8)  &kp LS(MINUS)  &kp N9        &kp N8       &kp N7        &kp PLUS                          &kp PLUS      &kp N7         &kp N8            &kp N9        &kp RS(MINUS)  &kp RS(N8)
-&kp DOT     &mt LGUI N0    &mt LCTRL N6  &mt LALT N5  &mt LSHFT N4  &kp MINUS                         &kp MINUS     &mt RSHIFT N4  &mt RIGHT_ALT N5  &mt RCTRL N6  &mt RGUI N0    &kp DOT
-&kp SLASH   &kp BACKSLASH  &kp N3        &kp N2       &kp N1        &kp EQUAL  &trans        &trans   &kp EQUAL     &kp N1         &kp N2            &kp N3        &kp SLASH      &kp BACKSLASH
-                           &trans        &trans       &kp TAB       &kp SPACE  &kp DELETE    &kp ESC  &kp CAPSLOCK  &kp BACKSPACE  &trans            &trans
-            >;
-
-            label = "num";
-        };
-
-        symb {
-            bindings = <
-&trans       &trans         &trans               &trans                &trans                 &trans                                &trans         &trans                &trans                 &trans               &trans         &trans
-&kp SQT      &kp RS(N2)     &kp RS(N4)           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH                             &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RS(N4)           &kp RS(N2)     &kp SQT
-&kp RS(SQT)  &mt RGUI PLUS  &mt RCTRL RS(MINUS)  &mt RALT EQUAL        &mt RSHFT MINUS        &kp RS(N3)                            &kp RS(N3)     &mt RSHFT MINUS       &mt RALT EQUAL         &mt RCTRL RS(MINUS)  &mt RGUI PLUS  &kp RS(SQT)
-&kp RS(N8)   &kp RS(N7)     &kp RS(N6)           &kp RS(N5)            &kp RS(N1)             &kp BACKSLASH  &trans        &trans   &kp BACKSLASH  &kp RS(N1)            &kp RS(N5)             &kp RS(N6)           &kp RS(N7)     &kp RS(N8)
-                            &trans               &trans                &kp TAB                &kp SPACE      &kp DELETE    &kp ESC  &kp CAPSLOCK   &kp BACKSPACE         &trans                 &trans
-            >;
-
-            label = "symb";
-        };
-
-        layers {
-            bindings = <
-&to 0           &kp C_PREV     &kp C_PLAY_PAUSE        &kp C_NEXT       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                               &kp F14                 &kp F15          &kp F16          &kp F17                 &kp F18         &to 0
-&to 0           &kp C_PREV     &kp C_PLAY_PAUSE        &kp C_NEXT       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                               &kp F14                 &kp F15          &to 0            &to 0                   &to 0           &to 0
-&to BASE_LAYER  &to NUM_LAYER  &to SYMB_LAYER          &to NAV_L_LAYER  &to FUNCT_LAYER    &tog BASE_MIRROR_LAYER                                        &tog BASE_MIRROR_LAYER  &to FUNCT_LAYER  &to NAV_R_LAYER  &to NUM_LAYER           &to SYMB_LAYER  &to BASE_LAYER
-&to 0           &kp LGUI       &kp LCTRL               &kp LALT         &kp LSHFT          &kp DELETE              &trans              &trans            &kp DELETE              &kp RSHIFT       &kp RALT         &kp RCTRL               &kp RGUI        &to 0
-                               &tog BASE_MIRROR_LAYER  &tog NUM_LAYER   &tog SYMB_LAYER    &tog NAV_L_LAYER        &tog FUNCT_LAYER    &tog FUNCT_LAYER  &tog NAV_R_LAYER        &tog NUM_LAYER   &tog SYMB_LAYER  &tog BASE_MIRROR_LAYER
-            >;
-
-            label = "layers";
-        };
-
-        adj {
-            bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &to 0                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
-&trans       &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans            &trans        &trans        &studio_unlock
-&trans       &trans  &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &trans        &trans
-&to 0        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &to 0
-                     &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &trans
-            >;
-
-            display-name = "Adjust";
-        };
-
-        base-override {
-            bindings = <
-&layer_to_tap BASE_LAYER ESC  &layer_hold_tap NUM_LAYER F2  &layer_hold_tap SYMB_LAYER F3  &layer_hold_tap NAV_L_LAYER F4  &layer_hold_tap FUNCT_LAYER F5  &layer_to_tap BASE_LAYER F6                                                   &layer_to_tap BASE_LAYER F7  &layer_hold_tap FUNCT_LAYER F8  &layer_hold_tap NAV_R_LAYER F9  &layer_hold_tap NUM_LAYER F10  &layer_hold_tap SYMB_LAYER F11  &layer_to_tap BASE_LAYER F12
-&kp LG(TAB)                   &kp Q                         &kp W                          &kp E                           &kp R                           &alt_ru_t_e                                                                   &kp Y                        &kp U                           &kp I                           &kp O                          &kp P                           &kp GRAVE
-&kp CAPS                      &mt LGUI A                    &mt LCTRL S                    &mt LALT D                      &mt LSHFT F                     &kp G                                                                         &kp H                        &mt RSHIFT J                    &mt RALT K                      &mt RCTRL L                    &mt RGUI SEMI                   &kp SQT
-&kp SPACE                     &kp Z                         &kp X                          &kp C                           &kp V                           &kp B                        &lt LAYERS_LAYER CAPS    &lt LAYERS_LAYER SPACE  &alt_ru_n_lbkr               &alt_ru_m_rbkr                  &kp COMMA                       &kp DOT                        &kp SLASH                       &kp BSLH
-                                                            &kp MINUS                      &kp EQUAL                       &kp TAB                         &kp SPACE                    &kp DEL                  &kp ESC                 &kp CAPS                     &kp BACKSPACE                   &alt_ru_m_rbkr                  &kp RIGHT_BRACKET
-            >;
-
-            display-name = "base-override";
-        };
+    ralt_base_down: ralt_base_down {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ralt_base_down";
+      #binding-cells = <0>;
+      bindings = 
+        <&kp DOT>,
+        <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+      mods = <(MOD_RALT)>;
     };
+
+    ralt_base_right: ralt_base_right {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ralt_base_right";
+      #binding-cells = <0>;
+      bindings =
+        <&kp SLASH>,
+        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+      mods = <(MOD_RALT)>;
+    };
+    /* end mouse 0 layer */
+
+    layer_lt_tap: layer_lt_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_LT_TAP";
+      #binding-cells = <2>;
+      tapping-term-ms = <180>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&lt>, <&kp>;
+    };
+
+    layer_hold_tap: layer_hold_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_HOLD_TAP";
+      #binding-cells = <2>;
+      tapping-term-ms = <180>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&tog>, <&kp>;
+    };
+    
+    layer_hold_tap2: layer_hold_tap2 {
+          compatible = "zmk,behavior-hold-tap";
+          label = "LAYER_HOLD_TAP2";
+          #binding-cells = <2>;
+          tapping-term-ms = <180>;
+          quick-tap-ms = <0>;
+          flavor = "tap-preferred";
+          bindings = <&tog>, <&tog>;
+        };
+
+    layer_to_tap: layer_to_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_TO_TAP";
+      #binding-cells = <2>;
+      tapping-term-ms = <180>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&to>, <&kp>;
+    };
+  };
+
+  combos {
+          compatible = "zmk,combos";
+  
+          PG_U_R {
+              bindings = <&kp UP>;
+              key-positions = <46 58>;
+          };
+  
+          PG_D_R {
+              bindings = <&kp DOWN>;
+              key-positions = <47 59>;
+          };
+  
+          PG_DOWN_L {
+              bindings = <&kp PAGE_DOWN>;
+              key-positions = <26 38>;
+          };
+  
+          PG_DOWN_R {
+              bindings = <&kp PAGE_DOWN>;
+              key-positions = <33 47>;
+          };
+  
+          CMD_PG_UP_L {
+              bindings = <&kp PAGE_UP>;
+              key-positions = <27 39>;
+          };
+  
+          CMD_PG_UP_R {
+              bindings = <&kp PAGE_UP>;
+              key-positions = <32 46>;
+          };
+  
+          M_DOWN_L {
+              bindings = <&msc SCRL_DOWN>;
+              key-positions = <27 39>;
+          };
+  
+          M_DOWN_R {
+              bindings = <&msc SCRL_DOWN>;
+              key-positions = <21 33>;
+          };
+  
+          M_UP_L {
+              bindings = <&msc SCRL_UP>;
+              key-positions = <15 27>;
+          };
+  
+          M_UP_R {
+              bindings = <&msc SCRL_UP>;
+              key-positions = <20 32>;
+          };
+  
+          M_LEFT_L {
+              bindings = <&msc SCRL_RIGHT>;
+              key-positions = <28 16>;
+          };
+  
+          M_LEFT_R {
+              bindings = <&msc SCRL_LEFT>;
+              key-positions = <19 31>;
+          };
+  
+          M_RIGHT_L {
+              bindings = <&msc SCRL_LEFT>;
+              key-positions = <13 25>;
+          };
+  
+          M_RIGHT_R {
+              bindings = <&msc SCRL_RIGHT>;
+              key-positions = <22 34>;
+          };
+  
+          CMD_TAB_L2 {
+              bindings = <&kp LG(TAB)>;
+              key-positions = <16 17>;
+          };
+  
+          CMD_TAB_R2 {
+              bindings = <&kp LG(TAB)>;
+              key-positions = <18 19>;
+          };
+  
+          CMD_TAB_L {
+              bindings = <&kp LG(TAB)>;
+              key-positions = <13 14>;
+          };
+  
+          CMD_TAB_R {
+              bindings = <&kp LG(TAB)>;
+              key-positions = <21 22>;
+          };
+  
+          CAPS_L {
+              bindings = <&kp CAPS>;
+              key-positions = <40 41>;
+          };
+  
+          CAPS_R {
+              bindings = <&kp CAPS>;
+              key-positions = <44 45>;
+          };
+  
+          SPACE_L {
+              bindings = <&kp SPACE>;
+              key-positions = <28 29>;
+              layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER>;
+          };
+  
+          SPACE_R {
+              bindings = <&kp SPACE>;
+              key-positions = <30 31>;
+              layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER>;
+          };
+  
+          FROM_LAYERS_TO_ADJ_LAYER {
+              bindings = <&tog ADJ_LAYER>;
+              key-positions = <9 10 11>;
+              layers = <LAYERS_LAYER ADJ_LAYER>;
+          };
+  
+          ENTER_R {
+              bindings = <&kp ENTER>;
+              key-positions = <46 47>;
+          };
+  
+          ENTER_L {
+              bindings = <&kp ENTER>;
+              key-positions = <38 39>;
+          };
+  
+          N0_L {
+              bindings = <&kp N0>;
+              key-positions = <27 28>;
+              layers = <NUM_LAYER>;
+          };
+  
+          N0_R {
+              bindings = <&kp N0>;
+              key-positions = <31 32>;
+              layers = <NUM_LAYER>;
+          };
+  
+          N0_L1 {
+              bindings = <&kp N0>;
+              key-positions = <39 40>;
+              layers = <NUM_LAYER>;
+          };
+  
+          N0_R2 {
+              bindings = <&kp N0>;
+              key-positions = <45 46>;
+              layers = <NUM_LAYER>;
+          };
+  
+          MOUSE1_R {
+              bindings = <&mkp MB1>;
+              key-positions = <45 46>;
+          };
+  
+          MOUSE2_R {
+              bindings = <&mkp MB2>;
+              key-positions = <45 46 47>;
+          };
+  
+          MOUSE1_L {
+              bindings = <&mkp MB1>;
+              key-positions = <40 39>;
+          };
+  
+          MOUSE2_L {
+              bindings = <&mkp MB2>;
+              key-positions = <38 39 40>;
+          };
+  
+          UI_REVERT {
+              bindings = <&kp RG(Z)>;
+              key-positions = <20 19>;
+              layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+          };
+  
+          UIO_REPEAT {
+              bindings = <&kp LS(LG(Z))>;
+              key-positions = <19 20 21>;
+              layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+          };
+  
+          UI_REVERT_L {
+              bindings = <&kp RG(Z)>;
+              key-positions = <15 16>;
+              layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+          };
+  
+          UIO_REPEAT_L {
+              bindings = <&kp LS(LG(Z))>;
+              key-positions = <14 15 16>;
+              layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_LAYER NAV_L_M_LAYER FUNCT_LAYER LAYERS_LAYER>;
+          };
+  
+          SHIFT_TOGGLE {
+              bindings = <&kt LSHIFT>;
+              key-positions = <29 30 31 32>;
+          };
+      };
+
+  keymap {
+    compatible = "zmk,keymap";
+
+    base {
+      bindings = <
+        /* base A L */
+        &layer_to_tap BASE_LAYER ESC
+        &layer_hold_tap NUM_LAYER F2
+        &layer_hold_tap SYMB_LAYER F3
+        &layer_hold_tap NAV_L_LAYER F4
+        &layer_hold_tap FUNCT_LAYER F5
+        &layer_hold_tap BASE_MIRROR_LAYER F6
+        /* base A R */        
+        &layer_hold_tap FUNCT_LAYER F7
+        &layer_hold_tap NAV_R_LAYER F8       
+        &layer_hold_tap NUM_LAYER F9
+        &layer_hold_tap SYMB_LAYER F10
+        &layer_to_tap BASE_MIRROR_LAYER F11
+        &layer_to_tap BASE_LAYER F12
+
+        /* base B L */
+        &kp LG(TAB)
+        &kp Q
+        &kp W
+        &kp E
+        &kp R
+        &alt_ru_t_e
+        /* base B R */
+        &kp Y
+        &kp U
+        &kp I
+        &kp O
+        &kp P
+        &kp GRAVE
+
+        /* base C L */
+        &kp CAPS
+        &mt LGUI A
+        &mt LCTRL S
+        &mt LALT D
+        &mt LSHFT F
+        &kp G
+        /* base C R */
+        &kp H
+        &mt RSHIFT J
+        &mt RALT K
+        &mt RCTRL L
+        &mt RGUI SEMI
+        &kp SQT
+
+        /* base D L */
+        &kp SPACE
+        &kp Z
+        &kp X
+        &kp C
+        &kp V
+        &kp B
+        &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
+        /* base D R */
+        &layer_hold_tap2 NAV_MOUSE_LAYER BASE_LAYER
+        &alt_ru_n_[
+        &alt_ru_m_m
+        &kp COMMA
+        &kp DOT
+        &kp SLASH
+        &kp BSLH
+
+        /* base T L */
+        &lt BASE_MIRROR_LAYER MINUS
+        &lt NUM_LAYER EQUAL
+        &lt SYMB_LAYER TAB
+        &lt NAV_L_LAYER SPACE
+        &lt FUNCT_LAYER DEL
+        /* base T R */
+        &lt FUNCT_LAYER ESC
+        &lt NAV_R_LAYER RG(RC(SPACE))
+        &lt NUM_LAYER BACKSPACE
+        &lt SYMB_LAYER LBKT
+        &lt BASE_MIRROR_LAYER RIGHT_BRACKET
+      >;
+      display-name = "base";
+    };
+
+    base_mirror {
+      bindings = <
+        /* base-m a l */
+        &layer_to_tap BASE_LAYER ESC
+                &layer_hold_tap NUM_LAYER F2
+                &layer_hold_tap SYMB_LAYER F3
+                &layer_hold_tap NAV_L_LAYER F4
+                &layer_hold_tap FUNCT_LAYER F5
+                &layer_to_tap BASE_LAYER F6
+        /* base-m A R */
+        &layer_to_tap BASE_LAYER F7
+                &layer_hold_tap FUNCT_LAYER F8
+                &layer_hold_tap NAV_R_LAYER F9
+                &layer_hold_tap NUM_LAYER F10
+                &layer_hold_tap SYMB_LAYER F11
+                &layer_to_tap BASE_LAYER F12
+      
+              /* base-m B L */
+                            &kp GRAVE
+                            &kp P
+                            &kp O
+                            &kp I
+                            &kp U
+                            &kp Y
+              /* base-m B R */
+              &alt_ru_e_e
+              &kp R
+              &kp E
+              &kp W
+              &kp Q
+              &kp LG(TAB)
+              
+              /* base-m C L */
+              &kp SQT
+              &mt LGUI SEMI
+              &mt LCTRL L
+              &mt LALT K
+              &mt LSHFT J
+              &kp H
+              /* base-m C R */
+              &kp G
+              &mt RSHIFT F
+              &mt RALT D
+              &mt RCTRL S
+              &mt RGUI A
+              &kp CAPS
+      
+              /* base-m D L */
+              &kp BSLH
+              &kp SLASH
+              &kp DOT
+              &kp COMMA
+              &alt_ru_m_m
+              &kp N
+              &trans
+              /* base-m D R */
+              &trans
+              &kp B
+              &kp V
+              &kp C
+              &kp X
+              &kp Z
+              &kp SPACE
+      
+              /* base-m T L */
+              &lt SYMB_LAYER LBKT
+              &lt LAYERS_LAYER RIGHT_BRACKET              
+              &lt FUNCT_LAYER ESC
+              &lt NAV_R_LAYER RG(RC(SPACE))
+              &lt NUM_LAYER BACKSPACE
+              /* base-m T R */
+              &lt SYMB_LAYER TAB
+              &lt NAV_L_LAYER SPACE
+              &lt FUNCT_LAYER DEL              
+              &lt NUM_LAYER EQUAL
+              &lt LAYERS_LAYER MINUS                            
+            >;
+      display-name = "base-mirror";
+    };
+
+    nav-r {
+      bindings = <
+        /* nav-r A L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        /* nav-r A R */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+
+        /* nav-r B L */
+        &kp LG(TAB)
+        &kp LEFT_ARROW
+                &kp DOWN
+                &kp UP
+                &kp RIGHT_ARROW
+        &tog NAV_MOUSE_LAYER
+        /* nav-r B R */
+        &tog NAV_MOUSE_LAYER
+        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+                &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
+                &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+                &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+        &kp LG(TAB)
+
+        /* nav-r C L */        
+        &kp LG(C)
+        &kp LGUI
+        &kp LCTRL
+        &kp LALT
+        &kp LSHFT
+        &msc SCRL_UP
+        /* nav-r C R */
+        &msc SCRL_UP
+        &kp LEFT_ARROW
+                        &kp UP
+                        &kp DOWN
+                        &kp RIGHT_ARROW
+        &kp LG(C)
+
+        /* nav-r D L */
+        &kp RG(V)
+        &mmv MOVE_X(MMV_FAST_SPEED_L)
+        &mmv MOVE_Y(MMV_FAST_SPEED_D)
+        &mmv MOVE_Y(MMV_FAST_SPEED_U)
+        &mmv MOVE_X(MMV_FAST_SPEED_R)
+        &msc SCRL_DOWN
+        &trans
+        /* nav-r D R */
+        &trans
+        &msc SCRL_DOWN
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &kp LG(V)
+
+        /* nav-r T L */
+        &lt NAV_MOUSE_LAYER RG(LEFT_BRACKET)
+        &lt NUM_LAYER RG(RIGHT_BRACKET)
+        &lt SYMB_LAYER TAB
+        &lt BASE_OVERRIDE_LAYER SPACE
+        &lt FUNCT_LAYER DEL
+        /* nav-r T R */
+        &lt FUNCT_LAYER ESC
+        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+        &lt NUM_LAYER BACKSPACE
+        &lt SYMB_LAYER RG(LEFT_BRACKET)
+        &lt NAV_MOUSE_LAYER RG(RIGHT_BRACKET)
+      >;
+      display-name = "nav-r";
+    };
+
+nav-l {
+  bindings = <
+    /* nav-l A L */
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    /* nav-l A R */
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+
+    /* nav-l B L */
+    &kp LG(TAB)
+    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+                    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
+                    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+    &tog NAV_MOUSE_LAYER
+    /* nav-l B R */
+    &tog NAV_MOUSE_LAYER
+    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+                &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+                        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
+                        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+            &kp LG(TAB)
+    /* nav-l C L */
+    &kp LG(C)
+            &kp LEFT_ARROW                            
+                            &kp DOWN
+                            &kp UP
+                            &kp RIGHT_ARROW
+            &msc SCRL_UP
+    /* nav-l C R */
+    &msc SCRL_UP
+    &kp LSHFT
+    &kp LALT
+    &kp LCTRL
+    &kp LGUI
+            &kp LG(C)
+
+    /* nav-l D L */
+    &kp LG(V)
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+    &msc SCRL_DOWN    
+    &trans    
+    /* nav-l D R */
+    &trans
+    &msc SCRL_DOWN
+    &mmv MOVE_X(MMV_FAST_SPEED_L)
+    &mmv MOVE_Y(MMV_FAST_SPEED_U)    
+    &mmv MOVE_Y(MMV_FAST_SPEED_D)
+    &mmv MOVE_X(MMV_FAST_SPEED_R)
+    &kp RG(V)
+    /* nav-l T L */            
+    &lt NAV_MOUSE_LAYER RG(LEFT_BRACKET)
+            &lt NUM_LAYER RG(RIGHT_BRACKET)
+            &lt SYMB_LAYER TAB
+            &lt BASE_OVERRIDE_LAYER SPACE
+            &lt FUNCT_LAYER DEL
+    /* nav-l T R */
+    &lt FUNCT_LAYER ESC
+                &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+                &lt NUM_LAYER BACKSPACE
+                &lt SYMB_LAYER RG(LEFT_BRACKET)
+                &lt NAV_MOUSE_LAYER RG(RIGHT_BRACKET)
+  >;
+  display-name = "nav-l";
+};
+
+nav-mouse {
+      bindings = <
+        /* nav-mouse A L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        /* nav-mouse A R */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+
+        /* nav-mouse B L */
+        &kp LG(TAB)
+        &kp LEFT_ARROW
+        &kp DOWN
+        &kp UP
+        &kp RIGHT_ARROW
+        &tog NAV_MOUSE_LAYER
+        /* nav-mouse B R */
+        &tog NAV_MOUSE_LAYER
+        &kp LEFT_ARROW
+        &kp UP
+        &kp DOWN
+        &kp RIGHT_ARROW
+        &kp LG(TAB)
+
+        /* nav-mouse C L */
+        &kp LG(C)
+        &mmv MOVE_X(MMV_FAST_SPEED_L)                
+                &mmv MOVE_Y(MMV_FAST_SPEED_D)
+                &mmv MOVE_Y(MMV_FAST_SPEED_U)
+                &mmv MOVE_X(MMV_FAST_SPEED_R)
+        &msc SCRL_UP
+        /* nav-mouse C R */
+        &msc SCRL_UP
+        &mmv MOVE_X(MMV_FAST_SPEED_L)
+        &mmv MOVE_Y(MMV_FAST_SPEED_U)
+        &mmv MOVE_Y(MMV_FAST_SPEED_D)
+        &mmv MOVE_X(MMV_FAST_SPEED_R)
+        &kp LG(C)
+
+        /* nav-mouse D L */
+        &kp RG(V)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)                
+                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &msc SCRL_DOWN
+        &trans
+        /* nav-mouse D R */
+        &trans
+        &msc SCRL_DOWN
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &kp LG(V)
+
+        /* nav-mouse T L */
+        &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+        &lt SYMB_LAYER TAB
+        &lt BASE_OVERRIDE_LAYER SPACE
+        &lt FUNCT_LAYER DEL
+        /* nav-mouse T R */
+        &lt FUNCT_LAYER ESC
+        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+        &lt NUM_LAYER BACKSPACE
+        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+      >;
+      display-name = "nav-mouse";
+    };
+
+nav-l-m {
+  bindings = <
+    /* nav-l-m A L */
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    /* nav-l-m A R */
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+    &trans
+
+    /* nav-l-m B L */
+            &kp LG(TAB)
+                        &msc SCRL_LEFT
+                        &msc SCRL_RIGHT
+            &kp PAGE_DOWN
+            &kp PG_UP            
+            &tog NAV_MOUSE_LAYER            
+    /* nav-l-m B R */
+    &tog NAV_MOUSE_LAYER            
+            &kp PAGE_UP
+            &kp PAGE_DOWN
+            &msc SCRL_LEFT
+            &msc SCRL_RIGHT
+            &kp LG(TAB)
+
+    /* nav-l-m C L */
+    &kp LG(C)    
+            &mmv MOVE_X(MMV_FAST_SPEED_L)
+            &mmv MOVE_Y(MMV_FAST_SPEED_D)
+            &mmv MOVE_Y(MMV_FAST_SPEED_U)
+            &mmv MOVE_X(MMV_FAST_SPEED_R)
+            &msc SCRL_UP
+    /* nav-l-m C R */    
+    &msc SCRL_UP
+            &kp LEFT_ARROW
+            &kp UP
+            &kp DOWN
+            &kp RIGHT_ARROW
+            &kp LG(C)
+            
+    /* nav-l-m D L */
+    &kp LG(V)
+            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)            
+            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+            &msc SCRL_DOWN
+    &trans        
+    /* nav-l-m D R */
+    &trans
+    &msc SCRL_DOWN
+            &mmv MOVE_X(MMV_FAST_SPEED_L)
+            &mmv MOVE_Y(MMV_FAST_SPEED_U)
+            &mmv MOVE_Y(MMV_FAST_SPEED_D)            
+            &mmv MOVE_X(MMV_FAST_SPEED_R)                        
+            &kp RG(V)
+
+    /* nav-l-m T L */    
+            &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+            &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+            &lt SYMB_LAYER TAB
+            &lt BASE_OVERRIDE_LAYER SPACE
+            &lt FUNCT_LAYER DEL
+            /* nav-l-m T R */
+            &lt FUNCT_LAYER ESC
+            &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+            &lt NUM_LAYER BACKSPACE
+            &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+            &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+  >;
+  display-name = "nav-l-m";
+};
+
+    funct {
+      bindings = <
+        /* funct A L */
+                &to 0
+                &kp C_PREV
+                &kp C_PLAY_PAUSE
+                &kp C_NEXT
+                &kp C_VOLUME_DOWN
+                &kp C_VOLUME_UP
+        /* funct A R */
+                &kp F14
+                &kp F15
+                &kp F16
+                &kp F17
+                &kp F18
+                &to 0
+
+        /* funct B L */
+        &msc SCRL_LEFT
+        &kp F3
+        &kp F9
+        &kp F8
+        &kp F7
+        &msc SCRL_RIGHT
+        /* funct B R */
+        &msc SCRL_LEFT
+        &kp F7
+        &kp F8
+        &kp F9
+        &kt F3
+        &msc SCRL_RIGHT
+
+        /* funct C L */
+        &kp LG(TAB)
+        &mt LGUI F2
+        &mt LCTRL F6
+        &mt LALT F5
+        &mt LSHIFT F4
+        &msc SCRL_UP
+        /* funct C R */
+        &msc SCRL_UP
+        &mt RSHFT F4
+        &mt RALT F5
+        &mt RCTRL F6
+        &mt RGUI F2
+        &kp LG(TAB)
+
+        /* funct D L */
+        &none
+        &kp F1
+        &kp F12
+        &kp F11
+        &kp F10
+        &msc SCRL_DOWN
+        &trans
+        /* funct D R */
+        &trans
+        &msc SCRL_DOWN
+        &kp F10
+        &kp F11
+        &kp F12
+        &kp F1
+        &none
+
+        /* funct T L */
+        &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+        &lt SYMB_LAYER TAB
+        &lt BASE_OVERRIDE_LAYER SPACE
+        &lt FUNCT_LAYER DEL
+        /* funct T R */
+        &lt FUNCT_LAYER ESC
+        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+        &lt NUM_LAYER BACKSPACE
+        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
+        &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+      >;
+      display-name = "funct";
+    };
+
+    num {
+      bindings = <
+        /* num A L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        /* num A R */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+
+        /* num B L */
+        &kp RS(N8)
+        &kp LS(MINUS)
+        &kp N9
+        &kp N8
+        &kp N7
+        &kp PLUS
+        /* num B R */
+        &kp PLUS
+        &kp N7
+        &kp N8
+        &kp N9
+        &kp RS(MINUS)
+        &kp RS(N8)
+
+        /* num C L */
+        &kp DOT
+        &mt LGUI N0
+        &mt LCTRL N6
+        &mt LALT N5
+        &mt LSHFT N4
+        &kp MINUS
+        /* num C R */
+        &kp MINUS
+        &mt RSHIFT N4
+        &mt RIGHT_ALT N5
+        &mt RCTRL N6
+        &mt RGUI N0
+        &kp DOT
+
+        /* num D L */
+        &kp SLASH
+        &kp BACKSLASH
+        &kp N3
+        &kp N2
+        &kp N1
+        &kp EQUAL
+        &trans
+        /* num D R */
+        &trans
+        &kp EQUAL
+        &kp N1
+        &kp N2
+        &kp N3
+        &kp SLASH
+        &kp BACKSLASH
+
+        /* num T L */
+        &trans
+        &trans
+        &kp TAB
+        &kp SPACE
+        &kp DELETE
+        /* num T R */
+        &kp ESC
+        &kp CAPSLOCK
+        &kp BACKSPACE
+        &trans
+        &trans
+      >;
+      label = "num";
+    };
+
+    symb {
+      bindings = <
+        /* symb row 1 L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        /* row 1 R */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+
+        /* symb B L */
+        &kp SQT
+        &kp RS(N2)
+        &kp RS(N4)
+        &kp LEFT_PARENTHESIS
+        &kp RIGHT_PARENTHESIS
+        &kp SLASH
+        /* symb B R */
+        &kp SLASH
+        &kp LEFT_PARENTHESIS
+        &kp RIGHT_PARENTHESIS
+        &kp RS(N4)
+        &kp RS(N2)
+        &kp SQT
+
+        /* symb C L */
+        &kp RS(SQT)
+        &mt RGUI PLUS
+        &mt RCTRL RS(MINUS)
+        &mt RALT EQUAL
+        &mt RSHFT MINUS
+        &kp RS(N3)
+        /* symb C R */
+        &kp RS(N3)
+        &mt RSHFT MINUS
+        &mt RALT EQUAL
+        &mt RCTRL RS(MINUS)
+        &mt RGUI PLUS
+        &kp RS(SQT)
+
+        /* symb D L */
+        &kp RS(N8)
+        &kp RS(N7)
+        &kp RS(N6)
+        &kp RS(N5)
+        &kp RS(N1)
+        &kp BACKSLASH
+        &trans
+        /* symb D R */
+        &trans
+        &kp BACKSLASH
+        &kp RS(N1)
+        &kp RS(N5)
+        &kp RS(N6)
+        &kp RS(N7)
+        &kp RS(N8)
+
+        /* symb T L */
+        &trans
+        &trans
+        &kp TAB
+        &kp SPACE
+        &kp DELETE
+        /* symb T R */
+        &kp ESC
+        &kp CAPSLOCK
+        &kp BACKSPACE
+        &trans
+        &trans
+      >;
+      label = "symb";
+    };
+
+    layers {
+      bindings = <
+        /* layers A L */
+        &to 0
+        &kp C_PREV
+        &kp C_PLAY_PAUSE
+        &kp C_NEXT
+        &kp C_VOLUME_DOWN
+        &kp C_VOLUME_UP
+        /* layers A R */
+        &kp F14
+        &kp F15
+        &kp F16
+        &kp F17
+        &kp F18
+        &to 0
+
+        /* layers B L */
+        &to 0
+        &kp C_PREV
+        &kp C_PLAY_PAUSE
+        &kp C_NEXT
+        &kp C_VOLUME_DOWN
+        &kp C_VOLUME_UP
+        /* layers B R */
+        &kp F14
+        &kp F15
+        &to 0
+        &to 0
+        &to 0
+        &to 0
+
+        /* layers C L */
+        &to BASE_LAYER
+        &to NUM_LAYER
+        &to SYMB_LAYER
+        &to NAV_L_LAYER
+        &to FUNCT_LAYER
+        &tog BASE_MIRROR_LAYER
+        /* layers C R */
+        &tog BASE_MIRROR_LAYER
+        &to FUNCT_LAYER
+        &to NAV_R_LAYER
+        &to NUM_LAYER
+        &to SYMB_LAYER
+        &to BASE_LAYER
+
+        /* layers D L */
+        &to 0
+        &kp LGUI
+        &kp LCTRL
+        &kp LALT
+        &kp LSHFT
+        &kp DELETE
+        &trans
+        /* layers D R */
+        &trans
+        &kp DELETE
+        &kp RSHIFT
+        &kp RALT
+        &kp RCTRL
+        &kp RGUI
+        &to 0
+
+        /* layers T L */
+        &tog BASE_MIRROR_LAYER
+        &tog NUM_LAYER
+        &tog SYMB_LAYER
+        &tog NAV_L_LAYER
+        &tog FUNCT_LAYER
+        /* layers T R */
+        &tog FUNCT_LAYER
+        &tog NAV_R_LAYER
+        &tog NUM_LAYER
+        &tog SYMB_LAYER
+        &tog BASE_MIRROR_LAYER
+      >;
+      label = "layers";
+    };
+
+    adj {
+      bindings = <
+      
+        /* adj A L */
+        &bootloader
+        &trans
+        &trans
+        &trans
+        &trans
+        &to 0
+        /* adj A R */
+        &bt BT_SEL 0
+        &bt BT_SEL 1
+        &bt BT_SEL 2
+        &bt BT_SEL 3
+        &bt BT_SEL 4
+        &bt BT_CLR_ALL
+        
+        /* adj B L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        /* adj B L */        
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &studio_unlock
+        
+        /* adj C L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        
+        /* adj C R */
+        &out OUT_BLE
+        &kp C_VOL_DN
+        &kp C_MUTE
+        &kp C_VOL_UP
+        &trans
+        &trans
+        /* adj C R */
+        &to 0
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        
+        /* layers D L */
+        &trans
+        &trans
+        &out OUT_USB
+        &kp C_PREV
+        &kp C_PLAY_PAUSE
+        &kp C_NEXT
+        &trans
+        /* layers D R */
+        &to 0
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        
+        /* adj T L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        /* adj T R */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+      >;
+      display-name = "Adjust";
+    };
+
+    base-override {
+      bindings = <
+        /* base-o A L */
+                &layer_to_tap BASE_LAYER ESC
+                &layer_hold_tap NUM_LAYER F2
+                &layer_hold_tap SYMB_LAYER F3
+                &layer_hold_tap NAV_L_LAYER F4
+                &layer_hold_tap FUNCT_LAYER F5
+                &layer_to_tap BASE_LAYER F6
+                /* base-o A R */
+                &layer_to_tap BASE_LAYER F7
+                &layer_hold_tap FUNCT_LAYER F8
+                &layer_hold_tap NAV_R_LAYER F9
+                &layer_hold_tap NUM_LAYER F10
+                &layer_hold_tap SYMB_LAYER F11
+                &layer_to_tap BASE_LAYER F12
+
+        /* base-o B L */
+                &kp LG(TAB)
+                &kp Q
+                &kp W
+                &kp E
+                &kp R
+                &alt_ru_e_e
+                /* base-o B R */
+                &kp Y
+                &kp U
+                &kp I
+                &kp O
+                &kp P
+                &kp GRAVE
+
+        /* base-o C L */
+        &kp CAPS
+        &mt LGUI A
+        &mt LCTRL S
+        &mt LALT D
+        &mt LSHFT F
+        &kp G
+        /* base-o C R */
+        &kp H
+        &mt RSHIFT J
+        &mt RALT K
+        &mt RCTRL L
+        &mt RGUI SEMI
+        &kp SQT
+
+        /* base-o D L */
+        &kp SPACE
+        &kp Z
+        &kp X
+        &kp C
+        &kp V
+        &kp B
+        &lt LAYERS_LAYER CAPS
+        /* base-o D R */
+        &lt LAYERS_LAYER SPACE
+        &kp N
+        &alt_ru_m_m
+        &kp COMMA
+        &kp DOT
+        &kp SLASH
+        &kp BSLH
+
+        /* base-o T L */
+        &kp MINUS
+        &kp EQUAL
+        &kp TAB
+        &kp SPACE
+        &kp DEL
+        /* base-o T R */
+        &kp ESC
+        &kp CAPS
+        &kp BACKSPACE
+        &kp LBKT
+        &kp RIGHT_BRACKET
+      >;
+      display-name = "base-override";
+    };
+  };
 };
