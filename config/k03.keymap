@@ -765,9 +765,9 @@
                 &kp DOWN
                 &kp UP
                 &kp RIGHT_ARROW
-        &tog NAV_MOUSE_LAYER
+        &tog NAV_R_LAYER
         /* nav-r B R */
-        &tog NAV_MOUSE_LAYER
+        &tog NAV_R_LAYER
         &kp LEFT_ARROW
         &kp UP
         &kp DOWN
@@ -844,9 +844,9 @@ nav-l {
             &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
             &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
             &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
-    &tog NAV_MOUSE_LAYER
+    &tog NAV_L_LAYER
     /* nav-l B R */
-    &tog NAV_MOUSE_LAYER
+    &tog NAV_L_LAYER
     &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)        
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
         &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
@@ -1097,9 +1097,9 @@ nav-l-m {
         &mt LCTRL F6
         &mt LALT F5
         &mt LSHIFT F4
-        &msc SCRL_UP
+        &tog NAV_L_LAYER
         /* funct C R */
-        &msc SCRL_UP
+        &tog NAV_R_LAYER
         &mt RSHFT F4
         &mt RALT F5
         &mt RCTRL F6
