@@ -861,7 +861,7 @@ nav-l {
     &tog NAV_L_LAYER
     /* nav-l C R */
     &tog NAV_L_LAYER
-    &kp LSHFT
+    &kp LSHFToo
     &kp LALT
     &kp LCTRL
     &kp LGUI
@@ -885,16 +885,16 @@ nav-l {
     &kp RG(V)
     /* nav-l T L */            
     &lt NAV_MOUSE_R_LAYER RG(LEFT_BRACKET)
-            &lt NUM_LAYER RG(RIGHT_BRACKET)
-            &lt SYMB_LAYER TAB
-            &lt BASE_OVERRIDE_LAYER SPACE
-            &lt FUNCT_LAYER DEL
+    &lt NUM_LAYER RG(RIGHT_BRACKET)
+    &lt SYMB_LAYER TAB
+    &lt BASE_OVERRIDE_LAYER SPACE
+    &lt FUNCT_LAYER DEL
     /* nav-l T R */
     &lt FUNCT_LAYER ESC
-                &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-                &lt NUM_LAYER BACKSPACE
-                &lt SYMB_LAYER RG(LEFT_BRACKET)
-                &lt NAV_MOUSE_R_LAYER RG(RIGHT_BRACKET)
+    &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+    &lt NUM_LAYER BACKSPACE
+    &lt SYMB_LAYER RG(LEFT_BRACKET)
+    &lt NAV_MOUSE_R_LAYER RG(RIGHT_BRACKET)
   >;
   display-name = "nav-l";
 };
