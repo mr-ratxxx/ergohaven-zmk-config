@@ -110,23 +110,23 @@
           mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
         };
         
+         // ru-n-lbkt
+                alt_ru_n_lbkr: alt_ru_n_lbkt {
+                  compatible = "zmk,behavior-mod-morph";
+                  label = "ALT_RU_N_LBKT";
+                  #binding-cells = <0>;
+                  bindings = <&kp M>, <&kp LBKT>;
+                  mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+                };
+        
     // ru-ь-ъ
     alt_ru_m_rbkr: alt_ru_m_rbkt {
       compatible = "zmk,behavior-mod-morph";
       label = "ALT_RU_M_RBKT";
       #binding-cells = <0>;
-      bindings = <&kp M>, <&kp RBKT>;
+      bindings = <&kp COMMA>, <&kp RBKT>;
       mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
     };
-    
-    // ru-n-lbkt
-        alt_ru_n_lbkr: alt_ru_n_lbkt {
-          compatible = "zmk,behavior-mod-morph";
-          label = "ALT_RU_N_LBKT";
-          #binding-cells = <0>;
-          bindings = <&kp N>, <&kp LBKT>;
-          mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
-        };
 
     // ru-б en/alt-ru ,
     alt_ru_en_comma: alt_ru_en_comma {
@@ -639,9 +639,9 @@
         &layer_hold_tap2 NAV_MOUSE_R_LAYER BASE_LAYER
         /* base D R */
         &layer_hold_tap2 NAV_MOUSE_R_LAYER BASE_LAYER
+        &kp N
         &alt_ru_n_lbkr
         &alt_ru_m_rbkr
-        &kp COMMA
         &kp DOT
         &kp SLASH
         &kp BSLH
@@ -1524,9 +1524,9 @@ nav-l-m {
         &lt LAYERS_LAYER CAPS
         /* base-o D R */
         &lt LAYERS_LAYER SPACE
+        &kp N
         &alt_ru_n_lbkr
-        &alt_ru_m_rbkr
-        &kp COMMA
+        &kalt_ru_m_rbkr
         &kp DOT
         &kp SLASH
         &kp BSLH
