@@ -491,7 +491,7 @@
 
         FROM_LAYERS_TO_ADJ_LAYER {
             bindings = <&tog ADJ_LAYER>;
-            key-positions = <9 10 11>;
+            key-positions = <10 11>;
             layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
         };
 
