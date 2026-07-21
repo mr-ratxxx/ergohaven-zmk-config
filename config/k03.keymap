@@ -130,7 +130,7 @@
                   compatible = "zmk,behavior-mod-morph";
                   label = "GRAVE_P2";
                   #binding-cells = <0>;
-                  bindings = <&kp SEMI>, <&kp GRAVE>;
+                  bindings = <&mt RGUI SEMI>, <&kp SQT>;
                   mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
                 };
                 
@@ -634,8 +634,7 @@
         &kp I
         &kp O
         &kp P
-        &kp GRAVE
-        
+        &kp GRAVE        
 
         /* base C L */
         &kp CAPS
@@ -649,7 +648,7 @@
         &mt RSHIFT J
         &mt RALT K
         &mt RCTRL L
-        &mt RGUI SEMI
+        &grave_p2
         &kp SQT
 
         /* base D L */
@@ -1534,7 +1533,7 @@ nav-l-m {
         &mt RSHIFT J
         &mt RALT K
         &mt RCTRL L
-        &mt RGUI SEMI
+        &grave_p2
         &kp SQT
 
         /* base-o D L */
