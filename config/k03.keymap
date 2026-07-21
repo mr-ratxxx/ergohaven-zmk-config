@@ -77,6 +77,14 @@
 
 / {
   behaviors {
+     my_caps_word: my_caps_word {
+                compatible = "zmk,behavior-caps-word";
+                label = "MY_CAPS_WORD";
+                #binding-cells = <0>;
+                continue-list = <UNDERSCORE MINUS COMMA PERIOD SEMICOLON SPACE>;
+            };
+        };
+  
     enc_vol: enc_vol {
       compatible = "zmk,behavior-sensor-rotate";
       label = "ENC_VOL";
