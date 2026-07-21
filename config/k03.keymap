@@ -134,9 +134,9 @@
                   mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
                 };
                 
-        grave_p3: grave_p3 {
+        ctrl_alt_slash_bslash: ctrl_alt_slash_bslash {
                           compatible = "zmk,behavior-mod-morph";
-                          label = "GRAVE_P3";
+                          label = "CTRL_ALT_SLASH_BSLASH";
                           #binding-cells = <0>;
                           bindings = <&kp SLASH>, <&kp BSLH>;
                           mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
@@ -666,7 +666,7 @@
         &kp M
         &alt_ru_n_lbkr
         &alt_ru_m_rbkr
-        &kp SLASH
+        &ctrl_alt_slash_bslash
         &kp BSLH
 
         /* base T L */
@@ -734,7 +734,7 @@
       
               /* base-m D L */
               &kp BSLH
-              &kp SLASH
+              &ctrl_alt_slash_bslash
               &kp DOT
               &kp COMMA
               &alt_ru_m_rbkr
@@ -1209,7 +1209,7 @@ nav-l-m {
         &kp DOT
 
         /* num D L */
-        &kp SLASH
+        &ctrl_alt_slash_bslash
         &kp BACKSLASH
         &kp N3
         &kp N2
@@ -1222,7 +1222,7 @@ nav-l-m {
         &kp N1
         &kp N2
         &kp N3
-        &kp SLASH
+        &ctrl_alt_slash_bslash
         &kp BACKSLASH
 
         /* num T L */
@@ -1264,9 +1264,9 @@ nav-l-m {
         &kp RS(N4)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
-        &kp SLASH
+        &ctrl_alt_slash_bslash
         /* symb B R */
-        &kp SLASH
+        &ctrl_alt_slash_bslash
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &kp RS(N4)
@@ -1551,7 +1551,7 @@ nav-l-m {
         &kp M
         &alt_ru_n_lbkr
         &alt_ru_m_rbkr
-        &kp SLASH
+        &ctrl_alt_slash_bslash
         &kp BSLH
 
         /* base-o T L */
