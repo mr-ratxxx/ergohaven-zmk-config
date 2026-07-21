@@ -647,7 +647,7 @@
         &kp GRAVE        
 
         /* base C L */
-        &kp CAPS
+        &caps_word
         &mt LGUI A
         &mt LCTRL S
         &mt LALT D
@@ -662,7 +662,7 @@
         &kp SQT
 
         /* base D L */
-        &kp SPACE
+        &kt LSHIFT
         &kp Z
         &kp X
         &kp C
