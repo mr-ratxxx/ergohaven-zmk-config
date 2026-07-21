@@ -633,7 +633,7 @@
         &kp U
         &kp I
         &kp O
-        &kp P
+        &grave_p
         &kp GRAVE        
 
         /* base C L */
@@ -703,7 +703,7 @@
       
               /* base-m B L */
                             &kp GRAVE
-                            &kp P
+                            &grave_p
                             &kp O
                             &kp I
                             &kp U
@@ -1518,7 +1518,7 @@ nav-l-m {
                 &kp U
                 &kp I
                 &kp O
-                &kp P
+                &grave_p
                 &kp GRAVE
 
         /* base-o C L */
