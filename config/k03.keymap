@@ -658,9 +658,9 @@
         &kp C
         &kp V
         &kp B
-        &layer_hold_tap2 NAV_MOUSE_R_LAYER BASE_LAYER
+        &layer_hold_tap2 FUNCT_LAYER BASE_LAYER
         /* base D R */
-        &layer_hold_tap2 NAV_MOUSE_R_LAYER BASE_LAYER
+        &layer_hold_tap2 FUNCT_LAYER BASE_LAYER
         &kp N
         &kp M
         &alt_ru_n_lbkr
