@@ -118,6 +118,30 @@
           mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
         };
         
+        grave_p: grave_p {
+          compatible = "zmk,behavior-mod-morph";
+          label = "GRAVE_P";
+          #binding-cells = <0>;
+          bindings = <&kp P>, <&kp GRAVE>;
+          mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+        };
+        
+        grave_p2: grave_p2 {
+                  compatible = "zmk,behavior-mod-morph";
+                  label = "GRAVE_P2";
+                  #binding-cells = <0>;
+                  bindings = <&kp SEMI>, <&kp GRAVE>;
+                  mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+                };
+                
+        grave_p3: grave_p3 {
+                          compatible = "zmk,behavior-mod-morph";
+                          label = "GRAVE_P3";
+                          #binding-cells = <0>;
+                          bindings = <&kp SLASH>, <&kp BSLH>;
+                          mods = <(MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT)>;
+                        };        
+        
     alt_ru_m_rbkr: alt_ru_m_rbkt {
       compatible = "zmk,behavior-mod-morph";
       label = "ALT_RU_M_RBKT";
@@ -610,7 +634,8 @@
         &kp I
         &kp O
         &kp P
-        &kp GRAVE
+        //&kp GRAVE
+        
 
         /* base C L */
         &kp CAPS
