@@ -481,12 +481,12 @@
 
         CMD_TAB_L {
             bindings = <&kp LG(TAB)>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
         };
 
         CMD_TAB_R {
             bindings = <&kp LG(TAB)>;
-            key-positions = <21 22>;
+            key-positions = <20 21>;
         };
 
         CAPS_L {
