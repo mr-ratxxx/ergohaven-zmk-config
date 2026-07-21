@@ -744,9 +744,9 @@
               /* base-m D L */
               &kp BSLH
               &ctrl_alt_slash_bslash
-              &kp DOT
-              &kp COMMA
               &alt_ru_m_rbkr
+              &alt_ru_n_lbkr
+              &kp M
               &kp N
               &trans
               /* base-m D R */
