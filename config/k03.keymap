@@ -97,6 +97,7 @@
       #binding-cells = <0>;
       bindings = <&kp FSLH>, <&kp BACKSLASH>;
       mods = <(MOD_LCTL | MOD_RCTL)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
 
     // ru-ю en/alt-ru .
@@ -106,6 +107,7 @@
       #binding-cells = <0>;
       bindings = <&kp DOT>, <&kp RS(N7)>;
       mods = <(MOD_LALT | MOD_RALT)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
                 
     // ru-e-ё
@@ -115,6 +117,7 @@
           #binding-cells = <0>;
           bindings = <&kp T>, <&kp BSLH>;
           mods = <(MOD_LALT | MOD_RALT)>;
+          keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
         };
         
         alt_ru_n_lbkr: alt_ru_n_lbkt {
@@ -123,6 +126,7 @@
           #binding-cells = <0>;
           bindings = <&kp COMMA>, <&kp LBKT>;
           mods = <(MOD_LALT | MOD_RALT)>;
+          keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
         };
         
         grave_p: grave_p {
@@ -131,6 +135,7 @@
           #binding-cells = <0>;
           bindings = <&kp P>, <&kp GRAVE>;
           mods = <(MOD_LALT | MOD_RALT)>;
+          keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
         };
         
         grave_p2: grave_p2 {
@@ -139,6 +144,7 @@
                   #binding-cells = <0>;
                   bindings = <&mt RGUI SEMI>, <&kp SQT>;
                   mods = <(MOD_LALT | MOD_RALT)>;
+                  keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
                 };
                 
         ctrl_alt_slash_bslash: ctrl_alt_slash_bslash {
@@ -147,6 +153,7 @@
                           #binding-cells = <0>;
                           bindings = <&kp SLASH>, <&kp BSLH>;
                           mods = <(MOD_LALT | MOD_RALT)>;
+                          keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
                         };        
         
     alt_ru_m_rbkr: alt_ru_m_rbkt {
@@ -155,6 +162,7 @@
       #binding-cells = <0>;
       bindings = <&kp DOT>, <&kp RBKT>;
       mods = <(MOD_LALT | MOD_RALT)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
 
     // ru-б en/alt-ru ,
@@ -164,6 +172,7 @@
       #binding-cells = <0>;
       bindings = <&kp COMMA>, <&kp RS(N6)>;
       mods = <(MOD_LALT | MOD_RALT)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
 
     // ru-ж en/alt-ru
@@ -173,6 +182,7 @@
       #binding-cells = <0>;
       bindings = <&mt RGUI SEMI>, <&kp RS(N8)>;
       mods = <(MOD_LALT | MOD_RALT)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
 
     // ru-э en/alt-ru "
@@ -182,6 +192,7 @@
       #binding-cells = <0>;
       bindings = <&kp SQT>, <&kp RS(N2)>;
       mods = <(MOD_LALT | MOD_RALT)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
 
 /*
@@ -190,8 +201,8 @@
             label = "ALT_TO_5";
             #binding-cells = <0>;
             bindings = <&lt 5 LG(LEFT_BRACKET)>, <&to 5>;
-
             mods = <(MOD_LALT | MOD_RALT)>;
+            keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
         };
         *\                       
 
@@ -201,6 +212,7 @@
       #binding-cells = <0>;
       bindings = <&kp COMMA>, <&kp LEFT_BRACKET>;
       mods = <(MOD_LCTL | MOD_RCTL)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
 
     ctrl_right_bracket: ctrl_right_bracket {
@@ -209,6 +221,7 @@
       #binding-cells = <0>;
       bindings = <&kp DOT>, <&kp RIGHT_BRACKET>;
       mods = <(MOD_LCTL | MOD_RCTL)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
 
     ctrl_p_sqt: ctrl_p_sqt {
@@ -217,27 +230,9 @@
       #binding-cells = <0>;
       bindings = <&kp P>, <&kp SQT>;
       mods = <(MOD_LCTL | MOD_RCTL)>;
+      keep-mods = <(MOD_LCTRL | MOD_RCTRL)>;
     };
-/*
-        alt_scrl_up: alt_scrl_up {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_SCRL_UP";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_UP>,
-            <&msc MOVE_Y(100)>;
-            mods = <(MOD_RALT)>;
-        };
-
-        alt_scrl_down: alt_scrl_down {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_SCRL_DOWN";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>,
-            <&msc MOVE_Y(-100)>;
-             mods = <(MOD_RALT)>;
-        };
-        */
-
+    
     ralt_y_up3: ralt_y_up3 {
       compatible = "zmk,behavior-mod-morph";
       label = "RALT_Y_UP3";
