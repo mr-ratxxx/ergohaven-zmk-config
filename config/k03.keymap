@@ -458,7 +458,7 @@
 
         M_UP_L {
             bindings = <&msc SCRL_UP>;
-            key-positions = <27 39>;
+            key-positions = <38 26>;
         };
 
         M_UP_R {
