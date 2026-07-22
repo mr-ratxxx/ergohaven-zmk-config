@@ -1058,10 +1058,10 @@ nav-l-m {
           &tog NAV_MOUSE_L_LAYER
           /* nav-l-m C R */
           &tog NAV_MOUSE_L_LAYER
-          &kp LEFT_ARROW
-          &kp UP
-          &kp DOWN
-          &kp RIGHT_ARROW
+          &kp LSHFT
+          &kp LALT
+                  &kp LCTRL                  
+          &kp LGUI        
           &kp LG(C)
   
           /* nav-l-m D L */
