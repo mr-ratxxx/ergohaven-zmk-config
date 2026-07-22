@@ -406,15 +406,15 @@
     combos {
         compatible = "zmk,combos";
 
-    TO_BASE_L {
+        TO_BASE_L {
             bindings = <&to BASE_LAYER>;
             key-positions = <13 14 15 16>;
         };
-        
+
         TO_BASE_R {
-                    bindings = <&to BASE_LAYER>;
-                    key-positions = <19 20 21 22>;
-                };
+            bindings = <&to BASE_LAYER>;
+            key-positions = <19 20 21 22>;
+        };
 
         PG_U_R {
             bindings = <&kp UP>;
@@ -428,22 +428,22 @@
 
         PG_DOWN_L {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <26 38>;
+            key-positions = <26 14>;
         };
 
         PG_DOWN_R {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <33 47>;
+            key-positions = <33 21>;
         };
 
         CMD_PG_UP_L {
             bindings = <&kp PAGE_UP>;
-            key-positions = <27 39>;
+            key-positions = <27 15>;
         };
 
         CMD_PG_UP_R {
             bindings = <&kp PAGE_UP>;
-            key-positions = <32 46>;
+            key-positions = <32 20>;
         };
 
         M_DOWN_L {
@@ -453,37 +453,37 @@
 
         M_DOWN_R {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <21 33>;
+            key-positions = <33 47>;
         };
 
         M_UP_L {
             bindings = <&msc SCRL_UP>;
-            key-positions = <15 27>;
+            key-positions = <27 39>;
         };
 
         M_UP_R {
             bindings = <&msc SCRL_UP>;
-            key-positions = <20 32>;
+            key-positions = <32 46>;
         };
 
         M_LEFT_L {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <28 16>;
+            key-positions = <28 40>;
         };
 
         M_LEFT_R {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <19 31>;
+            key-positions = <45 31>;
         };
 
         M_RIGHT_L {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <13 25>;
+            key-positions = <25 37>;
         };
 
         M_RIGHT_R {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <22 34>;
+            key-positions = <34 48>;
         };
 
         CMD_TAB_L2 {
