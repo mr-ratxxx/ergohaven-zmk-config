@@ -1036,10 +1036,10 @@ nav-l-m {
   
           /* nav-l-m B L */
           &kp LG(TAB)
-                   &kp LGUI
-                             &kp LCTRL
-                             &kp LALT
-                             &kp LSHFT
+                   &kp LEFT
+                             &kp DOWN
+                             &kp UP
+                             &kp RIGHT
                     &msc SCRL_UP
           /* nav-l-m B R */
           &msc SCRL_UP
