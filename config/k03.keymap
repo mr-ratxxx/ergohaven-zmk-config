@@ -1051,10 +1051,10 @@ nav-l-m {
                     
           /* nav-l-m C L */        
           &kp LG(C)
-          &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-                            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-                            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-                            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R) 
+          &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+                    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+                    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
+                    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R) 
           &tog NAV_MOUSE_L_LAYER
           /* nav-l-m C R */
           &tog NAV_MOUSE_L_LAYER
@@ -1066,10 +1066,10 @@ nav-l-m {
   
           /* nav-l-m D L */
           &kp RG(V)
-          &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
-          &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
-          &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
-          &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+          &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+                                      &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                                      &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                                      &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
           &msc SCRL_DOWN
           &trans
           /* nav-l-m D R */
