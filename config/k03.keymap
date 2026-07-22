@@ -1036,10 +1036,10 @@ nav-l-m {
   
           /* nav-l-m B L */
           &kp LG(TAB)
-                    &mmv MOVE_X(MMV_FAST_SPEED_L)                    
-                    &mmv MOVE_Y(MMV_FAST_SPEED_D)
-                    &mmv MOVE_Y(MMV_FAST_SPEED_U)        
-                    &mmv MOVE_X(MMV_FAST_SPEED_R)        
+                   &kp LGUI
+                             &kp LCTRL
+                             &kp LALT
+                             &kp LSHFT
                     &msc SCRL_UP
           /* nav-l-m B R */
           &msc SCRL_UP
@@ -1051,10 +1051,10 @@ nav-l-m {
                     
           /* nav-l-m C L */        
           &kp LG(C)
-          &kp LGUI
-          &kp LCTRL
-          &kp LALT
-          &kp LSHFT
+           &mmv MOVE_X(MMV_FAST_SPEED_L)                    
+                              &mmv MOVE_Y(MMV_FAST_SPEED_D)
+                              &mmv MOVE_Y(MMV_FAST_SPEED_U)        
+                              &mmv MOVE_X(MMV_FAST_SPEED_R)
           &tog NAV_MOUSE_L_LAYER
           /* nav-l-m C R */
           &tog NAV_MOUSE_L_LAYER
