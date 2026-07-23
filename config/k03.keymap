@@ -698,8 +698,8 @@
         /* base-add D L */
         &trans
         &trans
-        &trans
-        &trans
+        &kp MINUS
+        &kp EQUAL
         &trans
         &trans
         &trans
@@ -1610,7 +1610,7 @@ nav-l-m {
         &kp ESC
         &kp CAPS
         &kp BACKSPACE
-        &kp DOT
+        &kp LEFT_BRACKET
         &kp RIGHT_BRACKET
       >;
       display-name = "base-override";
@@ -1666,8 +1666,8 @@ nav-l-m {
             /* base-add-ovv D L */
             &trans
             &trans
-            &trans
-            &trans
+            &kp MINUS
+            &kp EQUAL
             &trans
             &trans
             &trans
