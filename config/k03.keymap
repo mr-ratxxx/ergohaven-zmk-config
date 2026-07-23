@@ -90,25 +90,6 @@
       #sensor-binding-cells = <0>;
       bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
     };
-
-    ctrl_bslh: ctrl_bslh {
-      compatible = "zmk,behavior-mod-morph";
-      label = "CTRL_BSLH";
-      #binding-cells = <0>;
-      bindings = <&kp FSLH>, <&kp BACKSLASH>;
-      mods = <(MOD_LCTL | MOD_RCTL)>;
-      keep-mods = <(MOD_LCTL | MOD_RCTL)>;
-    };
-
-    // ru-ю en/alt-ru .
-    alt_ru_en_dot: alt_ru_en_dot {
-      compatible = "zmk,behavior-mod-morph";
-      label = "ALT_RU_EN_DOT";
-      #binding-cells = <0>;
-      bindings = <&kp DOT>, <&kp RS(N7)>;
-      mods = <(MOD_LALT | MOD_RALT)>;
-      keep-mods = <(MOD_LCTL | MOD_RCTL)>;
-    };
                 
     // ru-e-ё
         alt_ru_t_e: alt_ru_t_e {
