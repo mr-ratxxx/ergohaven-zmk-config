@@ -98,7 +98,7 @@
           #binding-cells = <0>;
           bindings = <&kp T>, <&kp BSLH>;
           mods = <(MOD_LALT | MOD_RALT)>;
-          keep-mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+          keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
         
         alt_ru_n_lbkr: alt_ru_n_lbkt {
