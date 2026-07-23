@@ -116,7 +116,7 @@
           #binding-cells = <0>;
           bindings = <&kp P>, <&kp GRAVE>;
           mods = <(MOD_LALT | MOD_RALT)>;
-          keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+          keep-mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
         };
         
         grave_p2: grave_p2 {
