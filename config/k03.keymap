@@ -562,30 +562,30 @@
             bindings = <&mkp MB2>;
             key-positions = <38 39 40>;
         };
-        
+
         MOUSE1_UP_R {
-                            bindings = <&mkp MB1>;
-                            key-positions = <45 46>;
-                            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
-                        };
-                
-                        MOUSE2_UP_R {
-                            bindings = <&mkp MB2>;
-                            key-positions = <45 46 47>;
-                            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
-                        };
-                
-                        MOUSE1_UP_L {
-                            bindings = <&mkp MB1>;
-                            key-positions = <40 39>;
-                            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
-                        };
-                
-                        MOUSE2_UP_L {
-                            bindings = <&mkp MB2>;
-                            key-positions = <38 39 40>;
-                            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
-                        };
+            bindings = <&mkp MB1>;
+            key-positions = <19 20>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+        };
+
+        MOUSE2_UP_R {
+            bindings = <&mkp MB2>;
+            key-positions = <21 20 19>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+        };
+
+        MOUSE1_UP_L {
+            bindings = <&mkp MB1>;
+            key-positions = <16 15>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+        };
+
+        MOUSE2_UP_L {
+            bindings = <&mkp MB2>;
+            key-positions = <14 15 16>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+        };
 
         UI_REVERT {
             bindings = <&kp RG(Z)>;
