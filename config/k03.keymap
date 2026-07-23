@@ -590,25 +590,25 @@
         UI_REVERT {
             bindings = <&kp RG(Z)>;
             key-positions = <20 19>;
-            layers = <FUNCT_LAYER LAYERS_LAYER>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
         UIO_REPEAT {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <19 20 21>;
-            layers = <FUNCT_LAYER LAYERS_LAYER>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
         UI_REVERT_L {
             bindings = <&kp RG(Z)>;
             key-positions = <15 16>;
-            layers = <FUNCT_LAYER LAYERS_LAYER>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
         UIO_REPEAT_L {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <14 15 16>;
-            layers = <FUNCT_LAYER LAYERS_LAYER>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
         CAPS_WORLD {
