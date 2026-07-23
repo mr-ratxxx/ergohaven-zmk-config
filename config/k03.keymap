@@ -563,7 +563,25 @@
             key-positions = <38 39 40>;
         };
         
-        
+        MOUSE1_UP_R {
+                            bindings = <&mkp MB1>;
+                            key-positions = <45 46>;
+                        };
+                
+                        MOUSE2_UP_R {
+                            bindings = <&mkp MB2>;
+                            key-positions = <45 46 47>;
+                        };
+                
+                        MOUSE1_UP_L {
+                            bindings = <&mkp MB1>;
+                            key-positions = <40 39>;
+                        };
+                
+                        MOUSE2_UP_L {
+                            bindings = <&mkp MB2>;
+                            key-positions = <38 39 40>;
+                        };
 
         UI_REVERT {
             bindings = <&kp RG(Z)>;
