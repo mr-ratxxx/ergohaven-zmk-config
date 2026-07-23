@@ -15,6 +15,7 @@
 #define LAYERS_LAYER 10
 #define ADJ_LAYER 11
 #define BASE_OVERRIDE_LAYER 12
+#define BASE_ADD_OVERRIDE_LAYER 13
 
 #define MMV_SLOW_ALT_SPEED 250
 #define MMV_SLOW_ALT_SPEED_L -250
@@ -1573,9 +1574,9 @@ nav-l-m {
         &mt LCTRL S
         &mt LALT D
         &mt LSHFT F
-        &kp G
+        &lt BASE_ADD_OVERRIDE_LAYER G
         /* base-o C R */
-        &kp H
+        &lt BASE_ADD_OVERRIDE_LAYER H
         &mt RSHIFT J
         &mt RALT K
         &mt RCTRL L
@@ -1584,7 +1585,7 @@ nav-l-m {
 
         /* base-o D L */
         &kp SPACE
-        &kp Z
+        &lt BASE_ADD_OVERRIDE_LAYER Z
         &kp X
         &kp C
         &kp V
@@ -1596,7 +1597,7 @@ nav-l-m {
         &kp M
         &kp COMMA
         &kp DOT
-        &kp SLASH
+        &lt BASE_ADD_OVERRIDE_LAYER SLASH
         &kp BSLH
 
         /* base-o T L */
@@ -1614,5 +1615,88 @@ nav-l-m {
       >;
       display-name = "base-override";
     };
+    
+        base-add-ovv{
+          bindings = <
+            /* base-add-ovv A L */
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            /* base-add-ovv A R */        
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+    
+            /* base-add-ovv B L */
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            &kp BSLH
+            /* base-add-ovv B R */
+            &trans
+            &trans
+            &trans
+            &trans
+            &kp GRAVE
+            &trans        
+    
+            /* base-add-ovv C L */
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            /* base-add-ovv C R */
+            &trans
+            &trans
+            &trans
+            &trans
+            &kp SQT
+            &trans
+            
+            /* base-add-ovv D L */
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            /* base-add-ovv D R */
+            &trans
+            &trans
+            &trans
+            &kp LBKT
+            &kp RBKT
+            &kp BSLH
+            &trans
+    
+            /* base-add-ovv T L */
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            /* base-add T R */
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+          >;
+          display-name = "base-add-ovv";
+        };
+    
   };
 };
