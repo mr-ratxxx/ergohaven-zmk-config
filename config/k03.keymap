@@ -615,7 +615,7 @@
 
         /* base D L */
         &kt LSHIFT
-        &lt FUNCT_LAYER Z
+        &lt BASE_MIRROR_LAYER Z
         &kp X
         &kp C
         &kp V
@@ -627,7 +627,7 @@
         &kp M
         &kp COMMA
         &kp DOT
-        &lt FUNCT_LAYER SLASH
+        &lt BASE_MIRROR_LAYER SLASH
         &kp BSLH
 
         /* base T L */
