@@ -125,16 +125,7 @@
                   bindings = <&mt RGUI SEMI>, <&kp SQT>;
                   mods = <(MOD_LALT | MOD_RALT)>;
                   keep-mods = <(MOD_LCTL | MOD_RCTL)>;
-                };
-                
-        ctrl_alt_slash_bslash: ctrl_alt_slash_bslash {
-                          compatible = "zmk,behavior-mod-morph";
-                          label = "CTRL_ALT_SLASH_BSLASH";
-                          #binding-cells = <0>;
-                          bindings = <&kp SLASH>, <&kp BSLH>;
-                          mods = <(MOD_LALT | MOD_RALT)>;
-                          keep-mods = <(MOD_LCTL | MOD_RCTL)>;
-                        };        
+                };        
         
     alt_ru_m_rbkr: alt_ru_m_rbkt {
       compatible = "zmk,behavior-mod-morph";
@@ -681,7 +672,7 @@
         &kp M
         &alt_ru_n_lbkr
         &alt_ru_m_rbkr
-        &ctrl_alt_slash_bslash
+        &kp SLASH
         &kp BSLH
 
         /* base T L */
@@ -761,7 +752,7 @@
         &trans
         &kp LBKT
         &kp RBKT
-        &trans
+        &kp BSLH
         &trans
 
         /* base-add T L */
@@ -831,7 +822,7 @@
       
               /* base-m D L */
               &kp BSLH
-              &ctrl_alt_slash_bslash
+              &kp SLASH
               &alt_ru_m_rbkr
               &alt_ru_n_lbkr
               &kp M
@@ -1307,7 +1298,7 @@ nav-l-m {
         &kp DOT
 
         /* num D L */
-        &ctrl_alt_slash_bslash
+        &kp SLASH
         &kp BACKSLASH
         &kp N3
         &kp N2
@@ -1320,7 +1311,7 @@ nav-l-m {
         &kp N1
         &kp N2
         &kp N3
-        &ctrl_alt_slash_bslash
+        &kp SLASH
         &kp BACKSLASH
 
         /* num T L */
@@ -1362,9 +1353,9 @@ nav-l-m {
         &kp RS(N4)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
-        &ctrl_alt_slash_bslash
+        &kp SLASH
         /* symb B R */
-        &ctrl_alt_slash_bslash
+        &kp SLASH
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &kp RS(N4)
@@ -1649,7 +1640,7 @@ nav-l-m {
         &kp M
         &alt_ru_n_lbkr
         &alt_ru_m_rbkr
-        &ctrl_alt_slash_bslash
+        &kp SLASH
         &kp BSLH
 
         /* base-o T L */
