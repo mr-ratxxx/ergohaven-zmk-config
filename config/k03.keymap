@@ -443,7 +443,7 @@
 
         M_DOWN_L {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <27 39>;
+            key-positions = <26 38>;
         };
 
         M_DOWN_R {
@@ -453,7 +453,7 @@
 
         M_UP_L {
             bindings = <&msc SCRL_UP>;
-            key-positions = <38 26>;
+            key-positions = <27 39>;
         };
 
         M_UP_R {
