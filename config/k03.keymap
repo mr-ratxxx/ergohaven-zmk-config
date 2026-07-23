@@ -91,14 +91,14 @@
       bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
     };
                 
-    // ru-e-ё
+    // t-e-ё
         alt_ru_t_e: alt_ru_t_e {
           compatible = "zmk,behavior-mod-morph";
           label = "ALT_RU_T_E";
           #binding-cells = <0>;
           bindings = <&kp T>, <&kp BSLH>;
           mods = <(MOD_LALT | MOD_RALT)>;
-          keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+          keep-mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
         };
         
         alt_ru_n_lbkr: alt_ru_n_lbkt {
