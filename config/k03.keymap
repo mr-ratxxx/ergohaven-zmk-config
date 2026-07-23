@@ -699,6 +699,86 @@
       >;
       display-name = "base";
     };
+    
+    base-add{
+      bindings = <
+        /* base-add A L */
+        &layer_to_tap BASE_LAYER ESC
+        &layer_hold_tap NUM_LAYER F2
+        &layer_hold_tap SYMB_LAYER F3
+        &layer_hold_tap NAV_L_LAYER F4
+        &layer_hold_tap FUNCT_LAYER F5
+        &layer_hold_tap BASE_MIRROR_LAYER F6
+        /* base-add A R */        
+        &layer_hold_tap FUNCT_LAYER F7
+        &layer_hold_tap NAV_R_LAYER F8       
+        &layer_hold_tap NUM_LAYER F9
+        &layer_hold_tap SYMB_LAYER F10
+        &layer_to_tap BASE_MIRROR_LAYER F11
+        &layer_to_tap BASE_LAYER F12
+
+        /* base-add B L */
+        &kp LG(TAB)
+        &kp Q
+        &kp W
+        &kp E
+        &kp R
+        &alt_ru_t_e
+        /* base-add B R */
+        &kp Y
+        &kp U
+        &kp I
+        &kp O
+        &grave_p
+        &kp GRAVE        
+
+        /* base-add C L */
+        &caps_word
+        &mt LGUI A
+        &mt LCTRL S
+        &mt LALT D
+        &mt LSHFT F
+        &kp G
+        /* base-add C R */
+        &kp H
+        &mt RSHIFT J
+        &mt RALT K
+        &mt RCTRL L
+        &grave_p2
+        &kp SQT
+
+        /* base-add D L */
+        &kt LSHIFT
+        &kp Z
+        &kp X
+        &kp C
+        &kp V
+        &kp B
+        &layer_hold_tap2 FUNCT_LAYER BASE_LAYER
+        /* base-add D R */
+        &layer_hold_tap2 FUNCT_LAYER BASE_LAYER
+        &kp N
+        &kp M
+        &alt_ru_n_lbkr
+        &alt_ru_m_rbkr
+        &ctrl_alt_slash_bslash
+        &kp BSLH
+
+        /* base-add T L */
+        &lt BASE_MIRROR_LAYER MINUS
+        &lt NUM_LAYER EQUAL
+        &lt SYMB_LAYER TAB
+        &lt NAV_L_LAYER SPACE
+        &lt FUNCT_LAYER DEL
+        /* base-add T R */
+        &lt FUNCT_LAYER ESC
+        &lt NAV_R_LAYER RG(RC(SPACE))
+        &lt NUM_LAYER BACKSPACE
+        &lt SYMB_LAYER LBKT
+        &lt BASE_MIRROR_LAYER RIGHT_BRACKET
+      >;
+      display-name = "base";
+    };
 
     base_mirror {
       bindings = <
