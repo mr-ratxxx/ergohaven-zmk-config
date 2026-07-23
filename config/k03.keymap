@@ -604,9 +604,9 @@
         &mt LCTRL S
         &mt LALT D
         &mt LSHFT F
-        &kp G
+        &lt BASE_MIRROR_LAYER G
         /* base C R */
-        &kp H
+        &lt BASE_MIRROR_LAYER H
         &mt RSHIFT J
         &mt RALT K
         &mt RCTRL L
