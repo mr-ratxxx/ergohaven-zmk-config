@@ -115,8 +115,7 @@
           label = "GRAVE_P";
           #binding-cells = <0>;
           bindings = <&kp P>, <&kp GRAVE>;
-          mods = <(MOD_LALT | MOD_RALT)>;
-          #keep-mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+          mods = <(MOD_LALT | MOD_RALT)>;          
         };
         
         grave_p2: grave_p2 {
@@ -563,6 +562,8 @@
             bindings = <&mkp MB2>;
             key-positions = <38 39 40>;
         };
+        
+        
 
         UI_REVERT {
             bindings = <&kp RG(Z)>;
