@@ -338,6 +338,23 @@
             bindings = <&to BASE_LAYER>;
             key-positions = <19 20 21 22>;
         };
+        
+        BASE_MOUSE_L {
+                    bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
+                    key-positions = <46 58>;
+                };
+        BASE_MOUSE_R {
+                    bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
+                    key-positions = <46 58>;
+                };
+        BASE_MOUSE_D {
+                    bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_D)>;
+                    key-positions = <46 58>;
+                };
+        BASE_MOUSE_U {
+                    bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_U)>;
+                    key-positions = <46 58>;
+                };                                                
 
         PG_U_R {
             bindings = <&kp UP>;
