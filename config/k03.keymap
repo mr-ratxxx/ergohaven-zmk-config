@@ -327,7 +327,7 @@
   };
 
     combos {
-        compatible = "zmk,combos";1        
+        compatible = "zmk,combos";
                 
         PG_U_R {
             bindings = <&kp UP>;
@@ -401,12 +401,12 @@
 
         CMD_TAB_L2 {
             bindings = <&kp LG(TAB)>;
-            key-positions = <16 17>;
+            key-positions = <15 16>;
         };
 
         CMD_TAB_R2 {
             bindings = <&kp LG(TAB)>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
         };
 
         CMD_TAB_L {
