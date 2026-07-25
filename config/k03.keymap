@@ -349,7 +349,7 @@
                                 
         BASE_MOUSE_R {
             bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
-            key-positions = <34 35>;
+            key-positions = <33 34>;
             layers = <0>;
         };        
                 
