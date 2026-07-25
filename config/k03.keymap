@@ -399,18 +399,6 @@
             key-positions = <34 48>;
         };
 
-        CMD_TAB_L2 {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <15 16>;
-            layers = < BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };
-
-        CMD_TAB_R2 {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <19 20>;
-            layers = < BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };
-
         CMD_TAB_L {
             bindings = <&kp LG(TAB)>;
             key-positions = <14 15>;
@@ -675,7 +663,7 @@
         &trans        
         &kp RG(LEFT_BRACKET)
         &kp RG(RIGHT_BRACKET)
-        &trans        
+        &trans
         &trans
         /* base-add C R */
         &trans        
