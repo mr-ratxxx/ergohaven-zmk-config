@@ -342,25 +342,25 @@
         BASE_MOUSE_L {
             bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
             key-positions = <30 31>;
-            layers = <BASE_LAYER>;
+            layers = <0>;
         };
                 
         BASE_MOUSE_U {
             bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_U)>;
             key-positions = <32 33>;
-            layers = <BASE_LAYER>;
+            layers = <0>;
         };                                        
        
         BASE_MOUSE_D {
             bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_D)>;
             key-positions = <34 35>;
-            layers = <BASE_LAYER>;
+            layers = <0>;
         };
                                 
         BASE_MOUSE_R {
             bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
             key-positions = <36 37>;
-            layers = <BASE_LAYER>;
+            layers = <0>;
         };        
                 
         PG_U_R {
