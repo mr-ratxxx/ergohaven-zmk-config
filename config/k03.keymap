@@ -701,12 +701,12 @@
         &trans
         &trans
 
-        /* base-add B L */
+1        /* base-add B L */
         &trans
-        &trans
-        &trans     
+        &trans             
         &kp LS(LG(Z))
-        &kp RG(Z)        
+        &kp RG(Z)
+        &trans        
         &kp BSLH
         /* base-add B R */
         &trans        
