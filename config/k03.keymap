@@ -329,7 +329,7 @@
     combos {
         compatible = "zmk,combos";        
 
-        BASE_MOUSE_L_L {
+        */BASE_MOUSE_L_L {
             bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
             key-positions = <25 26>;
             layers = <0>;
@@ -375,7 +375,7 @@
             bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
             key-positions = <33 34>;
             layers = <0>;
-        };        
+        };*/        
                 
         PG_U_R {
             bindings = <&kp UP>;
