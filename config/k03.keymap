@@ -816,7 +816,7 @@
         &trans
 
         /* nav-r B L */
-        &kp LG(TAB)
+        &trans
         &kp LEFT_ARROW
                 &kp DOWN
                 &kp UP
@@ -825,10 +825,10 @@
         /* nav-r B R */
         &msc SCRL_UP
         &mmv MOVE_X(MMV_FAST_SPEED_L)
-               &mmv MOVE_Y(MMV_FAST_SPEED_U)
-               &mmv MOVE_Y(MMV_FAST_SPEED_D)        
-               &mmv MOVE_X(MMV_FAST_SPEED_R)        
-        &kp LG(TAB)
+        &mmv MOVE_Y(MMV_FAST_SPEED_U)
+        &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+        &mmv MOVE_X(MMV_FAST_SPEED_R)        
+        &trans
         /* nav-r C L */        
         &kp LG(C)
         &kp LGUI
@@ -838,10 +838,10 @@
         &tog NAV_R_LAYER
         /* nav-r C R */
         &tog NAV_R_LAYER
-         &kp LEFT_ARROW
-                &kp UP
-                &kp DOWN
-                &kp RIGHT_ARROW
+        &kp LEFT_ARROW
+        &kp UP
+        &kp DOWN
+        &kp RIGHT_ARROW
         &kp LG(C)
 
         /* nav-r D L */
@@ -856,9 +856,9 @@
         &trans
         &msc SCRL_DOWN
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &kp LG(V)
 
         /* nav-r T L */
@@ -895,7 +895,7 @@ nav-l {
     &trans
 
     /* nav-l B L */
-    &kp LG(TAB)
+    &trans
     &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
     &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
     &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
@@ -907,7 +907,7 @@ nav-l {
     &kp UP                      
     &kp DOWN
     &kp RIGHT_ARROW
-    &kp LG(TAB)
+    &trans
     /* nav-l C L */
     &kp LG(C)     
     &kp LEFT_ARROW
