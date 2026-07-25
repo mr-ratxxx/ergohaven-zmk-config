@@ -340,22 +340,29 @@
         };
         
         BASE_MOUSE_L {
-                    bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
-                    key-positions = <34 35>;
-                };
-        BASE_MOUSE_R {
-                    bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
-                    key-positions = <36 37>;
-                };
-        BASE_MOUSE_D {
-                    bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_D)>;
-                    key-positions = <46 58>;
-                };
+            bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
+            key-positions = <34 35>;
+            layers = <BASE_LAYER>;
+        };
+                
         BASE_MOUSE_U {
-                    bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_U)>;
-                    key-positions = <46 58>;
-                };                                                
-
+            bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_U)>;
+            key-positions = <36 37>;
+            layers = <BASE_LAYER>;
+        };                                        
+       
+        BASE_MOUSE_D {
+            bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_D)>;
+            key-positions = <38 39>;
+            layers = <BASE_LAYER>;
+        };
+                                
+        BASE_MOUSE_R {
+            bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
+            key-positions = <40 41>;
+            layers = <BASE_LAYER>;
+        };
+                
         PG_U_R {
             bindings = <&kp UP>;
             key-positions = <46 58>;
