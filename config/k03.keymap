@@ -678,10 +678,10 @@
         &trans        
         &trans
         /* base-add C R */
+        &trans        
         &trans
         &kp RG(LEFT_BRACKET)
-        &kp RG(RIGHT_BRACKET)
-        &trans        
+        &kp RG(RIGHT_BRACKET)        
         &kp SQT
         &trans
         
