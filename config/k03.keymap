@@ -449,15 +449,9 @@
             key-positions = <40 41>;
         };
 
-        CAPS_R {
-            bindings = <&kp CAPS>;
-            key-positions = <44 45>;
-        };
-
-        SPACE_L {
+        SPACE_R {
             bindings = <&kp SPACE>;
-            key-positions = <28 29>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+            key-positions = <44 45>;
         };
 
         FROM_LAYERS_TO_ADJ_LAYER {
