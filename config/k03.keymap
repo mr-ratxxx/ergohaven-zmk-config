@@ -705,13 +705,13 @@
         &trans
         &trans
         &trans
-        &trans
-        &trans
+        &kp LS(LG(Z))
+        &kp RG(Z)        
         &kp BSLH
         /* base-add B R */
         &trans
-        &trans
-        &trans
+        &kp RG(Z)
+        &kp LS(LG(Z))
         &trans
         &kp GRAVE
         &trans        
@@ -719,15 +719,15 @@
         /* base-add C L */
         &trans
         &trans
-        &trans
-        &trans
+        &kp RG(LEFT_BRACKET)
+        &kp RG(RIGHT_BRACKET)
         &trans
         &trans
         /* base-add C R */
         &trans
         &trans
-        &trans
-        &trans
+        &kp RG(LEFT_BRACKET)
+        &kp RG(RIGHT_BRACKET)
         &kp SQT
         &trans
         
