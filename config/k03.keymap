@@ -718,18 +718,18 @@
 
         /* base-add C L */
         &trans
-        &trans
-        &trans
+        &trans        
         &kp RG(LEFT_BRACKET)
-        &kp RG(RIGHT_BRACKET)        
+        &kp RG(RIGHT_BRACKET)
+        &trans1        
         &trans
         /* base-add C R */
         &trans
-        &trans
         &kp RG(LEFT_BRACKET)
         &kp RG(RIGHT_BRACKET)
+        &trans        
         &kp SQT
-        &trans1
+        &trans
         
         /* base-add D L */
         &trans
