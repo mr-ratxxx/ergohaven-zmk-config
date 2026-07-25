@@ -323,7 +323,7 @@
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
       bindings = <&to>, <&kp>;
-    };i
+    };
   };
 
     combos {
