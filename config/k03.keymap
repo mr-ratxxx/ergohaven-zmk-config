@@ -331,12 +331,12 @@
 
         TO_BASE_L {
             bindings = <&to BASE_LAYER>;
-            key-positions = <30 31>;
+            key-positions = <16 28 29 17>;
         };
 
         TO_BASE_R {
             bindings = <&to BASE_LAYER>;
-            key-positions = <32 33>;
+            key-positions = <18 19 31 30>;
         };
         
         BASE_MOUSE_L {
