@@ -327,17 +327,7 @@
   };
 
     combos {
-        compatible = "zmk,combos";
-
-        TO_BASE_L {
-            bindings = <&to BASE_LAYER>;
-            key-positions = <16 28 29 17>;
-        };
-
-        TO_BASE_R {
-            bindings = <&to BASE_LAYER>;
-            key-positions = <18 19 31 30>;
-        };
+        compatible = "zmk,combos";        
         
         BASE_MOUSE_L {
             bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
@@ -581,6 +571,16 @@
             bindings = <&caps_word>;
             key-positions = <27 28 31 32>;
         };
+        
+        TO_BASE_L {
+                    bindings = <&to BASE_LAYER>;
+                    key-positions = <16 28 29 17>;
+                };
+        
+                TO_BASE_R {
+                    bindings = <&to BASE_LAYER>;
+                    key-positions = <18 19 31 30>;
+                };
     };
 
   keymap {
