@@ -657,16 +657,16 @@
 
         /* base-add B L */
         &trans
-        &trans             
+        &trans          
         &kp LS(LG(Z))
         &kp RG(Z)
         &trans
         &kp BSLH
         /* base-add B R */
-        &trans        
+        &trans
+        &trans         
         &kp RG(Z)
-        &kp LS(LG(Z))
-        &trans        
+        &kp LS(LG(Z))                
         &kp GRAVE
         &trans        
 
