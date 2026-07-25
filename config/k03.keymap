@@ -338,6 +338,30 @@
             bindings = <&to BASE_LAYER>;
             key-positions = <32 33>;
         };
+        
+        BASE_MOUSE_L {
+            bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
+            key-positions = <30 31>;
+            layers = <BASE_LAYER>;
+        };
+                
+        BASE_MOUSE_U {
+            bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_U)>;
+            key-positions = <32 33>;
+            layers = <BASE_LAYER>;
+        };                                        
+       
+        BASE_MOUSE_D {
+            bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_D)>;
+            key-positions = <34 35>;
+            layers = <BASE_LAYER>;
+        };
+                                
+        BASE_MOUSE_R {
+            bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
+            key-positions = <36 37>;
+            layers = <BASE_LAYER>;
+        };        
                 
         PG_U_R {
             bindings = <&kp UP>;
@@ -445,11 +469,11 @@
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        SPACE_R {
+        */ SPACE_R {
             bindings = <&kp SPACE>;
             key-positions = <30 31>;
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
-        };
+        };*/
 
         FROM_LAYERS_TO_ADJ_LAYER {
             bindings = <&tog ADJ_LAYER>;
