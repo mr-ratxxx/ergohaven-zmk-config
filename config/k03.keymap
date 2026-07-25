@@ -343,19 +343,19 @@
        
         BASE_MOUSE_D {
             bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_D)>;
-            key-positions = <34 35>;
+            key-positions = <33 34>;
             layers = <0>;
         };
                                 
         BASE_MOUSE_R {
             bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
-            key-positions = <36 37>;
+            key-positions = <34 35>;
             layers = <0>;
         };        
                 
         PG_U_R {
             bindings = <&kp UP>;
-            key-positions = <46 58>;
+            key-positions = <35 36>;
         };
 
         PG_D_R {
