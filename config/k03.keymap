@@ -469,12 +469,6 @@
             layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        */ SPACE_R {
-            bindings = <&kp SPACE>;
-            key-positions = <30 31>;
-            layers = <BASE_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
-        };*/
-
         FROM_LAYERS_TO_ADJ_LAYER {
             bindings = <&tog ADJ_LAYER>;
             key-positions = <10 11>;
