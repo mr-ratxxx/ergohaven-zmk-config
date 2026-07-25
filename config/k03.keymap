@@ -653,7 +653,7 @@
         &trans
         &trans
 
-1        /* base-add B L */
+        /* base-add B L */
         &trans
         &trans             
         &kp LS(LG(Z))
