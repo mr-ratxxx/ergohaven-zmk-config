@@ -378,7 +378,7 @@
         };        
                 
         PG_U_R {
-            bindings = <&kp UP>;i
+            bindings = <&kp UP>;
             key-positions = <46 58>;
         };
 
