@@ -327,55 +327,7 @@
   };
 
     combos {
-        compatible = "zmk,combos";        
-
-        */BASE_MOUSE_L_L {
-            bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
-            key-positions = <25 26>;
-            layers = <0>;
-        };
-                
-        BASE_MOUSE_U_L {
-            bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_U)>;
-            key-positions = <26 27>;
-            layers = <0>;
-        };                                        
-       
-        BASE_MOUSE_D_L {
-            bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_D)>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-                                
-        BASE_MOUSE_R_L {
-            bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
-            key-positions = <28 29>;
-            layers = <0>;
-        };
-        
-        BASE_MOUSE_L_R {
-            bindings = <&mmv MOVE_X(MMV_FAST_SPEED_L)>;
-            key-positions = <30 31>;
-            layers = <0>;
-        };
-                
-        BASE_MOUSE_U_R {
-            bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_U)>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };                                        
-       
-        BASE_MOUSE_D_R {
-            bindings = <&mmv MOVE_Y(MMV_FAST_SPEED_D)>;
-            key-positions = <32 33>;
-            layers = <0>;
-        };
-                                
-        BASE_MOUSE_R_R {
-            bindings = <&mmv MOVE_X(MMV_FAST_SPEED_R)>;
-            key-positions = <33 34>;
-            layers = <0>;
-        };*/        
+        compatible = "zmk,combos";1        
                 
         PG_U_R {
             bindings = <&kp UP>;
