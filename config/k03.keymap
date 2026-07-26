@@ -648,11 +648,11 @@
         &trans          
         &kp LS(LG(Z))
         &kp RG(Z)
-        &trans
+        &kp LS(LA(K))
         &kp BSLH
         /* base-add B R */
         &trans
-        &trans         
+        &kp LS(LA(K))         
         &kp RG(Z)
         &kp LS(LG(Z))                
         &kp GRAVE
@@ -663,11 +663,11 @@
         &trans        
         &kp RG(LEFT_BRACKET)
         &kp RG(RIGHT_BRACKET)
-        &trans
+        &kp LS(LA(L))
         &trans
         /* base-add C R */
-        &trans        
         &trans
+        &kp LS(LA(L))
         &kp RG(LEFT_BRACKET)
         &kp RG(RIGHT_BRACKET)        
         &kp SQT
