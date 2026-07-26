@@ -1373,9 +1373,9 @@ nav-l-m {
         &kp F14
         &kp F15
         &to BASE_LAYER
-        &to 0
-        &to 0
-        &to 0
+        &to BASE_LAYER
+        &to BASE_LAYER
+        &to BASE_LAYER
 
         /* layers C L */
         &to BASE_LAYER
@@ -1393,7 +1393,7 @@ nav-l-m {
         &to BASE_LAYER
 
         /* layers D L */
-        &to 0
+        &to BASE_LAYER
         &kp LGUI
         &kp LCTRL
         &kp LALT
@@ -1407,7 +1407,7 @@ nav-l-m {
         &kp RALT
         &kp RCTRL
         &kp RGUI
-        &to 0
+        &to BASE_LAYER
 
         /* layers T L */
         &tog BASE_MIRROR_LAYER
@@ -1434,7 +1434,7 @@ nav-l-m {
         &trans
         &trans
         &trans
-        &to 0
+        &to BASE_LAYER
         /* adj A R */
         &bt BT_SEL 0
         &bt BT_SEL 1
@@ -1474,7 +1474,7 @@ nav-l-m {
         &trans
         &trans
         /* adj C R */
-        &to 0
+        &to BASE_LAYER
         &trans
         &trans
         &trans
@@ -1490,7 +1490,7 @@ nav-l-m {
         &kp C_NEXT
         &trans
         /* layers D R */
-        &to 0
+        &to BASE_LAYER
         &trans
         &trans
         &trans
