@@ -312,7 +312,7 @@
           tapping-term-ms = <180>;
           quick-tap-ms = <0>;
           flavor = "tap-preferred";
-          bindings = <&tog>, <&tog>;
+          bindings = <&lt>, <&to>;
         };
 
     layer_to_tap: layer_to_tap {
