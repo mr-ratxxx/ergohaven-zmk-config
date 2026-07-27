@@ -319,6 +319,33 @@
     combos {
         compatible = "zmk,combos";
         
+        BT_0 {
+                            bindings = <&BT_SEL 0>;
+                            key-positions = <27 28>;
+                            layers = <FUNCT_LAYER>;
+                        };
+        
+        BT_1 {
+                    bindings = <&BT_SEL 1>;
+                    key-positions = <27 28>;
+                    layers = <FUNCT_LAYER>;
+                };
+                BT_2 {
+                            bindings = <&BT_SEL 2>;
+                            key-positions = <27 28>;
+                            layers = <FUNCT_LAYER>;
+                        };
+                        BT_3 {
+                                    bindings = <&BT_SEL 3>;
+                                    key-positions = <27 28>;
+                                    layers = <FUNCT_LAYER>;
+                                };
+                                BT_4 {
+                                            bindings = <&BT_SEL 4>;
+                                            key-positions = <27 28>;
+                                            layers = <FUNCT_LAYER>;
+                                        };
+        
         BACK_L {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <27 28>;
@@ -611,7 +638,7 @@
         &none
         &lt BASE_ADD_LAYER Z
         &kp X
-        &kp C
+        &kp CTQEmlPIYz1CSfMNL5LWtгн
         &kp V
         &kp B
         &lt FUNCT_LAYER CAPS
