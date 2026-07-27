@@ -328,6 +328,26 @@
 
     combos {
         compatible = "zmk,combos";
+        
+        BACK_L {
+                    bindings = <&kp RG(LEFT_BRACKET)>;
+                    key-positions = <46 58>;
+                };
+                
+        FORWARD_L {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <46 58>;
+        };
+        
+        BACK_R {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <46 58>;
+        };
+                        
+        FORWARD_R {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <46 58>;
+        };                
                 
         PG_U_R {
             bindings = <&kp UP>;
@@ -660,16 +680,16 @@
 
         /* base-add C L */
         &trans
-        &trans        
-        &kp RG(LEFT_BRACKET)
-        &kp RG(RIGHT_BRACKET)
+        &trans     
+        &trans
+        &trans
         &trans
         &trans
         /* base-add C R */
         &trans
         &trans
-        &kp RG(LEFT_BRACKET)
-        &kp RG(RIGHT_BRACKET)        
+        &trans
+        &trans        
         &kp SQT
         &trans
         
