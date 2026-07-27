@@ -319,33 +319,6 @@
     combos {
         compatible = "zmk,combos";
         
-        BT_0 {
-                            bindings = <&BT_SEL 0>;
-                            key-positions = <27 28>;
-                            layers = <FUNCT_LAYER>;
-                        };
-        
-        BT_1 {
-                    bindings = <&BT_SEL 1>;
-                    key-positions = <27 28>;
-                    layers = <FUNCT_LAYER>;
-                };
-                BT_2 {
-                            bindings = <&BT_SEL 2>;
-                            key-positions = <27 28>;
-                            layers = <FUNCT_LAYER>;
-                        };
-                        BT_3 {
-                                    bindings = <&BT_SEL 3>;
-                                    key-positions = <27 28>;
-                                    layers = <FUNCT_LAYER>;
-                                };
-                                BT_4 {
-                                            bindings = <&BT_SEL 4>;
-                                            key-positions = <27 28>;
-                                            layers = <FUNCT_LAYER>;
-                                        };
-        
         BACK_L {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <27 28>;
@@ -582,6 +555,36 @@
                     bindings = <&to BASE_LAYER>;
                     key-positions = <18 19 31 30>;
                 };
+                
+        BT_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <5 4>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <4 3>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <3 2>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <2 1>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <1 0>;
+            layers = <FUNCT_LAYER>;
+        };                
     };
 
   keymap {
