@@ -635,8 +635,8 @@
         &kp BSLH
 
         /* base T L */
-        &lt BASE_MIRROR_LAYER MINUS
-        &lt NUM_LAYER EQUAL
+        &mo BASE_MIRROR_LAYER
+        &mo NUM_LAYER
         &lt SYMB_LAYER TAB
         &lt NAV_L_LAYER SPACE
         &lt FUNCT_LAYER DEL
@@ -644,8 +644,8 @@
         &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
-        &lt SYMB_LAYER LBKT
-        &lt BASE_MIRROR_LAYER RIGHT_BRACKET
+        &mo SYMB_LAYER
+        &mo BASE_MIRROR_LAYER
       >;
       display-name = "base";
     };
