@@ -330,23 +330,27 @@
         compatible = "zmk,combos";
         
         BACK_L {
-                    bindings = <&kp RG(LEFT_BRACKET)>;
-                    key-positions = <46 58>;
-                };
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <46 58>;
+            layers = <FUNCT_LAYER>;
+        };
                 
         FORWARD_L {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <46 58>;
+            layers = <FUNCT_LAYER>;
         };
         
         BACK_R {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <46 58>;
+            layers = <FUNCT_LAYER>;
         };
                         
         FORWARD_R {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <46 58>;
+            layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
         };                
                 
         PG_U_R {
