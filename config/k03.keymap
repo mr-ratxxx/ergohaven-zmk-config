@@ -600,7 +600,7 @@
         &kp I
         &kp O
         &kp P
-        &kp GRAVE        
+        &none        
 
         /* base C L */
         &caps_word
@@ -615,7 +615,7 @@
         &mt RALT K
         &mt RCTRL L
         &mt RGUI SEMI
-        &kp SQT
+        &none
 
         /* base D L */
         &kt LSHIFT
@@ -632,7 +632,7 @@
         &kp COMMA
         &kp DOT
         &lt BASE_ADD_LAYER SLASH
-        &kp BSLH
+        &none
 
         /* base T L */
         &mo BASE_MIRROR_LAYER
