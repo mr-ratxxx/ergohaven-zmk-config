@@ -331,25 +331,25 @@
         
         BACK_L {
             bindings = <&kp RG(LEFT_BRACKET)>;
-            key-positions = <46 58>;
+            key-positions = <27 28>;
             layers = <FUNCT_LAYER>;
         };
                 
         FORWARD_L {
             bindings = <&kp RG(RIGHT_BRACKET)>;
-            key-positions = <46 58>;
+            key-positions = <26 27>;
             layers = <FUNCT_LAYER>;
         };
         
         BACK_R {
             bindings = <&kp RG(LEFT_BRACKET)>;
-            key-positions = <46 58>;
+            key-positions = <31 32>;
             layers = <FUNCT_LAYER>;
         };
                         
         FORWARD_R {
             bindings = <&kp RG(RIGHT_BRACKET)>;
-            key-positions = <46 58>;
+            key-positions = <32 33>;
             layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
         };                
                 
