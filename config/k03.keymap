@@ -1211,8 +1211,8 @@ nav-l-m {
         &none
 
         /* funct T L */
-        &layer_lt_tap LAYERS_LAYER RG(LEFT_BRACKET)
-        &layer_lt_tap NUM_LAYER RG(RIGHT_BRACKET)
+        &none
+        &mo NUM_LAYER
         &lt SYMB_LAYER TAB
         &lt BASE_OVERRIDE_LAYER SPACE
         &lt FUNCT_LAYER DEL
@@ -1220,8 +1220,8 @@ nav-l-m {
         &lt FUNCT_LAYER ESC
         &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
-        &layer_lt_tap SYMB_LAYER RG(LEFT_BRACKET)
-        &layer_lt_tap LAYERS_LAYER RG(RIGHT_BRACKET)
+        &mo SYMB_LAYER
+        &none
       >;
       display-name = "funct";
     };
@@ -1595,7 +1595,7 @@ nav-l-m {
         &mt LSHFT F
         &lt BASE_ADD_OVERRIDE_LAYER G
         /* base-o C R */
-        &lt BASE_ADD_OVERRIDE_LAYER HTORTTTÍFÍÏVVSSFFFFDÏÍF
+        &lt BASE_ADD_OVERRIDE_LAYER H
         &mt RSHIFT J
         &mt RALT K
         &mt RCTRL L
