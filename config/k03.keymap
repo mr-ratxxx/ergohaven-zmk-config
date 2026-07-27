@@ -832,16 +832,16 @@
         /* nav-r B L */
         &trans
         &kp LEFT_ARROW
-                &kp DOWN
+        &kp DOWN
                 &kp UP
                 &kp RIGHT_ARROW
         &msc SCRL_UP
         /* nav-r B R */
         &msc SCRL_UP
-        &mmv MOVE_X(MMV_FAST_SPEED_L)
-        &mmv MOVE_Y(MMV_FAST_SPEED_U)
-        &mmv MOVE_Y(MMV_FAST_SPEED_D)        
-        &mmv MOVE_X(MMV_FAST_SPEED_R)        
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &trans
         /* nav-r C L */        
         &kp LG(C)
@@ -869,10 +869,10 @@
         /* nav-r D R */
         &trans
         &msc SCRL_DOWN
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &mmv MOVE_X(MMV_FAST_SPEED_L)
+                &mmv MOVE_Y(MMV_FAST_SPEED_U)
+                &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+                &mmv MOVE_X(MMV_FAST_SPEED_R)
         &kp LG(V)
 
         /* nav-r T L */
