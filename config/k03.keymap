@@ -1546,22 +1546,22 @@ nav-l-m {
                 &layer_to_tap BASE_LAYER F12
 
         /* base-o B L */
-                &none
-                &kp Q
-                &kp W
-                &kp E
-                &kp R
-                &kp T
-                /* base-o B R */
-                &kp Y
-                &kp U
-                &kp I
-                &kp O
-                &kp P
-                &none
+        &none
+        &kp Q
+        &kp W
+        &kp E
+        &kp R
+        &kp T
+        /* base-o B R */
+        &kp Y
+        &kp U
+        &kp I
+        &kp O
+        &kp P
+        &none
 
         /* base-o C L */
-        &none
+        &caps_word
         &mt LGUI A
         &mt LCTRL S
         &mt LALT D
@@ -1576,7 +1576,7 @@ nav-l-m {
         &none
 
         /* base-o D L */
-        &none
+        &kt LSHIFT
         &lt BASE_ADD_OVERRIDE_LAYER Z
         &kp X
         &kp C
