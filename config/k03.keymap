@@ -608,7 +608,7 @@
         &none
 
         /* base D L */
-        &kt LSHIFT
+        &none
         &lt BASE_ADD_LAYER Z
         &kp X
         &kp C
@@ -1568,7 +1568,7 @@ nav-l-m {
         &mt LSHFT F
         &lt BASE_ADD_OVERRIDE_LAYER G
         /* base-o C R */
-        &lt BASE_ADD_OVERRIDE_LAYER H
+        &lt BASE_ADD_OVERRIDE_LAYER HTORTTTÍFÍÏVVSSFFFFDÏÍF
         &mt RSHIFT J
         &mt RALT K
         &mt RCTRL L
@@ -1576,7 +1576,7 @@ nav-l-m {
         &none
 
         /* base-o D L */
-        &kt LSHIFT
+        &none
         &lt BASE_ADD_OVERRIDE_LAYER Z
         &kp X
         &kp C
