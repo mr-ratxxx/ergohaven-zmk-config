@@ -304,16 +304,6 @@
       flavor = "tap-preferred";
       bindings = <&tog>, <&kp>;
     };
-    
-    layer_hold_tap2: layer_hold_tap2 {
-          compatible = "zmk,behavior-hold-tap";
-          label = "LAYER_HOLD_TAP2";
-          #binding-cells = <2>;
-          tapping-term-ms = <180>;
-          quick-tap-ms = <0>;
-          flavor = "tap-preferred";
-          bindings = <&lt>, <&to>;
-        };
 
     layer_to_tap: layer_to_tap {
       compatible = "zmk,behavior-hold-tap";
@@ -624,9 +614,9 @@
         &kp C
         &kp V
         &kp B
-        &layer_hold_tap2 FUNCT_LAYER BASE_LAYER
+        &lt FUNCT_LAYER CAPS
         /* base D R */
-        &layer_hold_tap2 FUNCT_LAYER BASE_LAYER
+        &lt FUNCT_LAYER SPACE
         &kp N
         &kp M
         &kp COMMA
