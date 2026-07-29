@@ -857,7 +857,7 @@
                 &kp RIGHT_ARROW
         &msc SCRL_UP
         /* nav-r B R */
-        &msc SCRL_UP
+        &tog NAV_R_LAYER
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
                 &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
                 &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
@@ -871,7 +871,7 @@
         &kp LSHFT
         &tog NAV_R_LAYER
         /* nav-r C R */
-        &tog NAV_R_LAYER
+        &to NAV_MOUSE_R_LAYER
         &kp LEFT_ARROW
         &kp UP
         &kp DOWN
@@ -888,7 +888,7 @@
         &trans
         /* nav-r D R */
         &trans
-        &msc SCRL_DOWN
+        &none
         &mmv MOVE_X(MMV_FAST_SPEED_L)
                 &mmv MOVE_Y(MMV_FAST_SPEED_U)
                 &mmv MOVE_Y(MMV_FAST_SPEED_D)        
