@@ -620,7 +620,7 @@
         &kp I
         &kp O
         &kp P
-        &none        
+        &kp GRABE        
 
         /* base C L */
         &my_caps_word
@@ -635,7 +635,7 @@
         &mt RALT K
         &mt RCTRL L
         &mt RGUI SEMI
-        &none
+        &kp SQT
 
         /* base D L */
         &none
@@ -652,11 +652,11 @@
         &kp COMMA
         &kp DOT
         &lt BASE_ADD_LAYER SLASH
-        &none
+        &kp BSLH
 
         /* base T L */
-        &mo BASE_MIRROR_LAYER
-        &mo NUM_LAYER
+        &lt BASE_MIRROR_LAYER LBKT
+        &lt NUM_LAYER RBKT
         &lt SYMB_LAYER TAB
         &lt NAV_L_LAYER SPACE
         &lt FUNCT_LAYER DEL
