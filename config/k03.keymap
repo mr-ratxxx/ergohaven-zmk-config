@@ -121,18 +121,7 @@
       bindings = <&kp SQT>, <&kp RS(N2)>;
       mods = <(MOD_LALT | MOD_RALT)>;
       keep-mods = <(MOD_LCTL | MOD_RCTL)>;
-    };
-
-/*
-        alt_to_5: alt_to_5 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_TO_5";
-            #binding-cells = <0>;
-            bindings = <&lt 5 LG(LEFT_BRACKET)>, <&to 5>;
-            mods = <(MOD_LALT | MOD_RALT)>;
-            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
-        };
-        *\                       
+    };                       
 
     ctrl_left_bracket: ctrl_left_bracket {
       compatible = "zmk,behavior-mod-morph";
@@ -620,7 +609,7 @@
         &kp I
         &kp O
         &kp P
-        &kp GRABE        
+        &kp GRAVE        
 
         /* base C L */
         &my_caps_word
