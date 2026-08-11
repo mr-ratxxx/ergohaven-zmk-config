@@ -461,17 +461,30 @@
             key-positions = <45 46>;
             layers = <NUM_LAYER>;
         };
-        MOUSE1_ML_R {
+        
+        MOUSE1_ML_L {
             bindings = <&mkp MB1>;
             key-positions = <1 2>;
             layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        MOUSE2_ML_L {
+        MOUSE1_ML_L {
             bindings = <&mkp MB2>;
             key-positions = <3 4 5>;
             layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
+        
+        MOUSE1_ML_R {
+                    bindings = <&mkp MB1>;
+                    key-positions = <1 2>;
+                    layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+                };
+        
+                MOUSE1_ML_R {
+                    bindings = <&mkp MB2>;
+                    key-positions = <3 4 5>;
+                    layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+                };
 
         MOUSE1_R {
             bindings = <&mkp MB1>;
