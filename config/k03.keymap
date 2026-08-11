@@ -924,7 +924,7 @@ nav-l {
     &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
     &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
     &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
-    &msc SCRL_UP
+    &tog NAV_L_LAYER
     /* nav-l B R */
     &msc SCRL_UP
     &kp LEFT_ARROW      
