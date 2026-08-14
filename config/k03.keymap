@@ -468,7 +468,7 @@
                     layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
                 };
         
-                MOUSE1_ML_L {
+                MOUSE2_ML_L {
                     bindings = <&mkp MB2>;
                     key-positions = <28 27 26>;
                     layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
@@ -480,7 +480,7 @@
                     layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
                 };
         
-                MOUSE1_ML_R {
+                MOUSE2_ML_R {
                     bindings = <&mkp MB2>;
                     key-positions = <31 32 33>;
                     layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
