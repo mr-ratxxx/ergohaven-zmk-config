@@ -598,7 +598,13 @@
             bindings = <&bt BT_SEL 4>;
             key-positions = <1 0>;
             layers = <FUNCT_LAYER>;
-        };                
+        };
+
+        BT_CLEAR {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 1 2 3>;
+            layers = <FUNCT_LAYER>;
+        };                       
     };
 
   keymap {
