@@ -1027,9 +1027,9 @@ nav-mouse-r {
               &kp DOWN
               &kp UP
               &kp RIGHT_ARROW
-              &msc SCRL_UP
+              &tog NAV_MOUSE_R_LAYER              
               /* nav-m-r B R */
-              &msc SCRL_UP
+              &tog NAV_MOUSE_R_LAYER
               &kp LEFT_ARROW
               &kp UP
               &kp DOWN
@@ -1041,9 +1041,9 @@ nav-mouse-r {
               &kp LCTRL
               &kp LALT
               &kp LSHFT
-              &tog NAV_MOUSE_R_LAYER
+              &msc SCRL_UP
               /* nav-m-r C R */
-              &tog NAV_MOUSE_R_LAYER
+              &msc SCRL_UP
               &mmv MOVE_X(MMV_FAST_SPEED_L)
               &mmv MOVE_Y(MMV_FAST_SPEED_U)
               &mmv MOVE_Y(MMV_FAST_SPEED_D)        
