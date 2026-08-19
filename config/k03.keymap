@@ -1083,16 +1083,16 @@ nav-mouse-r {
       display-name = "nav-mouse-r";
     };
 
-nav-l-m {
+nav-mouse-l {
   bindings = <
-          /* nav-l-m A L */
+          /* nav-m-l A L */
           &trans
           &trans
           &trans
           &trans
           &trans
           &trans
-          /* nav-l-m A R */
+          /* nav-m-l A R */
           &trans
           &trans
           &trans
@@ -1100,14 +1100,14 @@ nav-l-m {
           &trans
           &trans
   
-          /* nav-l-m B L */
+          /* nav-m-l B L */
           &kp LG(TAB)
                    &kp LEFT
                              &kp DOWN
                              &kp UP
                              &kp RIGHT
                     &msc SCRL_UP
-          /* nav-l-m B R */
+          /* nav-m-l B R */
           &msc SCRL_UP
           &kp LEFT_ARROW
           &kp UP
@@ -1115,14 +1115,14 @@ nav-l-m {
           &kp RIGHT_ARROW
           &kp LG(TAB)
                     
-          /* nav-l-m C L */        
+          /* nav-m-l C L */        
           &kp LG(C)
           &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
                     &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
                     &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
                     &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R) 
           &tog NAV_MOUSE_L_LAYER
-          /* nav-l-m C R */
+          /* nav-m-l C R */
           &tog NAV_MOUSE_L_LAYER
           &kp LSHFT
           &kp LALT
@@ -1130,7 +1130,7 @@ nav-l-m {
           &kp LGUI        
           &kp LG(C)
   
-          /* nav-l-m D L */
+          /* nav-m-l D L */
           &kp RG(V)
           &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
                                       &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
@@ -1138,7 +1138,7 @@ nav-l-m {
                                       &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
           &msc SCRL_DOWN
           &trans
-          /* nav-l-m D R */
+          /* nav-m-l D R */
           &trans
           &msc SCRL_DOWN
           &mmv MOVE_X(MMV_FAST_SPEED_L) 
@@ -1147,20 +1147,20 @@ nav-l-m {
                                         &mmv MOVE_X(MMV_FAST_SPEED_R)
           &kp LG(V)
   
-          /* nav-l-m T L */
+          /* nav-m-l T L */
           &lt NAV_MOUSE_R_LAYER RG(LEFT_BRACKET)
           &lt NUM_LAYER RG(RIGHT_BRACKET)
           &lt SYMB_LAYER TAB
           &lt BASE_OVERRIDE_LAYER SPACE
           &lt FUNCT_LAYER DEL
-          /* nav-l-m T R */
+          /* nav-m-l T R */
           &lt FUNCT_LAYER ESC
           &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
           &lt NUM_LAYER BACKSPACE
           &lt SYMB_LAYER RG(LEFT_BRACKET)
           &lt NAV_MOUSE_R_LAYER RG(RIGHT_BRACKET)
         >;
-  display-name = "nav-l-m";
+  display-name = "nav-mouse-l";
 };
 
     funct {
