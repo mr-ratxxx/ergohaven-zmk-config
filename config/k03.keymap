@@ -951,7 +951,7 @@ nav-l {
     &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
     &tog NAV_L_LAYER
     /* nav-l B R */
-    &msc SCRL_UP
+    &tog NAV_L_LAYER
     &kp LEFT_ARROW      
     &kp UP                      
     &kp DOWN
@@ -963,9 +963,9 @@ nav-l {
     &kp DOWN
     &kp UP
     &kp RIGHT_ARROW   
-    &tog NAV_L_LAYER
+    &msc SCRL_UP
     /* nav-l C R */
-    &tog NAV_L_LAYER
+    &msc SCRL_UP
     &kp LSHFT
     &kp LALT
     &kp LCTRL
