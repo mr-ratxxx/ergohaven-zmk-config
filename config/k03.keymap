@@ -415,12 +415,7 @@
         CAPS_L {
             bindings = <&kp CAPS>;
             key-positions = <40 41>;
-        };
-
-        SPACE_R {
-            bindings = <&kp SPACE>;
-            key-positions = <44 45>;
-        };
+        };       
 
         FROM_LAYERS_TO_ADJ_LAYER {
             bindings = <&tog ADJ_LAYER>;
