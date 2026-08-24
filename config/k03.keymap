@@ -614,17 +614,16 @@
                                                    layers = <BASE_LAYER BASE_ADD_LAYER>;
                                                 };
                                                 
-SLASH_S {
-                                                   bindings = <&kp SLASH>;
-                                                   key-positions = <44 45>;
-                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
-                                                };
-                                                
-                                                SLASH_B {
-                                                                                                   bindings = <&kp SLASH>;
-                                                                                                   key-positions = <30 31>;
-                                                                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
-                                                                                                };                                  
+    SLASH_HIGH {
+                                                       bindings = <&kp SLASH>;
+                                                       key-positions = <30 31>;
+                                                       layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                    };                                  
+                                                    SLASH_DOWN {
+                                                                                                                                                   bindings = <&kp BSLH>;
+                                                                                                                                                   key-positions = <44 45>;
+                                                                                                                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                                                                                                                };
                                                   
                         UI_RU {
                                                    bindings = <&kp LBKT>;
