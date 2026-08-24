@@ -619,7 +619,7 @@
                                                    layers = <BASE_LAYER BASE_ADD_LAYER>;
                                                 };
                                                 
-SLASH {
+SLASH_S {
                                                    bindings = <&kp SLASH>;
                                                    key-positions = <44 45>;
                                                    layers = <BASE_LAYER BASE_ADD_LAYER>;
