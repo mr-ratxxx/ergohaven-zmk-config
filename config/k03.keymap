@@ -409,7 +409,7 @@
 
         CMD_TAB_R {
             bindings = <&kp LG(TAB)>;
-            key-positions = <19 20 21>;
+            key-positions = <21 22>;
         };
 
         CAPS_L {
