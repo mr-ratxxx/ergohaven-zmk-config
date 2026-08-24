@@ -613,6 +613,17 @@
                            layers = <BASE_LAYER BASE_ADD_LAYER>;
                         };
                         
+                        QUESTION_RUEN2 {
+                                                   bindings = <&kp RS(SLASH)>;
+                                                   key-positions = <33 34>;
+                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                };
+                                                
+QUESTION_RUEN3 {
+                                                   bindings = <&kp RS(SLASH)>;
+                                                   key-positions = <32 33>;
+                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                };                                                                        
                         UI_RU {
                                                    bindings = <&kp LBKT>;
                                                    key-positions = <19 20>;
