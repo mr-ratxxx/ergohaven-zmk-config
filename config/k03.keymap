@@ -608,8 +608,8 @@
         };
          
          QUESTION_RUEN {
-                           bindings = <&mt RSHFT SLASH>;
-                           key-positions = <33 34>;
+                           bindings = <&kp RS(SLASH)>;
+                           key-positions = <47 48>;
                            layers = <BASE_LAYER BASE_ADD_LAYER>;
                         };
                         
