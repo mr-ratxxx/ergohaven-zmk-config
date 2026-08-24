@@ -404,7 +404,7 @@
 
         CMD_TAB_L {
             bindings = <&kp LG(TAB)>;
-            key-positions = <14 15 16>;
+            key-positions = <14 15>;
         };
 
         CMD_TAB_R {
