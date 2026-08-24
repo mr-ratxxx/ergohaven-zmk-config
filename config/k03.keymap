@@ -607,11 +607,17 @@
             layers = <FUNCT_LAYER>;
         };
          
-         UI_RU {
-                           bindings = <&kp LBKT>;
-                           key-positions = <19 20>;
+         QUESTION_RUEN {
+                           bindings = <&mt RSHFT SLASH>;
+                           key-positions = <33 34>;
                            layers = <BASE_LAYER BASE_ADD_LAYER>;
                         };
+                        
+                        UI_RU {
+                                                   bindings = <&kp LBKT>;
+                                                   key-positions = <19 20>;
+                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                };
                         
                         IO_RU {
                                                    bindings = <&kp RBKT>;
