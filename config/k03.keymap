@@ -1371,9 +1371,9 @@ nav-mouse-l {
         &kp RS(N4)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
-        &kp SLASH
+        &kp RS(N3)
         /* symb B R */
-        &kp SLASH
+        &kp RS(N3)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &kp RS(N4)
@@ -1386,9 +1386,9 @@ nav-mouse-l {
         &mt RCTRL RS(MINUS)
         &mt RALT EQUAL
         &mt RSHFT MINUS
-        &kp RS(N3)
+        &kp SLASH
         /* symb C R */
-        &kp RS(N3)
+        &kp SLASH
         &mt RSHFT MINUS
         &mt RALT EQUAL
         &mt RCTRL RS(MINUS)
