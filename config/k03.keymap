@@ -558,6 +558,7 @@
         CAPS_WORLD {
             bindings = <&my_caps_word>;
             key-positions = <27 28 31 32>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
         
         TO_BASE_L {
@@ -605,12 +606,6 @@
             key-positions = <0 1 2 3>;
             layers = <FUNCT_LAYER>;
         };
-        
-         CAPS_W {
-            bindings = <&my_caps_word>;
-            key-positions = <28 30 31 29 32 27>;
-            layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-         };
          
          UI_RU {
                            bindings = <&kp LBKT>;
