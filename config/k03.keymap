@@ -861,11 +861,11 @@
               &lt NAV_R_LAYER RG(RC(SPACE))
               &lt FUNCT_LAYER ESC
               /* base-m T R */
-              &lt SYMB_LAYER TAB
+              &lt FUNCT_LAYER DEL
               &lt NAV_L_LAYER SPACE
-              &lt FUNCT_LAYER DEL              
-              &lt NUM_LAYER EQUAL
-              &lt LAYERS_LAYER MINUS                            
+              &lt SYMB_LAYER TAB
+              &lt LAYERS_LAYER MINUS
+              &lt NUM_LAYER EQUAL                            
             >;
       display-name = "base-mirror";
     };
