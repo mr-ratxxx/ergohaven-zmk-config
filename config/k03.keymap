@@ -401,15 +401,15 @@
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <34 48>;
         };
-
+r
         CMD_TAB_L {
             bindings = <&kp LG(TAB)>;
-            key-positions = <14 15>;
+            key-positions = <14 15 16>;
         };
 
         CMD_TAB_R {
             bindings = <&kp LG(TAB)>;
-            key-positions = <20 21>;
+            key-positions = <19 20 21>;
         };
 
         CAPS_L {
@@ -610,7 +610,19 @@
             bindings = <&my_caps_word>;
             key-positions = <28 30 31 29 32 27>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-         };                       
+         };
+         
+         UI_RU {
+                           bindings = <&kp LBKT>;
+                           key-positions = <19 20>;
+                           layers = <BASE_LAYER BASE_ADD_LAYER>;
+                        };
+                        
+                        IO_RU {
+                                                   bindings = <&kp RBKT>;
+                                                   key-positions = <20 21>;
+                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                };                      
     };
 
   keymap {
@@ -661,7 +673,7 @@
         &mt RALT K
         &mt RCTRL L
         &mt RGUI SEMI
-        &kp SQT
+        &kp SLASH
 
         /* base D L */
         &none
@@ -677,7 +689,7 @@
         &kp M
         &kp COMMA
         &kp DOT
-        &lt BASE_ADD_LAYER SLASH
+        &lt BASE_ADD_LAYER SQT
         &kp BSLH
 
         /* base T L */
