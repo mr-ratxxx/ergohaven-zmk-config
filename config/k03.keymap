@@ -853,13 +853,13 @@
               &kp X
               &kp Z
               &kp SPACE
-      
+
               /* base-m T L */
               &lt SYMB_LAYER LBKT
-              &lt LAYERS_LAYER RIGHT_BRACKET              
-              &lt FUNCT_LAYER ESC
-              &lt NAV_R_LAYER RG(RC(SPACE))
+              &lt LAYERS_LAYER RIGHT_BRACKET
               &lt NUM_LAYER BACKSPACE
+              &lt NAV_R_LAYER RG(RC(SPACE))
+              &lt FUNCT_LAYER ESC
               /* base-m T R */
               &lt SYMB_LAYER TAB
               &lt NAV_L_LAYER SPACE
