@@ -401,7 +401,7 @@
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <34 48>;
         };
-r
+
         CMD_TAB_L {
             bindings = <&kp LG(TAB)>;
             key-positions = <14 15 16>;
