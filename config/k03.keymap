@@ -311,13 +311,13 @@
         BACK_L {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <27 28>;
-            layers = <FUNCT_LAYER>;
+            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
         };
                 
         FORWARD_L {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <26 27>;
-            layers = <FUNCT_LAYER>;
+            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
         };
         
         BACK_R {
