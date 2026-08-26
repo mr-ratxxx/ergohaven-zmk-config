@@ -323,23 +323,13 @@
         BACK_R {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <31 32>;
-            layers = <FUNCT_LAYER>;
+            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
         };
                         
         FORWARD_R {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <32 33>;
-            layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
-        };                
-                
-        PG_U_R {
-            bindings = <&kp UP>;
-            key-positions = <46 58>;
-        };
-
-        PG_D_R {
-            bindings = <&kp DOWN>;
-            key-positions = <47 59>;
+            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
         };
 
         PG_DOWN_L {
