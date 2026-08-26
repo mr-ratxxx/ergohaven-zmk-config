@@ -524,7 +524,7 @@
 
         UIO_REPEAT {
             bindings = <&kp LS(LG(Z))>;
-            key-positions = <19 20 21>;
+            key-positions = <20 21>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
@@ -536,7 +536,7 @@
 
         UIO_REPEAT_L {
             bindings = <&kp LS(LG(Z))>;
-            key-positions = <14 15 16>;
+            key-positions = <14 15>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
