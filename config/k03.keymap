@@ -329,17 +329,7 @@
         FORWARD_R {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <32 33>;
-            layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
-        };                
-                
-        PG_U_R {
-            bindings = <&kp UP>;
-            key-positions = <46 58>;
-        };
-
-        PG_D_R {
-            bindings = <&kp DOWN>;
-            key-positions = <47 59>;
+            layers = <FUNCT_LAYER>;
         };
 
         PG_DOWN_L {
@@ -534,7 +524,7 @@
 
         UIO_REPEAT {
             bindings = <&kp LS(LG(Z))>;
-            key-positions = <19 20 21>;
+            key-positions = <20 21>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
@@ -546,7 +536,7 @@
 
         UIO_REPEAT_L {
             bindings = <&kp LS(LG(Z))>;
-            key-positions = <14 15 16>;
+            key-positions = <14 15>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
