@@ -111,61 +111,7 @@
         
       
 
-        M_DOWN_R {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <8 18>;
-        };
-
-        M_UP_L {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <13 23>;
-        };
-
-        M_UP_R {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <17 27>;
-        };
-
-        M_LEFT_L {
-            bindings = <&msc SCRL_RIGHT>;
-            key-positions = <18 28>;
-        };
-
-        M_LEFT_R {
-            bindings = <&msc SCRL_LEFT>;
-            key-positions = <11 21>;
-        };
-
-        M_RIGHT_L {
-            bindings = <&msc SCRL_LEFT>;
-            key-positions = <11 21>;
-        };
-
-        M_RIGHT_R {
-            bindings = <&msc SCRL_RIGHT>;
-            key-positions = <19 29>;
-        };
-
-        CMD_TAB_L {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <14 15>;
-        };
-
-        CMD_TAB_R {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <21 22>;
-        };
-
-        CAPS_L {
-            bindings = <&kp CAPS>;
-            key-positions = <40 41>;
-        };       
-
-        FROM_LAYERS_TO_ADJ_LAYER {
-            bindings = <&tog ADJ_LAYER>;
-            key-positions = <10 11>;
-            layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
-        };
+       
 
         ENTER_R {
             bindings = <&kp ENTER>;
