@@ -109,9 +109,110 @@
    combos {
         compatible = "zmk,combos";
         
-      
+        BACK_L {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <11 12>;
+            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
+        };
 
-       
+        FORWARD_L {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <10 11>;
+            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
+        };
+        
+         BACK_R {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <15 16>;
+            layers = <FUNCT_LAYER>;
+         };
+        
+         FORWARD_R {
+             bindings = <&kp RG(RIGHT_BRACKET)>;
+             key-positions = <16 17>;
+             layers = <FUNCT_LAYER>;
+         };
+
+        PG_DOWN_L {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <2 12>;
+        };
+
+        PG_DOWN_R {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <8 18>;
+        };
+
+        CMD_PG_UP_L {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <3 13>;
+        };
+
+        CMD_PG_UP_R {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <7 17>;
+        };
+
+        M_DOWN_L {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <12 22>;
+        };
+
+        M_DOWN_R {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <8 18>;
+        };
+
+        M_UP_L {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <13 23>;
+        };
+
+        M_UP_R {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <17 27>;
+        };
+
+        M_LEFT_L {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <18 28>;
+        };
+
+        M_LEFT_R {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <16 26>;
+        };
+
+        M_RIGHT_L {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <11 21>;
+        };
+
+        M_RIGHT_R {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <19 29>;
+        };
+
+        CMD_TAB_L {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <3 4>;
+        };
+
+        CMD_TAB_R {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <8 9>;
+        };
+
+        CAPS_L {
+            bindings = <&kp CAPS>;
+            key-positions = <23 24>;
+        };       
+
+        FROM_LAYERS_TO_ADJ_LAYER {
+            bindings = <&tog ADJ_LAYER>;
+            key-positions = <7 8 9>;
+            layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
+        };
 
         ENTER_R {
             bindings = <&kp ENTER>;
