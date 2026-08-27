@@ -109,54 +109,7 @@
    combos {
         compatible = "zmk,combos";
         
-        BACK_L {
-            bindings = <&kp RG(LEFT_BRACKET)>;
-            key-positions = <11 12>;
-            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
-        };
-
-        FORWARD_L {
-            bindings = <&kp RG(RIGHT_BRACKET)>;
-            key-positions = <10 11>;
-            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
-        };
-        
-         BACK_R {
-            bindings = <&kp RG(LEFT_BRACKET)>;
-            key-positions = <15 16>;
-            layers = <FUNCT_LAYER>;
-         };
-        
-         FORWARD_R {
-             bindings = <&kp RG(RIGHT_BRACKET)>;
-             key-positions = <16 17>;
-             layers = <FUNCT_LAYER>;
-         };
-
-        PG_DOWN_L {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <2 12>;
-        };
-
-        PG_DOWN_R {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <8 18>;
-        };
-
-        CMD_PG_UP_L {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <3 13>;
-        };
-
-        CMD_PG_UP_R {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <7 17>;
-        };
-
-        M_DOWN_L {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <12 22>;
-        };
+      
 
         M_DOWN_R {
             bindings = <&msc SCRL_DOWN>;
