@@ -426,9 +426,9 @@
                                                    bindings = <&kp RBKT>;
                                                    key-positions = <20 21>;
                                                    layers = <BASE_LAYER BASE_ADD_LAYER>;
-                                                };                      
+                                                };
+                                                *\                      
     };
-    *\
 
     keymap {
         compatible = "zmk,keymap";
