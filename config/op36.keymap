@@ -202,7 +202,7 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <8 9>;
         };
-
+*/
         CAPS_L {
             bindings = <&kp CAPS>;
             key-positions = <23 24>;
@@ -428,6 +428,7 @@
                                                    layers = <BASE_LAYER BASE_ADD_LAYER>;
                                                 };                      
     };
+    *\
 
     keymap {
         compatible = "zmk,keymap";
