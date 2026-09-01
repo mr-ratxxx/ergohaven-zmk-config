@@ -311,7 +311,7 @@
          ESC {
                     bindings = <&kp ESC>;
                     key-positions = <13 14 >;
-                    layers = < layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };
         
         BACK_L {
