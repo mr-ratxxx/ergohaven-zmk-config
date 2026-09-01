@@ -614,7 +614,8 @@
                                                        bindings = <&kp SLASH>;
                                                        key-positions = <30 31>;
                                                        layers = <BASE_LAYER BASE_ADD_LAYER>;
-                                                    };                                  
+                                                    };
+                                                                                      
                                                     SLASH_DOWN {
                                                                                                                                                    bindings = <&kp BSLH>;
                                                                                                                                                    key-positions = <44 45>;
