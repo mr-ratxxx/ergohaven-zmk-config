@@ -308,17 +308,29 @@
     combos {
         compatible = "zmk,combos";
         
+         ESC_COMBO {
+                    bindings = <&kp ESC>;
+                    key-positions = <13 14>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                };
+                
+                  RU_E {
+                                    bindings = <&kp T>;
+                                    key-positions = <16 17>;
+                                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                                };
+        
         BACK_L {
             bindings = <&kp RG(LEFT_BRACKET)>;
-            key-positions = <13 12>;
-            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
+            key-positions = <27 28>;
+            layers = <FUNCT_LAYER>;
         };
-
+        
         FORWARD_L {
             bindings = <&kp RG(RIGHT_BRACKET)>;
-            key-positions = <12 11>;
-            layers = <FUNCT_LAYER NAV_L_LAYER NAV_R_LAYER NAV_MOUSE_L_LAYER NAV_MOUSE_R_LAYER>;
-            
+            key-positions = <26 27>;
+            layers = <FUNCT_LAYER>;
+        };
         
         BACK_R {
             bindings = <&kp RG(LEFT_BRACKET)>;
@@ -608,7 +620,8 @@
                                                        bindings = <&kp SLASH>;
                                                        key-positions = <30 31>;
                                                        layers = <BASE_LAYER BASE_ADD_LAYER>;
-                                                    };                                  
+                                                    };
+                                                                                      
                                                     SLASH_DOWN {
                                                                                                                                                    bindings = <&kp BSLH>;
                                                                                                                                                    key-positions = <44 45>;
