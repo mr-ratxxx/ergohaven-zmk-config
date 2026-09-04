@@ -78,46 +78,567 @@
 };
 
 / {
-    behaviors {
-        hml: home_row_mod_left {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
-            hold-trigger-on-release;
-        };
-
-        hmr: home_row_mod_right {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
-            hold-trigger-on-release;
-        };
+  behaviors {
+     my_caps_word: my_caps_word {
+        compatible = "zmk,behavior-caps-word";
+        label = "MY_CAPS_WORD";
+        #binding-cells = <0>;
+        continue-list = <UNDERSCORE MINUS COMMA PERIOD SEMICOLON SPACE>;
+     };
+            
+    enc_vol: enc_vol {
+      compatible = "zmk,behavior-sensor-rotate";
+      label = "ENC_VOL";
+      #sensor-binding-cells = <0>;
+      bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+    };
+        
+    // ru-б en/alt-ru ,
+    alt_ru_en_comma: alt_ru_en_comma {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_EN_COMMA";
+      #binding-cells = <0>;
+      bindings = <&kp COMMA>, <&kp RS(N6)>;
+      mods = <(MOD_LALT | MOD_RALT)>;
+      keep-mods = <(MOD_LCTL | MOD_RCTL)>;
     };
 
-   combos {
+    // ru-ж en/alt-ru
+    alt_ru_en_semi: alt_ru_en_semi {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_EN_SEMI";
+      #binding-cells = <0>;
+      bindings = <&mt RGUI SEMI>, <&kp RS(N8)>;
+      mods = <(MOD_LALT | MOD_RALT)>;
+      keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+    };
+
+    // ru-э en/alt-ru "
+    alt_ru_en_sqt: alt_ru_en_sqt {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ALT_RU_EN_SQT";
+      #binding-cells = <0>;
+      bindings = <&kp SQT>, <&kp RS(N2)>;
+      mods = <(MOD_LALT | MOD_RALT)>;
+      keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+    };                       
+
+    ctrl_left_bracket: ctrl_left_bracket {
+      compatible = "zmk,behavior-mod-morph";
+      label = "CTRL_LEFT_BRACKET";
+      #binding-cells = <0>;
+      bindings = <&kp COMMA>, <&kp LEFT_BRACKET>;
+      mods = <(MOD_LCTL | MOD_RCTL)>;
+      keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+    };
+
+    ctrl_right_bracket: ctrl_right_bracket {
+      compatible = "zmk,behavior-mod-morph";
+      label = "CTRL_RIGHT_BRACKET";
+      #binding-cells = <0>;
+      bindings = <&kp DOT>, <&kp RIGHT_BRACKET>;
+      mods = <(MOD_LCTL | MOD_RCTL)>;
+      keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+    };
+
+    ctrl_p_sqt: ctrl_p_sqt {
+      compatible = "zmk,behavior-mod-morph";
+      label = "CTRL_P_SQT";
+      #binding-cells = <0>;
+      bindings = <&kp P>, <&kp SQT>;
+      mods = <(MOD_LCTL | MOD_RCTL)>;
+      keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+    };
+    
+    ralt_y_up3: ralt_y_up3 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_Y_UP3";
+      #binding-cells = <0>;
+      bindings = 
+        <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)>,
+        <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+      mods = <(MOD_RALT)>;
+    };
+
+    ralt_y_down3: ralt_y_down3 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_Y_DOWN3";
+      #binding-cells = <0>;
+      bindings = 
+        <&mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)>,
+        <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+      mods = <(MOD_RALT)>;
+    };
+
+    ralt_x_left3: ralt_x_left3 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_X_LEFT3";
+      #binding-cells = <0>;
+      bindings =
+        <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)>,
+        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
+      mods = <(MOD_RALT)>;
+    };
+
+    ralt_x_right3: ralt_x_right3 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_X_RIGHT3";
+      #binding-cells = <0>;
+      bindings =
+        <&mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)>,
+        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+      mods = <(MOD_RALT)>;
+    };
+    
+    /* */
+    ralt_y_up_f: ralt_y_up_f {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_y_up_f";
+          #binding-cells = <0>;
+          bindings = 
+            <&kp UP_ARROW>,
+            <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+          mods = <(MOD_RALT)>;
+        };
+    
+        ralt_y_down_f: ralt_y_down_f {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_y_down_f";
+          #binding-cells = <0>;
+          bindings = 
+            <&kp DOWN>,
+            <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+          mods = <(MOD_RALT)>;
+        };
+    
+        ralt_x_left_f: ralt_x_left_f {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_x_left_f";
+          #binding-cells = <0>;
+          bindings =
+            <&kp LEFT>,
+            <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
+          mods = <(MOD_RALT)>;
+        };
+    
+        ralt_x_right_f: ralt_x_right_f {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ralt_x_right_f";
+          #binding-cells = <0>;
+          bindings =
+            <&kp RIGHT>,
+            <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+          mods = <(MOD_RALT)>;
+        };
+    /* */
+
+    /* mouse 0 layer */
+    ralt_base_left: ralt_base_left {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ralt_base_left";
+      #binding-cells = <0>;
+      bindings =
+        <&kp M>,
+        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)>;
+      mods = <(MOD_RALT)>;
+    };
+
+    ralt_base_up: ralt_base_up {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RALT_BASE_UP";
+      #binding-cells = <0>;
+      bindings = 
+        <&kp COMMA>,
+        <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)>;
+      mods = <(MOD_RALT)>;
+    };
+
+    ralt_base_down: ralt_base_down {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ralt_base_down";
+      #binding-cells = <0>;
+      bindings = 
+        <&kp DOT>,
+        <&mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)>;
+      mods = <(MOD_RALT)>;
+    };
+
+    ralt_base_right: ralt_base_right {
+      compatible = "zmk,behavior-mod-morph";
+      label = "ralt_base_right";
+      #binding-cells = <0>;
+      bindings =
+        <&kp SLASH>,
+        <&mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)>;
+      mods = <(MOD_RALT)>;
+    };
+    /* end mouse 0 layer */
+
+    layer_lt_tap: layer_lt_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_LT_TAP";
+      #binding-cells = <2>;
+      tapping-term-ms = <180>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&lt>, <&kp>;
+    };
+
+    layer_hold_tap: layer_hold_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_HOLD_TAP";
+      #binding-cells = <2>;
+      tapping-term-ms = <180>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&tog>, <&kp>;
+    };
+
+    layer_to_tap: layer_to_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_TO_TAP";
+      #binding-cells = <2>;
+      tapping-term-ms = <180>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&to>, <&kp>;
+    };
+  };
+
+    combos {
         compatible = "zmk,combos";
         
-        kha {
-            bindings = <&kp LBKT>;
-            key-positions = <6 7>;
+         ESC_COMBO {
+                    bindings = <&kp ESC>;
+                    key-positions = <13 14>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                };
+                
+                  RU_E {
+                                    bindings = <&kp T>;
+                                    key-positions = <16 17>;
+                                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                                };
+        
+        BACK_L {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <27 28>;
+            layers = <FUNCT_LAYER>;
         };
-                                                                        
-        hrdsgn {
-            bindings = <&kp RBKT>;
-            key-positions = <7 8>;
+        
+        FORWARD_L {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <26 27>;
+            layers = <FUNCT_LAYER>;
         };
+        
+        BACK_R {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <31 32>;
+            layers = <FUNCT_LAYER>;
+        };
+                        
+        FORWARD_R {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <32 33>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        PG_DOWN_L {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <26 14>;
+        };
+
+        PG_DOWN_R {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <33 21>;
+        };
+
+        CMD_PG_UP_L {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <27 15>;
+        };
+
+        CMD_PG_UP_R {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <32 20>;
+        };
+
+        M_DOWN_L {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <26 38>;
+        };
+
+        M_DOWN_R {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <33 47>;
+        };
+
+        M_UP_L {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <27 39>;
+        };
+
+        M_UP_R {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <32 46>;
+        };
+
+        M_LEFT_L {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <28 40>;
+        };
+
+        M_LEFT_R {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <45 31>;
+        };
+
+        M_RIGHT_L {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <25 37>;
+        };
+
+        M_RIGHT_R {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <34 48>;
+        };
+
+        CMD_TAB_L {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <14 15>;
+        };
+
+        CMD_TAB_R {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <21 22>;
+        };
+
+        CAPS_L {
+            bindings = <&kp CAPS>;
+            key-positions = <40 41>;
+        };       
+
+        FROM_LAYERS_TO_ADJ_LAYER {
+            bindings = <&tog ADJ_LAYER>;
+            key-positions = <10 11>;
+            layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
+        };
+
+        ENTER_R {
+            bindings = <&kp ENTER>;
+            key-positions = <46 47>;
+        };
+
+        ENTER_L {
+            bindings = <&kp ENTER>;
+            key-positions = <38 39>;
+        };
+
+        N0_L {
+            bindings = <&kp N0>;
+            key-positions = <27 28>;
+            layers = <NUM_LAYER>;
+        };
+
+        N0_R {
+            bindings = <&kp N0>;
+            key-positions = <31 32>;
+            layers = <NUM_LAYER>;
+        };
+
+        N0_L1 {
+            bindings = <&kp N0>;
+            key-positions = <39 40>;
+            layers = <NUM_LAYER>;
+        };
+
+        N0_R2 {
+            bindings = <&kp N0>;
+            key-positions = <45 46>;
+            layers = <NUM_LAYER>;
+        };
+        
+        MOUSE1_ML_L {
+                    bindings = <&mkp MB1>;
+                    key-positions = <28 27>;
+                    layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+                };
+        
+                MOUSE2_ML_L {
+                    bindings = <&mkp MB2>;
+                    key-positions = <28 27 26>;
+                    layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+                };
+        
+                MOUSE1_ML_R {
+                    bindings = <&mkp MB1>;
+                    key-positions = <31 32>;
+                    layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+                };
+        
+                MOUSE2_ML_R {
+                    bindings = <&mkp MB2>;
+                    key-positions = <31 32 33>;
+                    layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+                };
+
+
+        MOUSE1_R {
+            bindings = <&mkp MB1>;
+            key-positions = <45 46>;
+        };
+
+        MOUSE2_R {
+            bindings = <&mkp MB2>;
+            key-positions = <45 46 47>;
+        };
+
+        MOUSE1_L {
+            bindings = <&mkp MB1>;
+            key-positions = <40 39>;
+        };
+
+        MOUSE2_L {
+            bindings = <&mkp MB2>;
+            key-positions = <38 39 40>;
+        };
+
+        MOUSE1_UP_R {
+            bindings = <&mkp MB1>;
+            key-positions = <19 20>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+        };
+
+        MOUSE2_UP_R {
+            bindings = <&mkp MB2>;
+            key-positions = <21 20 19>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+        };
+
+        MOUSE1_UP_L {
+            bindings = <&mkp MB1>;
+            key-positions = <16 15>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+        };
+
+        MOUSE2_UP_L {
+            bindings = <&mkp MB2>;
+            key-positions = <14 15 16>;
+            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+        };
+
+        UI_REVERT {
+            bindings = <&kp RG(Z)>;
+            key-positions = <20 19>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        UIO_REPEAT {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <20 21>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        UI_REVERT_L {
+            bindings = <&kp RG(Z)>;
+            key-positions = <15 16>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        UIO_REPEAT_L {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <14 15>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        CAPS_WORLD {
+            bindings = <&my_caps_word>;
+            key-positions = <27 28 31 32>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };
+        
+        TO_BASE_L {
+                    bindings = <&to BASE_LAYER>;
+                    key-positions = <16 28 29 17>;
+                };
+        
+                TO_BASE_R {
+                    bindings = <&to BASE_LAYER>;
+                    key-positions = <18 19 31 30>;
+                };
+                
+        BT_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <5 4>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <4 3>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <3 2>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <2 1>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <1 0>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_CLEAR {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 1 2 3>;
+            layers = <FUNCT_LAYER>;
+        };
+         
+         QUESTION_RUEN {
+                           bindings = <&kp RS(SLASH)>;
+                           key-positions = <47 48>;
+                           layers = <BASE_LAYER BASE_ADD_LAYER>;
+                        };
+                        
+                        QUESTION_RUEN2 {
+                                                   bindings = <&kp RS(SLASH)>;
+                                                   key-positions = <33 34>;
+                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                };
+                                                
+    SLASH_HIGH {
+                                                       bindings = <&kp SLASH>;
+                                                       key-positions = <30 31>;
+                                                       layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                    };
+                                                                                      
+                                                    SLASH_DOWN {
+                                                                                                                                                   bindings = <&kp BSLH>;
+                                                                                                                                                   key-positions = <44 45>;
+                                                                                                                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                                                                                                                };
+                                                  
+                        UI_RU {
+                                                   bindings = <&kp LBKT>;
+                                                   key-positions = <19 20>;
+                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                };
+                        
+                        IO_RU {
+                                                   bindings = <&kp RBKT>;
+                                                   key-positions = <20 21>;
+                                                   layers = <BASE_LAYER BASE_ADD_LAYER>;
+                                                };                      
     };
 
     keymap {
