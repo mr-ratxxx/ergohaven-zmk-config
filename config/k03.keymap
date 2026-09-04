@@ -315,7 +315,7 @@
                 };
                 
                   RU_E {
-                                    bindings = <&kp ESC>;
+                                    bindings = <&kp T>;
                                     key-positions = <16 17>;
                                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                                 };
