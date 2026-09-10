@@ -664,6 +664,60 @@ nav-mouse-r {
           >;
     display-name = "nav-mouse-l";
   };
+
+    funct {
+      bindings = <
+        /* funct B L */
+        &kp F3
+        &kp F9
+        &kp F8
+        &kp F7
+        &tog NAV_L_LAYER
+        /* funct B R */
+        &tog NAV_R_LAYER
+        &kp F7
+        &kp F8
+        &kp F9
+        &kt F3
+
+        /* funct C L */
+        &mt LGUI F2
+        &mt LCTRL F6
+        &mt LALT F5
+        &mt LSHIFT F4
+        &tog NAV_MOUSE_R_LAYER
+        
+        /* funct C R */
+        &tog NAV_MOUSE_R_LAYER
+        &mt RSHFT F4
+        &mt RALT F5
+        &mt RCTRL F6
+        &mt RGUI F2
+
+        /* funct D L */
+        &kp F1
+        &kp F12
+        &kp F11
+        &kp F10
+        &kp LS(LA(L))
+        /* funct D R */
+        &kp LS(LA(L))
+        &kp F10
+        &kp F11
+        &kp F12
+        &kp F1
+
+        /* funct T L */
+        &lt SYMB_LAYER TAB
+        &lt BASE_OVERRIDE_LAYER SPACE
+        &lt FUNCT_LAYER DEL
+        /* funct T R */
+        &lt FUNCT_LAYER ESC
+        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+        &lt NUM_LAYER BACKSPACE
+      >;
+      display-name = "funct";
+    };
     
     };
 };
