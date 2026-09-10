@@ -336,15 +336,43 @@
     combos {
         compatible = "zmk,combos";
 
-        kha {
-            bindings = <&kp LBKT>;
-            key-positions = <6 7>;
+    ESC_COMBO {
+                    bindings = <&kp ESC>;
+                    key-positions = <0 1>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                };
+                
+                  RU_E {
+                                    bindings = <&kp T>;
+                                    key-positions = <3 4>;
+                                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                                };
+        
+        BACK_L {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <12 13>;
+            layers = <FUNCT_LAYER>;
+        };
+        
+        FORWARD_L {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <11 12>;
+            layers = <FUNCT_LAYER>;
+        };
+        
+        BACK_R {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <16 17>;
+            layers = <FUNCT_LAYER>;
+        };
+                        
+        FORWARD_R {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <17 18>;
+            layers = <FUNCT_LAYER>;
         };
 
-        hrdsgn {
-            bindings = <&kp RBKT>;
-            key-positions = <7 8>;
-        };
+
     };
 
 keymap {
