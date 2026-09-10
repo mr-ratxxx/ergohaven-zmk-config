@@ -879,7 +879,67 @@ nav-mouse-r {
       >;
       label = "layers";
     };
-    
+
+
+    adj {
+      bindings = <        
+        /* adj B L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        /* adj B L */        
+        &trans
+        &trans
+        &trans
+        &trans
+        &studio_unlock
+        
+        /* adj C L */
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+                
+        /* adj C R */
+        &out OUT_BLE
+        &kp C_VOL_DN
+        &kp C_MUTE
+        &kp C_VOL_UP
+        &trans        
+        /* adj C R */
+        &to BASE_LAYER
+        &trans
+        &trans
+        &trans
+        &trans
+        
+        /* layers D L */
+        &trans
+        &out OUT_USB
+        &kp C_PREV
+        &kp C_PLAY_PAUSE
+        &kp C_NEXT
+        /* layers D R */
+        &to BASE_LAYER
+        &trans
+        &trans
+        &trans
+        &trans
+        
+        /* adj T L */
+        &trans
+        &trans
+        &trans
+        /* adj T R */
+        &trans
+        &trans
+        &trans
+      >;
+      display-name = "Adjust";
+    };    
         
     };
 };
