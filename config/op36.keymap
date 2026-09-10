@@ -619,39 +619,39 @@
             layers = <FUNCT_LAYER>;
         };
 
-        QUESTION_RUEN {
+QUESTION_RUEN {
             bindings = <&kp RS(SLASH)>;
-            key-positions = <47 48>;
+            key-positions = <47 48 18 19>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
         QUESTION_RUEN2 {
             bindings = <&kp RS(SLASH)>;
-            key-positions = <33 34>;
+            key-positions = <28 29>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
         SLASH_HIGH {
             bindings = <&kp SLASH>;
-            key-positions = <30 31>;
+            key-positions = <25 26>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
         SLASH_DOWN {
             bindings = <&kp BSLH>;
-            key-positions = <44 45>;
+            key-positions = <44 45 25 26>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
         UI_RU {
             bindings = <&kp LBKT>;
-            key-positions = <19 20>;
+            key-positions = <6 7>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
         IO_RU {
             bindings = <&kp RBKT>;
-            key-positions = <20 21>;
+            key-positions = <8 7>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
     };
