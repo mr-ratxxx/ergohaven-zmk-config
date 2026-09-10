@@ -403,5 +403,58 @@ keymap {
       display-name = "base";
     };  
 
+    baise_mirror {
+      bindings = <      
+              /* base-m B L */
+                            &kp P
+                            &kp O
+                            &kp I
+                            &kp U
+                            &kp Y
+              /* base-m B R */
+              &kp T
+              &kp R
+              &kp E
+              &kp W
+              &kp Q
+              
+              /* base-m C L */
+              &mt LGUI SEMI
+              &mt LCTRL L
+              &mt LALT K
+              &mt LSHFT J
+              &kp H
+              /* base-m C R */
+              &kp G
+              &mt RSHIFT F
+              &mt RALT D
+              &mt RCTRL S
+              &mt RGUI A
+      
+              /* base-m D L */
+              &kp SLASH
+              &kp DOT
+              &kp COMMA
+              &kp M
+              &kp N
+              /* base-m D R */
+              &kp B
+              &kp V
+              &kp C
+              &kp X
+              &kp Z
+
+              /* base-m T L */
+              &lt NUM_LAYER BACKSPACE
+              &lt NAV_R_LAYER RG(RC(SPACE))
+              &lt FUNCT_LAYER ESC
+              /* base-m T R */
+              &lt FUNCT_LAYER DEL
+              &lt NAV_L_LAYER SPACE
+              &lt SYMB_LAYER TAB
+            >;
+      display-name = "base-mirror";
+    };
+
     };
 };
