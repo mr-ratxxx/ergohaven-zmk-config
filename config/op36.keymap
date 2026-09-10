@@ -718,6 +718,59 @@ nav-mouse-r {
       >;
       display-name = "funct";
     };
+
+    num {
+      bindings = <
+        /* num B L */
+        &kp LS(MINUS)
+        &kp N9
+        &kp N8
+        &kp N7
+        &kp PLUS
+        /* num B R */
+        &kp PLUS
+        &kp N7
+        &kp N8
+        &kp N9
+        &kp RS(MINUS)
+
+        /* num C L */
+        &mt LGUI N0
+        &mt LCTRL N6
+        &mt LALT N5
+        &mt LSHFT N4
+        &kp MINUS
+        /* num C R */
+        &kp MINUS
+        &mt RSHIFT N4
+        &mt RIGHT_ALT N5
+        &mt RCTRL N6
+        &mt RGUI N0
+
+        /* num D L */
+        &kp BACKSLASH
+        &kp N3
+        &kp N2
+        &kp N1
+        &kp EQUAL
+        /* num D R */
+        &kp EQUAL
+        &kp N1
+        &kp N2
+        &kp N3
+        &kp BACKSLASH
+
+        /* num T L */
+        &kp TAB
+        &kp SPACE
+        &kp DELETE
+        /* num T R */
+        &kp ESC
+        &kp CAPSLOCK
+        &kp BACKSPACE
+      >;
+      label = "num";
+    };
     
     };
 };
