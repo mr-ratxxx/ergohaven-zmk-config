@@ -352,23 +352,7 @@ keymap {
 
     base {
       bindings = <
-        /* base A L */
-        &layer_to_tap BASE_LAYER ESC
-        &layer_hold_tap NUM_LAYER F2
-        &layer_hold_tap SYMB_LAYER F3
-        &layer_hold_tap NAV_L_LAYER F4
-        &layer_hold_tap FUNCT_LAYER F5
-        &layer_hold_tap BASE_MIRROR_LAYER F6
-        /* base A R */        
-        &layer_hold_tap FUNCT_LAYER F7
-        &layer_hold_tap NAV_R_LAYER F8       
-        &layer_hold_tap NUM_LAYER F9
-        &layer_hold_tap SYMB_LAYER F10
-        &layer_to_tap BASE_MIRROR_LAYER F11
-        &layer_to_tap BASE_LAYER F12
-
         /* base B L */
-        &kp LG(TAB)
         &kp Q
         &kp W
         &kp E
@@ -380,10 +364,8 @@ keymap {
         &kp I
         &kp O
         &kp P
-        &kp GRAVE        
 
         /* base C L */
-        &my_caps_word
         &mt LGUI A
         &mt LCTRL S
         &mt LALT D
@@ -395,28 +377,21 @@ keymap {
         &mt RALT K
         &mt RCTRL L
         &mt RGUI SEMI
-        &kp SLASH
 
         /* base D L */
-        &none
         &lt BASE_ADD_LAYER Z
         &kp X
         &kp C
         &kp V
         &kp B
-        &lt FUNCT_LAYER CAPS
         /* base D R */
-        &lt FUNCT_LAYER SPACE
         &kp N
         &kp M
         &kp COMMA
         &kp DOT
         &lt BASE_ADD_LAYER SQT
-        &kp BSLH
 
         /* base T L */
-        &lt BASE_MIRROR_LAYER MINUS
-        &lt NUM_LAYER EQUAL
         &lt SYMB_LAYER TAB
         &lt NAV_L_LAYER SPACE
         &lt FUNCT_LAYER DEL
@@ -424,8 +399,6 @@ keymap {
         &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
-        &lt SYMB_LAYER LBKT
-        &lt BASE_MIRROR_LAYER RBKT
       >;
       display-name = "base";
     };
