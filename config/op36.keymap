@@ -993,6 +993,61 @@ nav-mouse-r {
       >;
       display-name = "base-override";
     };    
+
+
+        base-add-ovv{
+          bindings = <
+            /* base-add-ovv B L */
+            &trans
+            &trans
+            &trans
+            &trans
+            &kp BSLH
+            /* base-add-ovv B R */
+            &trans
+            &trans
+            &trans
+            &kp GRAVE
+            &trans        
+    
+            /* base-add-ovv C L */
+            &trans
+            &trans
+            &trans
+            &trans
+            &trans
+            /* base-add-ovv C R */
+            &trans
+            &trans
+            &trans
+            &kp SQT
+            &trans
+            
+            /* base-add-ovv D L */
+            &trans
+            &kp MINUS
+            &kp EQUAL
+            &trans
+            &trans
+            /* base-add-ovv D R */
+            &trans
+            &kp LBKT
+            &kp RBKT
+            &kp BSLH
+    
+            /* base-add-ovv T L */
+            &trans
+            &trans
+            &trans
+            &trans
+            /* base-add T R */
+            &trans
+            &trans
+            &trans
+            &trans
+          >;
+          display-name = "base-add-ovv";
+        };
     
       
     };
