@@ -825,6 +825,61 @@ nav-mouse-r {
       >;
       label = "symb";
     };
+    
+
+    layers {
+      bindings = <
+        /* layers B L */
+        &kp C_PREV
+        &kp C_PLAY_PAUSE
+        &kp C_NEXT
+        &kp C_VOLUME_DOWN
+        &kp C_VOLUME_UP
+        /* layers B R */
+        &kp F14
+        &kp F15
+        &to BASE_LAYER
+        &to BASE_LAYER
+        &to BASE_LAYER
+
+        /* layers C L */
+        &to BASE_LAYER
+        &to NUM_LAYER
+        &to SYMB_LAYER
+        &to NAV_L_LAYER
+        &to FUNCT_LAYER
+        /* layers C R */
+        &tog BASE_MIRROR_LAYER
+        &to FUNCT_LAYER
+        &to NAV_R_LAYER
+        &to NUM_LAYER
+        &to SYMB_LAYER
+
+        /* layers D L */
+        &to BASE_LAYER
+        &kp LGUI
+        &kp LCTRL
+        &kp LALT
+        &kp LSHFT
+        /* layers D R */
+        &kp RSHIFT
+        &kp RALT
+        &kp RCTRL
+        &kp RGUI
+        &to BASE_LAYER
+
+        /* layers T L */
+        &tog NUM_LAYER
+        &tog SYMB_LAYER
+        &tog NAV_L_LAYER
+        /* layers T R */
+        &tog NAV_R_LAYER
+        &tog NUM_LAYER
+        &tog SYMB_LAYER
+      >;
+      label = "layers";
+    };
+    
         
     };
 };
