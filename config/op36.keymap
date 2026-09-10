@@ -507,7 +507,58 @@ keymap {
         &lt NUM_LAYER BACKSPACE
       >;
       display-name = "nav-r";
-    };    
+    };
+    
+nav-l {
+  bindings = <
+    /* nav-l B L */
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+    &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)                    
+    &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+    &tog NAV_L_LAYER
+    /* nav-l B R */
+    &tog NAV_L_LAYER
+    &kp LEFT_ARROW      
+    &kp UP                      
+    &kp DOWN
+    &kp RIGHT_ARROW
+    /* nav-l C L */
+    &kp LEFT_ARROW
+    &kp DOWN
+    &kp UP
+    &kp RIGHT_ARROW   
+    &msc SCRL_UP
+    /* nav-l C R */
+    &msc SCRL_UP
+    &kp LSHFT
+    &kp LALT
+    &kp LCTRL
+    &kp LGUI
+
+    /* nav-l D L */
+    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
+        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+    &msc SCRL_DOWN    
+    /* nav-l D R */
+    &msc SCRL_DOWN
+    &mmv MOVE_X(MMV_FAST_SPEED_L)
+    &mmv MOVE_Y(MMV_FAST_SPEED_U)        
+    &mmv MOVE_Y(MMV_FAST_SPEED_D)    
+    &mmv MOVE_X(MMV_FAST_SPEED_R)
+    /* nav-l T L */            
+    &lt SYMB_LAYER TAB
+    &lt BASE_OVERRIDE_LAYER SPACE
+    &lt FUNCT_LAYER DEL
+    /* nav-l T R */
+    &lt FUNCT_LAYER ESC
+    &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+    &lt NUM_LAYER BACKSPACE
+  >;
+  display-name = "nav-l";
+};        
     
     };
 };
