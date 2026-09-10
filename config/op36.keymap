@@ -939,7 +939,61 @@ nav-mouse-r {
         &trans
       >;
       display-name = "Adjust";
+    };
+    
+    base-override {
+      bindings = <
+        /* base-o B L */
+        &kp Q
+        &kp W
+        &kp E
+        &kp R
+        &kp T
+        /* base-o B R */
+        &kp Y
+        &kp U
+        &kp I
+        &kp O
+        &kp P
+
+        /* base-o C L */
+        &mt LGUI A
+        &mt LCTRL S
+        &mt LALT D
+        &mt LSHFT F
+        &lt BASE_ADD_OVERRIDE_LAYER G
+        /* base-o C R */
+        &lt BASE_ADD_OVERRIDE_LAYER H
+        &mt RSHIFT J
+        &mt RALT K
+        &mt RCTRL L
+        &mt RGUI SEMI
+
+        /* base-o D L */
+        &lt BASE_ADD_OVERRIDE_LAYER Z
+        &kp X
+        &kp C
+        &kp V
+        &kp B
+        /* base-o D R */
+        &kp N
+        &kp M
+        &kp COMMA
+        &kp DOT
+        &lt BASE_ADD_OVERRIDE_LAYER SLASH
+
+        /* base-o T L */
+        &kp TAB
+        &kp SPACE
+        &kp DEL
+        /* base-o T R */
+        &kp ESC
+        &kp CAPS
+        &kp BACKSPACE
+      >;
+      display-name = "base-override";
     };    
-        
+    
+      
     };
 };
