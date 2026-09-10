@@ -612,7 +612,58 @@ nav-mouse-r {
       display-name = "nav-mouse-r";
     };
 
-  
+  nav-mouse-l {
+    bindings = <
+            /* nav-m-l B L */
+                     &kp LEFT
+                               &kp DOWN
+                               &kp UP
+                               &kp RIGHT
+             &tog NAV_MOUSE_L_LAYER
+            /* nav-m-l B R */
+            &tog NAV_MOUSE_L_LAYER
+            &kp LEFT_ARROW
+            &kp UP
+            &kp DOWN          
+            &kp RIGHT_ARROW
+                      
+            /* nav-m-l C L */        
+            &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
+                      &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+                      &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)
+                      &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R) 
+            &msc SCRL_UP
+            /* nav-m-l C R */
+            &msc SCRL_UP
+            &kp LSHFT
+            &kp LALT
+                    &kp LCTRL                  
+            &kp LGUI        
+    
+            /* nav-m-l D L */
+            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+                                        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+                                        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+                                        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+            &msc SCRL_DOWN
+            /* nav-m-l D R */
+            &msc SCRL_DOWN
+            &mmv MOVE_X(MMV_FAST_SPEED_L) 
+                                          &mmv MOVE_Y(MMV_FAST_SPEED_U)
+                                          &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+                                          &mmv MOVE_X(MMV_FAST_SPEED_R)
+    
+            /* nav-m-l T L */
+            &lt SYMB_LAYER TAB
+            &lt BASE_OVERRIDE_LAYER SPACE
+            &lt FUNCT_LAYER DEL
+            /* nav-m-l T R */
+            &lt FUNCT_LAYER ESC
+            &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+            &lt NUM_LAYER BACKSPACE
+          >;
+    display-name = "nav-mouse-l";
+  };
     
     };
 };
