@@ -772,5 +772,59 @@ nav-mouse-r {
       label = "num";
     };
     
+    
+    symb {
+      bindings = <
+        /* symb B L */
+        &kp RS(N2)
+        &kp RS(N4)
+        &kp LEFT_PARENTHESIS
+        &kp RIGHT_PARENTHESIS
+        &kp RS(N3)
+        /* symb B R */
+        &kp RS(N3)
+        &kp LEFT_PARENTHESIS
+        &kp RIGHT_PARENTHESIS
+        &kp RS(N4)
+        &kp RS(N2)
+
+        /* symb C L */
+        &mt RGUI PLUS
+        &mt RCTRL RS(MINUS)
+        &mt RALT EQUAL
+        &mt RSHFT MINUS
+        &kp SLASH
+        /* symb C R */
+        &kp SLASH
+        &mt RSHFT MINUS
+        &mt RALT EQUAL
+        &mt RCTRL RS(MINUS)
+        &mt RGUI PLUS
+
+        /* symb D L */
+        &kp RS(N8)
+        &kp RS(N7)
+        &kp RS(N6)
+        &kp RS(N5)
+        &kp RS(N1)        
+        /* symb D R */
+        &kp RS(N1)
+        &kp RS(N5)
+        &kp RS(N6)
+        &kp RS(N7)
+        &kp RS(N8)
+
+        /* symb T L */
+        &kp TAB
+        &kp SPACE
+        &kp DELETE
+        /* symb T R */
+        &kp ESC
+        &kp CAPSLOCK
+        &kp BACKSPACE
+      >;
+      label = "symb";
+    };
+        
     };
 };
