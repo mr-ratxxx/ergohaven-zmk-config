@@ -374,62 +374,62 @@
 
         PG_DOWN_L {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <11 21>;
+            key-positions = <11 1>;
         };
 
         PG_DOWN_R {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <18 28>;
+            key-positions = <18 8>;
         };
 
         CMD_PG_UP_L {
             bindings = <&kp PAGE_UP>;
-            key-positions = <>;
+            key-positions = <12 2>;
         };
 
         CMD_PG_UP_R {
             bindings = <&kp PAGE_UP>;
-            key-positions = <32 20>;
+            key-positions = <7 17>;
         };
 
         M_DOWN_L {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <26 38>;
+            key-positions = <38 11 21>;
         };
 
         M_DOWN_R {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <33 47>;
+            key-positions = <47 28 18>;
         };
 
         M_UP_L {
             bindings = <&msc SCRL_UP>;
-            key-positions = <27 39>;
+            key-positions = <39 12 22>;
         };
 
         M_UP_R {
             bindings = <&msc SCRL_UP>;
-            key-positions = <32 46>;
+            key-positions = <46 17 27>;
         };
 
         M_LEFT_L {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <28 40>;
+            key-positions = <40 13 23>;
         };
 
         M_LEFT_R {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <45 31>;
+            key-positions = <45 16 26>;
         };
 
         M_RIGHT_L {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <25 37>;
+            key-positions = <37 11 21>;
         };
 
         M_RIGHT_R {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <34 48>;
+            key-positions = <48 28 18>;
         };
 
 
