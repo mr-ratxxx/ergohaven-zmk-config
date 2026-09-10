@@ -336,36 +336,36 @@
     combos {
         compatible = "zmk,combos";
 
-    ESC_COMBO {
-                    bindings = <&kp ESC>;
-                    key-positions = <0 1>;
-                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-                };
-                
-                  RU_E {
-                                    bindings = <&kp T>;
-                                    key-positions = <3 4>;
-                                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-                                };
-        
+        ESC_COMBO {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };
+
+        RU_E {
+            bindings = <&kp T>;
+            key-positions = <3 4>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };
+
         BACK_L {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <12 13>;
             layers = <FUNCT_LAYER>;
         };
-        
+
         FORWARD_L {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <11 12>;
             layers = <FUNCT_LAYER>;
         };
-        
+
         BACK_R {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <16 17>;
             layers = <FUNCT_LAYER>;
         };
-                        
+
         FORWARD_R {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <17 18>;
@@ -474,7 +474,7 @@
             key-positions = <26 27>;
             layers = <NUM_LAYER>;
         };
-        
+
         MOUSE1_ML_L {
             bindings = <&mkp MB1>;
             key-positions = <13 12>;
@@ -521,66 +521,66 @@
 
         MOUSE1_UP_R {
             bindings = <&mkp MB1>;
-            key-positions = <19 20>;
+            key-positions = <7 6>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
         MOUSE2_UP_R {
-           w bindings = <&mkp MB2>;
-            key-positions = <21 20 19>;
+            bindings = <&mkp MB2>;
+            key-positions = <20 6 7 8>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
         MOUSE1_UP_L {
             bindings = <&mkp MB1>;
-            key-positions = <16 15>;
+            key-positions = <3 2>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
         MOUSE2_UP_L {
             bindings = <&mkp MB2>;
-            key-positions = <14 15 16>;
+            key-positions = <3 2 1>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
         UI_REVERT {
             bindings = <&kp RG(Z)>;
-            key-positions = <20 19>;
+            key-positions = <6 7>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
         UIO_REPEAT {
             bindings = <&kp LS(LG(Z))>;
-            key-positions = <20 21>;
+            key-positions = <7 8>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
         UI_REVERT_L {
             bindings = <&kp RG(Z)>;
-            key-positions = <15 16>;
+            key-positions = <2 3>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
         UIO_REPEAT_L {
             bindings = <&kp LS(LG(Z))>;
-            key-positions = <14 15>;
+            key-positions = <2 1>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
         CAPS_WORLD {
             bindings = <&my_caps_word>;
-            key-positions = <27 28 31 32>;
+            key-positions = <16 13 17 12>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
         TO_BASE_L {
             bindings = <&to BASE_LAYER>;
-            key-positions = <16 28 29 17>;
+            key-positions = <3 13 14>;
         };
 
         TO_BASE_R {
             bindings = <&to BASE_LAYER>;
-            key-positions = <18 19 31 30>;
+            key-positions = <5 6 16 15>;
         };
 
         BT_0 {
@@ -614,7 +614,7 @@
         };
 
         BT_CLEAR {
-          k  bindings = <&bt BT_CLR_ALL>;
+            bindings = <&bt BT_CLR_ALL>;
             key-positions = <0 1 2 3>;
             layers = <FUNCT_LAYER>;
         };
@@ -653,8 +653,7 @@
             bindings = <&kp RBKT>;
             key-positions = <20 21>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };       
-
+        };
     };
 
 keymap {
