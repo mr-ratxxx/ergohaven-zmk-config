@@ -372,6 +372,67 @@
             layers = <FUNCT_LAYER>;
         };
 
+        PG_DOWN_L {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <11 21>;
+        };
+
+        PG_DOWN_R {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <18 28>;
+        };
+
+        CMD_PG_UP_L {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <>;
+        };
+
+        CMD_PG_UP_R {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <32 20>;
+        };
+
+        M_DOWN_L {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <26 38>;
+        };
+
+        M_DOWN_R {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <33 47>;
+        };
+
+        M_UP_L {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <27 39>;
+        };
+
+        M_UP_R {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <32 46>;
+        };
+
+        M_LEFT_L {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <28 40>;
+        };
+
+        M_LEFT_R {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <45 31>;
+        };
+
+        M_RIGHT_L {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <25 37>;
+        };
+
+        M_RIGHT_R {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <34 48>;
+        };
+
+
 
     };
 
