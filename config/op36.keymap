@@ -710,8 +710,63 @@ keymap {
         &lt NUM_LAYER BACKSPACE
       >;
       display-name = "base";
-    };  
+    };
+    
+    base-add{
+      bindings = <
+        /* base-add B L */
+        &trans          
+        &trans
+        &trans
+        &trans
+        &kp BSLH
+        /* base-add B R */
+        &trans
+        &trans         
+        &trans
+        &trans                
+        &kp GRAVE
 
+        /* base-add C L */
+        &trans     
+        &trans
+        &trans
+        &trans
+        &trans
+        /* base-add C R */
+        &trans
+        &trans
+        &trans
+        &trans        
+        &kp SQT
+        
+        /* base-add D L */
+        &trans
+        &kp MINUS
+        &kp EQUAL
+        &trans
+        &trans
+        /* base-add D R */
+        &trans
+        &trans
+        &kp LBKT
+        &kp RBKT
+        &kp BSLH
+
+        /* base-add T L */
+        &trans
+        &trans
+        &trans
+        &trans
+        /* base-add T R */
+        &trans
+        &trans
+        &trans
+        &trans
+      >;
+      display-name = "base";
+    };
+    
     baise_mirror {
       bindings = <      
               /* base-m B L */
