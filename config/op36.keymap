@@ -591,25 +591,25 @@
 
         BT_1 {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <4 3>;
+            key-positions = <2 3>;
             layers = <FUNCT_LAYER>;
         };
 
         BT_2 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <3 2>;
+            key-positions = <1 2>;
             layers = <FUNCT_LAYER>;
         };
 
         BT_3 {
             bindings = <&bt BT_SEL 3>;
-            key-positions = <2 1>;
+            key-positions = <5 6>;
             layers = <FUNCT_LAYER>;
         };
 
         BT_4 {
             bindings = <&bt BT_SEL 4>;
-            key-positions = <1 0>;
+            key-positions = <6 7>;
             layers = <FUNCT_LAYER>;
         };
 
