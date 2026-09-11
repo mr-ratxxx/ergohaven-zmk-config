@@ -662,7 +662,7 @@ keymap {
     base {
       bindings = <
         /* base B L */
-        &kp Q
+        &lt BASE_MIRROR_LAYER Q
         &kp W
         &kp E
         &kp R
@@ -688,7 +688,7 @@ keymap {
         &mt RGUI SEMI
 
         /* base D L */
-        &lt BASE_ADD_LAYER Z
+        &lt NUM_LAYER Z
         &kp X
         &kp C
         &kp V
@@ -698,7 +698,7 @@ keymap {
         &kp M
         &kp COMMA
         &kp DOT
-        &lt BASE_ADD_LAYER SQT
+        &lt SYMB_LAYER SQT
 
         /* base T L */
         &lt SYMB_LAYER TAB
