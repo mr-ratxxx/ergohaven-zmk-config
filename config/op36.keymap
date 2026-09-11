@@ -455,12 +455,12 @@
 
         ENTER_R {
             bindings = <&kp ENTER>;
-            key-positions = <46 47 28 27>;
+            key-positions = <27 28>;
         };
 
         ENTER_L {
             bindings = <&kp ENTER>;
-            key-positions = <38 39 22 21>;
+            key-positions = <22 21>;
         };
 
         N0_L {
