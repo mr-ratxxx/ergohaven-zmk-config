@@ -764,7 +764,7 @@ keymap {
         &trans
         &trans
       >;
-      display-name = "base";
+      display-name = "base-add";
     };
     
     baise_mirror {
