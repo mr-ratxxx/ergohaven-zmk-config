@@ -343,7 +343,7 @@
         };
 
         RU_E {
-            bindings = <&kp T>;
+            bindings = <&kp BSLH>;
             key-positions = <3 4>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
@@ -619,7 +619,7 @@
             layers = <FUNCT_LAYER>;
         };
 
-QUESTION_RUEN {
+       QUESTION_RUEN {
             bindings = <&kp RS(SLASH)>;
             key-positions = <47 48 18 19>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
