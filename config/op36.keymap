@@ -336,7 +336,7 @@
 
         M_DOWN_L {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <12 22>;
+            key-positions = <11 21>;
         };
 
         M_DOWN_R {
@@ -346,7 +346,7 @@
 
         M_UP_L {
             bindings = <&msc SCRL_UP>;
-            key-positions = <12 22>;
+            key-positions = <13 23>;
         };
 
         M_UP_R {
@@ -356,7 +356,7 @@
 
         M_LEFT_L {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <11 21>;
+            key-positions = <10 20>;
         };
 
         M_LEFT_R {
@@ -371,7 +371,7 @@
 
         M_RIGHT_R {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <19 29>;
+            key-positions = <18 28>;
         };
 
         CMD_TAB_L {
