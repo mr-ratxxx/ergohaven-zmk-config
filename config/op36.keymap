@@ -575,7 +575,7 @@
 
         TO_BASE_L {
             bindings = <&to BASE_LAYER>;
-            key-positions = <3 13 14>;
+            key-positions = <3 4 13 14>;
         };
 
         TO_BASE_R {
