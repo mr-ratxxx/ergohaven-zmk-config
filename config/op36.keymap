@@ -633,7 +633,7 @@
 
         SLASH_HIGH {
             bindings = <&kp SLASH>;
-            key-positions = <17 18>;
+            key-positions = <15 16>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
