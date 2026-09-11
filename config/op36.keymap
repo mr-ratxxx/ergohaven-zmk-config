@@ -501,22 +501,22 @@
 
         MOUSE1_R {
             bindings = <&mkp MB1>;
-            key-positions = <45 46 26 27>;
+            key-positions = <28 29>;
         };
 
         MOUSE2_R {
             bindings = <&mkp MB2>;
-            key-positions = <45 46 47 26 27 28>;
+            key-positions = <28 29 30>;
         };
 
         MOUSE1_L {
             bindings = <&mkp MB1>;
-            key-positions = <40 39 23 22>;
+            key-positions = <24 25>;
         };
 
         MOUSE2_L {
             bindings = <&mkp MB2>;
-            key-positions = <38 39 40 23 22 21>;
+            key-positions = <23 24 25>;
         };
 
         MOUSE1_UP_R {
@@ -527,7 +527,7 @@
 
         MOUSE2_UP_R {
             bindings = <&mkp MB2>;
-            key-positions = <20 6 7 8>;
+            key-positions = <6 7 8>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
@@ -621,7 +621,7 @@
 
        QUESTION_RUEN {
             bindings = <&kp RS(SLASH)>;
-            key-positions = <47 48 18 19>;
+            key-positions = <18 19>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
