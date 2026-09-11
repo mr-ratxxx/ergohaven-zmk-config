@@ -429,7 +429,7 @@
 
         M_RIGHT_R {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <20 30>;
+            key-positions = <19 29>;
         };
 
         CMD_TAB_L {
