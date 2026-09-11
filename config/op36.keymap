@@ -414,12 +414,12 @@
 
         M_LEFT_L {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <13 23>;
+            key-positions = <11 21>;
         };
 
         M_LEFT_R {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <45 16 26>;
+            key-positions = <16 26>;
         };
 
         M_RIGHT_L {
