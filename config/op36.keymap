@@ -617,17 +617,17 @@ keymap {
         &kp P
 
         /* base C L */
-        &mt LGUI A
-        &mt LCTRL S
-        &mt LALT D
-        &mt LSHFT F
+        &hml LGUI A
+        &hml LCTRL S
+        &hml LALT D
+        &hml LSHFT F
         &lt BASE_ADD_LAYER G
         /* base C R */
         &lt BASE_ADD_LAYER H
-        &mt RSHIFT J
-        &mt RALT K
-        &mt RCTRL L
-        &mt RGUI SEMI
+        &hmr RSHIFT J
+        &hmr RALT K
+        &hmr RCTRL L
+        &hmr RGUI SEMI
 
         /* base D L */
         &lt NUM_LAYER Z
@@ -725,17 +725,17 @@ keymap {
               &kp Q
               
               /* base-m C L */
-              &mt LGUI SEMI
-              &mt LCTRL L
-              &mt LALT K
-              &mt LSHFT J
+              &hml LGUI SEMI
+              &hml LCTRL L
+              &hml LALT K
+              &hml LSHFT J
               &kp H
               /* base-m C R */
               &kp G
-              &mt RSHIFT F
-              &mt RALT D
-              &mt RCTRL S
-              &mt RGUI A
+              &hmr RSHIFT F
+              &hmr RALT D
+              &hmr RCTRL S
+              &hmr RGUI A
       
               /* base-m D L */
               &kp SLASH
@@ -987,18 +987,18 @@ nav-mouse-r {
         &kp F3
 
         /* funct C L */
-        &mt LGUI F2
-        &mt LCTRL F6
-        &mt LALT F5
-        &mt LSHIFT F4
+        &hml LGUI F2
+        &hml LCTRL F6
+        &hml LALT F5
+        &hml LSHIFT F4
         &tog NAV_MOUSE_R_LAYER
         
         /* funct C R */
         &tog NAV_MOUSE_R_LAYER
-        &mt RSHFT F4
-        &mt RALT F5
-        &mt RCTRL F6
-        &mt RGUI F2
+        &hmr RSHFT F4
+        &hmr RALT F5
+        &hmr RCTRL F6
+        &hmr RGUI F2
 
         /* funct D L */
         &kp F1
@@ -1041,17 +1041,17 @@ nav-mouse-r {
         &kp RS(MINUS)
 
         /* num C L */
-        &mt LGUI N0
-        &mt LCTRL N6
-        &mt LALT N5
-        &mt LSHFT N4
+        &hml LGUI N0
+        &hml LCTRL N6
+        &hml LALT N5
+        &hml LSHFT N4
         &kp MINUS
         /* num C R */
         &kp MINUS
-        &mt RSHIFT N4
-        &mt RIGHT_ALT N5
-        &mt RCTRL N6
-        &mt RGUI N0
+        &hmr RSHIFT N4
+        &hmr RIGHT_ALT N5
+        &hmr RCTRL N6
+        &hmr RGUI N0
 
         /* num D L */
         &kp BACKSLASH
@@ -1263,17 +1263,17 @@ nav-mouse-r {
         &kp P
 
         /* base-o C L */
-        &mt LGUI A
-        &mt LCTRL S
-        &mt LALT D
-        &mt LSHFT F
+        &hml LGUI A
+        &hml LCTRL S
+        &hml LALT D
+        &hml LSHFT F
         &lt BASE_ADD_OVERRIDE_LAYER G
         /* base-o C R */
         &lt BASE_ADD_OVERRIDE_LAYER H
-        &mt RSHIFT J
-        &mt RALT K
-        &mt RCTRL L
-        &mt RGUI SEMI
+        &hmr RSHIFT J
+        &hmr RALT K
+        &hmr RCTRL L
+        &hmr RGUI SEMI
 
         /* base-o D L */
         &lt BASE_ADD_OVERRIDE_LAYER Z
