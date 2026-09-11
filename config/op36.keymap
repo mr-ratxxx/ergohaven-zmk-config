@@ -394,27 +394,27 @@
 
         M_DOWN_L {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <38 11 21>;
+            key-positions = <13 23>;
         };
 
         M_DOWN_R {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <47 28 18>;
+            key-positions = <20 30>;
         };
 
         M_UP_L {
             bindings = <&msc SCRL_UP>;
-            key-positions = <39 12 22>;
+            key-positions = <14 24>;
         };
 
         M_UP_R {
             bindings = <&msc SCRL_UP>;
-            key-positions = <46 17 27>;
+            key-positions = <19 29>;
         };
 
         M_LEFT_L {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <40 13 23>;
+            key-positions = <15 25>;
         };
 
         M_LEFT_R {
@@ -424,12 +424,12 @@
 
         M_RIGHT_L {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <37 11 21>;
+            key-positions = <13 23>;
         };
 
         M_RIGHT_R {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <48 28 18>;
+            key-positions = <20 30>;
         };
 
         CMD_TAB_L {
