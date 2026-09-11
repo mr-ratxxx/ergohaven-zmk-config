@@ -399,17 +399,17 @@
 
         M_DOWN_R {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <16 26>;
+            key-positions = <18 28>;
         };
 
         M_UP_L {
             bindings = <&msc SCRL_UP>;
-            key-positions = <14 24>;
+            key-positions = <12 22>;
         };
 
         M_UP_R {
             bindings = <&msc SCRL_UP>;
-            key-positions = <19 29>;
+            key-positions = <17 27>;
         };
 
         M_LEFT_L {
