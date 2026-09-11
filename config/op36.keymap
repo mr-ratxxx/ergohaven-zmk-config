@@ -1200,24 +1200,24 @@ nav-mouse-r {
         &kp C_VOLUME_DOWN
         &kp C_VOLUME_UP
         /* layers B R */
+        &kp C_VOLUME_DOWN
+        &kp C_VOLUME_UP
         &kp F14
         &kp F15
         &to BASE_LAYER
-        &to BASE_LAYER
-        &to BASE_LAYER
 
         /* layers C L */
-        &to BASE_LAYER
-        &to NUM_LAYER
-        &to SYMB_LAYER
-        &to NAV_L_LAYER
-        &to FUNCT_LAYER
+        &none
+        &none
+        &none
+        &none
+        &none
         /* layers C R */
-        &tog BASE_MIRROR_LAYER
-        &to FUNCT_LAYER
-        &to NAV_R_LAYER
-        &to NUM_LAYER
-        &to SYMB_LAYER
+        &none
+                &none
+                &none
+                &none
+                &none
 
         /* layers D L */
         &to BASE_LAYER
