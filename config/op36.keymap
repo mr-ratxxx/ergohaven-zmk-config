@@ -692,9 +692,9 @@ keymap {
         &kp X
         &kp C
         &kp V
-        &kp B
+        &lt LAYERS_LAYER B
         /* base D R */
-        &kp N
+        &lt LAYERS_LAYER N
         &kp M
         &kp COMMA
         &kp DOT
