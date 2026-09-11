@@ -633,13 +633,13 @@
 
         SLASH_HIGH {
             bindings = <&kp SLASH>;
-            key-positions = <25 26>;
+            key-positions = <17 18>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
         SLASH_DOWN {
             bindings = <&kp BSLH>;
-            key-positions = <44 45 25 26>;
+            key-positions = <25 26>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
