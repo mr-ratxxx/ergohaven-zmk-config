@@ -501,22 +501,22 @@
 
         MOUSE1_R {
             bindings = <&mkp MB1>;
-            key-positions = <28 29>;
+            key-positions = <26 27>;
         };
 
         MOUSE2_R {
             bindings = <&mkp MB2>;
-            key-positions = <28 29 30>;
+            key-positions = <26 27 28>;
         };
 
         MOUSE1_L {
             bindings = <&mkp MB1>;
-            key-positions = <24 25>;
+            key-positions = <22 23>;
         };
 
         MOUSE2_L {
             bindings = <&mkp MB2>;
-            key-positions = <23 24 25>;
+            key-positions = <21 22 23>;
         };
 
         MOUSE1_UP_R {
@@ -545,7 +545,7 @@
 
         UI_REVERT {
             bindings = <&kp RG(Z)>;
-            key-positions = <6 7>;
+            key-positions = <6 7>;e
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
