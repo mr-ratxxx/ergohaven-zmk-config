@@ -394,7 +394,7 @@
 
         M_DOWN_L {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <13 23>;
+            key-positions = <12 22>;
         };
 
         M_DOWN_R {
@@ -414,7 +414,7 @@
 
         M_LEFT_L {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <15 25>;
+            key-positions = <13 23>;
         };
 
         M_LEFT_R {
