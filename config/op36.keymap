@@ -585,7 +585,7 @@
 
         BT_0 {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <5 4>;
+            key-positions = <3 4>;
             layers = <FUNCT_LAYER>;
         };
 
