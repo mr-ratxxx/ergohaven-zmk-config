@@ -1141,9 +1141,9 @@ nav-mouse-r {
     layers {
       bindings = <
         /* layers B L */
-        &kp C_PREV
-        &kp C_PLAY_PAUSE
+        &kp C_PREV        
         &kp C_NEXT
+        &kp C_PLAY_PAUSE
         &kp C_VOLUME_DOWN
         &kp C_VOLUME_UP
         /* layers B R */
