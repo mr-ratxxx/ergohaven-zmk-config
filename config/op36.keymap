@@ -278,10 +278,15 @@
     combos {
         compatible = "zmk,combos";
 
+        GRAVE_COMBO {
+            bindings = <&kp GRAVE>;
+            key-positions = <9 8>;
+            layers = <SYMB_LAYER>;
+        };
+
         ESC_COMBO {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
-            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
         RU_E {
@@ -650,7 +655,7 @@ keymap {
         &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
-      >;
+      >;л
       display-name = "base";
     };
     
