@@ -280,7 +280,7 @@
 
         GRAVE_COMBO {
             bindings = <&kp GRAVE>;
-            key-positions = <9 8>;
+            key-positions = <19 18>;
             layers = <SYMB_LAYER>;
         };
 
