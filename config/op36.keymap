@@ -294,6 +294,11 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+        
+        ESC_COMBO_2 {
+                    bindings = <&kp ESC>;
+                    key-positions = <31 32>;
+                };
 
         RU_E {
             bindings = <&kp BSLH>;
@@ -661,7 +666,7 @@ keymap {
         &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
-      >;л
+      >;
       display-name = "base";
     };
     
