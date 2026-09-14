@@ -286,7 +286,7 @@
 
         CAPS_COMBO {
             bindings = <&kp CAPS>;
-            key-positions = <0 1>;
+            key-positions = <23 24>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
