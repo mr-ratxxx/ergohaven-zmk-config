@@ -625,7 +625,7 @@ keymap {
         &kp U
         &kp I
         &kp O
-        &kp P
+        &lt BASE_MIRROR_LAYER P
 
         /* base C L */
         &hml LGUI A
