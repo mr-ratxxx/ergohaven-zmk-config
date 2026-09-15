@@ -301,13 +301,13 @@
                 };
                 
         LT_NUM_LAYER {
-            bindings = <&to NUM_LAYER>;
+            bindings = <&lt NUM_LAYER>;
             key-positions = <30 31>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
         LT_FUNCT_LAYER {
-            bindings = <&to FUNCT_LAYER>;
+            bindings = <&lt FUNCT_LAYER>;
             key-positions = <34 35>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };        
