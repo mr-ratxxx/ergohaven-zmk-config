@@ -299,6 +299,16 @@
                     bindings = <&kp ESC>;
                     key-positions = <14 13>;
                 };
+                
+         LT_NUM_LAYER {
+                    bindings = <&kp ESC>;
+                    key-positions = <0 1>;
+                };
+                
+         LT_SYNC_LAYER {
+                    bindings = <&kp ESC>;
+                    key-positions = <0 1>;
+                };        
 
         RU_E {
             bindings = <&kp BSLH>;
