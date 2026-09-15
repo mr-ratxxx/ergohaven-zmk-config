@@ -1070,7 +1070,7 @@ nav-mouse-r {
         &hmr RGUI N0
 
         /* num D L */
-        &kp BACKSLASH
+        &kp DOT
         &kp N3
         &kp N2
         &kp N1
@@ -1080,7 +1080,7 @@ nav-mouse-r {
         &kp N1
         &kp N2
         &kp N3
-        &kp BACKSLASH
+        &kp DOT
 
         /* num T L */
         &kp TAB
