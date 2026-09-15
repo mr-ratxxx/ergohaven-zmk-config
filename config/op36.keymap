@@ -306,11 +306,23 @@
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
-        LT_FUNCT_LAYER {
-            bindings = <&mo FUNCT_LAYER>;
+        LT_SYMB_LAYER {
+            bindings = <&mo SYMB_LAYER>;
             key-positions = <34 35>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };        
+        };
+        
+        LT_FUNCT_LAYER_L {
+                    bindings = <&mo FUNCT_LAYER>;
+                    key-positions = <31 32>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                };
+                
+        LT_FUNCT_LAYER_L {
+                    bindings = <&mo FUNCT_LAYER>;
+                    key-positions = <33 34>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                };        
 
         RU_E {
             bindings = <&kp BSLH>;
