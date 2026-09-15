@@ -1115,26 +1115,26 @@ nav-mouse-r {
         &mt RCTRL RS(MINUS)
         &mt RALT EQUAL
         &mt RSHFT MINUS
-        &kp SLASH
+        &kp RS(SLASH)
         /* symb C R */
-        &kp SLASH
+        &kp RS(SLASH)
         &mt RSHFT MINUS
         &mt RALT EQUAL
         &mt RCTRL RS(MINUS)
         &mt RGUI PLUS
 
         /* symb D L */
-        &kp RS(N8)
-        &kp RS(N7)
-        &kp RS(N6)
         &kp RS(N5)
-        &kp RS(N1)        
-        /* symb D R */
+        &kp RS(N7)
+        &kp RS(N6)        
         &kp RS(N1)
-        &kp RS(N5)
+        &kp RS(N8)        
+        /* symb D R */
+        &kp RS(N8)
+        &kp RS(N1)
         &kp RS(N6)
         &kp RS(N7)
-        &kp RS(N8)
+        &kp RS(N5)
 
         /* symb T L */
         &kp TAB
