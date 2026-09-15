@@ -85,7 +85,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
@@ -98,7 +98,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
@@ -312,14 +312,14 @@
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
         
-        LT_FUNCT_LAYER_L {
-                    bindings = <&mo FUNCT_LAYER>;
+        MO_LAYERS_LAYER_L {
+                    bindings = <&mo LAYERS_LAYER>;
                     key-positions = <31 32>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };
                 
-        LT_FUNCT_LAYER_R {
-                    bindings = <&mo FUNCT_LAYER>;
+        MO_LAYERS_LAYER_R {
+                    bindings = <&mo LAYERS_LAYER>;
                     key-positions = <33 34>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };        
