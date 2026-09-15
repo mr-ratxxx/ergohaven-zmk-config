@@ -286,7 +286,7 @@
 
         CAPS_COMBO_L {
             bindings = <&kp CAPS>;
-            key-positions = <23 24>;
+            key-positions = <14 13>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
@@ -297,7 +297,7 @@
         
         ESC_COMBO_L_DOWN {
                     bindings = <&kp ESC>;
-                    key-positions = <14 13>;
+                    key-positions = <23 24>;                    
                 };
                 
         LT_NUM_LAYER {
