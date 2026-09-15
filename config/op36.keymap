@@ -300,15 +300,17 @@
                     key-positions = <14 13>;
                 };
                 
-         LT_NUM_LAYER {
-                    bindings = <&kp ESC>;
-                    key-positions = <0 1>;
-                };
-                
-         LT_SYNC_LAYER {
-                    bindings = <&kp ESC>;
-                    key-positions = <0 1>;
-                };        
+        LT_NUM_LAYER {
+            bindings = <&to NUM_LAYER>;
+            key-positions = <30 31>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };
+
+        LT_FUNCT_LAYER {
+            bindings = <&to FUNCT_LAYER>;
+            key-positions = <34 35>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };        
 
         RU_E {
             bindings = <&kp BSLH>;
