@@ -318,7 +318,7 @@
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };
                 
-        LT_FUNCT_LAYER_L {
+        LT_FUNCT_LAYER_R {
                     bindings = <&mo FUNCT_LAYER>;
                     key-positions = <33 34>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
