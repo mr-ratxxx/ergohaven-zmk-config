@@ -601,18 +601,6 @@
             layers = <FUNCT_LAYER>;
         };
 
-       QUESTION_RUEN {
-            bindings = <&kp RS(SLASH)>;
-            key-positions = <18 19>;
-            layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
-
-        QUESTION_RUEN2 {
-            bindings = <&kp RS(SLASH)>;
-            key-positions = <28 29>;
-            layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
-
         SLASH_HIGH {
             bindings = <&kp SLASH>;
             key-positions = <15 16>;
