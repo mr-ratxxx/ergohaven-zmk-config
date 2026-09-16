@@ -296,9 +296,9 @@
         };
         
         ESC_COMBO_L_DOWN {
-                    bindings = <&kp ESC>;
-                    key-positions = <23 24>;                    
-                };
+            bindings = <&kp ESC>;
+            key-positions = <23 24>;                    
+        };
                 
         LT_NUM_LAYER {
             bindings = <&mo NUM_LAYER>;
@@ -618,12 +618,24 @@
             key-positions = <15 16>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
+        
+        SLASH_HIGH_R {
+                    bindings = <&kp SLASH>;
+                    key-positions = <18 19>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER>;
+                };
 
         SLASH_DOWN {
             bindings = <&kp BSLH>;
             key-positions = <25 26>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
+        
+        SLASH_DOWN_R {
+                    bindings = <&kp BSLH>;
+                    key-positions = <28 29>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER>;
+                };
 
         UI_RU {
             bindings = <&kp LBKT>;
