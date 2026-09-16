@@ -299,6 +299,11 @@
             bindings = <&kp ESC>;
             key-positions = <23 24>;                    
         };
+        
+        ESC_COMBO_L_DOWN2 {
+                    bindings = <&kp ESC>;
+                    key-positions = <20 21>;                    
+                };
                 
         LT_NUM_LAYER {
             bindings = <&mo NUM_LAYER>;
