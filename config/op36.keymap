@@ -297,7 +297,7 @@
         
         ESC_COMBO_L_DOWN {
             bindings = <&kp ESC>;
-            key-positions = <23 24>;                    
+            key-positions = <23 24>;
         };
         
         ESC_COMBO_L_DOWN2 {
@@ -1036,7 +1036,7 @@ nav-mouse-r {
         &hml LCTRL F6
         &hml LALT F5
         &hml LSHIFT F4
-        &tog NAV_MOUSE_R_LAYER
+        &tog NAV_MOUSE_L_LAYER
         
         /* funct C R */
         &tog NAV_MOUSE_R_LAYER
