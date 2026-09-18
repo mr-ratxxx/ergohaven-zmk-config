@@ -327,7 +327,21 @@
                     bindings = <&mo LAYERS_LAYER>;                   
                     key-positions = <29 33>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-                };        
+                };
+                
+        /* mo */
+        MO_BASE_ADD_L {
+                            bindings = <&mo BASE_LAYER>;
+                            key-positions = <11 32>;
+                            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                        };
+                        
+                MO_BASE_ADD_R {
+                            bindings = <&mo BASE_LAYER>;                   
+                            key-positions = <19 33>;
+                            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                        };
+        /* mo-end */                
 
         RU_E {
             bindings = <&kp BSLH>;
