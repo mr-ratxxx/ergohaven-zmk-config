@@ -754,11 +754,11 @@ keymap {
         &none
         &msc SCRL_LEFT
         &msc SCRL_RIGHT        
-        &kp RS(N1)
+        &kp LS(LA(K))
         &none
         /* base-add D R */
         &none
-        &kp RS(N1)
+        &kp LS(LA(K))
         &msc SCRL_LEFT
         &msc SCRL_RIGHT
         &none
