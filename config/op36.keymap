@@ -739,13 +739,13 @@ keymap {
 
         /* base-add C L */
         &none
-        &none
+        &kp RS(SLASH)
         &msc SCRL_DOWN
         &msc SCRL_UP
         &none
         /* base-add C R */
         &none
-        &none
+        &kp RS(SLASH)
         &msc SCRL_UP
         &msc SCRL_DOWN
         &none
@@ -754,11 +754,11 @@ keymap {
         &none
         &msc SCRL_LEFT
         &msc SCRL_RIGHT        
-        &none
+        &kp RS(N1)
         &none
         /* base-add D R */
         &none
-        &none
+        &kp RS(N1)
         &msc SCRL_LEFT
         &msc SCRL_RIGHT
         &none
