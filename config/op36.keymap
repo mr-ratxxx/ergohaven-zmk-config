@@ -279,6 +279,16 @@
         compatible = "zmk,combos";
                 
         /* mo-start */
+        TO_BASE_L {
+            bindings = <&to BASE_LAYER>;
+            key-positions = <3 4 13 14>;
+        };
+
+        TO_BASE_R {
+            bindings = <&to BASE_LAYER>;
+            key-positions = <5 6 16 15>;
+        };        
+        
         LT_NUM_LAYER {
             bindings = <&mo NUM_LAYER>;
             key-positions = <30 31>;
@@ -517,16 +527,6 @@
             bindings = <&my_caps_word>;
             key-positions = <16 13 17 12>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };
-
-        TO_BASE_L {
-            bindings = <&to BASE_LAYER>;
-            key-positions = <3 4 13 14>;
-        };
-
-        TO_BASE_R {
-            bindings = <&to BASE_LAYER>;
-            key-positions = <5 6 16 15>;
         };
         
         /* bt */
