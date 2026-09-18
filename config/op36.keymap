@@ -733,28 +733,28 @@ keymap {
         &none
 
         /* base-add C L */
-        &msc SCRL_LEFT     
+        &none     
         &msc SCRL_DOWN
         &msc SCRL_UP
-        &msc SCRL_RIGHT
+        &none
         &none
         /* base-add C R */
         &none     
-        &msc SCRL_LEFT
+        &none
         &msc SCRL_UP
         &msc SCRL_DOWN
-        &msc SCRL_RIGHT
+        &none
         
         /* base-add D L */
-        &none     
         &none
-        &none
+        &msc SCRL_LEFT
+        &msc SCRL_RIGHT        
         &none
         &none
         /* base-add D R */
         &none     
-        &none
-        &none
+        &msc SCRL_LEFT
+        &msc SCRL_RIGHT
         &none
         &none
 
