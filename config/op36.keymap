@@ -726,41 +726,41 @@ keymap {
       bindings = <
         /* base-add B L */
         &none
-        &kp DOWN
-        &kp UP        
+        &msc SCRL_LEFT
+        &msc SCRL_RIGHT
         &none
         &none
         /* base-add B R */
         &none
         &none                   
-        &kp UP
-        &kp DOWN        
+        &msc SCRL_LEFT
+        &msc SCRL_RIGHT        
         &none
 
         /* base-add C L */
         &none
-        &msc SCRL_LEFT
-        &msc SCRL_RIGHT
+        &msc SCRL_DOWN
+        &msc SCRL_UP
         &kp LS(LA(L))        
         &none
         /* base-add C R */
         &none
         &kp LS(LA(L))
-        &msc SCRL_LEFT
-        &msc SCRL_RIGHT        
+        &msc SCRL_DOWN
+        &msc SCRL_UP        
         &none
         
         /* base-add D L */
         &none
-        &msc SCRL_DOWN 
-        &msc SCRL_UP               
+        &kp DOWN 
+        &kp UP               
         &kp LS(LA(K))
         &none
         /* base-add D R */
         &none
         &kp LS(LA(K))        
-        &msc SCRL_UP
-        &msc SCRL_DOWN
+        &kp UP
+        &kp DOWN
         &none
 
         /* base-add T L */
