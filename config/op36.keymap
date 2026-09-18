@@ -277,33 +277,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        GRAVE_COMBO {
-            bindings = <&kp GRAVE>;
-            key-positions = <19 18>;
-            layers = <SYMB_LAYER>;
-        };
-
-        CAPS_COMBO_L {
-            bindings = <&kp CAPS>;
-            key-positions = <14 13>;
-            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };
-
-        ESC_COMBO_L_UP {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
-        
-        ESC_COMBO_L_DOWN {
-            bindings = <&kp ESC>;
-            key-positions = <23 24>;
-        };
-        
-        ESC_COMBO_L_DOWN2 {
-                    bindings = <&kp ESC>;
-                    key-positions = <20 21>;                    
-                };
                 
         LT_NUM_LAYER {
             bindings = <&mo NUM_LAYER>;
@@ -658,6 +631,33 @@ BT_0 {
                     key-positions = <8 7>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
+                
+GRAVE_COMBO {
+            bindings = <&kp GRAVE>;
+            key-positions = <19 18>;
+            layers = <SYMB_LAYER>;
+        };
+
+        CAPS_COMBO_L {
+            bindings = <&kp CAPS>;
+            key-positions = <14 13>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };
+
+        ESC_COMBO_L_UP {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+        
+        ESC_COMBO_L_DOWN {
+            bindings = <&kp ESC>;
+            key-positions = <23 24>;
+        };
+        
+        ESC_COMBO_L_DOWN2 {
+                    bindings = <&kp ESC>;
+                    key-positions = <20 21>;                    
+                };                
         /* kp-end */
     };
 
@@ -720,51 +720,49 @@ keymap {
     base-add{
       bindings = <
         /* base-add B L */
-        &trans          
-        &trans
-        &trans
-        &trans
-        &kp BSLH
+        &none
+        &kp UP
+        &kp DOWN
+        &none
+        &none
         /* base-add B R */
-        &trans
-        &trans         
-        &trans
-        &trans                
-        &kp GRAVE
+        &none                      
+        &kp UP
+        &kp DOWN
+        &none
+        &none
 
         /* base-add C L */
-        &trans     
-        &trans
-        &trans
-        &trans
-        &trans
+        &msc SCRL_LEFT     
+        &msc SCRL_DOWN
+        &msc SCRL_UP
+        &msc SCRL_RIGHT
+        &none
         /* base-add C R */
-        &trans
-        &trans
-        &trans
-        &trans        
-        &kp SQT
+        &none     
+        &msc SCRL_LEFT
+        &msc SCRL_UP
+        &msc SCRL_DOWN
+        &msc SCRL_RIGHT
         
         /* base-add D L */
-        &trans
-        &kp MINUS
-        &kp EQUAL
-        &trans
-        &trans
+        &none     
+        &none
+        &none
+        &none
+        &none
         /* base-add D R */
-        &trans
-        &trans
-        &kp LBKT
-        &kp RBKT
-        &kp BSLH
+        &none     
+        &none
+        &none
+        &none
+        &none
 
         /* base-add T L */
         &trans
         &trans
         &trans
-        &trans
         /* base-add T R */
-        &trans
         &trans
         &trans
         &trans
@@ -836,9 +834,9 @@ keymap {
         /* nav-r B R */
         &to BASE_LAYER
         &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
-                &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
-                &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         
         /* nav-r C L */        
         &kp LGUI
@@ -862,9 +860,9 @@ keymap {
         /* nav-r D R */
         &msc SCRL_DOWN
         &mmv MOVE_X(MMV_FAST_SPEED_L)
-                &mmv MOVE_Y(MMV_FAST_SPEED_U)
-                &mmv MOVE_Y(MMV_FAST_SPEED_D)        
-                &mmv MOVE_X(MMV_FAST_SPEED_R)
+        &mmv MOVE_Y(MMV_FAST_SPEED_U)
+        &mmv MOVE_Y(MMV_FAST_SPEED_D)        
+        &mmv MOVE_X(MMV_FAST_SPEED_R)
 
         /* nav-r T L */
         &lt SYMB_LAYER TAB
