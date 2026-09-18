@@ -303,13 +303,13 @@
         
         MO_LAYERS_LAYER_L {
                     bindings = <&mo LAYERS_LAYER>;
-                    key-positions = <20 32>;
+                    key-positions = <20 31>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };
                 
         MO_LAYERS_LAYER_R {
                     bindings = <&mo LAYERS_LAYER>;                   
-                    key-positions = <29 33>;
+                    key-positions = <29 34>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };        
         
