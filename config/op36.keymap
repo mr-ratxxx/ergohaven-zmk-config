@@ -1071,9 +1071,9 @@ nav-mouse-r {
         &kp F12
         &kp F11
         &kp F10
-        &kp LS(LA(L))
+        &to BASE_LAYER
         /* funct D R */
-        &kp LS(LA(L))
+        &to BASE_LAYER
         &kp F10
         &kp F11
         &kp F12
