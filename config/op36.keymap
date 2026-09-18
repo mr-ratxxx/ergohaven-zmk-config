@@ -739,15 +739,15 @@ keymap {
 
         /* base-add C L */
         &none
-        &msc SCRL_DOWN
         &msc SCRL_UP
+        &msc SCRL_DOWN        
         &kp LS(LA(L))        
         &none
         /* base-add C R */
         &none
         &kp LS(LA(L))
-        &msc SCRL_DOWN
-        &msc SCRL_UP        
+        &msc SCRL_UP
+        &msc SCRL_DOWN                
         &none
         
         /* base-add D L */
