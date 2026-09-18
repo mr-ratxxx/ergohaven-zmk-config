@@ -726,8 +726,8 @@ keymap {
       bindings = <
         /* base-add B L */
         &none
-        &kp UP
         &kp DOWN
+        &kp UP        
         &none
         &none
         /* base-add B R */
@@ -744,10 +744,10 @@ keymap {
         &none
         &none
         /* base-add C R */
-        &none     
         &none
         &msc SCRL_UP
         &msc SCRL_DOWN
+        &none
         &none
         
         /* base-add D L */
