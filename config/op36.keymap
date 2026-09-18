@@ -414,6 +414,12 @@
         
         
         /* system-start */
+        CAPS_WORLD {
+            bindings = <&my_caps_word>;
+            key-positions = <16 13 17 12>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };        
+        
         UI_REVERT {
             bindings = <&kp RG(Z)>;
             key-positions = <6 7>;
@@ -521,12 +527,6 @@
             bindings = <&mkp MB2>;
             key-positions = <3 2 1>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
-        };
-
-        CAPS_WORLD {
-            bindings = <&my_caps_word>;
-            key-positions = <16 13 17 12>;
-            layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
         
         /* bt */
