@@ -278,6 +278,7 @@
     combos {
         compatible = "zmk,combos";
                 
+        /* mo-start */
         LT_NUM_LAYER {
             bindings = <&mo NUM_LAYER>;
             key-positions = <30 31>;
@@ -288,7 +289,7 @@
             bindings = <&mo SYMB_LAYER>;
             key-positions = <34 35>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };
+        };        
         
         MO_LAYERS_LAYER_L {
                     bindings = <&mo LAYERS_LAYER>;
@@ -300,9 +301,8 @@
                     bindings = <&mo LAYERS_LAYER>;                   
                     key-positions = <29 33>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-                };
-                
-        /* mo */
+                };        
+        
         MO_BASE_ADD_L {
                             bindings = <&mo BASE_LAYER>;
                             key-positions = <10 32>;
@@ -314,14 +314,9 @@
                             key-positions = <19 33>;
                             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                         };
-        /* mo-end */                
-
-        RU_E {
-            bindings = <&kp BSLH>;
-            key-positions = <3 4>;
-            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };
-
+        /* mo-end */
+        
+        /* nav-start */
         BACK_L {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <12 13>;
@@ -354,8 +349,8 @@
         PG_DOWN_R {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <18 8>;
-        };
-
+        };        
+        
         CMD_PG_UP_L {
             bindings = <&kp PAGE_UP>;
             key-positions = <12 2>;
@@ -404,8 +399,11 @@
         M_RIGHT_R {
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <19 29>;
-        };
-
+        };        
+        /* nav-end */
+        
+        
+        /* system-start */
         CMD_TAB_L {
             bindings = <&kp LG(TAB)>;
             key-positions = <2 1>;
@@ -414,39 +412,13 @@
         CMD_TAB_R {
             bindings = <&kp LG(TAB)>;
             key-positions = <9 8>;
-        };
-
-        CAPS_L {
-            bindings = <&kp CAPS>;
-            key-positions = <40 41 24 23>;
-        };
+        };        
+        /* system-end */                
 
         FROM_LAYERS_TO_ADJ_LAYER {
             bindings = <&tog ADJ_LAYER>;
             key-positions = <9 8>;
             layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
-        };
-
-        ENTER_R {
-            bindings = <&kp ENTER>;
-            key-positions = <27 28>;
-        };
-
-        ENTER_L {
-            bindings = <&kp ENTER>;
-            key-positions = <22 21>;
-        };
-
-        N0_L {
-            bindings = <&kp N0>;
-            key-positions = <23 22>;
-            layers = <NUM_LAYER>;
-        };
-
-        N0_R {
-            bindings = <&kp N0>;
-            key-positions = <26 27>;
-            layers = <NUM_LAYER>;
         };
 
         MOUSE1_ML_L {
@@ -595,7 +567,40 @@ BT_0 {
         };        
         /* bt-end */
         
-        /* kp */
+        /* kp-start */
+        ENTER_R {
+            bindings = <&kp ENTER>;
+            key-positions = <27 28>;
+        };
+
+        ENTER_L {
+            bindings = <&kp ENTER>;
+            key-positions = <22 21>;
+        };
+
+        N0_L {
+            bindings = <&kp N0>;
+            key-positions = <23 22>;
+            layers = <NUM_LAYER>;
+        };
+
+        N0_R {
+            bindings = <&kp N0>;
+            key-positions = <26 27>;
+            layers = <NUM_LAYER>;
+        };        
+        
+        CAPS_L {
+            bindings = <&kp CAPS>;
+            key-positions = <40 41 24 23>;
+        };        
+        
+        RU_E {
+            bindings = <&kp BSLH>;
+            key-positions = <3 4>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };        
+        
         SLASH_HIGH {
                     bindings = <&kp SLASH>;
                     key-positions = <15 16>;
@@ -632,7 +637,7 @@ BT_0 {
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
                 
-GRAVE_COMBO {
+        GRAVE_COMBO {
             bindings = <&kp GRAVE>;
             key-positions = <19 18>;
             layers = <SYMB_LAYER>;
