@@ -414,6 +414,30 @@
         
         
         /* system-start */
+        UI_REVERT {
+            bindings = <&kp RG(Z)>;
+            key-positions = <6 7>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        UIO_REPEAT {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <7 8>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        UI_REVERT_L {
+            bindings = <&kp RG(Z)>;
+            key-positions = <2 3>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        UIO_REPEAT_L {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <2 1>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };        
+        
         CMD_TAB_L {
             bindings = <&kp LG(TAB)>;
             key-positions = <2 1>;
@@ -499,30 +523,6 @@
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        UI_REVERT {
-            bindings = <&kp RG(Z)>;
-            key-positions = <6 7>;
-            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
-        };
-
-        UIO_REPEAT {
-            bindings = <&kp LS(LG(Z))>;
-            key-positions = <7 8>;
-            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
-        };
-
-        UI_REVERT_L {
-            bindings = <&kp RG(Z)>;
-            key-positions = <2 3>;
-            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
-        };
-
-        UIO_REPEAT_L {
-            bindings = <&kp LS(LG(Z))>;
-            key-positions = <2 1>;
-            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
-        };
-
         CAPS_WORLD {
             bindings = <&my_caps_word>;
             key-positions = <16 13 17 12>;
@@ -530,7 +530,7 @@
         };
         
         /* bt */
-BT_0 {
+        BT_0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <3 4>;
             layers = <FUNCT_LAYER>;
