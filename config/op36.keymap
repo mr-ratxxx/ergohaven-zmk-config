@@ -739,9 +739,9 @@ keymap {
 
         /* base-add C L */
         &none
-        &kp LS(LA(L))
         &msc SCRL_LEFT
-        &msc SCRL_RIGHT        
+        &msc SCRL_RIGHT
+        &kp LS(LA(L))        
         &none
         /* base-add C R */
         &none
@@ -751,16 +751,16 @@ keymap {
         &none
         
         /* base-add D L */
-        &none        
-        &msc SCRL_UP
-        &msc SCRL_DOWN        
+        &none
+        &msc SCRL_DOWN 
+        &msc SCRL_UP               
         &kp LS(LA(K))
         &none
         /* base-add D R */
         &none
-        &kp LS(LA(K))
-        &msc SCRL_DOWN
+        &kp LS(LA(K))        
         &msc SCRL_UP
+        &msc SCRL_DOWN
         &none
 
         /* base-add T L */
