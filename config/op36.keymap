@@ -305,7 +305,7 @@
         /* mo */
         MO_BASE_ADD_L {
                             bindings = <&mo BASE_LAYER>;
-                            key-positions = <11 32>;
+                            key-positions = <10 32>;
                             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                         };
                         
