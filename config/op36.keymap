@@ -731,23 +731,23 @@ keymap {
         &none
         &none
         /* base-add B R */
-        &none                      
-        &kp UP
-        &kp DOWN
         &none
+        &none                   
+        &kp UP
+        &kp DOWN        
         &none
 
         /* base-add C L */
-        &none     
+        &none
+        &none
         &msc SCRL_DOWN
         &msc SCRL_UP
-        &none
         &none
         /* base-add C R */
         &none
+        &none
         &msc SCRL_UP
         &msc SCRL_DOWN
-        &none
         &none
         
         /* base-add D L */
@@ -757,10 +757,10 @@ keymap {
         &none
         &none
         /* base-add D R */
-        &none     
+        &none
+        &none
         &msc SCRL_LEFT
         &msc SCRL_RIGHT
-        &none
         &none
 
         /* base-add T L */
