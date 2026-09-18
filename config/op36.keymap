@@ -569,8 +569,9 @@
             bindings = <&to BASE_LAYER>;
             key-positions = <5 6 16 15>;
         };
-
-        BT_0 {
+        
+        /* bt */
+BT_0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <3 4>;
             layers = <FUNCT_LAYER>;
@@ -604,43 +605,46 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <0 1 2 3>;
             layers = <FUNCT_LAYER>;
-        };
-
+        };        
+        /* bt-end */
+        
+        /* kp */
         SLASH_HIGH {
-            bindings = <&kp SLASH>;
-            key-positions = <15 16>;
-            layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
-        
-        SLASH_HIGH_R {
                     bindings = <&kp SLASH>;
-                    key-positions = <18 19>;
+                    key-positions = <15 16>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
-
-        SLASH_DOWN {
-            bindings = <&kp BSLH>;
-            key-positions = <25 26>;
-            layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
+                
+                SLASH_HIGH_R {
+                            bindings = <&kp SLASH>;
+                            key-positions = <18 19>;
+                            layers = <BASE_LAYER BASE_ADD_LAYER>;
+                        };
         
-        SLASH_DOWN_R {
+                SLASH_DOWN {
                     bindings = <&kp BSLH>;
-                    key-positions = <28 29>;
+                    key-positions = <25 26>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
-
-        UI_RU {
-            bindings = <&kp LBKT>;
-            key-positions = <6 7>;
-            layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
-
-        IO_RU {
-            bindings = <&kp RBKT>;
-            key-positions = <8 7>;
-            layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
+                
+                SLASH_DOWN_R {
+                            bindings = <&kp BSLH>;
+                            key-positions = <28 29>;
+                            layers = <BASE_LAYER BASE_ADD_LAYER>;
+                        };
+        
+                UI_RU {
+                    bindings = <&kp LBKT>;
+                    key-positions = <6 7>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER>;
+                };
+        
+                IO_RU {
+                    bindings = <&kp RBKT>;
+                    key-positions = <8 7>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER>;
+                };
+        /* kp-end */
     };
 
 keymap {
