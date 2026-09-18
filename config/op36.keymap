@@ -728,11 +728,11 @@ keymap {
         &none
         &msc SCRL_LEFT
         &msc SCRL_RIGHT
-        &none
+        &my_caps_word
         &none
         /* base-add B R */
         &none
-        &none                   
+        &my_caps_word           
         &msc SCRL_LEFT
         &msc SCRL_RIGHT        
         &none
