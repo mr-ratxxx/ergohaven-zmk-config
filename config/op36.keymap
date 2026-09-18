@@ -752,15 +752,15 @@ keymap {
         
         /* base-add D L */
         &none
-        &kp DOWN 
-        &kp UP               
+        &kp PAGE_DOWN
+        &kp PAGE_UP        
         &kp LS(LA(K))
         &none
         /* base-add D R */
         &none
         &kp LS(LA(K))        
-        &kp UP
-        &kp DOWN
+        &kp PAGE_UP
+        &kp PAGE_DOWN
         &none
 
         /* base-add T L */
