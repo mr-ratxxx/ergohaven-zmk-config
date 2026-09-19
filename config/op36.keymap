@@ -287,29 +287,17 @@
         TO_BASE_R {
             bindings = <&to BASE_LAYER>;
             key-positions = <5 6 16 15>;
-        };        
-        
-        LT_NUM_LAYER {
-            bindings = <&mo NUM_LAYER>;
-            key-positions = <30 31>;
-            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };
-
-        LT_SYMB_LAYER {
-            bindings = <&mo SYMB_LAYER>;
-            key-positions = <34 35>;
-            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };        
+        };                
         
         MO_LAYERS_LAYER_L {
                     bindings = <&mo LAYERS_LAYER>;
-                    key-positions = <20 32>;
+                    key-positions = <20 31>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };
                 
         MO_LAYERS_LAYER_R {
                     bindings = <&mo LAYERS_LAYER>;                   
-                    key-positions = <29 33>;
+                    key-positions = <29 34>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };        
         
@@ -1203,41 +1191,41 @@ nav-mouse-r {
       bindings = <
         /* layers B L */
         &none
-        &none
         &kp F14
         &kp F15
+        &none
         &none
         /* layers B R */        
-        &none        
+        &none
+        &none      
         &kp F15
         &kp F14
-        &none
         &none
 
         /* layers C L */
         &none
-        &kp C_MUTE
         &kp C_VOLUME_DOWN
         &kp C_VOLUME_UP
+        &kp C_MUTE
         &none
         /* layers C R */
         &none
+        &kp C_MUTE
         &kp C_VOLUME_UP
         &kp C_VOLUME_DOWN
-        &kp C_MUTE
         &none
 
         /* layers D L */
         &none
-        &kp C_PLAY_PAUSE
         &kp C_PREV        
         &kp C_NEXT
+        &kp C_PLAY_PAUSE
         &none
         /* layers D R */
         &none
+        &kp C_PLAY_PAUSE
         &kp C_NEXT
         &kp C_PREV
-        &kp C_PLAY_PAUSE
         &none
 
         /* layers T L */
