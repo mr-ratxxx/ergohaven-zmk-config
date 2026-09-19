@@ -485,8 +485,8 @@
                 NAV_MOUSE_R_LAYER
                 NAV_MOUSE_L_LAYER
                 FUNCT_LAYER
-                /* NUM_LAYER */
-                SYMB_LAYER
+                /* NUM_LAYER
+                SYMB_LAYER */
                 LAYERS_LAYER
                 ADJ_LAYER
                 BASE_OVERRIDE_LAYER
@@ -511,8 +511,8 @@
                 NAV_MOUSE_R_LAYER
                 NAV_MOUSE_L_LAYER
                 FUNCT_LAYER
-                /* NUM_LAYER */
-                SYMB_LAYER
+                /* NUM_LAYER
+                SYMB_LAYER */
                 LAYERS_LAYER
                 ADJ_LAYER
                 BASE_OVERRIDE_LAYER
