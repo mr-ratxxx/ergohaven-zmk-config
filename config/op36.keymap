@@ -608,7 +608,19 @@
             bindings = <&kp N0>;
             key-positions = <26 27>;
             layers = <NUM_LAYER>;
-        };        
+        };
+        
+        N1_L {
+            bindings = <&kp RS(N1)>;
+            key-positions = <23 22>;
+            layers = <SYMB_LAYER>;            
+        };
+        
+        N1_R {
+                    bindings = <&kp RS(N1)>;
+                    key-positions = <26 27>;
+                    layers = <SYMB_LAYER>;            
+                };                
         
         CAPS_L {
             bindings = <&kp CAPS>;
@@ -1185,9 +1197,9 @@ nav-mouse-r {
         &mt RCTRL RS(MINUS)
         &mt RALT EQUAL
         &mt RSHFT MINUS
-        &kp RS(SLASH)
+        &kp RS(N1)
         /* symb C R */
-        &kp RS(SLASH)
+        &kp RS(N1)
         &mt RSHFT MINUS
         &mt RALT EQUAL
         &mt RCTRL RS(MINUS)
@@ -1197,11 +1209,11 @@ nav-mouse-r {
         &kp RS(N5)
         &kp RS(N7)
         &kp RS(N6)        
-        &kp RS(N1)
+        &kp RS(SLASH)
         &kp RS(N8)        
         /* symb D R */
         &kp RS(N8)
-        &kp RS(N1)
+        &kp RS(SLASH)
         &kp RS(N6)
         &kp RS(N7)
         &kp RS(N5)
