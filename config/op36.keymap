@@ -297,7 +297,7 @@
                 
         MO_LAYERS_LAYER_R {
                     bindings = <&mo LAYERS_LAYER>;                   
-                    key-positions = <20 34>;
+                    key-positions = <19 34>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };        
         
