@@ -476,6 +476,22 @@
         MOUSE1_R {
             bindings = <&mkp MB1>;
             key-positions = <26 27>;
+            layers = <
+                BASE_LAYER
+                BASE_ADD_LAYER
+                BASE_MIRROR_LAYER
+                NAV_R_LAYER
+                NAV_L_LAYER
+                NAV_MOUSE_R_LAYER
+                NAV_MOUSE_L_LAYER
+                FUNCT_LAYER
+                / * NUM_LAYER */
+                SYMB_LAYER
+                LAYERS_LAYER
+                ADJ_LAYER
+                BASE_OVERRIDE_LAYER
+                BASE_ADD_OVERRIDE_LAYER
+            >;            
         };
 
         MOUSE2_R {
@@ -486,6 +502,22 @@
         MOUSE1_L {
             bindings = <&mkp MB1>;
             key-positions = <22 23>;
+            layers = <
+                BASE_LAYER
+                BASE_ADD_LAYER
+                BASE_MIRROR_LAYER
+                NAV_R_LAYER
+                NAV_L_LAYER
+                NAV_MOUSE_R_LAYER
+                NAV_MOUSE_L_LAYER
+                FUNCT_LAYER
+                /* NUM_LAYER */
+                SYMB_LAYER
+                LAYERS_LAYER
+                ADJ_LAYER
+                BASE_OVERRIDE_LAYER
+                BASE_ADD_OVERRIDE_LAYER
+            >;
         };
 
         MOUSE2_L {
