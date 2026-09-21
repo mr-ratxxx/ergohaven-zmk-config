@@ -285,7 +285,7 @@
         };
 
         to_base_mirror_r {
-            bindings = <&to BASE_MIRROR_LAYER>;
+            bindings = <&tog BASE_MIRROR_LAYER>;
             key-positions = <0 1 2>;
             layers = <
                 BASE_LAYER
@@ -297,7 +297,7 @@
         };
         
         to_base_mirror_l {
-            bindings = <&to BASE_MIRROR_LAYER>;
+            bindings = <&tog BASE_MIRROR_LAYER>;
             key-positions = <7 8 9>;
             layers = <
                 BASE_LAYER
@@ -625,19 +625,7 @@
             bindings = <&kp BSLH>;
             key-positions = <3 4>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-        };        
-        
-        slash_high {
-                    bindings = <&kp SLASH>;
-                    key-positions = <15 16>;
-                    layers = <BASE_LAYER BASE_ADD_LAYER>;
-                };
-                
-        slash_high_r {
-                    bindings = <&kp SLASH>;
-                    key-positions = <18 19>;
-                    layers = <BASE_LAYER BASE_ADD_LAYER>;
-                };
+        };
         
         slash_down {
             bindings = <&kp BSLH>;
@@ -650,6 +638,18 @@
                     key-positions = <28 29>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
+                
+        slash_combo_symb {
+            bindings = <&kp SLASH>;
+            key-positions = <16 17>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        bslash_combo_symb {
+            bindings = <&kp BSLH>;
+            key-positions = <17 18>;
+            layers = <SYMB_LAYER>;
+        };                
         
         lbkt_combos {
             bindings = <&kp LBKT>;
@@ -688,7 +688,7 @@
         esc_combo_l_down2 {
                     bindings = <&kp ESC>;
                     key-positions = <20 21>;                    
-                };                
+                };                                        
         /* kp-end */
         
         /* bt */
