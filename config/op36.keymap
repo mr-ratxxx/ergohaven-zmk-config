@@ -289,6 +289,10 @@
             key-positions = <0 1 2>;
             layers = <
                 BASE_LAYER
+                BASE_ADD_LAYER
+                BASE_OVERRIDE_LAYER
+                BASE_ADD_OVERRIDE_LAYER
+                BASE_MIRROR_LAYER
             >;            
         };
         
@@ -297,8 +301,12 @@
             key-positions = <7 8 9>;
             layers = <
                 BASE_LAYER
+                BASE_ADD_LAYER
+                BASE_OVERRIDE_LAYER
+                BASE_ADD_OVERRIDE_LAYER
+                BASE_MIRROR_LAYER
             >;                    
-                };
+        };
         
         to_base_r {
             bindings = <&to BASE_LAYER>;
