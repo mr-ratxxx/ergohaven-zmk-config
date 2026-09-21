@@ -816,15 +816,15 @@ keymap {
         
         /* base-add D L */
         &none
-        &kp PAGE_DOWN
-        &kp PAGE_UP        
         &kp LS(LA(K))
+        &kp PAGE_DOWN
+        &kp PAGE_UP
         &none
         /* base-add D R */
-        &none
-        &kp LS(LA(K))        
+        &none        
         &kp PAGE_UP
         &kp PAGE_DOWN
+        &kp LS(LA(K))
         &none
 
         /* base-add T L */
