@@ -284,9 +284,25 @@
             key-positions = <3 4 13 14>;
         };
 
+        to_base_mirror_r {
+            bindings = <&to BASE_MIRROR_LAYER>;
+            key-positions = <0 1 2>;
+            layers = <
+                BASE_LAYER
+            >;            
+        };
+        
+        to_base_mirror_l {
+            bindings = <&to BASE_MIRROR_LAYER>;
+            key-positions = <7 8 9>;
+            layers = <
+                BASE_LAYER
+            >;                    
+                };
+        
         to_base_r {
             bindings = <&to BASE_LAYER>;
-            key-positions = <5 6 16 15>;
+            key-positions = <5 6 16 15>;                    
         };                
         
           /*  
@@ -448,31 +464,37 @@
         from_layers_to_adj_layer {
             bindings = <&tog ADJ_LAYER>;
             key-positions = <9 8>;
-            layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
+            layers = <FUNCT_LAYER
+            LAYERS_LAYER
+            ADJ_LAYER>;
         };
 
         mouse1_ml_l {
             bindings = <&mkp MB1>;
             key-positions = <13 12>;
-            layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+            layers = <NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER>;
         };
 
         mouse2_ml_l {
             bindings = <&mkp MB2>;
             key-positions = <13 12 11>;
-            layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+            layers = <NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER>;
         };
 
         mouse1_ml_r {
             bindings = <&mkp MB1>;
             key-positions = <16 17>;
-            layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+            layers = <NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER>;
         };
 
         mouse2_ml_r {
             bindings = <&mkp MB2>;
             key-positions = <16 17 18>;
-            layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+            layers = <NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER>;
         };
 
         mouse1_r {
