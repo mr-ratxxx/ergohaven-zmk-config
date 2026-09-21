@@ -731,11 +731,11 @@ keymap {
         &lt BASE_MIRROR_LAYER Q
         &kp W
         &kp E
-        &kp R
+        &lt BASE_MIRROR_LAYER R
         &kp T
         /* base B R */
         &kp Y
-        &kp U
+        &lt BASE_MIRROR_LAYER U
         &kp I
         &kp O
         &lt BASE_MIRROR_LAYER P
