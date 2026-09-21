@@ -634,10 +634,10 @@
         };
                 
         slash_down_r {
-                    bindings = <&kp BSLH>;
-                    key-positions = <28 29>;
-                    layers = <BASE_LAYER BASE_ADD_LAYER>;
-                };
+            bindings = <&kp BSLH>;
+            key-positions = <28 29>;
+            layers = <BASE_LAYER BASE_ADD_LAYER>;
+        };
                 
         slash_combo_symb {
             bindings = <&kp SLASH>;
@@ -790,28 +790,28 @@ keymap {
       bindings = <
         /* base-add B L */
         &none
-        &msc SCRL_LEFT
-        &msc SCRL_RIGHT
         &my_caps_word
+        &kp DOWN
+        &kp UP        
         &none
         /* base-add B R */
-        &none
-        &my_caps_word           
-        &msc SCRL_LEFT
-        &msc SCRL_RIGHT        
+        &none                   
+        &kp UP
+        &kp DOWN
+        &my_caps_word        
         &none
 
         /* base-add C L */
-        &none               
+        &none
+        &kp LS(LA(L))
         &msc SCRL_DOWN
-        &msc SCRL_UP        
-        &kp LS(LA(L))        
+        &msc SCRL_UP
         &none
         /* base-add C R */
         &none
-        &kp LS(LA(L))
         &msc SCRL_UP
-        &msc SCRL_DOWN                
+        &msc SCRL_DOWN
+        &kp LS(LA(L))                
         &none
         
         /* base-add D L */
