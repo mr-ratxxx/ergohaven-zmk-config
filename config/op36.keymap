@@ -588,64 +588,64 @@
         /* bt-end */
         
         /* kp-start */
-        ENTER_R {
+        enter_r {
             bindings = <&kp ENTER>;
             key-positions = <27 28>;
         };
 
-        ENTER_L {
+        enter_l {
             bindings = <&kp ENTER>;
             key-positions = <22 21>;
         };
 
-        N0_L {
+        n0_l {
             bindings = <&kp N0>;
             key-positions = <23 22>;
             layers = <NUM_LAYER>;
         };
 
-        N0_R {
+        n0_r {
             bindings = <&kp N0>;
             key-positions = <26 27>;
             layers = <NUM_LAYER>;
         };
         
-        N1_L {
+        n1_l {
             bindings = <&kp RS(N1)>;
             key-positions = <23 22>;
             layers = <SYMB_LAYER>;            
         };
         
-        N1_R {
+        n1_r {
                     bindings = <&kp RS(N1)>;
                     key-positions = <26 27>;
                     layers = <SYMB_LAYER>;            
                 };                
         
-        CAPS_L {
+        caps_l {
             bindings = <&kp CAPS>;
             key-positions = <40 41 24 23>;
         };        
         
-        RU_E {
+        ru_e {
             bindings = <&kp BSLH>;
             key-positions = <3 4>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };        
         
-        SLASH_HIGH {
+        slash_high {
                     bindings = <&kp SLASH>;
                     key-positions = <15 16>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
                 
-                SLASH_HIGH_R {
+                slash_high_r {
                             bindings = <&kp SLASH>;
                             key-positions = <18 19>;
                             layers = <BASE_LAYER BASE_ADD_LAYER>;
                         };
         
-                SLASH_DOWN {
+                slash_down {
                     bindings = <&kp BSLH>;
                     key-positions = <25 26>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
@@ -657,36 +657,36 @@
                             layers = <BASE_LAYER BASE_ADD_LAYER>;
                         };
         
-                UI_RU {
+                lbkt_combos {
                     bindings = <&kp LBKT>;
                     key-positions = <6 7>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
         
-                IO_RU {
+                rbkt_combos {
                     bindings = <&kp RBKT>;
                     key-positions = <8 7>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
                 
-        GRAVE_COMBO {
+        grave_combo {
             bindings = <&kp GRAVE>;
             key-positions = <19 18>;
             layers = <SYMB_LAYER>;
         };
 
-        CAPS_COMBO_L {
+        caps_combo_l {
             bindings = <&kp CAPS>;
             key-positions = <14 13>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
-        ESC_COMBO_L_UP {
+        esc_combo_l_up {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
         
-        ESC_COMBO_L_DOWN {
+        esc_combo_l_down {
             bindings = <&kp ESC>;
             key-positions = <23 24>;
         };
