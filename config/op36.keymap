@@ -575,7 +575,7 @@
         n1_l {
             bindings = <&kp RS(SLASH)>;
             key-positions = <23 22>;
-            layers = <SYMB_LAYER>;            
+            layers = <SYMB_LAYER>;
         };
         
         n1_r {
@@ -1235,41 +1235,41 @@ nav-mouse-r {
       bindings = <
         /* layers B L */
         &none
+        &none
         &kp F14
         &kp F15
-        &none
         &none
         /* layers B R */        
-        &none
-        &none      
+        &none              
         &kp F15
         &kp F14
+        &none
         &none
 
         /* layers C L */
         &none
-        &kp C_VOLUME_DOWN
-        &kp C_VOLUME_UP
         &kp C_MUTE
+        &kp C_VOLUME_DOWN
+        &kp C_VOLUME_UP      
         &none
         /* layers C R */
         &none
-        &kp C_MUTE
         &kp C_VOLUME_UP
         &kp C_VOLUME_DOWN
+        &kp C_MUTE
         &none
 
         /* layers D L */
         &none
+        &kp C_PLAY_PAUSE
         &kp C_PREV        
         &kp C_NEXT
-        &kp C_PLAY_PAUSE
         &none
         /* layers D R */
         &none
-        &kp C_PLAY_PAUSE
         &kp C_NEXT
         &kp C_PREV
+        &kp C_PLAY_PAUSE
         &none
 
         /* layers T L */
