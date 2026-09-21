@@ -653,44 +653,44 @@
             key-positions = <23 24>;
         };
         
-        ESC_COMBO_L_DOWN2 {
+        esc_combo_l_down2 {
                     bindings = <&kp ESC>;
                     key-positions = <20 21>;                    
                 };                
         /* kp-end */
         
-/* bt */
-        BT_0 {
+        /* bt */
+        bt_0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <3 4>;
             layers = <FUNCT_LAYER>;
         };
 
-        BT_1 {
+        bt_1 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <2 3>;
             layers = <FUNCT_LAYER>;
         };
 
-        BT_2 {
+        bt_2 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <1 2>;
             layers = <FUNCT_LAYER>;
         };
 
-        BT_3 {
+        bt_3 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <5 6>;
             layers = <FUNCT_LAYER>;
         };
 
-        BT_4 {
+        bt_4 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <6 7>;
             layers = <FUNCT_LAYER>;
         };
 
-        BT_CLEAR {
+        bt_clear {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <0 1 2 3>;
             layers = <FUNCT_LAYER>;
