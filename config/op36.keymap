@@ -601,35 +601,35 @@
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
                 
-                slash_high_r {
-                            bindings = <&kp SLASH>;
-                            key-positions = <18 19>;
-                            layers = <BASE_LAYER BASE_ADD_LAYER>;
-                        };
-        
-                slash_down {
-                    bindings = <&kp BSLH>;
-                    key-positions = <25 26>;
+        slash_high_r {
+                    bindings = <&kp SLASH>;
+                    key-positions = <18 19>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
+        
+        slash_down {
+            bindings = <&kp BSLH>;
+            key-positions = <25 26>;
+            layers = <BASE_LAYER BASE_ADD_LAYER>;
+        };
                 
-                slash_down_r {
-                            bindings = <&kp BSLH>;
-                            key-positions = <28 29>;
-                            layers = <BASE_LAYER BASE_ADD_LAYER>;
-                        };
-        
-                lbkt_combos {
-                    bindings = <&kp LBKT>;
-                    key-positions = <6 7>;
+        slash_down_r {
+                    bindings = <&kp BSLH>;
+                    key-positions = <28 29>;
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
         
-                rbkt_combos {
-                    bindings = <&kp RBKT>;
-                    key-positions = <8 7>;
-                    layers = <BASE_LAYER BASE_ADD_LAYER>;
-                };
+        lbkt_combos {
+            bindings = <&kp LBKT>;
+            key-positions = <6 7>;
+            layers = <BASE_LAYER BASE_ADD_LAYER>;
+        };
+
+        rbkt_combos {
+            bindings = <&kp RBKT>;
+            key-positions = <8 7>;
+            layers = <BASE_LAYER BASE_ADD_LAYER>;
+        };
                 
         grave_combo {
             bindings = <&kp GRAVE>;
