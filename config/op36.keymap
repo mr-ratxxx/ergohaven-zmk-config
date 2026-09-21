@@ -402,42 +402,42 @@
         
         
         /* system-start */
-        CAPS_WORLD {
+        caps_world {
             bindings = <&my_caps_word>;
             key-positions = <16 13 17 12>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };        
         
-        UI_REVERT {
+        ui_revert {
             bindings = <&kp RG(Z)>;
             key-positions = <6 7>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
-        UIO_REPEAT {
+        uio_repeat {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <7 8>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
-        UI_REVERT_L {
+        ui_revert_l {
             bindings = <&kp RG(Z)>;
             key-positions = <2 3>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };
 
-        UIO_REPEAT_L {
+        uio_repeat_l {
             bindings = <&kp LS(LG(Z))>;
             key-positions = <2 1>;
             layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
         };        
         
-        CMD_TAB_L {
+        cmd_tab_l {
             bindings = <&kp LG(TAB)>;
             key-positions = <2 1>;
         };
 
-        CMD_TAB_R {
+        cmd_tab_r {
             bindings = <&kp LG(TAB)>;
             key-positions = <9 8>;
         };        
