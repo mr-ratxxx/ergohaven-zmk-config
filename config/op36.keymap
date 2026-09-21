@@ -289,6 +289,7 @@
             key-positions = <5 6 16 15>;
         };                
         
+          /*  
         mo_layers_layer_l {
                     bindings = <&mo LAYERS_LAYER>;
                     key-positions = <10 31>;
@@ -299,17 +300,18 @@
                     bindings = <&mo LAYERS_LAYER>;                   
                     key-positions = <19 34>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
-                };        
+                };
+                */        
         
         mo_base_add_l {
                             bindings = <&mo BASE_ADD_LAYER>;
-                            key-positions = <20 31>;
+                            key-positions = <20 30>;
                             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                         };
                         
                 mo_base_add_r {
                             bindings = <&mo BASE_ADD_LAYER>;                   
-                            key-positions = <29 34>;
+                            key-positions = <29 35>;
                             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                         };
         /* mo-end */
