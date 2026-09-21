@@ -279,35 +279,35 @@
         compatible = "zmk,combos";
                 
         /* mo-start */
-        TO_BASE_L {
+        to_base_l {
             bindings = <&to BASE_LAYER>;
             key-positions = <3 4 13 14>;
         };
 
-        TO_BASE_R {
+        to_base_r {
             bindings = <&to BASE_LAYER>;
             key-positions = <5 6 16 15>;
         };                
         
-        MO_LAYERS_LAYER_L {
+        mo_layers_layer_l {
                     bindings = <&mo LAYERS_LAYER>;
                     key-positions = <10 31>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };
                 
-        MO_LAYERS_LAYER_R {
+        mo_layers_layer_r {
                     bindings = <&mo LAYERS_LAYER>;                   
                     key-positions = <19 34>;
                     layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                 };        
         
-        MO_BASE_ADD_L {
+        mo_base_add_l {
                             bindings = <&mo BASE_ADD_LAYER>;
                             key-positions = <20 31>;
                             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
                         };
                         
-                MO_BASE_ADD_R {
+                mo_base_add_r {
                             bindings = <&mo BASE_ADD_LAYER>;                   
                             key-positions = <29 34>;
                             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
@@ -315,86 +315,86 @@
         /* mo-end */
         
         /* nav-start */
-        BACK_L {
+        back_l {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <12 13>;
             layers = <FUNCT_LAYER>;
         };
 
-        FORWARD_L {
+        forward_l {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <11 12>;
             layers = <FUNCT_LAYER>;
         };
 
-        BACK_R {
+        back_r {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <16 17>;
             layers = <FUNCT_LAYER>;
         };
 
-        FORWARD_R {
+        forward_r {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <17 18>;
             layers = <FUNCT_LAYER>;
         };
 
-        PG_DOWN_L {
+        pg_down_l {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <11 1>;
         };
 
-        PG_DOWN_R {
+        pg_down_r {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <18 8>;
         };        
         
-        CMD_PG_UP_L {
+        cmd_pg_up_l {
             bindings = <&kp PAGE_UP>;
             key-positions = <12 2>;
         };
 
-        CMD_PG_UP_R {
+        cmd_pg_up_r {
             bindings = <&kp PAGE_UP>;
             key-positions = <7 17>;
         };
 
-        M_DOWN_L {
+        m_down_l {
             bindings = <&msc SCRL_DOWN>;
             key-positions = <11 21>;
         };
 
-        M_DOWN_R {
+        m_down_r {
             bindings = <&msc SCRL_DOWN>;
             key-positions = <18 28>;
         };
 
-        M_UP_L {
+        m_up_l {
             bindings = <&msc SCRL_UP>;
             key-positions = <12 22>;
         };
 
-        M_UP_R {
+        m_up_r {
             bindings = <&msc SCRL_UP>;
             key-positions = <17 27>;
         };
 
-        M_LEFT_L {
+        m_left_l {
             bindings = <&msc SCRL_LEFT>;
             key-positions = <10 20>;
         };
 
-        M_LEFT_R {
+        m_left_r {
             bindings = <&msc SCRL_LEFT>;
             key-positions = <16 26>;
         };
 
-        M_RIGHT_L {
+        m_right_l {
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <13 23>;
         };
 
-        M_RIGHT_R {
+        m_right_r {
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <19 29>;
         };        
