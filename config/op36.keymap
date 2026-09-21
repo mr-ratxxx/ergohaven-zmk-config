@@ -579,10 +579,10 @@
         };
         
         n1_r {
-                    bindings = <&kp RS(SLASH)>;
-                    key-positions = <26 27>;
-                    layers = <SYMB_LAYER>;            
-                };                
+            bindings = <&kp RS(SLASH)>;
+            key-positions = <26 27>;
+            layers = <SYMB_LAYER>;      
+        };                
         
         caps_l {
             bindings = <&kp CAPS>;
