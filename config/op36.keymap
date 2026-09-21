@@ -443,37 +443,37 @@
         };        
         /* system-end */                
 
-        FROM_LAYERS_TO_ADJ_LAYER {
+        from_layers_to_adj_layer {
             bindings = <&tog ADJ_LAYER>;
             key-positions = <9 8>;
             layers = <FUNCT_LAYER LAYERS_LAYER ADJ_LAYER>;
         };
 
-        MOUSE1_ML_L {
+        mouse1_ml_l {
             bindings = <&mkp MB1>;
             key-positions = <13 12>;
             layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        MOUSE2_ML_L {
+        mouse2_ml_l {
             bindings = <&mkp MB2>;
             key-positions = <13 12 11>;
             layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        MOUSE1_ML_R {
+        mouse1_ml_r {
             bindings = <&mkp MB1>;
             key-positions = <16 17>;
             layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        MOUSE2_ML_R {
+        mouse2_ml_r {
             bindings = <&mkp MB2>;
             key-positions = <16 17 18>;
             layers = <NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        MOUSE1_R {
+        mouse1_r {
             bindings = <&mkp MB1>;
             key-positions = <26 27>;
             layers = <
@@ -494,12 +494,12 @@
             >;            
         };
 
-        MOUSE2_R {
+        mouse2_r {
             bindings = <&mkp MB2>;
             key-positions = <26 27 28>;
         };
 
-        MOUSE1_L {
+        mouse1_l {
             bindings = <&mkp MB1>;
             key-positions = <22 23>;
             layers = <
@@ -520,72 +520,34 @@
             >;
         };
 
-        MOUSE2_L {
+        mouse2_l {
             bindings = <&mkp MB2>;
             key-positions = <21 22 23>;
         };
 
-        MOUSE1_UP_R {
+        mouse1_up_r {
             bindings = <&mkp MB1>;
             key-positions = <7 6>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        MOUSE2_UP_R {
+        mouse2_up_r {
             bindings = <&mkp MB2>;
             key-positions = <6 7 8>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        MOUSE1_UP_L {
+        mouse1_up_l {
             bindings = <&mkp MB1>;
             key-positions = <3 2>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
 
-        MOUSE2_UP_L {
+        mouse2_up_l {
             bindings = <&mkp MB2>;
             key-positions = <3 2 1>;
             layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
         };
-        
-        /* bt */
-        BT_0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <3 4>;
-            layers = <FUNCT_LAYER>;
-        };
-
-        BT_1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <2 3>;
-            layers = <FUNCT_LAYER>;
-        };
-
-        BT_2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <1 2>;
-            layers = <FUNCT_LAYER>;
-        };
-
-        BT_3 {
-            bindings = <&bt BT_SEL 3>;
-            key-positions = <5 6>;
-            layers = <FUNCT_LAYER>;
-        };
-
-        BT_4 {
-            bindings = <&bt BT_SEL 4>;
-            key-positions = <6 7>;
-            layers = <FUNCT_LAYER>;
-        };
-
-        BT_CLEAR {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <0 1 2 3>;
-            layers = <FUNCT_LAYER>;
-        };        
-        /* bt-end */
         
         /* kp-start */
         enter_r {
@@ -651,7 +613,7 @@
                     layers = <BASE_LAYER BASE_ADD_LAYER>;
                 };
                 
-                SLASH_DOWN_R {
+                slash_down_r {
                             bindings = <&kp BSLH>;
                             key-positions = <28 29>;
                             layers = <BASE_LAYER BASE_ADD_LAYER>;
@@ -696,6 +658,44 @@
                     key-positions = <20 21>;                    
                 };                
         /* kp-end */
+        
+/* bt */
+        BT_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <3 4>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <2 3>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <1 2>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <5 6>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <6 7>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        BT_CLEAR {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 1 2 3>;
+            layers = <FUNCT_LAYER>;
+        };        
+        /* bt-end */        
     };
 
 keymap {
