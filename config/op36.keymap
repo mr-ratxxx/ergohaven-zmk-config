@@ -626,18 +626,6 @@
             key-positions = <3 4>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
-        
-        slash_down {
-            bindings = <&kp BSLH>;
-            key-positions = <25 26>;
-            layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
-                
-        slash_down_r {
-            bindings = <&kp BSLH>;
-            key-positions = <28 29>;
-            layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
                 
         slash_combo_symb {
             bindings = <&kp SLASH>;
@@ -662,16 +650,10 @@
             key-positions = <8 7>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
-                
-        grave_combo {
-            bindings = <&kp GRAVE>;
-            key-positions = <19 18>;
-            layers = <SYMB_LAYER>;
-        };
 
         caps_combo_l {
             bindings = <&kp CAPS>;
-            key-positions = <14 13>;
+            key-positions = <14 13>;s;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
@@ -1213,7 +1195,7 @@ nav-mouse-r {
       bindings = <
         /* symb B L */
         &kp RS(N2)
-        &kp RS(N4)
+        &kp GRAVE
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &kp RS(N3)
@@ -1221,7 +1203,7 @@ nav-mouse-r {
         &kp RS(N3)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
-        &kp RS(N4)
+        &kp GRAVE
         &kp RS(N2)
 
         /* symb C L */
@@ -1229,10 +1211,10 @@ nav-mouse-r {
         &mt RCTRL RS(MINUS)
         &mt RALT EQUAL
         &mt RSHFT MINUS
-        &kp RS(N1)
+        &kp RS(N4)
         /* symb C R */
-        &kp RS(N1)
-        &mt RSHFT MINUS
+        &kp RS(N4)
+        &mt RSHFT MINUS 
         &mt RALT EQUAL
         &mt RCTRL RS(MINUS)
         &mt RGUI PLUS
