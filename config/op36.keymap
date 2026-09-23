@@ -664,12 +664,14 @@
         symb_slash_combo_r {
             bindings = <&kp SLASH>;
             key-positions = <6 7>;
+            require-prior-idle-ms = <150>;
             layers = <SYMB_LAYER>;
         };
         
         symb_bslash_combo_r {
             bindings = <&kp BSLH>;
             key-positions = <7 8>;
+            require-prior-idle-ms = <150>;
             layers = <SYMB_LAYER>;
         };        
         
