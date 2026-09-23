@@ -928,7 +928,7 @@ keymap {
       display-name = "base-add";
     };
     
-    baise_mirror {
+    base_mirror {
       bindings = <      
               /* base-m B L */
                             &kp P
@@ -957,26 +957,26 @@ keymap {
               &hmr RGUI A
       
               /* base-m D L */
-              &kp SLASH
+              &lt NUM_LAYER SQT
               &kp DOT
               &kp COMMA
               &kp M
-              &kp N
+              &lt LAYERS_LAYER N
               /* base-m D R */
-              &kp B
+              &lt LAYERS_LAYER B
               &kp V
               &kp C
               &kp X
-              &kp Z
+              &lt SYMB_LAYER Z
 
               /* base-m T L */
-              &lt NUM_LAYER BACKSPACE
-              &lt NAV_R_LAYER RG(RC(SPACE))
+              &lt SYMB_LAYER BACKSPACE
+              &lt NAV_L_LAYER RG(RC(SPACE))
               &lt FUNCT_LAYER ESC
               /* base-m T R */
               &lt FUNCT_LAYER DEL
-              &lt NAV_L_LAYER SPACE
-              &lt SYMB_LAYER TAB
+              &lt NAV_R_LAYER SPACE
+              &lt NUM_LAYER TAB
             >;
       display-name = "base-mirror";
     };
