@@ -627,19 +627,19 @@
             bindings = <&kp RS(N1)>;
             key-positions = <16 17>;
             layers = <SYMB_LAYER>;      
-        };        
+        };
         
-        symb_grave_combo_l {
-            bindings = <&kp GRAVE>;
-            key-positions = <1 2>;
+        symb_slash_combo_r {
+            bindings = <&kp SLASH>;
+            key-positions = <6 7>;
             layers = <SYMB_LAYER>;
         };
         
-        symb_grave_combo_r {
-            bindings = <&kp GRAVE>;
+        symb_slash_combo_r {
+            bindings = <&kp BSLH>;
             key-positions = <7 8>;
             layers = <SYMB_LAYER>;
-        };                        
+        };
         
         caps_l {
             bindings = <&kp CAPS>;
