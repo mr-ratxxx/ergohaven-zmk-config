@@ -639,7 +639,19 @@
             bindings = <&kp BSLH>;
             key-positions = <7 8>;
             layers = <SYMB_LAYER>;
+        };        
+        
+        symb_grave_combo_l {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 11>;
+            layers = <SYMB_LAYER>;
         };
+        
+        symb_grave_combo_r {
+            bindings = <&kp GRAVE>;
+            key-positions = <18 19>;
+            layers = <SYMB_LAYER>;
+        };                        
         
         caps_l {
             bindings = <&kp CAPS>;
