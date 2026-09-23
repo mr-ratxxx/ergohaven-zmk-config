@@ -1195,9 +1195,9 @@ nav-mouse-r {
         &kp F9
         &kp F8
         &kp F7
-        &tog NAV_L_LAYER
+        &tog NAV_MOUSE_L_LAYER
         /* funct B R */
-        &tog NAV_R_LAYER
+        &tog NAV_MOUSE_R_LAYER
         &kp F7
         &kp F8
         &kp F9
@@ -1208,10 +1208,10 @@ nav-mouse-r {
         &hml LCTRL F6
         &hml LALT F5
         &hml LSHIFT F4
-        &tog NAV_MOUSE_L_LAYER
+        &tog NAV_L_LAYER
         
         /* funct C R */
-        &tog NAV_MOUSE_R_LAYER
+        &tog NAV_R_LAYER
         &hmr RSHFT F4
         &hmr RALT F5
         &hmr RCTRL F6
@@ -1232,11 +1232,11 @@ nav-mouse-r {
 
         /* funct T L */
         &lt SYMB_LAYER TAB
-        &lt BASE_OVERRIDE_LAYER SPACE
+        &lt BASE_LAYER SPACE
         &lt FUNCT_LAYER DEL
         /* funct T R */
         &lt FUNCT_LAYER ESC
-        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
+        &lt BASE_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
       >;
       display-name = "funct";
