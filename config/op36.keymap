@@ -759,6 +759,7 @@
                             BASE_OVERRIDE_LAYER
                             BASE_ADD_OVERRIDE_LAYER
                         >;
+            require-prior-idle-ms = <150>;
         };
         
         all_esc_combo_l_down2 {
@@ -779,7 +780,8 @@
                                     ADJ_LAYER
                                     BASE_OVERRIDE_LAYER
                                     BASE_ADD_OVERRIDE_LAYER
-                                >;                    
+                                >;
+            require-prior-idle-ms = <150>;
                 };                                        
         /* kp-end */
         
