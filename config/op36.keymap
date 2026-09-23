@@ -619,13 +619,13 @@
         
         symb_slash_n1_l {
             bindings = <&kp RS(N1)>;
-            key-positions = <10 11>;
+            key-positions = <12 13>;
             layers = <SYMB_LAYER>;
         };
         
         symb_slash_n1_r {
             bindings = <&kp RS(N1)>;
-            key-positions = <16 17>;
+            key-positions = <17 18>;
             layers = <SYMB_LAYER>;      
         };        
         
@@ -1213,7 +1213,7 @@ nav-mouse-r {
         &kp RIGHT_PARENTHESIS
         &kp RS(N3)
         /* symb B R */
-        &kp RS(N3)
+        &kp RS(N2)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &kp GRAVE
@@ -1224,9 +1224,9 @@ nav-mouse-r {
         &mt RCTRL RS(MINUS)
         &mt RALT EQUAL
         &mt RSHFT MINUS
-        &kp RS(N4)
+        &kp RS(N3)
         /* symb C R */
-        &kp RS(N4)
+        &kp RS(N3)
         &mt RSHFT MINUS
         &mt RALT EQUAL
         &mt RCTRL RS(MINUS)
@@ -1236,11 +1236,11 @@ nav-mouse-r {
         &kp RS(N5)
         &kp RS(N7)
         &kp RS(N6)        
-        &kp RS(N1)
-        &kp RS(N8)        
-        /* symb D R */
         &kp RS(N8)
-        &kp RS(N1)
+        &kp RS(N4)        
+        /* symb D R */
+        &kp RS(N4)
+        &kp RS(N8)
         &kp RS(N6)
         &kp RS(N7)
         &kp RS(N5)
