@@ -635,7 +635,7 @@
             layers = <SYMB_LAYER>;
         };
         
-        symb_slash_combo_r {
+        symb_bslash_combo_r {
             bindings = <&kp BSLH>;
             key-positions = <7 8>;
             layers = <SYMB_LAYER>;
