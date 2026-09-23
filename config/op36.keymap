@@ -1206,9 +1206,9 @@ nav-mouse-r {
     
     symb {
       bindings = <
-        /* symb B L */
-        &kp RS(N2)
+        /* symb B L */        
         &kp GRAVE
+        &kp RS(N2)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &kp RS(N3)
@@ -1216,8 +1216,8 @@ nav-mouse-r {
         &kp RS(N2)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
-        &kp GRAVE
         &kp RS(N2)
+        &kp GRAVE
 
         /* symb C L */
         &mt RGUI PLUS
