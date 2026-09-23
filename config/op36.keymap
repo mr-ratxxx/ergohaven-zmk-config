@@ -625,7 +625,7 @@
         
         symb_slash_n1_r {
             bindings = <&kp RS(N1)>;
-            key-positions = <17 18>;
+            key-positions = <16 17>;
             layers = <SYMB_LAYER>;      
         };        
         
@@ -635,8 +635,14 @@
             layers = <SYMB_LAYER>;
         };
         
-        symb_bslash_combo {
-            bindings = <&kp BSLH>;
+        symb_grave_combo_l {
+            bindings = <&kp GRAVE>;
+            key-positions = <1 2>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_grave_combo_r {
+            bindings = <&kp GRAVE>;
             key-positions = <7 8>;
             layers = <SYMB_LAYER>;
         };                        
