@@ -461,6 +461,7 @@
         cmd_tab_l {
             bindings = <&kp LG(TAB)>;
             key-positions = <2 1>;
+            require-prior-idle-ms = <150>;
         };
 
         cmd_tab_r {
