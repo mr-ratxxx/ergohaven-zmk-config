@@ -1207,17 +1207,17 @@ nav-mouse-r {
     symb {
       bindings = <
         /* symb B L */        
-        &kp GRAVE
-        &kp RS(N2)
+        &kp BSLH
+        &kp SLASH
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &kp RS(N3)
         /* symb B R */
         &kp RS(N2)
         &kp LEFT_PARENTHESIS
-        &kp RIGHT_PARENTHESIS
-        &kp RS(N2)
-        &kp GRAVE
+        &kp RIGHT_PARENTHESIS        
+        &kp SLASH
+        &kp BSLH
 
         /* symb C L */
         &mt RGUI PLUS
