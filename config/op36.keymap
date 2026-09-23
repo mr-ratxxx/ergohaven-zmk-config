@@ -618,11 +618,13 @@
         all_enter_r {
             bindings = <&kp ENTER>;
             key-positions = <27 28>;
+            require-prior-idle-ms = <150>;
         };
 
         all_enter_l {
             bindings = <&kp ENTER>;
             key-positions = <22 21>;
+            require-prior-idle-ms = <150>;
         };
 
         num_n0_l {
@@ -690,6 +692,7 @@
         all_caps_l {
             bindings = <&kp CAPS>;
             key-positions = <40 41 24 23>;
+            require-prior-idle-ms = <150>;
         };        
         
         base_ru_e {
@@ -1197,9 +1200,9 @@ nav-mouse-r {
         &kp F9
         &kp F8
         &kp F7
-        &tog NAV_MOUSE_L_LAYER
+        &to BASE_LAYER        
         /* funct B R */
-        &tog NAV_MOUSE_R_LAYER
+        &to BASE_LAYER
         &kp F7
         &kp F8
         &kp F9
