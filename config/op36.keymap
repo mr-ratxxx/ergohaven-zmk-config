@@ -593,13 +593,13 @@
             key-positions = <22 21>;
         };
 
-        symb_bslash_l {
+        n0_l {
             bindings = <&kp N0>;
             key-positions = <23 22>;
             layers = <NUM_LAYER>;
         };
 
-        symb_bslash_r {
+        n0_r {
             bindings = <&kp N0>;
             key-positions = <26 27>;
             layers = <NUM_LAYER>;
