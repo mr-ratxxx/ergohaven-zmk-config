@@ -981,10 +981,10 @@ nav-l {
 nav-mouse-r {
       bindings = <
               /* nav-m-r B L */
-              &kp LEFT_ARROW
-              &kp DOWN
-              &kp UP
-              &kp RIGHT_ARROW
+              &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+              &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+              &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)                                  
+              &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
               &to BASE_LAYER              
               /* nav-m-r B R */
               &to BASE_LAYER
