@@ -653,7 +653,7 @@
 
         caps_combo_l {
             bindings = <&kp CAPS>;
-            key-positions = <14 13>;s;
+            key-positions = <14 13>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
 
@@ -1214,7 +1214,7 @@ nav-mouse-r {
         &kp RS(N4)
         /* symb C R */
         &kp RS(N4)
-        &mt RSHFT MINUS 
+        &mt RSHFT MINUS
         &mt RALT EQUAL
         &mt RCTRL RS(MINUS)
         &mt RGUI PLUS
