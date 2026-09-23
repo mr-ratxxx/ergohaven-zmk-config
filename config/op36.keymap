@@ -605,17 +605,29 @@
             layers = <NUM_LAYER>;
         };
         
-        symb_slash_l {
+        symb_slash_question_l {
             bindings = <&kp RS(SLASH)>;
-            key-positions = <23 22>;
+            key-positions = <11 12>;
             layers = <SYMB_LAYER>;
         };
         
-        symb_slash_r {
+        symb_slash_question_r {
             bindings = <&kp RS(SLASH)>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
             layers = <SYMB_LAYER>;      
-        };                
+        };
+        
+        symb_slash_combo_r {
+            bindings = <&kp SLASH>;
+            key-positions = <6 7>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_bslash_combo {
+            bindings = <&kp BSLH>;
+            key-positions = <7 8>;
+            layers = <SYMB_LAYER>;
+        };                        
         
         caps_l {
             bindings = <&kp CAPS>;
@@ -627,18 +639,6 @@
             key-positions = <3 4>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
-                
-        slash_combo_symb {
-            bindings = <&kp SLASH>;
-            key-positions = <16 17>;
-            layers = <SYMB_LAYER>;
-        };
-        
-        bslash_combo_symb {
-            bindings = <&kp BSLH>;
-            key-positions = <17 18>;
-            layers = <SYMB_LAYER>;
-        };                
         
         lbkt_combos {
             bindings = <&kp LBKT>;
