@@ -877,10 +877,10 @@ keymap {
     nav-r {
       bindings = <
         /* nav-r B L */
-        &kp LEFT_ARROW
-        &kp DOWN
-        &kp UP
-        &kp RIGHT_ARROW
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+        &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)                    
+        &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
         &to BASE_LAYER
         /* nav-r B R */
         &to BASE_LAYER
