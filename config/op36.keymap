@@ -482,6 +482,7 @@
 
         all_cmd_tab_r {
             bindings = <&kp LG(TAB)>;
+            require-prior-idle-ms = <150>;
             key-positions = <9 8>;
                         layers = <
                             BASE_LAYER
