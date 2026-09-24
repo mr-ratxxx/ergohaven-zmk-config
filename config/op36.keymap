@@ -894,7 +894,7 @@ keymap {
         &lt NAV_L_LAYER SPACE
         &lt FUNCT_LAYER DEL
         /* base T R */
-        &lt FUNCT_LAYER ESC
+        &lt NUM_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
       >;
