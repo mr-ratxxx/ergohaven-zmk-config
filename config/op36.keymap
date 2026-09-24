@@ -664,7 +664,7 @@
             bindings = <&kp RS(SLASH)>;
             key-positions = <17 18>;
             layers = <SYMB_LAYER>;      
-        };
+        };        
         
         symb_slash_n1_l {
             bindings = <&kp RS(N1)>;
@@ -892,9 +892,9 @@ keymap {
         /* base T L */
         &lt SYMB_LAYER TAB
         &lt NAV_L_LAYER SPACE
-        &lt FUNCT_LAYER DEL
+        &lt NUM_LAYER DEL
         /* base T R */
-        &lt NUM_LAYER ESC
+        &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
         &lt NUM_LAYER BACKSPACE
       >;
