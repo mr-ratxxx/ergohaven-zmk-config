@@ -339,6 +339,9 @@
             layers = <FUNCT_LAYER>;
         };
 
+        /* nav-end */
+        
+        /* mouse-start */
         pg_down_l {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <11 1>;
@@ -398,8 +401,7 @@
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <19 29>;
         };        
-        /* nav-end */
-        
+        /* mouse-end */
         
         /* system-start */
         caps_world {
