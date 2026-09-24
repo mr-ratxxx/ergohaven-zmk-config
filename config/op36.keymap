@@ -889,7 +889,7 @@ keymap {
         &kp M
         &kp COMMA
         &kp DOT
-        &lt SYMB_LAYER SQT
+        &lt NUM_LAYER SQT
 
         /* base T L */
         &lt SYMB_LAYER TAB
@@ -898,7 +898,7 @@ keymap {
         /* base T R */
         &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
-        &lt NUM_LAYER BACKSPACE
+        &lt SYMB_LAYER BACKSPACE
       >;
       display-name = "base";
     };
@@ -995,7 +995,7 @@ keymap {
               &kp V
               &kp C
               &kp X
-              &lt SYMB_LAYER Z
+              &lt NUM_LAYER Z
 
               /* base-m T L */
               &lt SYMB_LAYER BACKSPACE
@@ -1004,7 +1004,7 @@ keymap {
               /* base-m T R */
               &lt FUNCT_LAYER DEL
               &lt NAV_R_LAYER SPACE
-              &lt NUM_LAYER TAB
+              &lt SYMB_LAYER TAB
             >;
       display-name = "base-mirror";
     };
@@ -1051,13 +1051,13 @@ keymap {
         &mmv MOVE_X(MMV_FAST_SPEED_R)
 
         /* nav-r T L */
-        &lt SYMB_LAYER TAB
+        &trans
         &lt BASE_OVERRIDE_LAYER SPACE
-        &lt FUNCT_LAYER DEL
+        &trans
         /* nav-r T R */
-        &lt FUNCT_LAYER ESC
-        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-        &lt NUM_LAYER BACKSPACE
+        &trans
+        &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))  
+        &trans
       >;
       display-name = "nav-r";
     };
@@ -1091,9 +1091,9 @@ nav-l {
 
     /* nav-l D L */
     &mmv MOVE_X(MMV_SUPER_FAST_SPEED_L)
-        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
-        &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
-        &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
+    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_D)
+    &mmv MOVE_Y(MMV_SUPER_FAST_SPEED_U)                    
+    &mmv MOVE_X(MMV_SUPER_FAST_SPEED_R)
     &msc SCRL_DOWN    
     /* nav-l D R */
     &msc SCRL_DOWN
@@ -1102,13 +1102,13 @@ nav-l {
     &mmv MOVE_Y(MMV_FAST_SPEED_D)    
     &mmv MOVE_X(MMV_FAST_SPEED_R)
     /* nav-l T L */            
-    &lt SYMB_LAYER TAB
+    &trans
     &lt BASE_OVERRIDE_LAYER SPACE
-    &lt FUNCT_LAYER DEL
+    &trans
     /* nav-l T R */
-    &lt FUNCT_LAYER ESC
+    &trans
     &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-    &lt NUM_LAYER BACKSPACE
+    &trans
   >;
   display-name = "nav-l";
 };
