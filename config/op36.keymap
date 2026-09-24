@@ -889,7 +889,7 @@ keymap {
         &kp M
         &kp COMMA
         &kp DOT
-        &lt NUM_LAYER SQT
+        &lt SYMB_LAYER SQT
 
         /* base T L */
         &lt SYMB_LAYER TAB
@@ -898,7 +898,7 @@ keymap {
         /* base T R */
         &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
-        &lt SYMB_LAYER BACKSPACE
+        &lt NUM_LAYER BACKSPACE
       >;
       display-name = "base";
     };
