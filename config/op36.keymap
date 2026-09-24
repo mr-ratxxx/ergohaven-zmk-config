@@ -597,19 +597,36 @@
             bindings = <&mkp MB2>;
             key-positions = <6 7 8>;
             require-prior-idle-ms = <150>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+            layers = <
+            NAV_R_LAYER
+            NAV_L_LAYER
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
         };
 
         mouse1_up_l {
             bindings = <&mkp MB1>;
             key-positions = <3 2>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_R_LAYER
+            NAV_L_LAYER
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
         };
 
         mouse2_up_l {
             bindings = <&mkp MB2>;
             key-positions = <3 2 1>;
-            layers = <NAV_R_LAYER NAV_L_LAYER NAV_MOUSE_R_LAYER NAV_MOUSE_L_LAYER>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_R_LAYER
+            NAV_L_LAYER
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
         };
         
         /* kp-start */
