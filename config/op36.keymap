@@ -1154,13 +1154,13 @@ nav-mouse-r {
               &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
       
               /* nav-m-r T L */
-              &lt SYMB_LAYER TAB
+              &trans
               &lt BASE_OVERRIDE_LAYER SPACE
-              &lt FUNCT_LAYER DEL
+              &trans
               /* nav-m-r T R */
-              &lt FUNCT_LAYER ESC
+              &trans
               &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-              &lt NUM_LAYER BACKSPACE
+              &trans
             >;
       display-name = "nav-mouse-r";
     };
