@@ -645,7 +645,7 @@
         num_n0_l {
             bindings = <&kp N0>;
             key-positions = <23 22>;
-            layers = <NUM_LAYER>;
+            layers = <FUNCT_LAYER>;
         };
 
         num_n0_r {
