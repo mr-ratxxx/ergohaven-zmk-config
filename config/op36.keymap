@@ -1207,13 +1207,13 @@ nav-mouse-r {
             &mmv MOVE_X(MMV_FAST_SPEED_R)
     
             /* nav-m-l T L */
-            &lt SYMB_LAYER TAB
+            &trans
             &lt BASE_OVERRIDE_LAYER SPACE
-            &lt FUNCT_LAYER DEL
+            &trans
             /* nav-m-l T R */
-            &lt FUNCT_LAYER ESC
+            &trans
             &lt BASE_OVERRIDE_LAYER RG(RC(SPACE))
-            &lt NUM_LAYER BACKSPACE
+            &trans
           >;
     display-name = "nav-mouse-l";
   };
@@ -1260,14 +1260,14 @@ nav-mouse-r {
         &kp F12
         &kp F1
 
-        /* funct T L */
-        &lt SYMB_LAYER TAB
-        &lt BASE_LAYER SPACE
-        &lt FUNCT_LAYER DEL
-        /* funct T R */
-        &lt FUNCT_LAYER ESC
-        &lt BASE_LAYER RG(RC(SPACE))
-        &lt NUM_LAYER BACKSPACE
+        /* num T L */
+        &kp TAB
+        &kp SPACE
+        &kp DELETE
+        /* num T R */
+        &kp ESC
+        &kp CAPSLOCK
+        &kp BACKSPACE
       >;
       display-name = "funct";
     };
