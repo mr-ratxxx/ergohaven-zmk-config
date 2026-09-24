@@ -1219,11 +1219,11 @@ nav-mouse-r {
     funct {
       bindings = <
         /* funct B L */
-        &kp F3
-        &kp F9
-        &kp F8
-        &kp F7
-        &to BASE_LAYER        
+        &kp LS(MINUS)
+        &kp N9
+        &kp N8
+        &kp N7
+        &kp PLUS        
         /* funct B R */
         &to BASE_LAYER
         &kp F7
@@ -1232,12 +1232,11 @@ nav-mouse-r {
         &kp F3
 
         /* funct C L */
-        &hml LGUI F2
-        &hml LCTRL F6
-        &hml LALT F5
-        &hml LSHIFT F4
-        &tog NAV_L_LAYER
-        
+        &hml LGUI N0
+        &hml LCTRL N6
+        &hml LALT N5
+        &hml LSHFT N4
+        &kp MINUS        
         /* funct C R */
         &tog NAV_R_LAYER
         &hmr RSHFT F4
@@ -1245,12 +1244,12 @@ nav-mouse-r {
         &hmr RCTRL F6
         &hmr RGUI F2
 
-        /* funct D L */
-        &kp F1
-        &kp F12
-        &kp F11
-        &kp F10
-        &to BASE_LAYER
+        /* funct D L */        
+        &kp DOT
+        &kp N3
+        &kp N2
+        &kp N1
+        &kp EQUAL
         /* funct D R */
         &to BASE_LAYER
         &kp F10
@@ -1259,13 +1258,13 @@ nav-mouse-r {
         &kp F1
 
         /* funct T L */
-        &lt SYMB_LAYER TAB
-        &lt BASE_LAYER SPACE
-        &lt FUNCT_LAYER DEL
+        &kp TAB
+        &kp SPACE
+        &kp DELETE
         /* funct T R */
-        &lt FUNCT_LAYER ESC
-        &lt BASE_LAYER RG(RC(SPACE))
-        &lt NUM_LAYER BACKSPACE
+        &kp ESC
+        &kp CAPSLOCK
+        &kp BACKSPACE
       >;
       display-name = "funct";
     };
@@ -1273,11 +1272,11 @@ nav-mouse-r {
     num {
       bindings = <
         /* num B L */
-        &kp LS(MINUS)
-        &kp N9
-        &kp N8
-        &kp N7
-        &kp PLUS
+        &kp F3
+                &kp F9
+                &kp F8
+                &kp F7
+                &to BASE_LAYER
         /* num B R */
         &kp PLUS
         &kp N7
@@ -1286,11 +1285,11 @@ nav-mouse-r {
         &kp RS(MINUS)
 
         /* num C L */
-        &hml LGUI N0
-        &hml LCTRL N6
-        &hml LALT N5
-        &hml LSHFT N4
-        &kp MINUS
+        &hml LGUI F2
+                &hml LCTRL F6
+                &hml LALT F5
+                &hml LSHIFT F4
+                &tog NAV_L_LAYER
         /* num C R */
         &kp MINUS
         &hmr RSHIFT N4
@@ -1299,11 +1298,11 @@ nav-mouse-r {
         &hmr RGUI N0
 
         /* num D L */
-        &kp DOT
-        &kp N3
-        &kp N2
-        &kp N1
-        &kp EQUAL
+        &kp F1
+                &kp F12
+                &kp F11
+                &kp F10
+                &to BASE_LAYER
         /* num D R */
         &kp EQUAL
         &kp N1
