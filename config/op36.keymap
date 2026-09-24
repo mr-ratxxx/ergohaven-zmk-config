@@ -1601,7 +1601,5 @@ nav-mouse-r {
           >;
           display-name = "base-add-ovv";
         };
-    
-      
     };
 };
