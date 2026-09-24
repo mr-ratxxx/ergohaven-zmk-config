@@ -318,27 +318,40 @@
         back_l {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <12 13>;
-            layers = <FUNCT_LAYER>;
+            layers = <
+            FUNCT_LAYER
+            NUM_LAYER
+            >;
         };
 
         forward_l {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <11 12>;
-            layers = <FUNCT_LAYER>;
+            layers = <
+            FUNCT_LAYER
+            NUM_LAYER
+            >;
         };
 
         back_r {
             bindings = <&kp RG(LEFT_BRACKET)>;
             key-positions = <16 17>;
-            layers = <FUNCT_LAYER>;
+            layers = <
+            FUNCT_LAYER
+            NUM_LAYER
+            >;
         };
 
         forward_r {
             bindings = <&kp RG(RIGHT_BRACKET)>;
             key-positions = <17 18>;
-            layers = <FUNCT_LAYER>;
+            layers = <
+            FUNCT_LAYER
+            NUM_LAYER
+            >;
         };
-
+        
+        /* nav-end */
         pg_down_l {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <11 1>;
@@ -398,8 +411,9 @@
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <19 29>;
         };        
-        /* nav-end */
+        /* mouse-start */
         
+        /* mouse-end */
         
         /* system-start */
         caps_world {
