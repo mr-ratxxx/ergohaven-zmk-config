@@ -892,13 +892,13 @@ keymap {
         &lt SYMB_LAYER SQT
 
         /* base T L */
-        &lt FUNCT_LAYER TAB
+        &lt SYMB_LAYER TAB
         &lt NAV_L_LAYER SPACE
-        &lt SYMB_LAYER DEL
+        &lt FUNCT_LAYER DEL
         /* base T R */
-        &lt NUM_LAYER ESC
+        &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
-        &lt FUNCT_LAYER BACKSPACE
+        &lt NUM_LAYER BACKSPACE
       >;
       display-name = "base";
     };
