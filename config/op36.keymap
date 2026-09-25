@@ -658,25 +658,25 @@
         
         symb_n1_l {
             bindings = <&kp RS(N1)>;
-            key-positions = <2 3>;
+            key-positions = <1 2>;
             layers = <SYMB_LAYER>;
         };
         
         symb_n1_r {
             bindings = <&kp RS(N1)>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             layers = <SYMB_LAYER>;      
         };
         
         symb_question_l {
             bindings = <&kp RS(SLASH)>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             layers = <SYMB_LAYER>;
         };
         
         symb_question_r {
             bindings = <&kp RS(SLASH)>;
-            key-positions = <7 8>;
+            key-positions = <6 7>;
             layers = <SYMB_LAYER>;      
         };
         
