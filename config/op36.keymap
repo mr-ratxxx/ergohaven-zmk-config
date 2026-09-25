@@ -867,7 +867,7 @@ keymap {
     base {
       bindings = <
         /* base B L */
-        &lt BASE_MIRROR_LAYER Q
+        &kp Q
         &lt BASE_MIRROR_LAYER W
         &kp E
         &kp R
@@ -877,7 +877,7 @@ keymap {
         &kp U
         &kp I
         &lt BASE_MIRROR_LAYER O
-        &lt BASE_MIRROR_LAYER P
+        &kp P
 
         /* base C L */
         &hml LGUI A
