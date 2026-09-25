@@ -680,6 +680,20 @@
             layers = <SYMB_LAYER>;      
         };
         
+        symb_slash_combo_l {
+            bindings = <&kp SLASH>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <150>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_bslash_combo_l {
+            bindings = <&kp BSLH>;
+            key-positions = <11 12>;
+            require-prior-idle-ms = <150>;
+            layers = <SYMB_LAYER>;
+        };        
+        
         symb_slash_combo_r {
             bindings = <&kp SLASH>;
             key-positions = <16 17>;
@@ -692,7 +706,7 @@
             key-positions = <17 18>;
             require-prior-idle-ms = <150>;
             layers = <SYMB_LAYER>;
-        };        
+        };                
         
         symb_grave_combo_l {
             bindings = <&kp GRAVE>;
