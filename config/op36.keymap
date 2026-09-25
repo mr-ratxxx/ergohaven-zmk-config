@@ -656,40 +656,40 @@
             layers = <NUM_LAYER>;
         };
         
-        symb_slash_question_l {
-            bindings = <&kp RS(SLASH)>;
+        symb_slash_l {
+            bindings = <&kp SLASH>;
             key-positions = <11 12>;
             layers = <SYMB_LAYER>;
         };
         
-        symb_slash_question_r {
-            bindings = <&kp RS(SLASH)>;
+        symb_slash_r {
+            bindings = <&kp SLASH>;
             key-positions = <17 18>;
             layers = <SYMB_LAYER>;      
         };
         
-        symb_slash_n1_l {
+        symb_n1_l {
             bindings = <&kp RS(N1)>;
-            key-positions = <12 13>;
+            key-positions = <2 3>;
             layers = <SYMB_LAYER>;
         };
         
-        symb_slash_n1_r {
+        symb_n1_r {
             bindings = <&kp RS(N1)>;
-            key-positions = <16 17>;
+            key-positions = <6 7>;
             layers = <SYMB_LAYER>;      
         };
         
         symb_slash_combo_r {
             bindings = <&kp SLASH>;
-            key-positions = <6 7>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <150>;
             layers = <SYMB_LAYER>;
         };
         
         symb_bslash_combo_r {
             bindings = <&kp BSLH>;
-            key-positions = <7 8>;
+            key-positions = <17 18>;
             require-prior-idle-ms = <150>;
             layers = <SYMB_LAYER>;
         };        
