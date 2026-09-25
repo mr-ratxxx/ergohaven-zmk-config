@@ -670,7 +670,7 @@
         
         symb_question_l {
             bindings = <&kp RS(SLASH)>;
-            key-positions = <3 4>;
+            key-positions = <1 2>;
             layers = <SYMB_LAYER>;
         };
         
@@ -868,15 +868,15 @@ keymap {
       bindings = <
         /* base B L */
         &lt BASE_MIRROR_LAYER Q
-        &kp W
+        &lt BASE_MIRROR_LAYER W
         &kp E
-        &lt BASE_MIRROR_LAYER R
+        &kp R
         &kp T
         /* base B R */
         &kp Y
-        &lt BASE_MIRROR_LAYER U
+        &kp U
         &kp I
-        &kp O
+        &lt BASE_MIRROR_LAYER O
         &lt BASE_MIRROR_LAYER P
 
         /* base C L */
