@@ -668,13 +668,13 @@
             layers = <SYMB_LAYER>;      
         };
         
-        symb_slash_l {
+        symb_question_l {
             bindings = <&kp RS(SLASH)>;
             key-positions = <3 4>;
             layers = <SYMB_LAYER>;
         };
         
-        symb_slash_r {
+        symb_question_r {
             bindings = <&kp RS(SLASH)>;
             key-positions = <7 8>;
             layers = <SYMB_LAYER>;      
