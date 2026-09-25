@@ -744,7 +744,7 @@
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
-        base_ru_e {
+        base_ru_e_mirror {
             bindings = <&kp BSLH>;
             key-positions = <5 6>;
             layers = <BASE_MIRROR_LAYER>;
