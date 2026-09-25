@@ -744,6 +744,24 @@
             layers = <BASE_LAYER BASE_ADD_LAYER>;
         };
 
+        base_ru_e {
+            bindings = <&kp BSLH>;
+            key-positions = <5 6>;
+            layers = <BASE_MIRROR_LAYER>;
+        };
+        
+        base_lbkt_combos_mirror {
+            bindings = <&kp LBKT>;
+            key-positions = <2 3>;
+            layers = <BASE_MIRROR_LAYER>;
+        };
+
+        base_rbkt_combos_mirror {
+            bindings = <&kp RBKT>;
+            key-positions = <1 2>;
+            layers = <BASE_MIRROR_LAYER>;
+        };        
+
         base_caps_combo_l {
             bindings = <&kp CAPS>;
             key-positions = <14 13>;
