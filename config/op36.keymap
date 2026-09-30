@@ -698,15 +698,15 @@
             layers = <SYMB_LAYER>;
         };        
         
-        symb_slash_combo_r {
-            bindings = <&kp SLASH>;
+        symb_slash_combo_r_lbkt {
+            bindings = <&kp LBKT>;
             key-positions = <16 17>;
             require-prior-idle-ms = <150>;
             layers = <SYMB_LAYER>;
         };
         
-        symb_bslash_combo_r {
-            bindings = <&kp BSLH>;
+        symb_bslash_combo_r_rbkt {
+            bindings = <&kp RBKT>;
             key-positions = <17 18>;
             require-prior-idle-ms = <150>;
             layers = <SYMB_LAYER>;
