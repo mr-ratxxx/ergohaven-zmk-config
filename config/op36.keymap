@@ -732,9 +732,15 @@
         
         base_ru_e {
             bindings = <&kp BSLH>;
-            key-positions = <3 4>;
+            key-positions = <2 3>;
             layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
         };
+        
+        base_mirror_ru_e {
+            bindings = <&kp BSLH>;
+            key-positions = <6 7>;
+            layers = <BASE_MIRROR_LAYER>;
+        };        
         
         base_lbkt_combos {
             bindings = <&kp LBKT>;
@@ -746,12 +752,6 @@
             bindings = <&kp RBKT>;
             key-positions = <8 7>;
             layers = <BASE_LAYER BASE_ADD_LAYER>;
-        };
-
-        base_ru_e_mirror {
-            bindings = <&kp BSLH>;
-            key-positions = <5 6>;
-            layers = <BASE_MIRROR_LAYER>;
         };
         
         base_lbkt_combos_mirror {
