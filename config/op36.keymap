@@ -1423,9 +1423,9 @@ nav-mouse-r {
         &kp C_MUTE
         &kp C_VOLUME_DOWN
         &kp C_VOLUME_UP
-        &none
+        &to BASE_LAYER
         /* layers B R */        
-        &none              
+        &to BASE_LAYER              
         &kp C_VOLUME_UP
         &kp C_VOLUME_DOWN
         &kp C_MUTE
@@ -1460,9 +1460,9 @@ nav-mouse-r {
         /* layers T L */
         &none
         &none
-        &to BASE_LAYER
+        &none
         /* layers T R */
-        &to BASE_LAYER
+        &none
         &none
         &none
       >;
