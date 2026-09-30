@@ -1288,9 +1288,9 @@ nav-mouse-r {
         &kp F12
         &kp F11
         &kp F10
-        &to BASE_LAYER
+        &to NAV_MOUSE_L_LAYER
         /* funct D R */
-        &to BASE_LAYER
+        &to NAV_MOUSE_R_LAYER
         &kp F10
         &kp F11
         &kp F12
