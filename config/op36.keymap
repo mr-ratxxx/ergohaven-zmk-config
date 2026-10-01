@@ -1569,7 +1569,7 @@ nav-mouse-r {
         &kp M
         &kp COMMA
         &kp DOT
-        &lt BASE_ADD_OVERRIDE_LAYER SLASH
+        &lt BASE_ADD_OVERRIDE_LAYER SQT
 
         /* base-o T L */
         &kp TAB
