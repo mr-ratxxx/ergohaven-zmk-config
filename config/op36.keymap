@@ -1311,7 +1311,7 @@ nav-mouse-r {
     num {
       bindings = <
         /* num B L */
-        &kp LS(MINUS)
+        &kp DOT
         &kp N9
         &kp N8
         &kp N7
@@ -1321,7 +1321,7 @@ nav-mouse-r {
         &kp N7
         &kp N8
         &kp N9
-        &kp RS(MINUS)
+        &kp DOT
 
         /* num C L */
         &hml LGUI N0
@@ -1337,7 +1337,7 @@ nav-mouse-r {
         &hmr RGUI N0
 
         /* num D L */
-        &kp DOT
+        &kp RS(MINUS)
         &kp N3
         &kp N2
         &kp N1
@@ -1347,7 +1347,7 @@ nav-mouse-r {
         &kp N1
         &kp N2
         &kp N3
-        &kp DOT
+        &kp RS(MINUS)
 
         /* num T L */
         &kp TAB
