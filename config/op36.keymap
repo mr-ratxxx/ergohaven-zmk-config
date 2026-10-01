@@ -1550,16 +1550,16 @@ nav-mouse-r {
         &hml LCTRL S
         &hml LALT D
         &hml LSHFT F
-        &lt BASE_ADD_OVERRIDE_LAYER G
+        &kp G
         /* base-o C R */
-        &lt BASE_ADD_OVERRIDE_LAYER H
+        &kp H
         &hmr RSHIFT J
         &hmr RALT K
         &hmr RCTRL L
         &hmr RGUI SEMI
 
         /* base-o D L */
-        &lt BASE_ADD_OVERRIDE_LAYER Z
+        &lt NUM_LAYER Z
         &kp X
         &kp C
         &kp V
@@ -1569,7 +1569,7 @@ nav-mouse-r {
         &kp M
         &kp COMMA
         &kp DOT
-        &lt BASE_ADD_OVERRIDE_LAYER SQT
+        &lt SYMB_LAYER SQT
 
         /* base-o T L */
         &kp TAB
