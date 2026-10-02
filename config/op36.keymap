@@ -1304,9 +1304,9 @@ nav-mouse-r {
             &kp LGUI        
     
             /* nav-m-l D L */
-            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)
-            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
+            &mmv MOVE_X(MMV_SLOW_ALT_SPEED_L)            
             &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_D)
+            &mmv MOVE_Y(MMV_SLOW_ALT_SPEED_U)
             &mmv MOVE_X(MMV_SLOW_ALT_SPEED_R)
             &msc SCRL_DOWN
             /* nav-m-l D R */
