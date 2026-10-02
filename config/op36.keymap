@@ -847,38 +847,38 @@
         /* bt */
         bt_0 {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <3 4>;
-            layers = <FUNCT_LAYER>;
+            key-positions = <0 1 2>;
+            layers = <LAYERS_LAYER>;
         };
 
         bt_1 {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <2 3>;
-            layers = <FUNCT_LAYER>;
+            key-positions = <1 2 3>;
+            layers = <LAYERS_LAYER>;
         };
 
         bt_2 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <1 2>;
-            layers = <FUNCT_LAYER>;
+            key-positions = <2 3 4>;
+            layers = <LAYERS_LAYER>;
         };
 
         bt_3 {
             bindings = <&bt BT_SEL 3>;
-            key-positions = <5 6>;
-            layers = <FUNCT_LAYER>;
+            key-positions = <5 6 7>;
+            layers = <LAYERS_LAYER>;
         };
 
         bt_4 {
             bindings = <&bt BT_SEL 4>;
-            key-positions = <6 7>;
-            layers = <FUNCT_LAYER>;
+            key-positions = <6 7 8>;
+            layers = <LAYERS_LAYER>;
         };
 
         bt_clear {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <0 1 2 3>;
-            layers = <FUNCT_LAYER>;
+            key-positions = <2 3 4 5 6 7>;
+            layers = <LAYERS_LAYER>;
         };        
         /* bt-end */        
     };
@@ -919,7 +919,7 @@ keymap {
         &kp X
         &kp C
         &kp V
-        &lt LAYERS_LAYER B
+        &lt LAYERS_LAYER B                                
         /* base D R */
         &lt LAYERS_LAYER N
         &kp M
