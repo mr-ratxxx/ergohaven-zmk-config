@@ -919,7 +919,41 @@
         /* bt-end */
         
         /* 4*3-start */
+        base_t {
+            bindings = <&kp T;
+            key-positions = <1 3>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        base_g {
+            bindings = <&kp G;
+            key-positions = <11 13>;
+            layers = <FUNCT_LAYER>;
+        };
         
+        base_b {
+            bindings = <&kp B;
+            key-positions = <21 23>;
+            layers = <FUNCT_LAYER>;
+        };
+        
+        base_y {
+            bindings = <&kp Y;
+            key-positions = <6 8>;
+            layers = <FUNCT_LAYER>;
+        };
+        
+        base_h {
+            bindings = <&kp H;
+            key-positions = <16 18>;
+            layers = <FUNCT_LAYER>;
+        };
+        
+        base_n {
+            bindings = <&kp N;
+            key-positions = <26 28>;
+            layers = <FUNCT_LAYER>;
+        };                                                
         /* 4*3-end */        
     };
 
