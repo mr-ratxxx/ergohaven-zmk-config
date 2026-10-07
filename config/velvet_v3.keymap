@@ -16,7 +16,7 @@
                   &kp GRAVE  &kp LGUI  &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LALT  &kp LBKT   &kp RBKT
             >;
 
-            display-name = "Base";
+            display-name = "Base1";
         };
 
         nav {
