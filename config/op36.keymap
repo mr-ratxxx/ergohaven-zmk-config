@@ -989,7 +989,7 @@ keymap {
         &hmr RGUI SEMI
 
         /* base D L */
-        &lt NUM_LAYER Z
+        &lt FUNCT_LAYER Z
         &kp X
         &kp C
         &kp V
@@ -999,7 +999,7 @@ keymap {
         &kp M
         &kp COMMA
         &kp DOT
-        &lt SYMB_LAYER SQT
+        &lt FUNCT_LAYER SQT
 
         /* base T L */
         &lt SYMB_LAYER TAB
