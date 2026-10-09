@@ -953,7 +953,8 @@
             bindings = <&kp N>;
             key-positions = <26 28>;
             layers = <BASE_LAYER BASE_ADD_LAYER NAV_R_LAYER NAV_L_LAYER NUM_LAYER SYMB_LAYER FUNCT_LAYER>;
-        };                                                
+        };       
+                                                 
         /* 4*3-end */        
     };
 
