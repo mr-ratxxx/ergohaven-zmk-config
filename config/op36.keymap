@@ -10,8 +10,8 @@
 #define NAV_MOUSE_R_LAYER 5
 #define NAV_MOUSE_L_LAYER 6
 #define FUNCT_LAYER 7
-#define NUM_LAYER 8
-#define SYMB_LAYER 9
+#define SYMB_LAYER 8
+#define NUM_LAYER 9
 #define LAYERS_LAYER 10
 #define ADJ_LAYER 11
 #define BASE_OVERRIDE_LAYER 12
@@ -1386,11 +1386,11 @@ nav-mouse-r {
     num {
       bindings = <
         /* num B L */
-        &kp DOT
-        &kp N9
-        &kp N8
-        &kp N7
-        &kp PLUS
+        &kp BSLH
+        &kp SLASH
+        &kp LEFT_PARENTHESIS
+        &kp RIGHT_PARENTHESIS
+        &kp RS(N3)
         /* num B R */
         &kp PLUS
         &kp N7
@@ -1399,11 +1399,11 @@ nav-mouse-r {
         &kp DOT
 
         /* num C L */
-        &hml LGUI N0
-        &hml LCTRL N6
-        &hml LALT N5
-        &hml LSHFT N4
-        &kp MINUS
+        &mt RGUI PLUS
+        &mt RCTRL RS(MINUS)
+        &mt RALT EQUAL
+        &mt RSHFT MINUS
+        &kp RS(N3)
         /* num C R */
         &kp MINUS
         &hmr RSHIFT N4
@@ -1439,12 +1439,12 @@ nav-mouse-r {
     
     symb {
       bindings = <
-        /* symb B L */        
-        &kp BSLH
-        &kp SLASH
-        &kp LEFT_PARENTHESIS
-        &kp RIGHT_PARENTHESIS
-        &kp RS(N3)
+        /* symb B L */
+        &kp DOT
+                &kp N9
+                &kp N8
+                &kp N7
+                &kp PLUS
         /* symb B R */
         &kp RS(N2)
         &kp LEFT_PARENTHESIS
@@ -1453,11 +1453,11 @@ nav-mouse-r {
         &kp BSLH
 
         /* symb C L */
-        &mt RGUI PLUS
-        &mt RCTRL RS(MINUS)
-        &mt RALT EQUAL
-        &mt RSHFT MINUS
-        &kp RS(N3)
+        &hml LGUI N0
+                &hml LCTRL N6
+                &hml LALT N5
+                &hml LSHFT N4
+                &kp MINUS
         /* symb C R */
         &kp RS(N3)
         &mt RSHFT MINUS
