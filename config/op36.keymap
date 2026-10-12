@@ -990,17 +990,17 @@ keymap {
         &hmr RGUI SEMI
 
         /* base D L */
-        &lt FUNCT_LAYER Z
+        &lt SYMB_LAYER Z
         &kp X
         &kp C
         &kp V
-        &lt LAYERS_LAYER B                                
+        &kp B                                
         /* base D R */
-        &lt LAYERS_LAYER N
+        &kp N
         &kp M
         &kp COMMA
         &kp DOT
-        &lt FUNCT_LAYER SQT
+        &lt NUM_LAYER SQT
 
         /* base T L */
         &lt SYMB_LAYER TAB
