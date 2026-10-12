@@ -1412,11 +1412,11 @@ nav-mouse-r {
         &hmr RGUI N0
 
         /* num D L */
-        &kp RS(MINUS)
-        &kp N3
-        &kp N2
-        &kp N1
-        &kp EQUAL
+        &kp RS(N5)
+                &kp RS(N7)
+                &kp RS(N6)        
+                &kp RS(N8)
+                &kp RS(N4)
         /* num D R */
         &kp EQUAL
         &kp N1
@@ -1466,11 +1466,11 @@ nav-mouse-r {
         &mt RGUI PLUS
 
         /* symb D L */
-        &kp RS(N5)
-        &kp RS(N7)
-        &kp RS(N6)        
-        &kp RS(N8)
-        &kp RS(N4)        
+        &kp RS(MINUS)
+        &kp N3
+        &kp N2
+        &kp N1
+        &kp EQUAL
         /* symb D R */
         &kp RS(N4)
         &kp RS(N8)
