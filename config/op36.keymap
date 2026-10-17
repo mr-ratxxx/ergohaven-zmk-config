@@ -1495,12 +1495,12 @@ nav-mouse-r {
         &mt RCTRL RS(N4)
         &mt RGUI GRAVE
 
-        /* symb D L */
-        &none
-        &kp RS(N7)
-        &kp RS(N6)        
+        /* symb D L */        
+        &kp RS(N5)
+        &kp RS(N7)        
+        &kp RS(N6)
         &kp RS(N8)
-        &kp RS(N4)        
+        &none
         /* symb D R */
         &none
         &kp RS(N8)
