@@ -1483,17 +1483,17 @@ nav-mouse-r {
         &kp BSLH
 
         /* symb C L */
-        &mt LGUI PLUS
+        &mt LGUI &kp RS(SLASH)
         &mt LCTRL EQUAL
         &mt LALT MINUS
-        &mt LSHFT RS(N4)
+        &mt LSHFT RS(N1)
         &kp RS(N3)
         /* symb C R */
         &kp RS(N3)
-        &mt RSHFT RS(N4)
+        &mt RSHFT RS(N1)
         &mt RALT MINUS
         &mt RCTRL EQUAL
-        &mt RGUI PLUS
+        &mt RGUI &kp RS(SLASH)
 
         /* symb D L */
         &kp RS(N5)
