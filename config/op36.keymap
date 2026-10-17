@@ -758,20 +758,20 @@
             layers = <SYMB_LAYER>;
         };
         
-        symb_percent_r {
+        symb_resh_r {
             bindings = <&kp RS(N3)>;
             key-positions = <16 17 18>;
             layers = <SYMB_LAYER>;
         };
         
-        symb_percent_l {
-            bindings = <&kp RS(N4)>;
+        symb_par_l {
+            bindings = <&kp RS(N5)>;
             key-positions = <21 22 23>;
             layers = <SYMB_LAYER>;      
         };        
                 
         symb_par_r {
-            bindings = <&kp RS(N4)>;
+            bindings = <&kp RS(N5)>;
             key-positions = <26 27 28>;
             layers = <SYMB_LAYER>;      
         };                                               
@@ -1019,13 +1019,13 @@ keymap {
         &lt SYMB_LAYER SQT
 
         /* base T L */
-        &lt FUNCT_LAYER TAB
+        &lt SYMB_LAYER TAB
         &lt NAV_L_LAYER SPACE
-        &lt SYMB_LAYER DEL
+        &lt FUNCT_LAYER DEL
         /* base T R */
-        &lt NUM_LAYER ESC
+        &lt FUNCT_LAYER ESC
         &lt NAV_R_LAYER RG(RC(SPACE))
-        &lt FUNCT_LAYER BACKSPACE
+        &lt NUM_LAYER BACKSPACE
       >;
       display-name = "base";
     };
@@ -1473,9 +1473,9 @@ nav-mouse-r {
         &mt LCTRL EQUAL
         &mt LALT MINUS
         &mt LSHFT RS(N3)
-        &kp RS(N3)
+        &kp RS(N4)
         /* symb C R */
-        &kp RS(N3)
+        &kp RS(N4)
         &mt RSHFT RS(N3)
         &mt RALT MINUS
         &mt RCTRL EQUAL
