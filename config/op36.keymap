@@ -1469,9 +1469,9 @@ nav-mouse-r {
     
     symb {
       bindings = <
-        /* symb B L */
-        &kp BSLH
-        &kp SLASH
+        /* symb B L */        
+        &mt LGUI GRAVE
+        &mt LCTRL RS(N4)
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
         &none
@@ -1479,12 +1479,12 @@ nav-mouse-r {
         &none
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS        
-        &kp SLASH
-        &kp BSLH
+        &mt RCTRL RS(N4)
+        &mt RGUI GRAVE
 
         /* symb C L */
-        &mt LGUI GRAVE
-        &mt LCTRL RS(N4)
+        &kp BSLH
+        &kp SLASH
         &mt LALT EQUAL
         &mt LSHFT MINUS
         &none
@@ -1492,8 +1492,8 @@ nav-mouse-r {
         &none
         &mt RSHFT MINUS
         &mt RALT EQUAL
-        &mt RCTRL RS(N4)
-        &mt RGUI GRAVE
+        &kp SLASH
+        &kp BSLH
 
         /* symb D L */        
         &kp RS(N5)
