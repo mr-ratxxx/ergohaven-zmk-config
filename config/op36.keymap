@@ -1482,9 +1482,9 @@ nav-mouse-r {
         &mt RCTRL RS(N4)
         &mt RGUI GRAVE
 
-        /* symb C L */
-        &kp BSLH
+        /* symb C L */        
         &kp SLASH
+        &kp BSLH
         &mt LALT EQUAL
         &mt LSHFT MINUS
         &none
