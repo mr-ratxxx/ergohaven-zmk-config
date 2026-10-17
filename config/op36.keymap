@@ -1484,7 +1484,7 @@ nav-mouse-r {
 
         /* symb C L */
         &mt LGUI GRAVE
-        &mt LCTRL RS($4)
+        &mt LCTRL RS(N4)
         &mt LALT EQUAL
         &mt LSHFT MINUS
         &none
