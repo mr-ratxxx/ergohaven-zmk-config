@@ -1472,11 +1472,11 @@ nav-mouse-r {
         &mt LGUI PLUS
         &mt LCTRL EQUAL
         &mt LALT MINUS
-        &mt LSHFT RS(N3)
-        &kp RS(N4)
+        &mt LSHFT RS(N4)
+        &kp RS(N3)
         /* symb C R */
-        &kp RS(N4)
-        &mt RSHFT RS(N3)
+        &kp RS(N3)
+        &mt RSHFT RS(N4)
         &mt RALT MINUS
         &mt RCTRL EQUAL
         &mt RGUI PLUS
