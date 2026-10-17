@@ -716,7 +716,7 @@
         
         symb_down_minus_combo_l {
                     bindings = <&kp RS(MINUS)>;
-                    key-positions = <12 13>;
+                    key-positions = <11 12>;
                     require-prior-idle-ms = <150>;
                     layers = <SYMB_LAYER>;
                 };
@@ -730,7 +730,7 @@
         
         symb_down_equals_combo_l {
                     bindings = <&kp RS(EQUAL)>;
-                    key-positions = <13 14>;
+                    key-positions = <12 13>;
                     require-prior-idle-ms = <150>;
                     layers = <SYMB_LAYER>;
                 };
