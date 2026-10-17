@@ -1474,9 +1474,9 @@ nav-mouse-r {
         &kp SLASH
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS
-        &kp RS(N3)
+        &none
         /* symb B R */
-        &kp RS(N2)
+        &none
         &kp LEFT_PARENTHESIS
         &kp RIGHT_PARENTHESIS        
         &kp SLASH
@@ -1496,13 +1496,13 @@ nav-mouse-r {
         &mt RGUI GRAVE
 
         /* symb D L */
-        &kp RS(N5)
+        &none
         &kp RS(N7)
         &kp RS(N6)        
         &kp RS(N8)
         &kp RS(N4)        
         /* symb D R */
-        &kp RS(N4)
+        &none
         &kp RS(N8)
         &kp RS(N6)
         &kp RS(N7)
