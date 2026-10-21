@@ -676,6 +676,30 @@
             layers = <NUM_LAYER>;
         };
         
+        num_dot_l {
+                    bindings = <&kp DOT>;
+                    key-positions = <12 13>;
+                    layers = <NUM_LAYER>;
+                };
+                
+        num_dot_ru_l {
+                    bindings = <&kp RS(N7)>;
+                    key-positions = <11 12>;
+                    layers = <NUM_LAYER>;
+                };        
+        
+        num_dot_r {
+                    bindings = <&kp DOT>;
+                    key-positions = <16 17>;
+                    layers = <NUM_LAYER>;
+                };
+                
+        num_dot_ru_r {
+                    bindings = <&kp RS(N7)>;
+                    key-positions = <17 18>;
+                    layers = <NUM_LAYER>;
+                };                
+        
         symb_n1_l {
             bindings = <&kp RS(N1)>;
             key-positions = <2 3>;
