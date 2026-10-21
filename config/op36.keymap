@@ -678,25 +678,25 @@
         
         num_dot_l {
                     bindings = <&kp DOT>;
-                    key-positions = <12 13>;
+                    key-positions = <2 3>;
                     layers = <NUM_LAYER>;
                 };
-                
+               
         num_dot_ru_l {
                     bindings = <&kp RS(N7)>;
-                    key-positions = <11 12>;
+                    key-positions = <1 2>;
                     layers = <NUM_LAYER>;
                 };        
         
         num_dot_r {
                     bindings = <&kp DOT>;
-                    key-positions = <16 17>;
+                    key-positions = <6 7>;
                     layers = <NUM_LAYER>;
                 };
                 
         num_dot_ru_r {
                     bindings = <&kp RS(N7)>;
-                    key-positions = <17 18>;
+                    key-positions = <7 8>;
                     layers = <NUM_LAYER>;
                 };                
         
