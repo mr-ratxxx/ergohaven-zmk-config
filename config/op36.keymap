@@ -313,10 +313,11 @@
             >;                    
         };
         
+        /*
         to_num_r {
                     bindings = <&to NUM_LAYER>;
                     key-positions = <26 27 28>;
-            layers = <NUM_LAYER>;                    
+            layers = <NUM_LAYER>;    
                 };
         to_num_r_revert {
                     bindings = <&tog NUM_LAYER>;
@@ -355,7 +356,8 @@ to_symb_r {
                     bindings = <&tog SYMB_LAYER>;
                     key-positions = <26 27 28>;
             layers = <SYMB_LAYER>;                    
-                };                                                                
+                };
+                */                                                                
                         
         /* mo-end */
         
