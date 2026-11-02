@@ -316,13 +316,24 @@
         to_num_r {
                     bindings = <&to NUM_LAYER>;
                     key-positions = <26 27 28>;
-            layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;                    
+            layers = <NUM_LAYER>;                    
                 };
         to_num_r_revert {
                     bindings = <&tog NUM_LAYER>;
                     key-positions = <26 27 28>;
             layers = <NUM_LAYER>;                    
-                };                
+                };
+
+        to_nav_r {
+                    bindings = <&to NUM_LAYER>;
+                    key-positions = <26 27 28>;
+            layers = <NAV_R_LAYER>;                    
+                };
+        to_nav_r_revert {
+                    bindings = <&tog NUM_LAYER>;
+                    key-positions = <26 27 28>;
+            layers = <NAV_R_LAYER>;                    
+                };                                
                         
         /* mo-end */
         
