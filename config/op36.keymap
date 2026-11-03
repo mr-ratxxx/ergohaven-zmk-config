@@ -311,54 +311,7 @@
                 BASE_ADD_OVERRIDE_LAYER
                 BASE_MIRROR_LAYER
             >;                    
-        };
-        
-        /*
-        to_num_r {
-                    bindings = <&to NUM_LAYER>;
-                    key-positions = <26 27 28>;
-            layers = <NUM_LAYER>;    
-                };
-        to_num_r_revert {
-                    bindings = <&tog NUM_LAYER>;
-                    key-positions = <26 27 28>;
-            layers = <NUM_LAYER>;                    
-                };
-
-        to_nav_r {
-                    bindings = <&to NAV_R_LAYER>;
-                    key-positions = <26 27 28>;
-            layers = <NAV_R_LAYER>;                    
-                };
-        to_nav_r_revert {
-                    bindings = <&tog NAV_R_LAYER>;
-                    key-positions = <26 27 28>;
-            layers = <NAV_R_LAYER>;                    
-                };
-                
-        to_funct_r {
-                    bindings = <&to FUNCT_LAYER>;
-                    key-positions = <26 27 28>;
-            layers = <FUNCT_LAYER>;                    
-                };
-        to_funct_r_revert {
-                    bindings = <&tog FUNCT_LAYER>;
-                    key-positions = <26 27 28>;
-            layers = <FUNCT_LAYER>;                    
-                };
-                
-to_symb_r {
-                    bindings = <&to SYMB_LAYER>;
-                    key-positions = <26 27 28>;
-            layers = <SYMB_LAYER>;                    
-                };
-        to_symb_r_revert {
-                    bindings = <&tog SYMB_LAYER>;
-                    key-positions = <26 27 28>;
-            layers = <SYMB_LAYER>;                    
-                };
-                */                                                                
-                        
+        };              
         /* mo-end */
         
         /* nav-start */
