@@ -685,7 +685,41 @@
         /* bt-end */
         
         /* funct-start */
+        funct_f1_l {
+            bindings = <&kp F1>;
+            key-positions = <1 3>;
+            layers = <FUNCT_LAYER>;
+        };        
         
+        funct_f2_l {
+            bindings = <&kp F2>;
+            key-positions = <11 13>;
+            layers = <FUNCT_LAYER>;
+        };
+        
+        funct_f3_l {
+            bindings = <&kp F3>;
+            key-positions = <21 23>;
+            layers = <FUNCT_LAYER>;
+        };
+        
+        funct_f1_r {
+            bindings = <&kp F1>;
+            key-positions = <6 8>;
+            layers = <FUNCT_LAYER>;
+        };        
+        
+        funct_f2_r {
+            bindings = <&kp F2>;
+            key-positions = <16 18>;
+            layers = <FUNCT_LAYER>;
+        };
+        
+        funct_f3_r {
+            bindings = <&kp F3>;
+            key-positions = <26 28>;
+            layers = <FUNCT_LAYER>;
+        };                        
         /* funct-end */
         
         /* 4*3-start */
