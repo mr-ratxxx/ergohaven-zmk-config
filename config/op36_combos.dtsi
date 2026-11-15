@@ -1,0 +1,725 @@
+// op36_combos.dtsi
+    combos {
+        compatible = "zmk,combos";
+                
+        /* mo-start */
+        to_base_l {
+            bindings = <&to BASE_LAYER>;
+            key-positions = <3 4 13 14>;
+        };
+        
+        to_base_r {
+            bindings = <&to BASE_LAYER>;
+            key-positions = <5 6 16 15>;                    
+        };
+        
+        to_base_mirror_r {
+            bindings = <&tog BASE_MIRROR_LAYER>;
+            key-positions = <0 1 2>;
+            layers = <
+                BASE_LAYER
+                BASE_ADD_LAYER
+                BASE_OVERRIDE_LAYER
+                BASE_ADD_OVERRIDE_LAYER
+                BASE_MIRROR_LAYER
+            >;            
+        };
+        
+        to_base_mirror_l {
+            bindings = <&tog BASE_MIRROR_LAYER>;
+            key-positions = <7 8 9>;
+            layers = <
+                BASE_LAYER
+                BASE_ADD_LAYER
+                BASE_OVERRIDE_LAYER
+                BASE_ADD_OVERRIDE_LAYER
+                BASE_MIRROR_LAYER
+            >;                    
+        };              
+        /* mo-end */
+        
+        /* nav-start */
+        back_l {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <12 13>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        forward_l {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <11 12>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        back_r {
+            bindings = <&kp RG(LEFT_BRACKET)>;
+            key-positions = <16 17>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        forward_r {
+            bindings = <&kp RG(RIGHT_BRACKET)>;
+            key-positions = <17 18>;
+            layers = <FUNCT_LAYER>;
+        };
+
+        /* nav-end */
+        
+        /* mouse-start */
+        pg_down_l {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <11 1>;
+        };
+
+        pg_down_r {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <18 8>;
+        };        
+        
+        cmd_pg_up_l {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <12 2>;
+        };
+
+        cmd_pg_up_r {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <7 17>;
+        };
+
+        m_down_l {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <11 21>;
+        };
+
+        m_down_r {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <18 28>;
+        };
+
+        m_up_l {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <12 22>;
+        };
+
+        m_up_r {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <17 27>;
+        };
+
+        m_left_l {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <10 20>;
+        };
+
+        m_left_r {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <16 26>;
+        };
+
+        m_right_l {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <13 23>;
+        };
+
+        m_right_r {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <19 29>;
+        };        
+        /* mouse-end */
+        
+        /* system-start */
+        caps_world {
+            bindings = <&my_caps_word>;
+            key-positions = <16 13 17 12>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_MIRROR_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };        
+        
+        ui_revert {
+            bindings = <&kp RG(Z)>;
+            key-positions = <6 7>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        uio_repeat {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <7 8>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        ui_revert_l {
+            bindings = <&kp RG(Z)>;
+            key-positions = <2 3>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };
+
+        uio_repeat_l {
+            bindings = <&kp LS(LG(Z))>;
+            key-positions = <2 1>;
+            layers = <FUNCT_LAYER BASE_OVERRIDE_LAYER LAYERS_LAYER>;
+        };        
+        
+        all_cmd_tab_l {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <2 1>;
+            require-prior-idle-ms = <150>;
+                        layers = <
+                            BASE_LAYER
+                            BASE_ADD_LAYER
+                            BASE_MIRROR_LAYER
+                            NAV_R_LAYER
+                            NAV_L_LAYER
+                            NAV_MOUSE_R_LAYER
+                            NAV_MOUSE_L_LAYER
+                            FUNCT_LAYER
+                            NUM_LAYER
+                            /* SYMB_LAYER */
+                            LAYERS_LAYER
+                            ADJ_LAYER
+                            BASE_OVERRIDE_LAYER
+                            BASE_ADD_OVERRIDE_LAYER
+                        >;
+        };
+
+        all_cmd_tab_r {
+            bindings = <&kp LG(TAB)>;
+            require-prior-idle-ms = <150>;
+            key-positions = <9 8>;
+                        layers = <
+                            BASE_LAYER
+                            BASE_ADD_LAYER
+                            BASE_MIRROR_LAYER
+                            NAV_R_LAYER
+                            NAV_L_LAYER
+                            NAV_MOUSE_R_LAYER
+                            NAV_MOUSE_L_LAYER
+                            FUNCT_LAYER
+                            NUM_LAYER
+                            /* SYMB_LAYER */
+                            LAYERS_LAYER
+                            ADJ_LAYER
+                            BASE_OVERRIDE_LAYER
+                            BASE_ADD_OVERRIDE_LAYER
+                        >;
+        };        
+        /* system-end */                
+
+        from_layers_to_adj_layer {
+            bindings = <&tog ADJ_LAYER>;
+            key-positions = <9 8>;
+            layers = <FUNCT_LAYER
+            LAYERS_LAYER
+            ADJ_LAYER>;
+        };
+
+        mouse1_ml_l {
+            bindings = <&mkp MB1>;
+            key-positions = <13 12>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
+        };
+
+        mouse2_ml_l {
+            bindings = <&mkp MB2>;
+            key-positions = <13 12 11>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
+        };
+
+        mouse1_ml_r {
+            bindings = <&mkp MB1>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
+        };
+
+        mouse2_ml_r {
+            bindings = <&mkp MB2>;
+            key-positions = <16 17 18>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
+        };
+
+        mouse1-r {
+            bindings = <&mkp MB1>;
+            key-positions = <26 27>;
+            layers = <
+                NAV_R_LAYER
+                NAV_L_LAYER
+                NAV_MOUSE_R_LAYER
+                NAV_MOUSE_L_LAYER
+                FUNCT_LAYER
+                /* NUM_LAYER
+                SYMB_LAYER */
+                LAYERS_LAYER
+                ADJ_LAYER
+            >;            
+        };
+
+        mouse2_r {
+            bindings = <&mkp MB2>;
+            key-positions = <26 27 28>;
+            layers = <
+                NAV_R_LAYER
+                NAV_L_LAYER
+                NAV_MOUSE_R_LAYER
+                NAV_MOUSE_L_LAYER
+                FUNCT_LAYER
+                /* NUM_LAYER
+                SYMB_LAYER */
+                LAYERS_LAYER
+                ADJ_LAYER
+            >;            
+        };
+
+        mouse1_l {
+            bindings = <&mkp MB1>;
+            key-positions = <22 23>;
+            require-prior-idle-ms = <150>;
+            layers = <
+                BASE_LAYER
+                BASE_ADD_LAYER
+                BASE_MIRROR_LAYER
+                NAV_R_LAYER
+                NAV_L_LAYER
+                NAV_MOUSE_R_LAYER
+                NAV_MOUSE_L_LAYER
+                FUNCT_LAYER
+                /* NUM_LAYER
+                SYMB_LAYER */
+                LAYERS_LAYER
+                ADJ_LAYER
+                BASE_OVERRIDE_LAYER
+                BASE_ADD_OVERRIDE_LAYER
+            >;
+        };
+
+        mouse2_l {
+            bindings = <&mkp MB2>;
+            key-positions = <21 22 23>;
+            require-prior-idle-ms = <150>;
+            layers = <
+                BASE_LAYER
+                BASE_ADD_LAYER
+                BASE_MIRROR_LAYER
+                NAV_R_LAYER
+                NAV_L_LAYER
+                NAV_MOUSE_R_LAYER
+                NAV_MOUSE_L_LAYER
+                FUNCT_LAYER
+                /* NUM_LAYER
+                SYMB_LAYER */
+                LAYERS_LAYER
+                ADJ_LAYER
+                BASE_OVERRIDE_LAYER
+                BASE_ADD_OVERRIDE_LAYER
+            >;            
+        };
+
+        mouse1_up_r {
+            bindings = <&mkp MB1>;
+            key-positions = <7 6>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_R_LAYER
+            NAV_L_LAYER
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
+        };
+
+        mouse2_up_r {
+            bindings = <&mkp MB2>;
+            key-positions = <6 7 8>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_R_LAYER
+            NAV_L_LAYER
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
+        };
+
+        mouse1_up_l {
+            bindings = <&mkp MB1>;
+            key-positions = <3 2>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_R_LAYER
+            NAV_L_LAYER
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
+        };
+
+        mouse2_up_l {
+            bindings = <&mkp MB2>;
+            key-positions = <3 2 1>;
+            require-prior-idle-ms = <150>;
+            layers = <
+            NAV_R_LAYER
+            NAV_L_LAYER
+            NAV_MOUSE_R_LAYER
+            NAV_MOUSE_L_LAYER
+            >;
+        };
+        
+        /* kp-start */
+        all_enter_r {
+            bindings = <&kp ENTER>;
+            key-positions = <27 28>;
+            require-prior-idle-ms = <70>;
+        };
+
+        all_enter_l {
+            bindings = <&kp ENTER>;
+            key-positions = <22 21>;
+            require-prior-idle-ms = <70>;
+        };
+
+        num_n0_l {
+            bindings = <&kp N0>;
+            key-positions = <23 22>;
+            layers = <NUM_LAYER>;
+        };
+
+        num_n0_r {
+            bindings = <&kp N0>;
+            key-positions = <26 27>;
+            layers = <NUM_LAYER>;
+        };
+        
+        num_dot_l {
+                    bindings = <&kp DOT>;
+                    key-positions = <2 3>;
+                    layers = <NUM_LAYER>;
+                };
+               
+        num_dot_ru_l {
+                    bindings = <&kp RS(N7)>;
+                    key-positions = <1 2>;
+                    layers = <NUM_LAYER>;
+                };        
+        
+        num_dot_r {
+                    bindings = <&kp DOT>;
+                    key-positions = <6 7>;
+                    layers = <NUM_LAYER>;
+                };
+
+        num_dot_ru_r {
+                    bindings = <&kp RS(N7)>;
+                    key-positions = <7 8>;
+                    layers = <NUM_LAYER>;
+                };                
+        
+        symb_n1_l {
+            bindings = <&kp RS(N1)>;
+            key-positions = <2 3>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_n1_r {
+            bindings = <&kp RS(N1)>;
+            key-positions = <6 7>;
+            layers = <SYMB_LAYER>;      
+        };
+        
+        symb_question_l {
+            bindings = <&kp RS(SLASH)>;
+            key-positions = <1 2>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_question_r {
+            bindings = <&kp RS(SLASH)>;
+            key-positions = <7 8>;
+            layers = <SYMB_LAYER>;      
+        };
+        
+        symb_slash_combo_l {
+            bindings = <&kp SLASH>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <150>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_bslash_combo_l {
+            bindings = <&kp BSLH>;
+            key-positions = <11 12>;
+            require-prior-idle-ms = <150>;
+            layers = <SYMB_LAYER>;
+        };        
+        
+        symb_down_minus_combo_l {
+                    bindings = <&kp RS(MINUS)>;
+                    key-positions = <11 12>;
+                    require-prior-idle-ms = <150>;
+                    layers = <SYMB_LAYER>;
+                };
+        
+        symb_down_minus_combo_r {
+            bindings = <&kp RS(MINUS)>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <150>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_down_equals_combo_l {
+                    bindings = <&kp RS(EQUAL)>;
+                    key-positions = <12 13>;
+                    require-prior-idle-ms = <150>;
+                    layers = <SYMB_LAYER>;
+                };
+        
+        symb_down_equals_combo_r {
+            bindings = <&kp RS(EQUAL)>;
+            key-positions = <17 18>;
+            require-prior-idle-ms = <150>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_dog_l {
+            bindings = <&kp RS(N2)>;
+            key-positions = <1 3>;
+            layers = <SYMB_LAYER>;
+        };
+                        
+        symb_dog_r {
+            bindings = <&kp RS(N2)>;
+            key-positions = <6 8>;
+            layers = <SYMB_LAYER>;
+        };                        
+
+        symb_resh_l {
+            bindings = <&kp RS(N3)>;
+            key-positions = <11 13>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_resh_r {
+            bindings = <&kp RS(N3)>;
+            key-positions = <16 18>;
+            layers = <SYMB_LAYER>;
+        };
+        
+        symb_percent_l {
+            bindings = <&kp RS(N5)>;
+            key-positions = <21 23>;
+            layers = <SYMB_LAYER>;      
+        };        
+                
+        symb_percent_r {
+            bindings = <&kp RS(N5)>;
+            key-positions = <26 28>;
+            layers = <SYMB_LAYER>;      
+        };                                               
+        
+        all_caps_l {
+            bindings = <&kp CAPS>;
+            key-positions = <40 41 24 23>;
+            require-prior-idle-ms = <150>;
+        };        
+        
+        base_ru_e {
+            bindings = <&kp BSLH>;
+            key-positions = <2 3>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };
+        
+        base_mirror_ru_e {
+            bindings = <&kp BSLH>;
+            key-positions = <6 7>;
+            layers = <BASE_MIRROR_LAYER>;
+        };        
+        
+        base_lbkt_combos {
+            bindings = <&kp LBKT>;
+            key-positions = <6 7>;
+            layers = <BASE_LAYER BASE_ADD_LAYER>;
+        };
+
+        base_rbkt_combos {
+            bindings = <&kp RBKT>;
+            key-positions = <8 7>;
+            layers = <BASE_LAYER BASE_ADD_LAYER>;
+        };
+        
+        base_lbkt_combos_mirror {
+            bindings = <&kp LBKT>;
+            key-positions = <2 3>;
+            layers = <BASE_MIRROR_LAYER>;
+        };
+
+        base_rbkt_combos_mirror {
+            bindings = <&kp RBKT>;
+            key-positions = <1 2>;
+            layers = <BASE_MIRROR_LAYER>;
+        };        
+
+        base_caps_combo_l {
+            bindings = <&kp CAPS>;
+            key-positions = <14 13>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };
+        
+        base_space_combo_r {
+            bindings = <&kp SPACE>;
+            key-positions = <28 29>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };        
+
+        all_esc_combo_l_up {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+                        layers = <
+                            BASE_LAYER
+                            BASE_ADD_LAYER
+                            BASE_MIRROR_LAYER
+                            NAV_R_LAYER
+                            NAV_L_LAYER
+                            NAV_MOUSE_R_LAYER
+                            NAV_MOUSE_L_LAYER
+                            FUNCT_LAYER
+                            NUM_LAYER
+                            /* SYMB_LAYER */
+                            LAYERS_LAYER
+                            ADJ_LAYER
+                            BASE_OVERRIDE_LAYER
+                            BASE_ADD_OVERRIDE_LAYER
+                        >;
+        };
+        
+        all_esc_combo_l_down {
+            bindings = <&kp ESC>;
+            key-positions = <23 24>;
+                        layers = <
+                            BASE_LAYER
+                            BASE_ADD_LAYER
+                            BASE_MIRROR_LAYER
+                            NAV_R_LAYER
+                            NAV_L_LAYER
+                            NAV_MOUSE_R_LAYER
+                            NAV_MOUSE_L_LAYER
+                            FUNCT_LAYER
+                            NUM_LAYER
+                            /* SYMB_LAYER */
+                            LAYERS_LAYER
+                            ADJ_LAYER
+                            BASE_OVERRIDE_LAYER
+                            BASE_ADD_OVERRIDE_LAYER
+                        >;
+            require-prior-idle-ms = <150>;
+        };
+        
+        all_esc_combo_l_down2 {
+                    bindings = <&kp ESC>;
+                    key-positions = <20 21>;
+                                layers = <
+                                    BASE_LAYER
+                                    BASE_ADD_LAYER
+                                    BASE_MIRROR_LAYER
+                                    NAV_R_LAYER
+                                    NAV_L_LAYER
+                                    NAV_MOUSE_R_LAYER
+                                    NAV_MOUSE_L_LAYER
+                                    FUNCT_LAYER
+                                    NUM_LAYER
+                                    /* SYMB_LAYER */
+                                    LAYERS_LAYER
+                                    ADJ_LAYER
+                                    BASE_OVERRIDE_LAYER
+                                    BASE_ADD_OVERRIDE_LAYER
+                                >;
+            require-prior-idle-ms = <150>;
+                };                                        
+        /* kp-end */
+        
+        /* bt */
+        bt_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <0 1 2>;
+            layers = <LAYERS_LAYER>;
+        };
+
+        bt_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <1 2 3>;
+            layers = <LAYERS_LAYER>;
+        };
+
+        bt_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <2 3 4>;
+            layers = <LAYERS_LAYER>;
+        };
+
+        bt_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <5 6 7>;
+            layers = <LAYERS_LAYER>;
+        };
+
+        bt_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <6 7 8>;
+            layers = <LAYERS_LAYER>;
+        };
+
+        bt_clear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <2 3 4 5 6 7>;
+            layers = <LAYERS_LAYER>;
+        };        
+        /* bt-end */
+        
+        /* 4*3-start */
+        base_t {
+            bindings = <&kp T>;
+            key-positions = <1 3>;
+            layers = <BASE_LAYER BASE_ADD_LAYER NAV_R_LAYER NAV_L_LAYER NUM_LAYER FUNCT_LAYER>;
+        };
+
+        base_g {
+            bindings = <&kp G>;
+            key-positions = <11 13>;
+            layers = <BASE_LAYER BASE_ADD_LAYER NAV_R_LAYER NAV_L_LAYER NUM_LAYER FUNCT_LAYER>;
+        };
+        
+        base_b {
+            bindings = <&kp B>;
+            key-positions = <21 23>;
+            layers = <BASE_LAYER BASE_ADD_LAYER NAV_R_LAYER NAV_L_LAYER NUM_LAYER FUNCT_LAYER>;
+        };
+        
+        base_y {
+            bindings = <&kp Y>;
+            key-positions = <6 8>;
+            layers = <BASE_LAYER BASE_ADD_LAYER NAV_R_LAYER NAV_L_LAYER NUM_LAYER FUNCT_LAYER>;
+        };
+        
+        base_h {
+            bindings = <&kp H>;
+            key-positions = <16 18>;
+            layers = <BASE_LAYER BASE_ADD_LAYER NAV_R_LAYER NAV_L_LAYER NUM_LAYER FUNCT_LAYER>;
+        };
+        
+        base_n {
+            bindings = <&kp N>;
+            key-positions = <26 28>;
+            layers = <BASE_LAYER BASE_ADD_LAYER NAV_R_LAYER NAV_L_LAYER NUM_LAYER FUNCT_LAYER>;
+        };
+                                                 
+        /* 4*3-end */        
+    };
