@@ -1,5 +1,5 @@
 #include "op36_combos.dtsi"
-ыф
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
 // Константы для перемещений
