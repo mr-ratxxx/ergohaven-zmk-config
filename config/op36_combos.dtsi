@@ -1,5 +1,5 @@
 // op36_combos.dtsi
-{
+/ {
     combos {
         compatible = "zmk,combos";
                 
@@ -762,4 +762,4 @@
                                                  
         /* 4*3-end */        
     };
-}
+};
