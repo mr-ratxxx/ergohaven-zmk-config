@@ -684,6 +684,10 @@
         };        
         /* bt-end */
         
+        /* funct-start */
+        
+        /* funct-end */
+        
         /* 4*3-start */
         base_t {
             bindings = <&kp T>;
