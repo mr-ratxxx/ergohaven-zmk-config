@@ -1,4 +1,6 @@
 // op36_combos.dtsi
+#include "op36_const.dtsi"
+
 / {
     combos {
         compatible = "zmk,combos";
