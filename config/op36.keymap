@@ -422,10 +422,9 @@
                 &hml LCTRL F6
                 &hml LALT F5
                 &hml LSHIFT F4
-                &hml_tog LGUI NAV_L_LAYER
-
+                &my_caps_word
                 /* funct C R */
-                &tog NAV_R_LAYER
+                &my_caps_word
                 &hmr RSHFT F4
                 &hmr RALT F5
                 &hmr RCTRL F6
@@ -436,9 +435,9 @@
                 &kp F12
                 &kp F11
                 &kp F10
-                &none
+                &to BASE_LAYER
                 /* funct D R */
-                &none
+                &to BASE_LAYER
                 &kp F10
                 &kp F11
                 &kp F12

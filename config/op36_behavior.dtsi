@@ -83,11 +83,11 @@ hml_tog: home_row_mod_left_tog {
                 };                
         
          my_caps_word: my_caps_word {
-                compatible = "zmk,behavior-caps-word";
-                label = "MY_CAPS_WORD";
-                #binding-cells = <0>;
-                continue-list = <UNDERSCORE MINUS COMMA PERIOD SEMICOLON SPACE>;
-             };
+             compatible = "zmk,behavior-caps-word";
+             label = "MY_CAPS_WORD";
+             #binding-cells = <0>;
+             continue-list = <UNDERSCORE MINUS COMMA PERIOD SEMICOLON SPACE SLASH BACKSLASH>;
+         };
                     
             enc_vol: enc_vol {
               compatible = "zmk,behavior-sensor-rotate";
