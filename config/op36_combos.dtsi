@@ -1,7 +1,6 @@
 // op36_combos.dtsi
 
 #include "op36_behavior.dtsi"
-#include "op36_combos.dtsi"
 
 / {
     combos {
