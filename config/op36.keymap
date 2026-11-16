@@ -30,6 +30,8 @@
   tapping-term-ms = <171>;
 };
 
+/ {
+
 keymap {
     compatible = "zmk,keymap";
 
@@ -785,4 +787,6 @@ nav-mouse-r {
           display-name = "base-add-ovv";
         };
     };
+};
+
 };
