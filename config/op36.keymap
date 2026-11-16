@@ -432,17 +432,17 @@
                 &hmr_tog RGUI NAV_R_LAYER
 
                 /* funct D L */
-                &hml_tog F1 BASE_LAYER
+                &hml_to LGUI BASE_LAYER
                 &kp F12
                 &kp F11
                 &kp F10
-                &to BASE_LAYER
+                &none
                 /* funct D R */
-                &to BASE_LAYER
+                &none
                 &kp F10
                 &kp F11
                 &kp F12
-                &hmr_tog F1 BASE_LAYER
+                &hmr_to RGUI BASE_LAYER
 
                 /* num T L */
                 &kp TAB
