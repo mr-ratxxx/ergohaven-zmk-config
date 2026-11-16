@@ -86,7 +86,13 @@ hml_tog: home_row_mod_left_tog {
              compatible = "zmk,behavior-caps-word";
              label = "MY_CAPS_WORD";
              #binding-cells = <0>;
-             continue-list = <UNDERSCORE MINUS COMMA PERIOD SEMICOLON SPACE SLASH BACKSLASH>;
+             continue-list = <
+                 UNDERSCORE MINUS
+                 COMMA PERIOD SEMICOLON
+                 SLASH BACKSLASH
+                 EQUAL PLUS STAR GRAVE
+                 SPACE
+             >;
          };
                     
             enc_vol: enc_vol {
