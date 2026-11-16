@@ -534,7 +534,19 @@
             bindings = <&kp CAPS>;
             key-positions = <40 41 24 23>;
             require-prior-idle-ms = <150>;
-        };        
+        };
+        
+        base_slash {
+                    bindings = <&kp SLASH>;
+                    key-positions = <17 18>;
+                    layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+                };
+                
+        base_bslh {
+            bindings = <&kp BSLH>;
+            key-positions = <18 19>;
+            layers = <BASE_LAYER BASE_ADD_LAYER BASE_OVERRIDE_LAYER BASE_ADD_OVERRIDE_LAYER>;
+        };                
         
         base_ru_e {
             bindings = <&kp BSLH>;
