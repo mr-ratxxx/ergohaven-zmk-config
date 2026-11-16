@@ -1,5 +1,7 @@
 // op36_behavior.dtsi
 
+#include "op36_combos.dtsi"
+
 / {
     behaviors {
         hml: home_row_mod_left {
