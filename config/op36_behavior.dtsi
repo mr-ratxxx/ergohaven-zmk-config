@@ -224,3 +224,4 @@ hml_tog: home_row_mod_left_tog {
               bindings = <&to>, <&kp>;
             };
     };
+};    
