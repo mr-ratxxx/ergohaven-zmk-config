@@ -58,7 +58,7 @@
             hold-trigger-on-release;
         };
         
-hml_tog: home_row_mod_left {
+hml_tog: home_row_mod_left_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -71,7 +71,7 @@ hml_tog: home_row_mod_left {
             hold-trigger-on-release;
         };
 
-        hmr_tog: home_row_mod_right {
+        hmr_tog: home_row_mod_right_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
