@@ -405,7 +405,7 @@
         funct {
             bindings = <
                 /* funct B L */
-                &to NAV_MOUSE_L_LAYER
+                &hml_tog LGUI NAV_MOUSE_L_LAYER
                 &kp F9
                 &kp F8
                 &kp F7
@@ -415,7 +415,7 @@
                 &kp F7
                 &kp F8
                 &kp F9
-                &to NAV_MOUSE_R_LAYER
+                &hmr_tog LGUI NAV_MOUSE_R_LAYER
 
                 /* funct C L */
                 &hml_tog LGUI NAV_L_LAYER
