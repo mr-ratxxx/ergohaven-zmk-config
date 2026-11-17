@@ -409,9 +409,9 @@
                 &kp F9
                 &kp F8
                 &kp F7
-                &my_caps_word
+                &tog NUM_LAYER
                 /* funct B R */
-                &my_caps_word
+                &tog NUM_LAYER
                 &kp F7
                 &kp F8
                 &kp F9
