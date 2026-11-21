@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: mr-ratxxx
-      url-base: https://github.com/mr-ratxxx
+    - name: ergohaven
+      url-base: https://github.com/ergohaven
   projects:
     - name: ergohaven-zmk
-      remote: mr-ratxxx
-      revision: zmk-main
+      remote: ergohaven
+      revision: main
       import: config/west.yml
   self:
     path: config

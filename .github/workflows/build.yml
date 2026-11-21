@@ -2,4 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: mr-ratxxx/ergohaven-zmk/.github/workflows/build-user-config.yml@zmk-main
+    uses: ergohaven/ergohaven-zmk/.github/workflows/build-user-config.yml@main
