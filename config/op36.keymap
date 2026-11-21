@@ -38,15 +38,15 @@
             bindings = <
                 /* base B L */
                 &lt LAYERS_LAYER Q
-                &lt BASE_MIRROR_LAYER W
+                &layer_hold NUM_LAYER W
                 &lt BASE_MIRROR_LAYER E
-                &kp R
+                &layer_hold SYMB_LAYER R
                 &kp T
                 /* base B R */
                 &kp Y
-                &kp U
+                &layer_hold SYMB_LAYER U
                 &lt BASE_MIRROR_LAYER I
-                &lt BASE_MIRROR_LAYER O
+                &layer_hold NUM_LAYER O
                 &lt LAYERS_LAYER P
 
                 /* base C L */
