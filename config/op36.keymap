@@ -38,15 +38,15 @@
             bindings = <
                 /* base B L */
                 &lt LAYERS_LAYER Q
-                &lt BASE_MIRROR_LAYER W
+                &layer_hold NUM_LAYER W
                 &lt BASE_MIRROR_LAYER E
-                &kp R
+                &layer_hold SYMB_LAYER R
                 &kp T
                 /* base B R */
                 &kp Y
-                &kp U
+                &layer_hold SYMB_LAYER U
                 &lt BASE_MIRROR_LAYER I
-                &lt BASE_MIRROR_LAYER O
+                &layer_hold NUM_LAYER O
                 &lt LAYERS_LAYER P
 
                 /* base C L */
@@ -405,16 +405,16 @@
         funct {
             bindings = <
                 /* funct B L */
-                &hml_tog LGUI NAV_MOUSE_L_LAYER
-                &kp F9
-                &kp F8
-                &kp F7
-                &tog NUM_LAYER
+                &hml_tog LGUI NUM_LAYER 
+                &hml LCTRL F9
+                &hml LALT F8
+                &hml LSHIFT F7
+                &tog NAV_MOUSE_L_LAYER
                 /* funct B R */
-                &tog NUM_LAYER
-                &kp F7
-                &kp F8
-                &kp F9
+                &tog NAV_MOUSE_R_LAYER
+                &hmr RSHIFT F7
+                &hmr RALT F8
+                &hmr LCTRL F9
                 &hmr_tog LGUI NAV_MOUSE_R_LAYER
 
                 /* funct C L */
