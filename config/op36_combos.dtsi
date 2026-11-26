@@ -426,8 +426,22 @@
                     bindings = <&kp RS(N7)>;
                     key-positions = <7 8>;
                     layers = <NUM_LAYER>;
-                };                
-        
+                };
+
+        num_lock_l {
+            bindings = <&tog NUM_LAYER>;
+            key-positions = <10 11>;
+            require-prior-idle-ms = <150>;
+            layers = <NUM_LAYER>;
+        };
+
+        num_lock_r {
+            bindings = <&tog NUM_LAYER>;
+            key-positions = <18 19>;
+            require-prior-idle-ms = <150>;
+            layers = <NUM_LAYER>;
+        };
+
         symb_n1_l {
             bindings = <&kp RS(N1)>;
             key-positions = <2 3>;
